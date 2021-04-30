@@ -1,7 +1,6 @@
 # PheKB Phenotypes
 
 [![PhEMA](./repo-badge.svg)](https://projectphema.org "PhEMA")
-[![Build Status](https://travis-ci.com/PheMA/phekb-phenotypes.svg?token=iwpimAkwdy3aMcQRLqoQ&branch=master)](https://travis-ci.com/PheMA/phema-phenotypes)
 ![](https://img.shields.io/badge/progress-33%2F33-brightgreen?style=flat)
 
 Collection of PheKB [phenotypes](./phenotypes) translated as part of the PhEMA
