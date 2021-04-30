@@ -1,0 +1,29 @@
+---
+name: 020 Low HDL case - one niacin med after HDLs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2015-11-11T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2016-06-01T07:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#7393 Niacin
+    authoredOn: "2017-11-12T16:00:00.000Z"
+    status: completed
+
+results:
+  Has Two Or More HDLs Before Lipid Impacting Event: true
+  Has Diabetes Code: false
+  Earliest Niacin Use Indication: "2017-11-12T16:00:00.000+00:00"
+  Case: true

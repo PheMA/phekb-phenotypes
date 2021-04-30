@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-39",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-39",
+  "status": "active",
+  "name": "Magnesium Lab Test",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "19123-9",
+            "display": "Magnesium [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

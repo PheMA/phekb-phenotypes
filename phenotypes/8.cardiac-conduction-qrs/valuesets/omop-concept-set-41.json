@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-41",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-41",
+  "status": "active",
+  "name": "Troponin Lab Test",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10839-9",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "16255-2",
+            "display": "Troponin I.cardiac [Units/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

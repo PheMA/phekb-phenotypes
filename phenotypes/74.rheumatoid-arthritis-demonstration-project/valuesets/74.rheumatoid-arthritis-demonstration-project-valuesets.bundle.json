@@ -1,0 +1,1102 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "74.rheumatoid-arthritis-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/74.rheumatoid-arthritis-dx",
+        "name": "Rheumatoid Arthritis Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "714",
+                  "display": "Rheumatoid arthritis and other inflammatory polyarthropathies"
+                },
+                {
+                  "code": "714.0",
+                  "display": "Rheumatoid arthritis"
+                },
+                {
+                  "code": "714.1",
+                  "display": "Felty's syndrome"
+                },
+                {
+                  "code": "714.2",
+                  "display": "Other rheumatoid arthritis with visceral or systemic involvement"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "74.rheumatoid-arthritis-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/74.rheumatoid-arthritis-meds",
+        "name": "Rheumatoid Arthritis Medications",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "6851",
+                  "display": "Methotrexate"
+                },
+                {
+                  "code": "9524",
+                  "display": "Sulfasalazine"
+                },
+                {
+                  "code": "202770",
+                  "display": "Azulfidine"
+                },
+                {
+                  "code": "6980",
+                  "display": "Minocycline"
+                },
+                {
+                  "code": "152056",
+                  "display": "Minocin"
+                },
+                {
+                  "code": "630820",
+                  "display": "Solodyn"
+                },
+                {
+                  "code": "5521",
+                  "display": "Hydroxychloroquine"
+                },
+                {
+                  "code": "202462",
+                  "display": "Plaquenil"
+                },
+                {
+                  "code": "327361",
+                  "display": "adalimumab"
+                },
+                {
+                  "code": "353484",
+                  "display": "Humira"
+                },
+                {
+                  "code": "214555",
+                  "display": "Etanercept"
+                },
+                {
+                  "code": "216891",
+                  "display": "Enbrel"
+                },
+                {
+                  "code": "191831",
+                  "display": "infliximab"
+                },
+                {
+                  "code": "219610",
+                  "display": "Remicade"
+                },
+                {
+                  "code": "1311190",
+                  "display": "Gold"
+                },
+                {
+                  "code": "203004",
+                  "display": "Myochrysine"
+                },
+                {
+                  "code": "1256",
+                  "display": "Azathioprine"
+                },
+                {
+                  "code": "202559",
+                  "display": "Imuran"
+                },
+                {
+                  "code": "121191",
+                  "display": "rituximab"
+                },
+                {
+                  "code": "226754",
+                  "display": "Rituxan"
+                },
+                {
+                  "code": "72435",
+                  "display": "anakinra"
+                },
+                {
+                  "code": "352734",
+                  "display": "Kineret"
+                },
+                {
+                  "code": "614391",
+                  "display": "abatacept"
+                },
+                {
+                  "code": "607377",
+                  "display": "Abatacept"
+                },
+                {
+                  "code": "616011",
+                  "display": "Orencia"
+                },
+                {
+                  "code": "27169",
+                  "display": "leflunomide"
+                },
+                {
+                  "code": "215393",
+                  "display": "Arava"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "74.rheumatoid-arthritis-inflammatory-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/74.rheumatoid-arthritis-inflammatory-dx",
+        "name": "Rheumatoid Arthritis Inflamatory Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "099.3",
+                  "display": "Reiter's disease"
+                },
+                {
+                  "code": "135",
+                  "display": "Sarcoidosis"
+                },
+                {
+                  "code": "242.0",
+                  "display": "Toxic diffuse goiter"
+                },
+                {
+                  "code": "245.0",
+                  "display": "Acute thyroiditis"
+                },
+                {
+                  "code": "274.0",
+                  "display": "Gouty arthropathy"
+                },
+                {
+                  "code": "340",
+                  "display": "Multiple sclerosis"
+                },
+                {
+                  "code": "341.9",
+                  "display": "Demyelinating disease of central nervous system, unspecified"
+                },
+                {
+                  "code": "323.9",
+                  "display": "Unspecified causes of encephalitis, myelitis, and encephalomyelitis"
+                },
+                {
+                  "code": "358.00",
+                  "display": "Myasthenia gravis without (acute) exacerbation"
+                },
+                {
+                  "code": "358.01",
+                  "display": "Myasthenia gravis with (acute) exacerbation"
+                },
+                {
+                  "code": "358.0",
+                  "display": "Myasthenia gravis"
+                },
+                {
+                  "code": "775.2",
+                  "display": "Neonatal myasthenia gravis"
+                },
+                {
+                  "code": "443.0",
+                  "display": "Raynaud's syndrome"
+                },
+                {
+                  "code": "555.1",
+                  "display": "Regional enteritis of large intestine"
+                },
+                {
+                  "code": "555.9",
+                  "display": "Regional enteritis of unspecified site"
+                },
+                {
+                  "code": "555.2",
+                  "display": "Regional enteritis of small intestine with large intestine"
+                },
+                {
+                  "code": "555.0",
+                  "display": "Regional enteritis of small intestine"
+                },
+                {
+                  "code": "555",
+                  "display": "Regional enteritis"
+                },
+                {
+                  "code": "556.2",
+                  "display": "Ulcerative (chronic) proctitis"
+                },
+                {
+                  "code": "556.0",
+                  "display": "Ulcerative (chronic) enterocolitis"
+                },
+                {
+                  "code": "556.3",
+                  "display": "Ulcerative (chronic) proctosigmoiditis"
+                },
+                {
+                  "code": "556",
+                  "display": "Ulcerative colitis"
+                },
+                {
+                  "code": "556.6",
+                  "display": "Universal ulcerative (chronic) colitis"
+                },
+                {
+                  "code": "556.8",
+                  "display": "Other ulcerative colitis"
+                },
+                {
+                  "code": "556.1",
+                  "display": "Ulcerative (chronic) ileocolitis"
+                },
+                {
+                  "code": "556.9",
+                  "display": "Ulcerative colitis, unspecified"
+                },
+                {
+                  "code": "556.4",
+                  "display": "Pseudopolyposis of colon"
+                },
+                {
+                  "code": "556.5",
+                  "display": "Left-sided ulcerative (chronic) colitis"
+                },
+                {
+                  "code": "564.1",
+                  "display": "Irritable bowel syndrome"
+                },
+                {
+                  "code": "695.4",
+                  "display": "Lupus erythematosus"
+                },
+                {
+                  "code": "710.0",
+                  "display": "Systemic lupus erythematosus"
+                },
+                {
+                  "code": "373.34",
+                  "display": "Discoid lupus erythematosus of eyelid"
+                },
+                {
+                  "code": "696.1",
+                  "display": "Other psoriasis"
+                },
+                {
+                  "code": "696",
+                  "display": "Psoriasis and similar disorders"
+                },
+                {
+                  "code": "696.2",
+                  "display": "Parapsoriasis"
+                },
+                {
+                  "code": "696.8",
+                  "display": "Other psoriasis and similar disorders"
+                },
+                {
+                  "code": "696.0",
+                  "display": "Psoriatic arthropathy"
+                },
+                {
+                  "code": "696.5",
+                  "display": "Other and unspecified pityriasis"
+                },
+                {
+                  "code": "696.3",
+                  "display": "Pityriasis rosea"
+                },
+                {
+                  "code": "696.4",
+                  "display": "Pityriasis rubra pilaris"
+                },
+                {
+                  "code": "710.1",
+                  "display": "Systemic sclerosis"
+                },
+                {
+                  "code": "710.2",
+                  "display": "Sicca syndrome"
+                },
+                {
+                  "code": "710.3",
+                  "display": "Dermatomyositis"
+                },
+                {
+                  "code": "710.4",
+                  "display": "Polymyositis"
+                },
+                {
+                  "code": "714.33",
+                  "display": "Monoarticular juvenile rheumatoid arthritis"
+                },
+                {
+                  "code": "714.30",
+                  "display": "Polyarticular juvenile rheumatoid arthritis, chronic or unspecified"
+                },
+                {
+                  "code": "714.32",
+                  "display": "Pauciarticular juvenile rheumatoid arthritis"
+                },
+                {
+                  "code": "714.3",
+                  "display": "Juvenile chronic polyarthritis"
+                },
+                {
+                  "code": "714.31",
+                  "display": "Polyarticular juvenile rheumatoid arthritis, acute"
+                },
+                {
+                  "code": "715.17",
+                  "display": "Osteoarthrosis, localized, primary, ankle and foot"
+                },
+                {
+                  "code": "715.21",
+                  "display": "Osteoarthrosis, localized, secondary, shoulder region"
+                },
+                {
+                  "code": "715.92",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, upper arm"
+                },
+                {
+                  "code": "715.31",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, shoulder region"
+                },
+                {
+                  "code": "715.2",
+                  "display": "Osteoarthrosis, localized, secondary"
+                },
+                {
+                  "code": "715.25",
+                  "display": "Osteoarthrosis, localized, secondary, pelvic region and thigh"
+                },
+                {
+                  "code": "715.28",
+                  "display": "Osteoarthrosis, localized, secondary, other specified sites"
+                },
+                {
+                  "code": "715.8",
+                  "display": "Osteoarthrosis involving or with mention of more than one site, but not specified as generalized"
+                },
+                {
+                  "code": "715.12",
+                  "display": "Osteoarthrosis, localized, primary, upper arm"
+                },
+                {
+                  "code": "715.91",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, shoulder region"
+                },
+                {
+                  "code": "715.11",
+                  "display": "Osteoarthrosis, localized, primary, shoulder region"
+                },
+                {
+                  "code": "715.22",
+                  "display": "Osteoarthrosis, localized, secondary, upper arm"
+                },
+                {
+                  "code": "715.24",
+                  "display": "Osteoarthrosis, localized, secondary, hand"
+                },
+                {
+                  "code": "715.34",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, hand"
+                },
+                {
+                  "code": "715.9",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized"
+                },
+                {
+                  "code": "715.97",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, ankle and foot"
+                },
+                {
+                  "code": "715.35",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, pelvic region and thigh"
+                },
+                {
+                  "code": "715.98",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, other specified sites"
+                },
+                {
+                  "code": "715.26",
+                  "display": "Osteoarthrosis, localized, secondary, lower leg"
+                },
+                {
+                  "code": "715.30",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, site unspecified"
+                },
+                {
+                  "code": "715.33",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, forearm"
+                },
+                {
+                  "code": "715.09",
+                  "display": "Osteoarthrosis, generalized, multiple sites"
+                },
+                {
+                  "code": "715.32",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, upper arm"
+                },
+                {
+                  "code": "715.89",
+                  "display": "Osteoarthrosis involving, or with mention of more than one site, but not specified as generalized, multiple sites"
+                },
+                {
+                  "code": "715.1",
+                  "display": "Osteoarthrosis, localized, primary"
+                },
+                {
+                  "code": "715.10",
+                  "display": "Osteoarthrosis, localized, primary, site unspecified"
+                },
+                {
+                  "code": "715.16",
+                  "display": "Osteoarthrosis, localized, primary, lower leg"
+                },
+                {
+                  "code": "715.80",
+                  "display": "Osteoarthrosis involving, or with mention of more than one site, but not specified as generalized, site unspecified"
+                },
+                {
+                  "code": "715",
+                  "display": "Osteoarthrosis and allied disorders"
+                },
+                {
+                  "code": "715.90",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, site unspecified"
+                },
+                {
+                  "code": "715.93",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, forearm"
+                },
+                {
+                  "code": "715.13",
+                  "display": "Osteoarthrosis, localized, primary, forearm"
+                },
+                {
+                  "code": "715.0",
+                  "display": "Osteoarthrosis, generalized"
+                },
+                {
+                  "code": "715.14",
+                  "display": "Osteoarthrosis, localized, primary, hand"
+                },
+                {
+                  "code": "715.37",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, ankle and foot"
+                },
+                {
+                  "code": "715.94",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, hand"
+                },
+                {
+                  "code": "715.18",
+                  "display": "Osteoarthrosis, localized, primary, other specified sites"
+                },
+                {
+                  "code": "715.20",
+                  "display": "Osteoarthrosis, localized, secondary, site unspecified"
+                },
+                {
+                  "code": "715.23",
+                  "display": "Osteoarthrosis, localized, secondary, forearm"
+                },
+                {
+                  "code": "715.27",
+                  "display": "Osteoarthrosis, localized, secondary, ankle and foot"
+                },
+                {
+                  "code": "715.3",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary"
+                },
+                {
+                  "code": "715.95",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, pelvic region and thigh"
+                },
+                {
+                  "code": "715.00",
+                  "display": "Osteoarthrosis, generalized, site unspecified"
+                },
+                {
+                  "code": "715.04",
+                  "display": "Osteoarthrosis, generalized, hand"
+                },
+                {
+                  "code": "715.15",
+                  "display": "Osteoarthrosis, localized, primary, pelvic region and thigh"
+                },
+                {
+                  "code": "715.36",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, lower leg"
+                },
+                {
+                  "code": "715.96",
+                  "display": "Osteoarthrosis, unspecified whether generalized or localized, lower leg"
+                },
+                {
+                  "code": "715.38",
+                  "display": "Osteoarthrosis, localized, not specified whether primary or secondary, other specified sites"
+                },
+                {
+                  "code": "719.23",
+                  "display": "Villonodular synovitis, forearm"
+                },
+                {
+                  "code": "719.32",
+                  "display": "Palindromic rheumatism, upper arm"
+                },
+                {
+                  "code": "719.34",
+                  "display": "Palindromic rheumatism, hand"
+                },
+                {
+                  "code": "719.50",
+                  "display": "Stiffness of joint, not elsewhere classified, site unspecified"
+                },
+                {
+                  "code": "719.70",
+                  "display": "Difficulty in walking involving joint, site unspecified"
+                },
+                {
+                  "code": "719.79",
+                  "display": "Difficulty in walking involving joint of multiple sites"
+                },
+                {
+                  "code": "719.99",
+                  "display": "Unspecified disorder of joint, multiple sites"
+                },
+                {
+                  "code": "719.03",
+                  "display": "Effusion of joint, forearm"
+                },
+                {
+                  "code": "719.40",
+                  "display": "Pain in joint, site unspecified"
+                },
+                {
+                  "code": "719.45",
+                  "display": "Pain in joint, pelvic region and thigh"
+                },
+                {
+                  "code": "719.65",
+                  "display": "Other symptoms referable to joint, pelvic region and thigh"
+                },
+                {
+                  "code": "719.76",
+                  "display": "Difficulty in walking involving lower leg joint"
+                },
+                {
+                  "code": "719.9",
+                  "display": "Unspecified disorder of joint"
+                },
+                {
+                  "code": "719.12",
+                  "display": "Hemarthrosis, upper arm"
+                },
+                {
+                  "code": "719.30",
+                  "display": "Palindromic rheumatism, site unspecified"
+                },
+                {
+                  "code": "719.42",
+                  "display": "Pain in joint, upper arm"
+                },
+                {
+                  "code": "719.58",
+                  "display": "Stiffness of joint, not elsewhere classified, other specified sites"
+                },
+                {
+                  "code": "719.59",
+                  "display": "Stiffness of joint, not elsewhere classified, multiple sites"
+                },
+                {
+                  "code": "719.88",
+                  "display": "Other specified disorders of joint, other specified sites"
+                },
+                {
+                  "code": "719",
+                  "display": "Other and unspecified disorders of joint"
+                },
+                {
+                  "code": "719.77",
+                  "display": "Difficulty in walking involving ankle and foot joint"
+                },
+                {
+                  "code": "719.86",
+                  "display": "Other specified disorders of joint, lower leg"
+                },
+                {
+                  "code": "719.1",
+                  "display": "Hemarthrosis"
+                },
+                {
+                  "code": "719.27",
+                  "display": "Villonodular synovitis, ankle and foot"
+                },
+                {
+                  "code": "719.36",
+                  "display": "Palindromic rheumatism, lower leg"
+                },
+                {
+                  "code": "719.81",
+                  "display": "Other specified disorders of joint, shoulder region"
+                },
+                {
+                  "code": "719.84",
+                  "display": "Other specified disorders of joint, hand"
+                },
+                {
+                  "code": "719.97",
+                  "display": "Unspecified disorder of joint, ankle and foot"
+                },
+                {
+                  "code": "719.0",
+                  "display": "Effusion of joint"
+                },
+                {
+                  "code": "719.10",
+                  "display": "Hemarthrosis, site unspecified"
+                },
+                {
+                  "code": "719.15",
+                  "display": "Hemarthrosis, pelvic region and thigh"
+                },
+                {
+                  "code": "719.18",
+                  "display": "Hemarthrosis, other specified sites"
+                },
+                {
+                  "code": "719.39",
+                  "display": "Palindromic rheumatism, multiple sites"
+                },
+                {
+                  "code": "719.47",
+                  "display": "Pain in joint, ankle and foot"
+                },
+                {
+                  "code": "719.56",
+                  "display": "Stiffness of joint, not elsewhere classified, lower leg"
+                },
+                {
+                  "code": "719.85",
+                  "display": "Other specified disorders of joint, pelvic region and thigh"
+                },
+                {
+                  "code": "719.06",
+                  "display": "Effusion of joint, lower leg"
+                },
+                {
+                  "code": "719.3",
+                  "display": "Palindromic rheumatism"
+                },
+                {
+                  "code": "719.43",
+                  "display": "Pain in joint, forearm"
+                },
+                {
+                  "code": "719.80",
+                  "display": "Other specified disorders of joint, site unspecified"
+                },
+                {
+                  "code": "719.82",
+                  "display": "Other specified disorders of joint, upper arm"
+                },
+                {
+                  "code": "719.95",
+                  "display": "Unspecified disorder of joint, pelvic region and thigh"
+                },
+                {
+                  "code": "719.01",
+                  "display": "Effusion of joint, shoulder region"
+                },
+                {
+                  "code": "719.04",
+                  "display": "Effusion of joint, hand"
+                },
+                {
+                  "code": "719.20",
+                  "display": "Villonodular synovitis, site unspecified"
+                },
+                {
+                  "code": "719.41",
+                  "display": "Pain in joint, shoulder region"
+                },
+                {
+                  "code": "719.53",
+                  "display": "Stiffness of joint, not elsewhere classified, forearm"
+                },
+                {
+                  "code": "719.87",
+                  "display": "Other specified disorders of joint, ankle and foot"
+                },
+                {
+                  "code": "719.91",
+                  "display": "Unspecified disorder of joint, shoulder region"
+                },
+                {
+                  "code": "719.22",
+                  "display": "Villonodular synovitis, upper arm"
+                },
+                {
+                  "code": "719.26",
+                  "display": "Villonodular synovitis, lower leg"
+                },
+                {
+                  "code": "719.38",
+                  "display": "Palindromic rheumatism, other specified sites"
+                },
+                {
+                  "code": "719.44",
+                  "display": "Pain in joint, hand"
+                },
+                {
+                  "code": "719.7",
+                  "display": "Difficulty in walking"
+                },
+                {
+                  "code": "719.07",
+                  "display": "Effusion of joint, ankle and foot"
+                },
+                {
+                  "code": "719.2",
+                  "display": "Villonodular synovitis"
+                },
+                {
+                  "code": "719.31",
+                  "display": "Palindromic rheumatism, shoulder region"
+                },
+                {
+                  "code": "719.68",
+                  "display": "Other symptoms referable to joint, other specified sites"
+                },
+                {
+                  "code": "719.83",
+                  "display": "Other specified disorders of joint, forearm"
+                },
+                {
+                  "code": "719.89",
+                  "display": "Other specified disorders of joint, multiple sites"
+                },
+                {
+                  "code": "719.02",
+                  "display": "Effusion of joint, upper arm"
+                },
+                {
+                  "code": "719.17",
+                  "display": "Hemarthrosis, ankle and foot"
+                },
+                {
+                  "code": "719.4",
+                  "display": "Pain in joint"
+                },
+                {
+                  "code": "719.46",
+                  "display": "Pain in joint, lower leg"
+                },
+                {
+                  "code": "719.61",
+                  "display": "Other symptoms referable to joint, shoulder region"
+                },
+                {
+                  "code": "719.62",
+                  "display": "Other symptoms referable to joint, upper arm"
+                },
+                {
+                  "code": "719.63",
+                  "display": "Other symptoms referable to joint, forearm"
+                },
+                {
+                  "code": "719.8",
+                  "display": "Other specified disorders of joint"
+                },
+                {
+                  "code": "719.98",
+                  "display": "Unspecified disorder of joint, other specified sites"
+                },
+                {
+                  "code": "719.05",
+                  "display": "Effusion of joint, pelvic region and thigh"
+                },
+                {
+                  "code": "719.11",
+                  "display": "Hemarthrosis, shoulder region"
+                },
+                {
+                  "code": "719.24",
+                  "display": "Villonodular synovitis, hand"
+                },
+                {
+                  "code": "719.33",
+                  "display": "Palindromic rheumatism, forearm"
+                },
+                {
+                  "code": "719.35",
+                  "display": "Palindromic rheumatism, pelvic region and thigh"
+                },
+                {
+                  "code": "719.37",
+                  "display": "Palindromic rheumatism, ankle and foot"
+                },
+                {
+                  "code": "719.57",
+                  "display": "Stiffness of joint, not elsewhere classified, ankle and foot"
+                },
+                {
+                  "code": "719.69",
+                  "display": "Other symptoms referable to joint, multiple sites"
+                },
+                {
+                  "code": "719.93",
+                  "display": "Unspecified disorder of joint, forearm"
+                },
+                {
+                  "code": "719.09",
+                  "display": "Effusion of joint, multiple sites"
+                },
+                {
+                  "code": "719.16",
+                  "display": "Hemarthrosis, lower leg"
+                },
+                {
+                  "code": "719.21",
+                  "display": "Villonodular synovitis, shoulder region"
+                },
+                {
+                  "code": "719.29",
+                  "display": "Villonodular synovitis, multiple sites"
+                },
+                {
+                  "code": "719.48",
+                  "display": "Pain in joint, other specified sites"
+                },
+                {
+                  "code": "719.5",
+                  "display": "Stiffness of joint, not elsewhere classified"
+                },
+                {
+                  "code": "719.67",
+                  "display": "Other symptoms referable to joint, ankle and foot"
+                },
+                {
+                  "code": "719.90",
+                  "display": "Unspecified disorder of joint, site unspecified"
+                },
+                {
+                  "code": "719.08",
+                  "display": "Effusion of joint, other specified sites"
+                },
+                {
+                  "code": "719.54",
+                  "display": "Stiffness of joint, not elsewhere classified, hand"
+                },
+                {
+                  "code": "719.55",
+                  "display": "Stiffness of joint, not elsewhere classified, pelvic region and thigh"
+                },
+                {
+                  "code": "719.75",
+                  "display": "Difficulty in walking involving joint of pelvic region and thigh"
+                },
+                {
+                  "code": "719.94",
+                  "display": "Unspecified disorder of joint, hand"
+                },
+                {
+                  "code": "719.96",
+                  "display": "Unspecified disorder of joint, lower leg"
+                },
+                {
+                  "code": "719.00",
+                  "display": "Effusion of joint, site unspecified"
+                },
+                {
+                  "code": "719.13",
+                  "display": "Hemarthrosis, forearm"
+                },
+                {
+                  "code": "719.28",
+                  "display": "Villonodular synovitis, other specified sites"
+                },
+                {
+                  "code": "719.52",
+                  "display": "Stiffness of joint, not elsewhere classified, upper arm"
+                },
+                {
+                  "code": "719.60",
+                  "display": "Other symptoms referable to joint, site unspecified"
+                },
+                {
+                  "code": "719.64",
+                  "display": "Other symptoms referable to joint, hand"
+                },
+                {
+                  "code": "719.92",
+                  "display": "Unspecified disorder of joint, upper arm"
+                },
+                {
+                  "code": "719.14",
+                  "display": "Hemarthrosis, hand"
+                },
+                {
+                  "code": "719.19",
+                  "display": "Hemarthrosis, multiple sites"
+                },
+                {
+                  "code": "719.25",
+                  "display": "Villonodular synovitis, pelvic region and thigh"
+                },
+                {
+                  "code": "719.49",
+                  "display": "Pain in joint, multiple sites"
+                },
+                {
+                  "code": "719.51",
+                  "display": "Stiffness of joint, not elsewhere classified, shoulder region"
+                },
+                {
+                  "code": "719.6",
+                  "display": "Other symptoms referable to joint"
+                },
+                {
+                  "code": "719.66",
+                  "display": "Other symptoms referable to joint, lower leg"
+                },
+                {
+                  "code": "719.78",
+                  "display": "Difficulty in walking involving joint of other specified sites"
+                },
+                {
+                  "code": "720.89",
+                  "display": "Other inflammatory spondylopathies"
+                },
+                {
+                  "code": "720.2",
+                  "display": "Sacroiliitis, not elsewhere classified"
+                },
+                {
+                  "code": "720.81",
+                  "display": "Inflammatory spondylopathies in diseases classified elsewhere"
+                },
+                {
+                  "code": "720",
+                  "display": "Ankylosing spondylitis and other inflammatory spondylopathies"
+                },
+                {
+                  "code": "720.0",
+                  "display": "Ankylosing spondylitis"
+                },
+                {
+                  "code": "720.9",
+                  "display": "Unspecified inflammatory spondylopathy"
+                },
+                {
+                  "code": "720.1",
+                  "display": "Spinal enthesopathy"
+                },
+                {
+                  "code": "720.8",
+                  "display": "Other inflammatory spondylopathies"
+                },
+                {
+                  "code": "721.2",
+                  "display": "Thoracic spondylosis without myelopathy"
+                },
+                {
+                  "code": "721.3",
+                  "display": "Lumbosacral spondylosis without myelopathy"
+                },
+                {
+                  "code": "729.0",
+                  "display": "Rheumatism, unspecified and fibrositis"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "74.rheumatoid-arthritis-juvenile-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/74.rheumatoid-arthritis-juvenile-dx",
+        "name": "Rheumatoid Arthritis Juvenile Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "714.33",
+                  "display": "Monoarticular juvenile rheumatoid arthritis"
+                },
+                {
+                  "code": "714.30",
+                  "display": "Polyarticular juvenile rheumatoid arthritis, chronic or unspecified"
+                },
+                {
+                  "code": "714.32",
+                  "display": "Pauciarticular juvenile rheumatoid arthritis"
+                },
+                {
+                  "code": "714.3",
+                  "display": "Juvenile chronic polyarthritis"
+                },
+                {
+                  "code": "714.31",
+                  "display": "Polyarticular juvenile rheumatoid arthritis, acute"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

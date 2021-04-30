@@ -1,0 +1,24 @@
+---
+name: 003 WBC NOT Case - HIV Indication
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#5905-5 Monocytes/100 leukocytes in Blood by Automated count
+    valueQuantity: 4 %
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#042 Human immunodeficiency virus [HIV] disease
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+results:
+  Has HIV Indication: true
+  Has Dialysis Procedure: false
+  Has Splenectomy Procedure: false
+  Has WBC Sample: true
+  Case: false

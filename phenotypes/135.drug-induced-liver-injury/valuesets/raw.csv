@@ -1,0 +1,1305 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,277.4,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,^570*,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,572.2,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,^572.4*,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,^573*,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,576.8,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,782.4,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,^789.1*,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,^790.4*,ICD9CM
+135.acute-liver-injury-dx,Acute Liver Injury Diagnoses,^794.8*,ICD9CM
+135.total-bilirubin,Total Bilirubin Labs,35194-0,LOINC
+135.total-bilirubin,Total Bilirubin Labs,1975-2,LOINC
+135.total-bilirubin,Total Bilirubin Labs,14631-6,LOINC
+135.alt,Alanine Aminotransferase Labs,1742-6,LOINC
+135.alp,Alanine Phosphatase Labs,6768-6,LOINC
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.0,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.4,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.40,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.41,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.49,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.5,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.6,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.8,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.42,ICD9CM
+135.chronic-liver-injury-dx,Chronic Liver Injury Diagnoses,571.9,ICD9CM
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),6-mercaptopurine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),acebutolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),acetazolamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),acetohexamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),acyclovir,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),albuterol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),alendronate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),allopurinol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),alprazolam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amantadine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amiloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amiodarone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amitriptyline,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amlodipine besylate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amobarbital,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amoxicillin / clavulanate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amoxicillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),amphotericin b,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ampicillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),anastrozole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),atenolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),atorvastatin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),atovaquone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),auranofin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),azathioprine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),azithromycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),aztreonam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),baclofen,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List), benztropine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),betamethasone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),betaxolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),bicalutamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),bumetanide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),bupropion,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),busulfan,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),capreomycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),captopril,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),carbamazepine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),carbenicillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),carboplatin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),carisoprodol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cascara,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefaclor,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefepime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefixime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefoperazone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefotaxime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefoxitin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefpodoxime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefprozil,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ceftazidime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ceftizoxime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ceftriaxone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cefuroxime,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cephalexin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cephalosporin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cephradine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chlorambucil,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chlordiazepoxide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chloroquine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chlorothiazide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chlorpromazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chlorpropamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),chlorthalidone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cimetidine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ciprofloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cisplatin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clarithromycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clinafloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clindamycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clofibrate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clomipramine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clonazepam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clonidine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clorazepate dipotassium,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),clozapine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cocaine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),colchicine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),colestipol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cortisone acetate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cyclobenzaprine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cyclophosphamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cycloserine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cyclosporin a,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),cyproheptadine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),danazol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dantrolene sodium,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dapsone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),demeclocycline hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),desflurane,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),desipramine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dexamethasone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),diazepam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),diclofenac sodium,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dicloxacillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dicyclomine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),didanosine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),diflunisal,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),diltiazem,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dimenhydrinate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),diphenhydramine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),dipyridamole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),disopyramide phosphate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),disulfiram,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),docetaxel,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),donepezil hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),doxazosin mesylate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),doxepin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),doxycycline hyclate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),enalapril maleate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),enflurane,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),enoxaparin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),erythromycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),esmolol hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ethambutol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ethinyl estradiol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ethosuximide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),etodolac,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),famciclovir,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),famotidine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),felbamate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),felodipine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fexofenadine hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),finasteride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),flecainide acetate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fluconazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),flucytosine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fluoxetine hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fluoxymesterone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fluphenazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),flurazepam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),flutamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fluvastatin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fluvoxamine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),foscarnet,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),fosinopril,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),furosemide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),gabapentin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ganciclovir,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),gemfibrozil,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),gentamicin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),glimepiride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),glipizide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),glucagon,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),glyburide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),glycopyrrolate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),gold sodium thiomalate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),griseofulvin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),haloperidol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),halothane,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),histamine phosphate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),hydralazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),hydrochlorothiazide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),hydrocortisone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),hydroxychloroquine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),hydroxyzine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),hyoscyamine sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ibuprofen,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ifosfamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),imipramine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),indinavir,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),indomethacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),interferon beta 1a,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ipratropium bromide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),isoflurane,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),isoniazid,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),isotretinoin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),isradipine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),itraconazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ketoconazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ketoprofen,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ketorolac tromethamine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),labetalol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lamivudine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lamotrigine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lansoprazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),levodopa,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),levofloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lisinopril,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lithium carbonate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lithium citrate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lomustine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),loratadine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lorazepam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),losartan potassium,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),lovastatin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),loxapine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),mebendazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),mechlorethamine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),meclizine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),mefloquine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),melphalan,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),meropenem,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),metaproterenol sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),metformin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methazolamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methicillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methimazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methocarbamol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methotrexate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methyldopa,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methylphenidate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),methylprednisolone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),metolazone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),metoprolol tartrate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),metronidazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),mexiletine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),midazolam hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),minocycline,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),minoxidil,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),mirtazapine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),molindone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),moxifloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),mycophenolate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nabumetone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nadolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),naltrexone hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nandrolone decanoate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),naproxen,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nefazodone hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nelfinavir,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),neomycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nevirapine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),niacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nicardipine hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nifedipine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nimodipine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nitrofurantoin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nizatidine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),norfloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),nortriptyline,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ofloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),olanzapine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),omeprazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),aspirin / caffeine / orphenadrine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),orphenadrine citrate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),oxandrolone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),oxaprozin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),oxazepam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),oxybutynin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),paclitaxel,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pamidronate disodium,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),penicillamine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),penicillin g,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pergolide mesylate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),perphenazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),phenelzine sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),phenytoin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pimozide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pindolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),piperacillin / tazobactam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),piperacillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),piroxicam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pramipexole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pravastatin sodium,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),praziquantel,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),prazosin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),prednisolone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),prednisone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),primaquine phosphate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),primidone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),probenecid,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),procainamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),procarbazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),prochlorperazine edisylate salt,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),prochlorperazine maleate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),propafenone hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),propantheline bromide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),propofol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),propranolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),propylthiouracil,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pyrazinamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),pyrimethamine / sulfadoxine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),quetiapine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),quinapril hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),quinidine gluconate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),quinidine sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),quinine sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ranitidine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),reserpine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ribavirin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),rifabutin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),rifampin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),riluzole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),rimantadine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),risperidone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ritonavir,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),salmeterol xinafoate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),saquinavir mesylate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),scopolamine hydrobromide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),secobarbital,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),selegiline hcl,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),senna,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),sertraline hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),simvastatin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),sotalol hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),sparfloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),spironolactone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),stavudine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),streptomycin sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),sulfamethoxazole / trimethoprim,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),sulfisoxazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),sulindac,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tacrine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tacrolimus,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tamoxifen citrate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),terazosin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),terbinafine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),terbutaline sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),theophylline,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),thiabendazole,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),thioguanine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),thioridazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ticarcillin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),ticlopidine hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),timolol,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tizanidine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tolbutamide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tolmetin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),torsemide,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),tranylcypromine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),trazodone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),triamcinolone,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),trimethoprim,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),triamterene,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),triazolam,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),trifluoperazine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),trihexyphenidyl,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),trimethoprim,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),trovafloxacin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),valacyclovir hydrochloride,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),valproic acid,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),vancomycin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),venlafaxine,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),verapamil,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),vincristine sulfate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),vinorelbine tartrate,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),warfarin,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),zafirlukast,RxNorm
+135.liver-toxicity-meds-expanded-list,Liver Toxicity Medications (Expanded List),zidovudine,RxNorm
+135.exclusionary-dx,Exclusionary Diagnoses,448.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,259.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,199.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,199.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,149.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,140.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,141.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,142.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,142.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,142.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,142.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,142.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,143.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,143.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,143.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,143.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,145.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,144.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,144.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,144.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,144.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,149.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,146.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,147.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,147.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,147.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,147.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,147.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,147.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,148.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,148.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,148.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,148.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,148.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,148.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,149.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,149.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,159.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,150.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,151.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,159.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,152.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,152.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,152.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,152.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,152.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,152.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,153.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,154.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,154.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,154.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,154.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,154.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,155.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,155.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,155.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,156.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,156.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,156.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,156.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,156.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,157.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,158.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,158.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,158.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,159.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,159.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,165.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,165.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,160.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,161.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,161.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,161.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,161.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,161.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,161.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,162.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,163.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,163.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,163.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,163.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,164.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,164.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,164.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,164.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,164.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,164.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,165.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,170.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,171.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.90,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.00,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.20,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.30,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.40,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.50,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.60,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.70,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.80,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,174.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,175.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,175.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,181,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,179,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,180.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,180.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,180.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,180.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,182.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,182.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,182.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,183.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,184.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,185,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,186.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,186.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,187.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,188.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,189.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,190.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,192.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,191.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,192.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,192.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,192.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,192.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,192.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,193,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,195.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,196.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,197.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.82,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,198.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.20,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.21,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.23,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.24,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.25,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.26,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.27,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,200.28,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.90,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.60,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.61,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.62,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.63,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.64,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.65,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.66,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.67,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.68,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.92,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.93,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.94,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.95,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.96,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.97,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,202.98,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,203.80,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,229.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,229.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,229.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,210.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,211.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,212.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,213.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,215.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,216.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,217,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,218.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,219.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,219.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,219.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,219.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,221.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,220,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,221.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,221.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,221.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,221.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,222.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,223.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,224.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,225.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,226,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,227.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,234.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,234.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,234.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,230.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,231.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,231.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,231.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,231.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,231.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,232.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,235.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.90,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,236.99,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,237.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,238.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,365.64,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,377.51,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,377.52,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,377.61,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,377.71,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,194.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,203.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,727.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,731.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,654.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,654.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,654.12,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,654.13,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,654.14,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.90,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.00,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.03,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.04,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.05,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.06,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.07,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.09,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.20,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.12,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.21,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.29,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.40,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.43,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.44,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.45,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.46,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.47,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.49,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.50,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.51,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.52,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.79,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.83,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.84,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.85,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.86,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.87,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.88,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.40,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V71.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.43,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.49,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,99.25,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,99.85,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V12.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.49,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.43,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.12,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.19,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.48,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.51,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.44,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.45,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.46,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.47,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.50,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.51,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.52,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V76.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,285.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.59,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V58.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V84.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V84.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V84.03,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V84.04,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V84.09,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,338.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,795.06,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,795.82,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,795.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.30,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.32,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,233.39,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,624.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,624.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V16.52,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,059.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,199.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,203.82,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.00,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.03,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.12,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.13,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.14,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.15,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.16,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.17,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.20,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.21,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.23,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.24,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.25,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.26,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.27,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.29,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.30,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.40,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.43,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.50,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.51,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.52,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.53,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.54,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.55,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.56,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.57,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.60,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.61,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.62,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.63,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.64,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.65,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.66,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.67,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.69,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,795.16,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,796.76,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.32,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.33,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.34,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.35,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.36,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.70,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.71,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.72,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.73,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.74,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.75,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,209.79,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,239.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,277.88,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V10.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.09,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.12,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.19,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.21,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.29,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.32,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.39,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.49,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.51,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.52,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.59,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.61,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.62,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.69,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.71,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.72,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.79,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.82,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.92,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,173.99,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,358.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,575.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,251.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,251.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,577.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,577.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,577.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,577.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,577.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,402.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,402.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,402.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.90,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.00,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.11,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.92,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.12,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.93,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.03,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,404.13,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,398.91,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E872.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E874.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,402.90,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,402.00,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,402.10,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.20,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.30,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.21,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.40,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.23,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.43,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.32,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,428.33,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,305.00,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,305.01,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,305.02,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,305.03,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,571.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,571.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,571.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,571.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,980.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,980.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,980.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,980.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,980.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,980.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,042,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,079.53,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V08,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.30,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.32,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.33,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,714.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,720.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V82.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,135,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,321.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,710.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.49,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.59,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.30,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.20,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.21,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.31,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.41,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.42,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.43,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.70,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,573.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V02.60,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V05.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.32,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.22,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.23,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.33,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V02.69,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,070.71,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,576.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.82,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.83,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.84,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.85,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.86,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.87,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.88,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,996.80,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.89,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.81,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.82,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.83,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.84,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,V42.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,798.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,798.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,798.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.9,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.0,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.1,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.2,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.3,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.4,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.5,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.6,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.7,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E950.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E958.8,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E959,ICD9CM
+135.exclusionary-dx,Exclusionary Diagnoses,E958.9,ICD9CM
+135.exclusionary-procs,Exclusionary Procedures,41.02,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.03,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.06,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.07,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.08,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.09,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.01,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.04,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.05,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,41.00,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,33.51,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,33.52,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,33.50,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.81,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.82,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.83,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.84,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.85,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.86,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,52.80,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.0,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.21,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.22,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.3,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.4,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.51,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.59,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.61,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.69,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.91,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.92,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.93,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.94,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.99,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.23,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.24,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.25,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.26,ICD9Proc
+135.exclusionary-procs,Exclusionary Procedures,50.29,ICD9Proc

@@ -1,0 +1,210 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "19.hiv-indication",
+        "url": "https://workbench.phema.science/fhir/ValueSet/19.hiv-indication",
+        "name": "HIV Indication",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "042",
+                  "display": "Human immunodeficiency virus [HIV] disease"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "19.dialysis-procedures",
+        "url": "https://workbench.phema.science/fhir/ValueSet/19.dialysis-procedures",
+        "name": "Dialysis Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "90921",
+                  "display": "End stage renal disease (ESRD) related services per full month; for patients twenty years of age and over"
+                },
+                {
+                  "code": "90924",
+                  "display": "End stage renal disease (ESRD) related services (less than full month), per day; for patients between twelve and nineteen years of age"
+                },
+                {
+                  "code": "90925",
+                  "display": "End stage renal disease (ESRD) related services (less than full month), per day; for patients twenty years of age and over"
+                },
+                {
+                  "code": "90935",
+                  "display": "Hemodialysis procedure with single evaluation by a physician or other qualified health care professional"
+                },
+                {
+                  "code": "90937",
+                  "display": "Hemodialysis procedure requiring repeated evaluation(s) with or without substantial revision of dialysis prescription"
+                },
+                {
+                  "code": "90940",
+                  "display": "Hemodialysis access flow study to determine blood flow in grafts and arteriovenous fistulae by an indicator method"
+                },
+                {
+                  "code": "90945",
+                  "display": "Dialysis procedure other than hemodialysis (eg, peritoneal dialysis, hemofiltration, or other continuous renal replacement therapies), with single evaluation by a physician or other qualified health care professional"
+                },
+                {
+                  "code": "90947",
+                  "display": "Dialysis procedure other than hemodialysis (eg, peritoneal dialysis, hemofiltration, or other continuous renal replacement therapies) requiring repeated evaluations by a physician or other qualified health care professional, with or without substantial re"
+                },
+                {
+                  "code": "90953",
+                  "display": "End-stage renal disease (ESRD) related services monthly, for patients younger than 2 years of age to include monitoring for the adequacy of nutrition, assessment of growth and development, and counseling of parents; with 1 face-to-face visit by a physicia"
+                },
+                {
+                  "code": "90989",
+                  "display": "Dialysis training, patient, including helper where applicable, any mode, completed course"
+                },
+                {
+                  "code": "90993",
+                  "display": "Dialysis training, patient, including helper where applicable, any mode, course not completed, per training session"
+                },
+                {
+                  "code": "90999",
+                  "display": "Unlisted dialysis procedure, inpatient or outpatient"
+                }
+              ]
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/HCPCS",
+              "concept": [
+                {
+                  "code": "G0317",
+                  "display": "END STAGE RENAL DISEASE (ESRD) RELATED SERVICES DURING THE COURSE OF TREATMENT, FOR PATIENTS 20 YEARS OF AGE AND OVER; WITH 4 OR MORE FACE-TO-FACE PHYSICIAN VISITS PER MONTH"
+                },
+                {
+                  "code": "G0318",
+                  "display": "END STAGE RENAL DISEASE (ESRD) RELATED SERVICES DURING THE COURSE OF TREATMENT, FOR PATIENTS 20 YEARS OF AGE AND OVER; WITH 2 OR 3 FACE-TO-FACE PHYSICIAN VISITS PER MONTH"
+                },
+                {
+                  "code": "G0323",
+                  "display": "END STAGE RENAL DISEASE (ESRD) RELATED SERVICES FOR HOME DIALYSIS PATIENTS PER FULL MONTH; FOR PATIENTS TWENTY YEARS OF AGE AND OLDER"
+                },
+                {
+                  "code": "G0327",
+                  "display": "END STAGE RENAL DISEASE (ESRD) RELATED SERVICES LESS THAN FULL MONTH, PER DAY; FOR PATIENTS TWENTY YEARS OF AGE AND OVER"
+                },
+                {
+                  "code": "G8075",
+                  "display": "End stage renal disease patient with documented dialysis dose of urr greater than or equal to 65% (or kt/v greater than or equal to 1.2)"
+                },
+                {
+                  "code": "A4653",
+                  "display": "Peritoneal dialysis catheter anchoring device, belt, each"
+                },
+                {
+                  "code": "A4913",
+                  "display": "Miscellaneous dialysis supplies, not otherwise specified"
+                },
+                {
+                  "code": "E1590",
+                  "display": "Hemodialysis machine"
+                }
+              ]
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "39.95",
+                  "display": "Hemodialysis"
+                },
+                {
+                  "code": "54.98",
+                  "display": "Peritoneal dialysis"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "19.splenectomy-procedures",
+        "url": "https://workbench.phema.science/fhir/ValueSet/19.splenectomy-procedures",
+        "name": "Splenectomy Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "41.43",
+                  "display": "Partial splenectomy"
+                },
+                {
+                  "code": "41.5",
+                  "display": "Total splenectomy"
+                }
+              ]
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "38120",
+                  "display": "Laparoscopy, surgical, splenectomy"
+                },
+                {
+                  "code": "56345",
+                  "display": "Laparoscopy, surgical; splenectomy."
+                },
+                {
+                  "code": "38100",
+                  "display": "Splenectomy; total (separate procedure)"
+                },
+                {
+                  "code": "38101",
+                  "display": "Splenectomy; partial (separate procedure)"
+                },
+                {
+                  "code": "38102",
+                  "display": "Splenectomy; total, en bloc for extensive disease, in conjunction with other procedure (List in addition to code for primary procedure)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

@@ -1,0 +1,711 @@
+{
+  "resourceType": "ValueSet",
+  "id": "1197.prostate-cancer-treatment-procedures",
+  "url": "https://workbench.phema.science/fhir/ValueSet/1197.prostate-cancer-treatment-procedures",
+  "status": "active",
+  "name": "PHEKB-1197 Prostate Cancer Treatment Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "77295",
+            "display": "3-dimensional radiotherapy plan, including dose-volume histograms"
+          },
+          {
+            "code": "4164F",
+            "display": "Adjuvant (ie, in combination with external beam radiotherapy to the prostate for prostate cancer) hormonal therapy (gonadotropin-releasing hormone [GnRH] agonist or antagonist) prescribed/administered (PRCA)"
+          },
+          {
+            "code": "77300",
+            "display": "Basic radiation dosimetry calculation, central axis depth dose calculation, TDF, NSD, gap calculation, off axis factor, tissue inhomogeneity factors, calculation of non-ionizing radiation surface and depth dose, as required during course of treatment, onl"
+          },
+          {
+            "code": "77318",
+            "display": "Brachytherapy isodose plan; complex (calculation[s] made from over 10 sources, or remote afterloading brachytherapy, over 12 channels), includes basic dosimetry calculation(s)"
+          },
+          {
+            "code": "77317",
+            "display": "Brachytherapy isodose plan; intermediate (calculation[s] made from 5 to 10 sources, or remote afterloading brachytherapy, 2-12 channels), includes basic dosimetry calculation(s)"
+          },
+          {
+            "code": "77316",
+            "display": "Brachytherapy isodose plan; simple (calculation[s] made from 1 to 4 sources, or remote afterloading brachytherapy, 1 channel), includes basic dosimetry calculation(s)"
+          },
+          {
+            "code": "96423",
+            "display": "Chemotherapy administration, intra-arterial; infusion technique, each additional hour (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "96425",
+            "display": "Chemotherapy administration, intra-arterial; infusion technique, initiation of prolonged infusion (more than 8 hours), requiring the use of a portable or implantable pump"
+          },
+          {
+            "code": "96422",
+            "display": "Chemotherapy administration, intra-arterial; infusion technique, up to 1 hour"
+          },
+          {
+            "code": "96420",
+            "display": "Chemotherapy administration, intra-arterial; push technique"
+          },
+          {
+            "code": "96406",
+            "display": "Chemotherapy administration; intralesional, more than 7 lesions"
+          },
+          {
+            "code": "96405",
+            "display": "Chemotherapy administration; intralesional, up to and including 7 lesions"
+          },
+          {
+            "code": "96415",
+            "display": "Chemotherapy administration, intravenous infusion technique; each additional hour (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "96417",
+            "display": "Chemotherapy administration, intravenous infusion technique; each additional sequential infusion (different substance/drug), up to 1 hour (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "96416",
+            "display": "Chemotherapy administration, intravenous infusion technique; initiation of prolonged chemotherapy infusion (more than 8 hours), requiring use of a portable or implantable pump"
+          },
+          {
+            "code": "96413",
+            "display": "Chemotherapy administration, intravenous infusion technique; up to 1 hour, single or initial substance/drug"
+          },
+          {
+            "code": "96411",
+            "display": "Chemotherapy administration; intravenous, push technique, each additional substance/drug (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "96409",
+            "display": "Chemotherapy administration; intravenous, push technique, single or initial substance/drug"
+          },
+          {
+            "code": "96402",
+            "display": "Chemotherapy administration, subcutaneous or intramuscular; hormonal anti-neoplastic"
+          },
+          {
+            "code": "96401",
+            "display": "Chemotherapy administration, subcutaneous or intramuscular; non-hormonal anti-neoplastic"
+          },
+          {
+            "code": "77336",
+            "display": "Continuing medical physics consultation, including assessment of treatment parameters, quality assurance of dose delivery, and review of patient treatment documentation in support of the radiation oncologist, reported per week of therapy"
+          },
+          {
+            "code": "77387",
+            "display": "Guidance for localization of target volume for delivery of radiation treatment delivery, includes intrafraction tracking, when performed"
+          },
+          {
+            "code": "77423",
+            "display": "High energy neutron radiation treatment delivery; 1 or more isocenter(s) with coplanar or non-coplanar geometry with blocking and/or wedge, and/or compensator(s)"
+          },
+          {
+            "code": "77422",
+            "display": "High energy neutron radiation treatment delivery; single treatment area using a single port or parallel-opposed ports with no blocks or simple blocking"
+          },
+          {
+            "code": "77750",
+            "display": "Infusion or instillation of radioelement solution (includes 3-month follow-up care)"
+          },
+          {
+            "code": "77386",
+            "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; complex"
+          },
+          {
+            "code": "77385",
+            "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; simple"
+          },
+          {
+            "code": "77301",
+            "display": "Intensity modulated radiotherapy plan, including dose-volume histograms for target and critical structure partial tolerance specifications"
+          },
+          {
+            "code": "77778",
+            "display": "Interstitial radiation source application; complex"
+          },
+          {
+            "code": "77777",
+            "display": "Interstitial radiation source application; intermediate"
+          },
+          {
+            "code": "77776",
+            "display": "Interstitial radiation source application; simple"
+          },
+          {
+            "code": "77763",
+            "display": "Intracavitary radiation source application; complex"
+          },
+          {
+            "code": "77762",
+            "display": "Intracavitary radiation source application; intermediate"
+          },
+          {
+            "code": "77761",
+            "display": "Intracavitary radiation source application; simple"
+          },
+          {
+            "code": "77425",
+            "display": "Intraoperative radiation treatment delivery, electrons, single treatment session"
+          },
+          {
+            "code": "77424",
+            "display": "Intraoperative radiation treatment delivery, x-ray, single treatment session"
+          },
+          {
+            "code": "77469",
+            "display": "Intraoperative radiation treatment management"
+          },
+          {
+            "code": "55866",
+            "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
+          },
+          {
+            "code": "77338",
+            "display": "Multi-leaf collimator (MLC) device(s) for intensity modulated radiation therapy (IMRT), design and construction per IMRT plan"
+          },
+          {
+            "code": "55831",
+            "display": "Prostatectomy (including control of postoperative bleeding, vasectomy, meatotomy, urethral calibration and/or dilation, and internal urethrotomy); retropubic, subtotal"
+          },
+          {
+            "code": "55821",
+            "display": "Prostatectomy (including control of postoperative bleeding, vasectomy, meatotomy, urethral calibration and/or dilation, and internal urethrotomy); suprapubic, subtotal, 1 or 2 stages"
+          },
+          {
+            "code": "55810",
+            "display": "Prostatectomy, perineal radical"
+          },
+          {
+            "code": "55815",
+            "display": "Prostatectomy, perineal radical; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
+          },
+          {
+            "code": "55812",
+            "display": "Prostatectomy, perineal radical; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+          },
+          {
+            "code": "55801",
+            "display": "Prostatectomy, perineal, subtotal (including control of postoperative bleeding, vasectomy, meatotomy, urethral calibration and/or dilation, and internal urethrotomy)"
+          },
+          {
+            "code": "55840",
+            "display": "Prostatectomy, retropubic radical, with or without nerve sparing"
+          },
+          {
+            "code": "55845",
+            "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric, and obturator nodes"
+          },
+          {
+            "code": "55842",
+            "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+          },
+          {
+            "code": "77431",
+            "display": "Radiation therapy management with complete course of therapy consisting of 1 or 2 fractions only"
+          },
+          {
+            "code": "77407",
+            "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks; up to 5 MeV"
+          },
+          {
+            "code": "77412",
+            "display": "Radiation treatment delivery, 3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; up to 5 MeV"
+          },
+          {
+            "code": "77402",
+            "display": "Radiation treatment delivery, single treatment area, single port or parallel opposed ports, simple blocks or no blocks; up to 5 MeV"
+          },
+          {
+            "code": "77372",
+            "display": "Radiation treatment delivery, stereotactic radiosurgery (SRS), complete course of treatment of cranial lesion(s) consisting of 1 session; linear accelerator based"
+          },
+          {
+            "code": "77371",
+            "display": "Radiation treatment delivery, stereotactic radiosurgery (SRS), complete course of treatment of cranial lesion(s) consisting of 1 session; multi-source Cobalt 60 based"
+          },
+          {
+            "code": "77401",
+            "display": "Radiation treatment delivery, superficial and/or ortho voltage"
+          },
+          {
+            "code": "77427",
+            "display": "Radiation treatment management, 5 treatments"
+          },
+          {
+            "code": "77785",
+            "display": "Remote afterloading high dose rate radionuclide brachytherapy; 1 channel"
+          },
+          {
+            "code": "77786",
+            "display": "Remote afterloading high dose rate radionuclide brachytherapy; 2-12 channels"
+          },
+          {
+            "code": "77787",
+            "display": "Remote afterloading high dose rate radionuclide brachytherapy; over 12 channels"
+          },
+          {
+            "code": "77293",
+            "display": "Respiratory motion management simulation (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "77331",
+            "display": "Special dosimetry (eg, TLD, microdosimetry) (specify), only when prescribed by the treating physician"
+          },
+          {
+            "code": "77370",
+            "display": "Special medical radiation physics consultation"
+          },
+          {
+            "code": "77321",
+            "display": "Special teletherapy port plan, particles, hemibody, total body"
+          },
+          {
+            "code": "77470",
+            "display": "Special treatment procedure (eg, total body irradiation, hemibody radiation, per oral or endocavitary irradiation)"
+          },
+          {
+            "code": "77373",
+            "display": "Stereotactic body radiation therapy, treatment delivery, per fraction to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+          },
+          {
+            "code": "77435",
+            "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+          },
+          {
+            "code": "77432",
+            "display": "Stereotactic radiation treatment management of cranial lesion(s) (complete course of treatment consisting of 1 session)"
+          },
+          {
+            "code": "77790",
+            "display": "Supervision, handling, loading of radiation source"
+          },
+          {
+            "code": "77789",
+            "display": "Surface application of radiation source"
+          },
+          {
+            "code": "77307",
+            "display": "Teletherapy isodose plan; complex (multiple treatment areas, tangential ports, the use of wedges, blocking, rotational beam, or special beam considerations), includes basic dosimetry calculation(s)"
+          },
+          {
+            "code": "77306",
+            "display": "Teletherapy isodose plan; simple (1 or 2 unmodified ports directed to a single area of interest), includes basic dosimetry calculation(s)"
+          },
+          {
+            "code": "77417",
+            "display": "Therapeutic radiology port film(s)"
+          },
+          {
+            "code": "77290",
+            "display": "Therapeutic radiology simulation-aided field setting; complex"
+          },
+          {
+            "code": "77285",
+            "display": "Therapeutic radiology simulation-aided field setting; intermediate"
+          },
+          {
+            "code": "77280",
+            "display": "Therapeutic radiology simulation-aided field setting; simple"
+          },
+          {
+            "code": "77263",
+            "display": "Therapeutic radiology treatment planning; complex"
+          },
+          {
+            "code": "77262",
+            "display": "Therapeutic radiology treatment planning; intermediate"
+          },
+          {
+            "code": "77261",
+            "display": "Therapeutic radiology treatment planning; simple"
+          },
+          {
+            "code": "77334",
+            "display": "Treatment devices, design and construction; complex (irregular blocks, special shields, compensators, wedges, molds or casts)"
+          },
+          {
+            "code": "77333",
+            "display": "Treatment devices, design and construction; intermediate (multiple blocks, stents, bite blocks, special bolus)"
+          },
+          {
+            "code": "77332",
+            "display": "Treatment devices, design and construction; simple (simple block, simple bolus)"
+          },
+          {
+            "code": "77799",
+            "display": "Unlisted procedure, clinical brachytherapy"
+          },
+          {
+            "code": "77399",
+            "display": "Unlisted procedure, medical radiation physics, dosimetry and treatment devices, and special services"
+          },
+          {
+            "code": "77299",
+            "display": "Unlisted procedure, therapeutic radiology clinical treatment planning"
+          },
+          {
+            "code": "77499",
+            "display": "Unlisted procedure, therapeutic radiology treatment management"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-pcs",
+        "concept": [
+          {
+            "code": "DV003ZZ",
+            "display": "Beam Radiation of Prostate using Electrons"
+          },
+          {
+            "code": "DV003Z0",
+            "display": "Beam Radiation of Prostate using Electrons, Intraoperative"
+          },
+          {
+            "code": "DV004ZZ",
+            "display": "Beam Radiation of Prostate using Heavy Particles (Protons,Ions)"
+          },
+          {
+            "code": "DV006ZZ",
+            "display": "Beam Radiation of Prostate using Neutron Capture"
+          },
+          {
+            "code": "DV005ZZ",
+            "display": "Beam Radiation of Prostate using Neutrons"
+          },
+          {
+            "code": "DV002ZZ",
+            "display": "Beam Radiation of Prostate using Photons >10 MeV"
+          },
+          {
+            "code": "DV001ZZ",
+            "display": "Beam Radiation of Prostate using Photons 1 - 10 MeV"
+          },
+          {
+            "code": "DV000ZZ",
+            "display": "Beam Radiation of Prostate using Photons <1 MeV"
+          },
+          {
+            "code": "DVY07ZZ",
+            "display": "Contact Radiation of Prostate"
+          },
+          {
+            "code": "DV109CZ",
+            "display": "High Dose Rate (HDR) Brachytherapy of Prostate using Californium 252 (Cf-252)"
+          },
+          {
+            "code": "DV1097Z",
+            "display": "High Dose Rate (HDR) Brachytherapy of Prostate using Cesium 137 (Cs-137)"
+          },
+          {
+            "code": "DV1099Z",
+            "display": "High Dose Rate (HDR) Brachytherapy of Prostate using Iodine 125 (I-125)"
+          },
+          {
+            "code": "DV1098Z",
+            "display": "High Dose Rate (HDR) Brachytherapy of Prostate using Iridium 192 (Ir-192)"
+          },
+          {
+            "code": "DV109YZ",
+            "display": "High Dose Rate (HDR) Brachytherapy of Prostate using Other Isotope"
+          },
+          {
+            "code": "DV109BZ",
+            "display": "High Dose Rate (HDR) Brachytherapy of Prostate using Palladium 103 (Pd-103)"
+          },
+          {
+            "code": "DVY08ZZ",
+            "display": "Hyperthermia of Prostate"
+          },
+          {
+            "code": "DVY0CZZ",
+            "display": "Intraoperative Radiation Therapy (IORT) of Prostate"
+          },
+          {
+            "code": "XW04351",
+            "display": "Introduction of Blinatumomab Antineoplastic Immunotherapy into Central Vein, Percutaneous Approach, New Technology Group 1"
+          },
+          {
+            "code": "XW03351",
+            "display": "Introduction of Blinatumomab Antineoplastic Immunotherapy into Peripheral Vein, Percutaneous Approach, New Technology Group 1"
+          },
+          {
+            "code": "3E04305",
+            "display": "Introduction of Other Antineoplastic into Central Vein, Percutaneous Approach"
+          },
+          {
+            "code": "3E03305",
+            "display": "Introduction of Other Antineoplastic into Peripheral Vein, Percutaneous Approach"
+          },
+          {
+            "code": "DVY0KZZ",
+            "display": "Laser Interstitial Thermal Therapy of Prostate"
+          },
+          {
+            "code": "DV10BCZ",
+            "display": "Low Dose Rate (LDR) Brachytherapy of Prostate using Californium 252 (Cf-252)"
+          },
+          {
+            "code": "DV10B7Z",
+            "display": "Low Dose Rate (LDR) Brachytherapy of Prostate using Cesium 137 (Cs-137)"
+          },
+          {
+            "code": "DV10B9Z",
+            "display": "Low Dose Rate (LDR) Brachytherapy of Prostate using Iodine 125 (I-125)"
+          },
+          {
+            "code": "DV10B8Z",
+            "display": "Low Dose Rate (LDR) Brachytherapy of Prostate using Iridium 192 (Ir-192)"
+          },
+          {
+            "code": "DV10BYZ",
+            "display": "Low Dose Rate (LDR) Brachytherapy of Prostate using Other Isotope"
+          },
+          {
+            "code": "DV10BBZ",
+            "display": "Low Dose Rate (LDR) Brachytherapy of Prostate using Palladium 103 (Pd-103)"
+          },
+          {
+            "code": "DVY0FZZ",
+            "display": "Plaque Radiation of Prostate"
+          },
+          {
+            "code": "DV00",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate"
+          },
+          {
+            "code": "DV003",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Electrons"
+          },
+          {
+            "code": "DV003Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Electrons @ None"
+          },
+          {
+            "code": "DV004",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Heavy Particles (Protons,Ions)"
+          },
+          {
+            "code": "DV004Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Heavy Particles (Protons,Ions) @ None"
+          },
+          {
+            "code": "DV006",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Neutron Capture"
+          },
+          {
+            "code": "DV006Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Neutron Capture @ None"
+          },
+          {
+            "code": "DV005",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Neutrons"
+          },
+          {
+            "code": "DV005Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Neutrons @ None"
+          },
+          {
+            "code": "DV002",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Photons >10 MeV"
+          },
+          {
+            "code": "DV002Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Photons >10 MeV @ None"
+          },
+          {
+            "code": "DV001",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Photons 1 - 10 MeV"
+          },
+          {
+            "code": "DV001Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Photons 1 - 10 MeV @ None"
+          },
+          {
+            "code": "DV000",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Photons <1 MeV"
+          },
+          {
+            "code": "DV000Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Beam Radiation @ Prostate @ Photons <1 MeV @ None"
+          },
+          {
+            "code": "DV10",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate"
+          },
+          {
+            "code": "DV109",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR)"
+          },
+          {
+            "code": "DV109C",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR) @ Californium 252 (Cf-252)"
+          },
+          {
+            "code": "DV1097",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR) @ Cesium 137 (Cs-137)"
+          },
+          {
+            "code": "DV1099",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR) @ Iodine 125 (I-125)"
+          },
+          {
+            "code": "DV1098",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR) @ Iridium 192 (Ir-192)"
+          },
+          {
+            "code": "DV109Y",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR) @ Other Isotope"
+          },
+          {
+            "code": "DV109B",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ High Dose Rate (HDR) @ Palladium 103 (Pd-103)"
+          },
+          {
+            "code": "DV10B",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR)"
+          },
+          {
+            "code": "DV10BC",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR) @ Californium 252 (Cf-252)"
+          },
+          {
+            "code": "DV10B7",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR) @ Cesium 137 (Cs-137)"
+          },
+          {
+            "code": "DV10B9",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR) @ Iodine 125 (I-125)"
+          },
+          {
+            "code": "DV10B8",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR) @ Iridium 192 (Ir-192)"
+          },
+          {
+            "code": "DV10BY",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR) @ Other Isotope"
+          },
+          {
+            "code": "DV10BB",
+            "display": "Radiation Therapy @ Male Reproductive System @ Brachytherapy @ Prostate @ Low Dose Rate (LDR) @ Palladium 103 (Pd-103)"
+          },
+          {
+            "code": "DVY0",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate"
+          },
+          {
+            "code": "DVY07",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Contact Radiation"
+          },
+          {
+            "code": "DVY07Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Contact Radiation @ None"
+          },
+          {
+            "code": "DVY08",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Hyperthermia"
+          },
+          {
+            "code": "DVY08Z",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Hyperthermia @ None"
+          },
+          {
+            "code": "DVY0C",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Intraoperative Radiation Therapy (IORT)"
+          },
+          {
+            "code": "DVY0CZ",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Intraoperative Radiation Therapy (IORT) @ None"
+          },
+          {
+            "code": "DVY0K",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Laser Interstitial Thermal Therapy"
+          },
+          {
+            "code": "DVY0KZ",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Laser Interstitial Thermal Therapy @ None"
+          },
+          {
+            "code": "DVY0F",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Plaque Radiation"
+          },
+          {
+            "code": "DVY0FZ",
+            "display": "Radiation Therapy @ Male Reproductive System @ Other Radiation @ Prostate @ Plaque Radiation @ None"
+          },
+          {
+            "code": "DV20",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate"
+          },
+          {
+            "code": "DV20J",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate @ Stereotactic Gamma Beam Radiosurgery"
+          },
+          {
+            "code": "DV20JZ",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate @ Stereotactic Gamma Beam Radiosurgery @ None"
+          },
+          {
+            "code": "DV20D",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate @ Stereotactic Other Photon Radiosurgery"
+          },
+          {
+            "code": "DV20DZ",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate @ Stereotactic Other Photon Radiosurgery @ None"
+          },
+          {
+            "code": "DV20H",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate @ Stereotactic Particulate Radiosurgery"
+          },
+          {
+            "code": "DV20HZ",
+            "display": "Radiation Therapy @ Male Reproductive System @ Stereotactic Radiosurgery @ Prostate @ Stereotactic Particulate Radiosurgery @ None"
+          },
+          {
+            "code": "DV20JZZ",
+            "display": "Stereotactic Gamma Beam Radiosurgery of Prostate"
+          },
+          {
+            "code": "DV20DZZ",
+            "display": "Stereotactic Other Photon Radiosurgery of Prostate"
+          },
+          {
+            "code": "DV20HZZ",
+            "display": "Stereotactic Particulate Radiosurgery of Prostate"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-proc",
+        "concept": [
+          {
+            "code": "60.0",
+            "display": "Incision of prostate"
+          },
+          {
+            "code": "99.25",
+            "display": "Injection or infusion of cancer chemotherapeutic substance"
+          },
+          {
+            "code": "60.61",
+            "display": "Local excision of lesion of prostate"
+          },
+          {
+            "code": "60.6",
+            "display": "Other prostatectomy"
+          },
+          {
+            "code": "60.69",
+            "display": "Other prostatectomy"
+          },
+          {
+            "code": "60.62",
+            "display": "Perineal prostatectomy"
+          }
+        ]
+      }
+    ]
+  }
+}

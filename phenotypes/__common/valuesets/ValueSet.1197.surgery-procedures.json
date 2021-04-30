@@ -1,0 +1,2045 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1197.surgery-procedures",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1197.surgery-procedures",
+        "status": "active",
+        "name": "PHEKB-1197 Surgery",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "4042F",
+                  "display": "Documentation that prophylactic antibiotics were neither given within 4 hours prior to surgical incision nor given intraoperatively (PERI 2)"
+                },
+                {
+                  "code": "5200F",
+                  "display": "Consideration of referral for a neurological evaluation of appropriateness for surgical therapy for intractable epilepsy within the past 3 years (EPI)"
+                },
+                {
+                  "code": "4043F",
+                  "display": "Documentation that an order was given to discontinue prophylactic antibiotics within 48 hours of surgical end time, cardiac procedures (PERI 2)"
+                },
+                {
+                  "code": "4044F",
+                  "display": "Documentation that an order was given for venous thromboembolism (VTE) prophylaxis to be given within 24 hours prior to incision time or 24 hours after surgery end time (PERI 2)"
+                },
+                {
+                  "code": "99024",
+                  "display": "Postoperative follow-up visit, normally included in the surgical package, to indicate that an evaluation and management service was performed during a postoperative period for a reason(s) related to the original procedure"
+                },
+                {
+                  "code": "4046F",
+                  "display": "Documentation that prophylactic antibiotics were given within 4 hours prior to surgical incision or given intraoperatively (PERI 2)"
+                },
+                {
+                  "code": "4047F",
+                  "display": "Documentation of order for prophylactic parenteral antibiotics to be given within 1 hour (if fluoroquinolone or vancomycin, 2 hours) prior to surgical incision (or start of procedure when no incision is required) (PERI 2)"
+                },
+                {
+                  "code": "3323F",
+                  "display": "Clinical tumor, node and metastases (TNM) staging documented and reviewed prior to surgery (Lung/Esop Cx)"
+                },
+                {
+                  "code": "4048F",
+                  "display": "Documentation that administration of prophylactic parenteral antibiotic was initiated within 1 hour (if fluoroquinolone or vancomycin, 2 hours) prior to surgical incision (or start of procedure when no incision is required) as ordered (PERI 2)"
+                },
+                {
+                  "code": "3038F",
+                  "display": "Pulmonary function test performed within 12 months prior to surgery (Lung/Esop Cx)"
+                },
+                {
+                  "code": "4049F",
+                  "display": "Documentation that order was given to discontinue prophylactic antibiotics within 24 hours of surgical end time, non-cardiac procedure (PERI 2)"
+                },
+                {
+                  "code": "4325F",
+                  "display": "Medical and surgical treatment options reviewed with patient (or caregiver) (Prkns)"
+                },
+                {
+                  "code": "4115F",
+                  "display": "Beta blocker administered within 24 hours prior to surgical incision (CABG)"
+                },
+                {
+                  "code": "3325F",
+                  "display": "Preoperative assessment of functional or medical indication(s) for surgery prior to the cataract surgery with intraocular lens placement (must be performed within 12 months prior to cataract surgery) (EC)"
+                },
+                {
+                  "code": "3328F",
+                  "display": "Performance status documented and reviewed within 2 weeks prior to surgery (Lung/Esop Cx)"
+                },
+                {
+                  "code": "4175F",
+                  "display": "Best-corrected visual acuity of 20/40 or better (distance or near) achieved within the 90 days following cataract surgery (EC)"
+                },
+                {
+                  "code": "2044F",
+                  "display": "Documentation of mental health assessment prior to intervention (back surgery or epidural steroid injection) or for back pain episode lasting longer than 6 weeks (BkP)"
+                },
+                {
+                  "code": "2020F",
+                  "display": "Dilated fundus evaluation performed within 12 months prior to cataract surgery (EC)"
+                },
+                {
+                  "code": "3073F",
+                  "display": "Pre-surgical (cataract) axial length, corneal power measurement and method of intraocular lens power calculation documented within 12 months prior to surgery (EC)"
+                },
+                {
+                  "code": "01634",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on humeral head and neck, sternoclavicular joint, acromioclavicular joint, and shoulder joint; shoulder disarticulation"
+                },
+                {
+                  "code": "01636",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on humeral head and neck, sternoclavicular joint, acromioclavicular joint, and shoulder joint; interthoracoscapular (forequarter) amputation"
+                },
+                {
+                  "code": "01638",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on humeral head and neck, sternoclavicular joint, acromioclavicular joint, and shoulder joint; total shoulder replacement"
+                },
+                {
+                  "code": "01740",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures of the elbow; not otherwise specified"
+                },
+                {
+                  "code": "01742",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures of the elbow; osteotomy of humerus"
+                },
+                {
+                  "code": "01744",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures of the elbow; repair of nonunion or malunion of humerus"
+                },
+                {
+                  "code": "01756",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures of the elbow; radical procedures"
+                },
+                {
+                  "code": "01758",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures of the elbow; excision of cyst or tumor of humerus"
+                },
+                {
+                  "code": "01760",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures of the elbow; total elbow replacement"
+                },
+                {
+                  "code": "01830",
+                  "display": "Anesthesia for open or surgical arthroscopic/endoscopic procedures on distal radius, distal ulna, wrist, or hand joints; not otherwise specified"
+                },
+                {
+                  "code": "01832",
+                  "display": "Anesthesia for open or surgical arthroscopic/endoscopic procedures on distal radius, distal ulna, wrist, or hand joints; total wrist replacement"
+                },
+                {
+                  "code": "0184T",
+                  "display": "Excision of rectal tumor, transanal endoscopic microsurgical approach (ie, TEMS), including muscularis propria (ie, full thickness)"
+                },
+                {
+                  "code": "01951",
+                  "display": "Anesthesia for second- and third-degree burn excision or debridement with or without skin grafting, any site, for total body surface area (TBSA) treated during anesthesia and surgery; less than 4% total body surface area"
+                },
+                {
+                  "code": "01952",
+                  "display": "Anesthesia for second- and third-degree burn excision or debridement with or without skin grafting, any site, for total body surface area (TBSA) treated during anesthesia and surgery; between 4% and 9% of total body surface area"
+                },
+                {
+                  "code": "01953",
+                  "display": "Anesthesia for second- and third-degree burn excision or debridement with or without skin grafting, any site, for total body surface area (TBSA) treated during anesthesia and surgery; each additional 9% total body surface area or part thereof (List separa"
+                },
+                {
+                  "code": "10040",
+                  "display": "Acne surgery (eg, marsupialization, opening or removal of multiple milia, comedones, cysts, pustules)"
+                },
+                {
+                  "code": "13160",
+                  "display": "Secondary closure of surgical wound or dehiscence, extensive or complicated"
+                },
+                {
+                  "code": "15002",
+                  "display": "Surgical preparation or creation of recipient site by excision of open wounds, burn eschar, or scar (including subcutaneous tissues), or incisional release of scar contracture, trunk, arms, legs; first 100 sq cm or 1% of body area of infants and children"
+                },
+                {
+                  "code": "15003",
+                  "display": "Surgical preparation or creation of recipient site by excision of open wounds, burn eschar, or scar (including subcutaneous tissues), or incisional release of scar contracture, trunk, arms, legs; each additional 100 sq cm, or part thereof, or each additio"
+                },
+                {
+                  "code": "15004",
+                  "display": "Surgical preparation or creation of recipient site by excision of open wounds, burn eschar, or scar (including subcutaneous tissues), or incisional release of scar contracture, face, scalp, eyelids, mouth, neck, ears, orbits, genitalia, hands, feet and/or"
+                },
+                {
+                  "code": "15005",
+                  "display": "Surgical preparation or creation of recipient site by excision of open wounds, burn eschar, or scar (including subcutaneous tissues), or incisional release of scar contracture, face, scalp, eyelids, mouth, neck, ears, orbits, genitalia, hands, feet and/or"
+                },
+                {
+                  "code": "15842",
+                  "display": "Graft for facial nerve paralysis; free muscle flap by microsurgical technique"
+                },
+                {
+                  "code": "15850",
+                  "display": "Removal of sutures under anesthesia (other than local), same surgeon"
+                },
+                {
+                  "code": "15851",
+                  "display": "Removal of sutures under anesthesia (other than local), other surgeon"
+                },
+                {
+                  "code": "17000",
+                  "display": "Destruction (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), premalignant lesions (eg, actinic keratoses); first lesion"
+                },
+                {
+                  "code": "17003",
+                  "display": "Destruction (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), premalignant lesions (eg, actinic keratoses); second through 14 lesions, each (List separately in addition to code for first lesion)"
+                },
+                {
+                  "code": "17004",
+                  "display": "Destruction (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), premalignant lesions (eg, actinic keratoses), 15 or more lesions"
+                },
+                {
+                  "code": "17110",
+                  "display": "Destruction (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), of benign lesions other than skin tags or cutaneous vascular proliferative lesions; up to 14 lesions"
+                },
+                {
+                  "code": "17111",
+                  "display": "Destruction (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), of benign lesions other than skin tags or cutaneous vascular proliferative lesions; 15 or more lesions"
+                },
+                {
+                  "code": "17260",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), trunk, arms or legs; lesion diameter 0.5 cm or less"
+                },
+                {
+                  "code": "17261",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), trunk, arms or legs; lesion diameter 0.6 to 1.0 cm"
+                },
+                {
+                  "code": "17262",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), trunk, arms or legs; lesion diameter 1.1 to 2.0 cm"
+                },
+                {
+                  "code": "17263",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), trunk, arms or legs; lesion diameter 2.1 to 3.0 cm"
+                },
+                {
+                  "code": "17264",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), trunk, arms or legs; lesion diameter 3.1 to 4.0 cm"
+                },
+                {
+                  "code": "17266",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), trunk, arms or legs; lesion diameter over 4.0 cm"
+                },
+                {
+                  "code": "17270",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), scalp, neck, hands, feet, genitalia; lesion diameter 0.5 cm or less"
+                },
+                {
+                  "code": "17271",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), scalp, neck, hands, feet, genitalia; lesion diameter 0.6 to 1.0 cm"
+                },
+                {
+                  "code": "17272",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), scalp, neck, hands, feet, genitalia; lesion diameter 1.1 to 2.0 cm"
+                },
+                {
+                  "code": "17273",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), scalp, neck, hands, feet, genitalia; lesion diameter 2.1 to 3.0 cm"
+                },
+                {
+                  "code": "17274",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), scalp, neck, hands, feet, genitalia; lesion diameter 3.1 to 4.0 cm"
+                },
+                {
+                  "code": "17276",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), scalp, neck, hands, feet, genitalia; lesion diameter over 4.0 cm"
+                },
+                {
+                  "code": "17280",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), face, ears, eyelids, nose, lips, mucous membrane; lesion diameter 0.5 cm or less"
+                },
+                {
+                  "code": "17281",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), face, ears, eyelids, nose, lips, mucous membrane; lesion diameter 0.6 to 1.0 cm"
+                },
+                {
+                  "code": "17282",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), face, ears, eyelids, nose, lips, mucous membrane; lesion diameter 1.1 to 2.0 cm"
+                },
+                {
+                  "code": "17283",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), face, ears, eyelids, nose, lips, mucous membrane; lesion diameter 2.1 to 3.0 cm"
+                },
+                {
+                  "code": "17284",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), face, ears, eyelids, nose, lips, mucous membrane; lesion diameter 3.1 to 4.0 cm"
+                },
+                {
+                  "code": "17286",
+                  "display": "Destruction, malignant lesion (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery, surgical curettement), face, ears, eyelids, nose, lips, mucous membrane; lesion diameter over 4.0 cm"
+                },
+                {
+                  "code": "17311",
+                  "display": "Mohs micrographic technique, including removal of all gross tumor, surgical excision of tissue specimens, mapping, color coding of specimens, microscopic examination of specimens by the surgeon, and histopathologic preparation including routine stain(s) ("
+                },
+                {
+                  "code": "17312",
+                  "display": "Mohs micrographic technique, including removal of all gross tumor, surgical excision of tissue specimens, mapping, color coding of specimens, microscopic examination of specimens by the surgeon, and histopathologic preparation including routine stain(s) ("
+                },
+                {
+                  "code": "17313",
+                  "display": "Mohs micrographic technique, including removal of all gross tumor, surgical excision of tissue specimens, mapping, color coding of specimens, microscopic examination of specimens by the surgeon, and histopathologic preparation including routine stain(s) ("
+                },
+                {
+                  "code": "17314",
+                  "display": "Mohs micrographic technique, including removal of all gross tumor, surgical excision of tissue specimens, mapping, color coding of specimens, microscopic examination of specimens by the surgeon, and histopathologic preparation including routine stain(s) ("
+                },
+                {
+                  "code": "17315",
+                  "display": "Mohs micrographic technique, including removal of all gross tumor, surgical excision of tissue specimens, mapping, color coding of specimens, microscopic examination of specimens by the surgeon, and histopathologic preparation including routine stain(s) ("
+                },
+                {
+                  "code": "19105",
+                  "display": "Ablation, cryosurgical, of fibroadenoma, including ultrasound guidance, each fibroadenoma"
+                },
+                {
+                  "code": "20802",
+                  "display": "Replantation, arm (includes surgical neck of humerus through elbow joint), complete amputation"
+                },
+                {
+                  "code": "20930",
+                  "display": "Allograft, morselized, or placement of osteopromotive material, for spine surgery only (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "20931",
+                  "display": "Allograft, structural, for spine surgery only (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "20936",
+                  "display": "Autograft for spine surgery only (includes harvesting the graft); local (eg, ribs, spinous process, or laminar fragments) obtained from same incision (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "20937",
+                  "display": "Autograft for spine surgery only (includes harvesting the graft); morselized (through separate skin or fascial incision) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "20938",
+                  "display": "Autograft for spine surgery only (includes harvesting the graft); structural, bicortical or tricortical (through separate skin or fascial incision) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "20985",
+                  "display": "Computer-assisted surgical navigational procedure for musculoskeletal procedures, image-less (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "21076",
+                  "display": "Impression and custom preparation; surgical obturator prosthesis"
+                },
+                {
+                  "code": "21085",
+                  "display": "Impression and custom preparation; oral surgical splint"
+                },
+                {
+                  "code": "21365",
+                  "display": "Open treatment of complicated (eg, comminuted or involving cranial nerve foramina) fracture(s) of malar area, including zygomatic arch and malar tripod; with internal fixation and multiple surgical approaches"
+                },
+                {
+                  "code": "21433",
+                  "display": "Open treatment of craniofacial separation (LeFort III type); complicated (eg, comminuted or involving cranial nerve foramina), multiple surgical approaches"
+                },
+                {
+                  "code": "21436",
+                  "display": "Open treatment of craniofacial separation (LeFort III type); complicated, multiple surgical approaches, internal fixation, with bone grafting (includes obtaining graft)"
+                },
+                {
+                  "code": "21470",
+                  "display": "Open treatment of complicated mandibular fracture by multiple surgical approaches including internal fixation, interdental fixation, and/or wiring of dentures or splints"
+                },
+                {
+                  "code": "23174",
+                  "display": "Sequestrectomy (eg, for osteomyelitis or bone abscess), humeral head to surgical neck"
+                },
+                {
+                  "code": "23600",
+                  "display": "Closed treatment of proximal humeral (surgical or anatomical neck) fracture; without manipulation"
+                },
+                {
+                  "code": "23605",
+                  "display": "Closed treatment of proximal humeral (surgical or anatomical neck) fracture; with manipulation, with or without skeletal traction"
+                },
+                {
+                  "code": "23615",
+                  "display": "Open treatment of proximal humeral (surgical or anatomical neck) fracture, includes internal fixation, when performed, includes repair of tuberosity(s), when performed"
+                },
+                {
+                  "code": "23616",
+                  "display": "Open treatment of proximal humeral (surgical or anatomical neck) fracture, includes internal fixation, when performed, includes repair of tuberosity(s), when performed; with proximal humeral prosthetic replacement"
+                },
+                {
+                  "code": "23675",
+                  "display": "Closed treatment of shoulder dislocation, with surgical or anatomical neck fracture, with manipulation"
+                },
+                {
+                  "code": "23680",
+                  "display": "Open treatment of shoulder dislocation, with surgical or anatomical neck fracture, includes internal fixation, when performed"
+                },
+                {
+                  "code": "27132",
+                  "display": "Conversion of previous hip surgery to total hip arthroplasty, with or without autograft or allograft"
+                },
+                {
+                  "code": "29804",
+                  "display": "Arthroscopy, temporomandibular joint, surgical"
+                },
+                {
+                  "code": "29806",
+                  "display": "Arthroscopy, shoulder, surgical; capsulorrhaphy"
+                },
+                {
+                  "code": "29807",
+                  "display": "Arthroscopy, shoulder, surgical; repair of SLAP lesion"
+                },
+                {
+                  "code": "29819",
+                  "display": "Arthroscopy, shoulder, surgical; with removal of loose body or foreign body"
+                },
+                {
+                  "code": "29820",
+                  "display": "Arthroscopy, shoulder, surgical; synovectomy, partial"
+                },
+                {
+                  "code": "29821",
+                  "display": "Arthroscopy, shoulder, surgical; synovectomy, complete"
+                },
+                {
+                  "code": "29822",
+                  "display": "Arthroscopy, shoulder, surgical; debridement, limited"
+                },
+                {
+                  "code": "29823",
+                  "display": "Arthroscopy, shoulder, surgical; debridement, extensive"
+                },
+                {
+                  "code": "29824",
+                  "display": "Arthroscopy, shoulder, surgical; distal claviculectomy including distal articular surface (Mumford procedure)"
+                },
+                {
+                  "code": "29825",
+                  "display": "Arthroscopy, shoulder, surgical; with lysis and resection of adhesions, with or without manipulation"
+                },
+                {
+                  "code": "29826",
+                  "display": "Arthroscopy, shoulder, surgical; decompression of subacromial space with partial acromioplasty, with coracoacromial ligament (ie, arch) release, when performed (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "29827",
+                  "display": "Arthroscopy, shoulder, surgical; with rotator cuff repair"
+                },
+                {
+                  "code": "29828",
+                  "display": "Arthroscopy, shoulder, surgical; biceps tenodesis"
+                },
+                {
+                  "code": "29834",
+                  "display": "Arthroscopy, elbow, surgical; with removal of loose body or foreign body"
+                },
+                {
+                  "code": "29835",
+                  "display": "Arthroscopy, elbow, surgical; synovectomy, partial"
+                },
+                {
+                  "code": "29836",
+                  "display": "Arthroscopy, elbow, surgical; synovectomy, complete"
+                },
+                {
+                  "code": "29837",
+                  "display": "Arthroscopy, elbow, surgical; debridement, limited"
+                },
+                {
+                  "code": "29838",
+                  "display": "Arthroscopy, elbow, surgical; debridement, extensive"
+                },
+                {
+                  "code": "29843",
+                  "display": "Arthroscopy, wrist, surgical; for infection, lavage and drainage"
+                },
+                {
+                  "code": "29844",
+                  "display": "Arthroscopy, wrist, surgical; synovectomy, partial"
+                },
+                {
+                  "code": "29845",
+                  "display": "Arthroscopy, wrist, surgical; synovectomy, complete"
+                },
+                {
+                  "code": "29846",
+                  "display": "Arthroscopy, wrist, surgical; excision and/or repair of triangular fibrocartilage and/or joint debridement"
+                },
+                {
+                  "code": "29847",
+                  "display": "Arthroscopy, wrist, surgical; internal fixation for fracture or instability"
+                },
+                {
+                  "code": "29848",
+                  "display": "Endoscopy, wrist, surgical, with release of transverse carpal ligament"
+                },
+                {
+                  "code": "29861",
+                  "display": "Arthroscopy, hip, surgical; with removal of loose body or foreign body"
+                },
+                {
+                  "code": "29862",
+                  "display": "Arthroscopy, hip, surgical; with debridement/shaving of articular cartilage (chondroplasty), abrasion arthroplasty, and/or resection of labrum"
+                },
+                {
+                  "code": "29863",
+                  "display": "Arthroscopy, hip, surgical; with synovectomy"
+                },
+                {
+                  "code": "29866",
+                  "display": "Arthroscopy, knee, surgical; osteochondral autograft(s) (eg, mosaicplasty) (includes harvesting of the autograft[s])"
+                },
+                {
+                  "code": "29867",
+                  "display": "Arthroscopy, knee, surgical; osteochondral allograft (eg, mosaicplasty)"
+                },
+                {
+                  "code": "29868",
+                  "display": "Arthroscopy, knee, surgical; meniscal transplantation (includes arthrotomy for meniscal insertion), medial or lateral"
+                },
+                {
+                  "code": "29871",
+                  "display": "Arthroscopy, knee, surgical; for infection, lavage and drainage"
+                },
+                {
+                  "code": "29873",
+                  "display": "Arthroscopy, knee, surgical; with lateral release"
+                },
+                {
+                  "code": "29874",
+                  "display": "Arthroscopy, knee, surgical; for removal of loose body or foreign body (eg, osteochondritis dissecans fragmentation, chondral fragmentation)"
+                },
+                {
+                  "code": "29875",
+                  "display": "Arthroscopy, knee, surgical; synovectomy, limited (eg, plica or shelf resection) (separate procedure)"
+                },
+                {
+                  "code": "29876",
+                  "display": "Arthroscopy, knee, surgical; synovectomy, major, 2 or more compartments (eg, medial or lateral)"
+                },
+                {
+                  "code": "29877",
+                  "display": "Arthroscopy, knee, surgical; debridement/shaving of articular cartilage (chondroplasty)"
+                },
+                {
+                  "code": "29879",
+                  "display": "Arthroscopy, knee, surgical; abrasion arthroplasty (includes chondroplasty where necessary) or multiple drilling or microfracture"
+                },
+                {
+                  "code": "29880",
+                  "display": "Arthroscopy, knee, surgical; with meniscectomy (medial AND lateral, including any meniscal shaving) including debridement/shaving of articular cartilage (chondroplasty), same or separate compartment(s), when performed"
+                },
+                {
+                  "code": "29881",
+                  "display": "Arthroscopy, knee, surgical; with meniscectomy (medial OR lateral, including any meniscal shaving) including debridement/shaving of articular cartilage (chondroplasty), same or separate compartment(s), when performed"
+                },
+                {
+                  "code": "29882",
+                  "display": "Arthroscopy, knee, surgical; with meniscus repair (medial OR lateral)"
+                },
+                {
+                  "code": "29883",
+                  "display": "Arthroscopy, knee, surgical; with meniscus repair (medial AND lateral)"
+                },
+                {
+                  "code": "29884",
+                  "display": "Arthroscopy, knee, surgical; with lysis of adhesions, with or without manipulation (separate procedure)"
+                },
+                {
+                  "code": "29885",
+                  "display": "Arthroscopy, knee, surgical; drilling for osteochondritis dissecans with bone grafting, with or without internal fixation (including debridement of base of lesion)"
+                },
+                {
+                  "code": "29886",
+                  "display": "Arthroscopy, knee, surgical; drilling for intact osteochondritis dissecans lesion"
+                },
+                {
+                  "code": "29887",
+                  "display": "Arthroscopy, knee, surgical; drilling for intact osteochondritis dissecans lesion with internal fixation"
+                },
+                {
+                  "code": "29891",
+                  "display": "Arthroscopy, ankle, surgical, excision of osteochondral defect of talus and/or tibia, including drilling of the defect"
+                },
+                {
+                  "code": "29894",
+                  "display": "Arthroscopy, ankle (tibiotalar and fibulotalar joints), surgical; with removal of loose body or foreign body"
+                },
+                {
+                  "code": "29895",
+                  "display": "Arthroscopy, ankle (tibiotalar and fibulotalar joints), surgical; synovectomy, partial"
+                },
+                {
+                  "code": "29897",
+                  "display": "Arthroscopy, ankle (tibiotalar and fibulotalar joints), surgical; debridement, limited"
+                },
+                {
+                  "code": "29898",
+                  "display": "Arthroscopy, ankle (tibiotalar and fibulotalar joints), surgical; debridement, extensive"
+                },
+                {
+                  "code": "29899",
+                  "display": "Arthroscopy, ankle (tibiotalar and fibulotalar joints), surgical; with ankle arthrodesis"
+                },
+                {
+                  "code": "29901",
+                  "display": "Arthroscopy, metacarpophalangeal joint, surgical; with debridement"
+                },
+                {
+                  "code": "29902",
+                  "display": "Arthroscopy, metacarpophalangeal joint, surgical; with reduction of displaced ulnar collateral ligament (eg, Stenar lesion)"
+                },
+                {
+                  "code": "29904",
+                  "display": "Arthroscopy, subtalar joint, surgical; with removal of loose body or foreign body"
+                },
+                {
+                  "code": "29905",
+                  "display": "Arthroscopy, subtalar joint, surgical; with synovectomy"
+                },
+                {
+                  "code": "29906",
+                  "display": "Arthroscopy, subtalar joint, surgical; with debridement"
+                },
+                {
+                  "code": "29907",
+                  "display": "Arthroscopy, subtalar joint, surgical; with subtalar arthrodesis"
+                },
+                {
+                  "code": "30120",
+                  "display": "Excision or surgical planing of skin of nose for rhinophyma"
+                },
+                {
+                  "code": "31040",
+                  "display": "Pterygomaxillary fossa surgery, any approach"
+                },
+                {
+                  "code": "31237",
+                  "display": "Nasal/sinus endoscopy, surgical; with biopsy, polypectomy or debridement (separate procedure)"
+                },
+                {
+                  "code": "31238",
+                  "display": "Nasal/sinus endoscopy, surgical; with control of nasal hemorrhage"
+                },
+                {
+                  "code": "31239",
+                  "display": "Nasal/sinus endoscopy, surgical; with dacryocystorhinostomy"
+                },
+                {
+                  "code": "31240",
+                  "display": "Nasal/sinus endoscopy, surgical; with concha bullosa resection"
+                },
+                {
+                  "code": "31254",
+                  "display": "Nasal/sinus endoscopy, surgical; with ethmoidectomy, partial (anterior)"
+                },
+                {
+                  "code": "31255",
+                  "display": "Nasal/sinus endoscopy, surgical; with ethmoidectomy, total (anterior and posterior)"
+                },
+                {
+                  "code": "31256",
+                  "display": "Nasal/sinus endoscopy, surgical, with maxillary antrostomy"
+                },
+                {
+                  "code": "31267",
+                  "display": "Nasal/sinus endoscopy, surgical, with maxillary antrostomy; with removal of tissue from maxillary sinus"
+                },
+                {
+                  "code": "31276",
+                  "display": "Nasal/sinus endoscopy, surgical with frontal sinus exploration, with or without removal of tissue from frontal sinus"
+                },
+                {
+                  "code": "31287",
+                  "display": "Nasal/sinus endoscopy, surgical, with sphenoidotomy"
+                },
+                {
+                  "code": "31288",
+                  "display": "Nasal/sinus endoscopy, surgical, with sphenoidotomy; with removal of tissue from the sphenoid sinus"
+                },
+                {
+                  "code": "31290",
+                  "display": "Nasal/sinus endoscopy, surgical, with repair of cerebrospinal fluid leak; ethmoid region"
+                },
+                {
+                  "code": "31291",
+                  "display": "Nasal/sinus endoscopy, surgical, with repair of cerebrospinal fluid leak; sphenoid region"
+                },
+                {
+                  "code": "31292",
+                  "display": "Nasal/sinus endoscopy, surgical; with medial or inferior orbital wall decompression"
+                },
+                {
+                  "code": "31293",
+                  "display": "Nasal/sinus endoscopy, surgical; with medial orbital wall and inferior orbital wall decompression"
+                },
+                {
+                  "code": "31294",
+                  "display": "Nasal/sinus endoscopy, surgical; with optic nerve decompression"
+                },
+                {
+                  "code": "31820",
+                  "display": "Surgical closure tracheostomy or fistula; without plastic repair"
+                },
+                {
+                  "code": "31825",
+                  "display": "Surgical closure tracheostomy or fistula; with plastic repair"
+                },
+                {
+                  "code": "32650",
+                  "display": "Thoracoscopy, surgical; with pleurodesis (eg, mechanical or chemical)"
+                },
+                {
+                  "code": "32651",
+                  "display": "Thoracoscopy, surgical; with partial pulmonary decortication"
+                },
+                {
+                  "code": "32652",
+                  "display": "Thoracoscopy, surgical; with total pulmonary decortication, including intrapleural pneumonolysis"
+                },
+                {
+                  "code": "32653",
+                  "display": "Thoracoscopy, surgical; with removal of intrapleural foreign body or fibrin deposit"
+                },
+                {
+                  "code": "32654",
+                  "display": "Thoracoscopy, surgical; with control of traumatic hemorrhage"
+                },
+                {
+                  "code": "32655",
+                  "display": "Thoracoscopy, surgical; with resection-plication of bullae, includes any pleural procedure when performed"
+                },
+                {
+                  "code": "32656",
+                  "display": "Thoracoscopy, surgical; with parietal pleurectomy"
+                },
+                {
+                  "code": "32658",
+                  "display": "Thoracoscopy, surgical; with removal of clot or foreign body from pericardial sac"
+                },
+                {
+                  "code": "32659",
+                  "display": "Thoracoscopy, surgical; with creation of pericardial window or partial resection of pericardial sac for drainage"
+                },
+                {
+                  "code": "32661",
+                  "display": "Thoracoscopy, surgical; with excision of pericardial cyst, tumor, or mass"
+                },
+                {
+                  "code": "32662",
+                  "display": "Thoracoscopy, surgical; with excision of mediastinal cyst, tumor, or mass"
+                },
+                {
+                  "code": "32663",
+                  "display": "Thoracoscopy, surgical; with lobectomy (single lobe)"
+                },
+                {
+                  "code": "32664",
+                  "display": "Thoracoscopy, surgical; with thoracic sympathectomy"
+                },
+                {
+                  "code": "32665",
+                  "display": "Thoracoscopy, surgical; with esophagomyotomy (Heller type)"
+                },
+                {
+                  "code": "33265",
+                  "display": "Endoscopy, surgical; operative tissue ablation and reconstruction of atria, limited (eg, modified maze procedure), without cardiopulmonary bypass"
+                },
+                {
+                  "code": "33266",
+                  "display": "Endoscopy, surgical; operative tissue ablation and reconstruction of atria, extensive (eg, maze procedure), without cardiopulmonary bypass"
+                },
+                {
+                  "code": "33508",
+                  "display": "Endoscopy, surgical, including video-assisted harvest of vein(s) for coronary artery bypass procedure (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33548",
+                  "display": "Surgical ventricular restoration procedure, includes prosthetic patch, when performed (eg, ventricular remodeling, SVR, SAVER, Dor procedures)"
+                },
+                {
+                  "code": "33610",
+                  "display": "Repair of complex cardiac anomalies (eg, single ventricle with subaortic obstruction) by surgical enlargement of ventricular septal defect"
+                },
+                {
+                  "code": "33770",
+                  "display": "Repair of transposition of the great arteries with ventricular septal defect and subpulmonary stenosis; without surgical enlargement of ventricular septal defect"
+                },
+                {
+                  "code": "33771",
+                  "display": "Repair of transposition of the great arteries with ventricular septal defect and subpulmonary stenosis; with surgical enlargement of ventricular septal defect"
+                },
+                {
+                  "code": "33999",
+                  "display": "Unlisted procedure, cardiac surgery"
+                },
+                {
+                  "code": "35686",
+                  "display": "Creation of distal arteriovenous fistula during lower extremity bypass surgery (non-hemodialysis) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "35701",
+                  "display": "Exploration (not followed by surgical repair), with or without lysis of artery; carotid artery"
+                },
+                {
+                  "code": "35721",
+                  "display": "Exploration (not followed by surgical repair), with or without lysis of artery; femoral artery"
+                },
+                {
+                  "code": "35741",
+                  "display": "Exploration (not followed by surgical repair), with or without lysis of artery; popliteal artery"
+                },
+                {
+                  "code": "35761",
+                  "display": "Exploration (not followed by surgical repair), with or without lysis of artery; other vessels"
+                },
+                {
+                  "code": "37500",
+                  "display": "Vascular endoscopy, surgical, with ligation of perforator veins, subfascial (SEPS)"
+                },
+                {
+                  "code": "37799",
+                  "display": "Unlisted procedure, vascular surgery"
+                },
+                {
+                  "code": "38120",
+                  "display": "Laparoscopy, surgical, splenectomy"
+                },
+                {
+                  "code": "38570",
+                  "display": "Laparoscopy, surgical; with retroperitoneal lymph node sampling (biopsy), single or multiple"
+                },
+                {
+                  "code": "38571",
+                  "display": "Laparoscopy, surgical; with bilateral total pelvic lymphadenectomy"
+                },
+                {
+                  "code": "38572",
+                  "display": "Laparoscopy, surgical; with bilateral total pelvic lymphadenectomy and peri-aortic lymph node sampling (biopsy), single or multiple"
+                },
+                {
+                  "code": "41520",
+                  "display": "Frenoplasty (surgical revision of frenum, eg, with Z-plasty)"
+                },
+                {
+                  "code": "42962",
+                  "display": "Control oropharyngeal hemorrhage, primary or secondary (eg, post-tonsillectomy); with secondary surgical intervention"
+                },
+                {
+                  "code": "42972",
+                  "display": "Control of nasopharyngeal hemorrhage, primary or secondary (eg, postadenoidectomy); with secondary surgical intervention"
+                },
+                {
+                  "code": "43242",
+                  "display": "Esophagogastroduodenoscopy, flexible, transoral; with transendoscopic ultrasound-guided intramural or transmural fine needle aspiration/biopsy(s) (includes endoscopic ultrasound examination of the esophagus, stomach, and either the duodenum or a surgicall"
+                },
+                {
+                  "code": "43259",
+                  "display": "Esophagogastroduodenoscopy, flexible, transoral; with endoscopic ultrasound examination, including the esophagus, stomach, and either the duodenum or a surgically altered stomach where the jejunum is examined distal to the anastomosis"
+                },
+                {
+                  "code": "43279",
+                  "display": "Laparoscopy, surgical, esophagomyotomy (Heller type), with fundoplasty, when performed"
+                },
+                {
+                  "code": "43280",
+                  "display": "Laparoscopy, surgical, esophagogastric fundoplasty (eg, Nissen, Toupet procedures)"
+                },
+                {
+                  "code": "43644",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; with gastric bypass and Roux-en-Y gastroenterostomy (roux limb 150 cm or less)"
+                },
+                {
+                  "code": "43645",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; with gastric bypass and small intestine reconstruction to limit absorption"
+                },
+                {
+                  "code": "43647",
+                  "display": "Laparoscopy, surgical; implantation or replacement of gastric neurostimulator electrodes, antrum"
+                },
+                {
+                  "code": "43648",
+                  "display": "Laparoscopy, surgical; revision or removal of gastric neurostimulator electrodes, antrum"
+                },
+                {
+                  "code": "43651",
+                  "display": "Laparoscopy, surgical; transection of vagus nerves, truncal"
+                },
+                {
+                  "code": "43652",
+                  "display": "Laparoscopy, surgical; transection of vagus nerves, selective or highly selective"
+                },
+                {
+                  "code": "43653",
+                  "display": "Laparoscopy, surgical; gastrostomy, without construction of gastric tube (eg, Stamm procedure) (separate procedure)"
+                },
+                {
+                  "code": "43770",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; placement of adjustable gastric restrictive device (eg, gastric band and subcutaneous port components)"
+                },
+                {
+                  "code": "43771",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; revision of adjustable gastric restrictive device component only"
+                },
+                {
+                  "code": "43772",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; removal of adjustable gastric restrictive device component only"
+                },
+                {
+                  "code": "43773",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; removal and replacement of adjustable gastric restrictive device component only"
+                },
+                {
+                  "code": "43774",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; removal of adjustable gastric restrictive device and subcutaneous port components"
+                },
+                {
+                  "code": "43870",
+                  "display": "Closure of gastrostomy, surgical"
+                },
+                {
+                  "code": "44180",
+                  "display": "Laparoscopy, surgical, enterolysis (freeing of intestinal adhesion) (separate procedure)"
+                },
+                {
+                  "code": "44186",
+                  "display": "Laparoscopy, surgical; jejunostomy (eg, for decompression or feeding)"
+                },
+                {
+                  "code": "44187",
+                  "display": "Laparoscopy, surgical; ileostomy or jejunostomy, non-tube"
+                },
+                {
+                  "code": "44188",
+                  "display": "Laparoscopy, surgical, colostomy or skin level cecostomy"
+                },
+                {
+                  "code": "44202",
+                  "display": "Laparoscopy, surgical; enterectomy, resection of small intestine, single resection and anastomosis"
+                },
+                {
+                  "code": "44203",
+                  "display": "Laparoscopy, surgical; each additional small intestine resection and anastomosis (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "44204",
+                  "display": "Laparoscopy, surgical; colectomy, partial, with anastomosis"
+                },
+                {
+                  "code": "44205",
+                  "display": "Laparoscopy, surgical; colectomy, partial, with removal of terminal ileum with ileocolostomy"
+                },
+                {
+                  "code": "44206",
+                  "display": "Laparoscopy, surgical; colectomy, partial, with end colostomy and closure of distal segment (Hartmann type procedure)"
+                },
+                {
+                  "code": "44207",
+                  "display": "Laparoscopy, surgical; colectomy, partial, with anastomosis, with coloproctostomy (low pelvic anastomosis)"
+                },
+                {
+                  "code": "44208",
+                  "display": "Laparoscopy, surgical; colectomy, partial, with anastomosis, with coloproctostomy (low pelvic anastomosis) with colostomy"
+                },
+                {
+                  "code": "44210",
+                  "display": "Laparoscopy, surgical; colectomy, total, abdominal, without proctectomy, with ileostomy or ileoproctostomy"
+                },
+                {
+                  "code": "44211",
+                  "display": "Laparoscopy, surgical; colectomy, total, abdominal, with proctectomy, with ileoanal anastomosis, creation of ileal reservoir (S or J), with loop ileostomy, includes rectal mucosectomy, when performed"
+                },
+                {
+                  "code": "44212",
+                  "display": "Laparoscopy, surgical; colectomy, total, abdominal, with proctectomy, with ileostomy"
+                },
+                {
+                  "code": "44213",
+                  "display": "Laparoscopy, surgical, mobilization (take-down) of splenic flexure performed in conjunction with partial colectomy (List separately in addition to primary procedure)"
+                },
+                {
+                  "code": "44227",
+                  "display": "Laparoscopy, surgical, closure of enterostomy, large or small intestine, with resection and anastomosis"
+                },
+                {
+                  "code": "44970",
+                  "display": "Laparoscopy, surgical, appendectomy"
+                },
+                {
+                  "code": "45190",
+                  "display": "Destruction of rectal tumor (eg, electrodesiccation, electrosurgery, laser ablation, laser resection, cryosurgery) transanal approach"
+                },
+                {
+                  "code": "45395",
+                  "display": "Laparoscopy, surgical; proctectomy, complete, combined abdominoperineal, with colostomy"
+                },
+                {
+                  "code": "45397",
+                  "display": "Laparoscopy, surgical; proctectomy, combined abdominoperineal pull-through procedure (eg, colo-anal anastomosis), with creation of colonic reservoir (eg, J-pouch), with diverting enterostomy, when performed"
+                },
+                {
+                  "code": "45400",
+                  "display": "Laparoscopy, surgical; proctopexy (for prolapse)"
+                },
+                {
+                  "code": "45402",
+                  "display": "Laparoscopy, surgical; proctopexy (for prolapse), with sigmoid resection"
+                },
+                {
+                  "code": "45990",
+                  "display": "Anorectal exam, surgical, requiring anesthesia (general, spinal, or epidural), diagnostic"
+                },
+                {
+                  "code": "46270",
+                  "display": "Surgical treatment of anal fistula (fistulectomy/fistulotomy); subcutaneous"
+                },
+                {
+                  "code": "46275",
+                  "display": "Surgical treatment of anal fistula (fistulectomy/fistulotomy); intersphincteric"
+                },
+                {
+                  "code": "46280",
+                  "display": "Surgical treatment of anal fistula (fistulectomy/fistulotomy); transsphincteric, suprasphincteric, extrasphincteric or multiple, including placement of seton, when performed"
+                },
+                {
+                  "code": "46285",
+                  "display": "Surgical treatment of anal fistula (fistulectomy/fistulotomy); second stage"
+                },
+                {
+                  "code": "46916",
+                  "display": "Destruction of lesion(s), anus (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), simple; cryosurgery"
+                },
+                {
+                  "code": "46917",
+                  "display": "Destruction of lesion(s), anus (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), simple; laser surgery"
+                },
+                {
+                  "code": "46922",
+                  "display": "Destruction of lesion(s), anus (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), simple; surgical excision"
+                },
+                {
+                  "code": "46924",
+                  "display": "Destruction of lesion(s), anus (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), extensive (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery)"
+                },
+                {
+                  "code": "47370",
+                  "display": "Laparoscopy, surgical, ablation of 1 or more liver tumor(s); radiofrequency"
+                },
+                {
+                  "code": "47371",
+                  "display": "Laparoscopy, surgical, ablation of 1 or more liver tumor(s); cryosurgical"
+                },
+                {
+                  "code": "47381",
+                  "display": "Ablation, open, of 1 or more liver tumor(s); cryosurgical"
+                },
+                {
+                  "code": "47560",
+                  "display": "Laparoscopy, surgical; with guided transhepatic cholangiography, without biopsy"
+                },
+                {
+                  "code": "47561",
+                  "display": "Laparoscopy, surgical; with guided transhepatic cholangiography with biopsy"
+                },
+                {
+                  "code": "47562",
+                  "display": "Laparoscopy, surgical; cholecystectomy"
+                },
+                {
+                  "code": "47563",
+                  "display": "Laparoscopy, surgical; cholecystectomy with cholangiography"
+                },
+                {
+                  "code": "47564",
+                  "display": "Laparoscopy, surgical; cholecystectomy with exploration of common duct"
+                },
+                {
+                  "code": "47570",
+                  "display": "Laparoscopy, surgical; cholecystoenterostomy"
+                },
+                {
+                  "code": "49321",
+                  "display": "Laparoscopy, surgical; with biopsy (single or multiple)"
+                },
+                {
+                  "code": "49322",
+                  "display": "Laparoscopy, surgical; with aspiration of cavity or cyst (eg, ovarian cyst) (single or multiple)"
+                },
+                {
+                  "code": "49323",
+                  "display": "Laparoscopy, surgical; with drainage of lymphocele to peritoneal cavity"
+                },
+                {
+                  "code": "49324",
+                  "display": "Laparoscopy, surgical; with insertion of tunneled intraperitoneal catheter"
+                },
+                {
+                  "code": "49325",
+                  "display": "Laparoscopy, surgical; with revision of previously placed intraperitoneal cannula or catheter, with removal of intraluminal obstructive material if performed"
+                },
+                {
+                  "code": "49326",
+                  "display": "Laparoscopy, surgical; with omentopexy (omental tacking procedure) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "49495",
+                  "display": "Repair, initial inguinal hernia, full term infant younger than age 6 months, or preterm infant older than 50 weeks postconception age and younger than age 6 months at the time of surgery, with or without hydrocelectomy; reducible"
+                },
+                {
+                  "code": "49496",
+                  "display": "Repair, initial inguinal hernia, full term infant younger than age 6 months, or preterm infant older than 50 weeks postconception age and younger than age 6 months at the time of surgery, with or without hydrocelectomy; incarcerated or strangulated"
+                },
+                {
+                  "code": "49650",
+                  "display": "Laparoscopy, surgical; repair initial inguinal hernia"
+                },
+                {
+                  "code": "49651",
+                  "display": "Laparoscopy, surgical; repair recurrent inguinal hernia"
+                },
+                {
+                  "code": "49652",
+                  "display": "Laparoscopy, surgical, repair, ventral, umbilical, spigelian or epigastric hernia (includes mesh insertion, when performed); reducible"
+                },
+                {
+                  "code": "49653",
+                  "display": "Laparoscopy, surgical, repair, ventral, umbilical, spigelian or epigastric hernia (includes mesh insertion, when performed); incarcerated or strangulated"
+                },
+                {
+                  "code": "49654",
+                  "display": "Laparoscopy, surgical, repair, incisional hernia (includes mesh insertion, when performed); reducible"
+                },
+                {
+                  "code": "49655",
+                  "display": "Laparoscopy, surgical, repair, incisional hernia (includes mesh insertion, when performed); incarcerated or strangulated"
+                },
+                {
+                  "code": "49656",
+                  "display": "Laparoscopy, surgical, repair, recurrent incisional hernia (includes mesh insertion, when performed); reducible"
+                },
+                {
+                  "code": "49657",
+                  "display": "Laparoscopy, surgical, repair, recurrent incisional hernia (includes mesh insertion, when performed); incarcerated or strangulated"
+                },
+                {
+                  "code": "50065",
+                  "display": "Nephrolithotomy; secondary surgical operation for calculus"
+                },
+                {
+                  "code": "50205",
+                  "display": "Renal biopsy; by surgical exposure of kidney"
+                },
+                {
+                  "code": "50225",
+                  "display": "Nephrectomy, including partial ureterectomy, any open approach including rib resection; complicated because of previous surgery on same kidney"
+                },
+                {
+                  "code": "50250",
+                  "display": "Ablation, open, 1 or more renal mass lesion(s), cryosurgical, including intraoperative ultrasound guidance and monitoring, if performed"
+                },
+                {
+                  "code": "50541",
+                  "display": "Laparoscopy, surgical; ablation of renal cysts"
+                },
+                {
+                  "code": "50542",
+                  "display": "Laparoscopy, surgical; ablation of renal mass lesion(s), including intraoperative ultrasound guidance and monitoring, when performed"
+                },
+                {
+                  "code": "50543",
+                  "display": "Laparoscopy, surgical; partial nephrectomy"
+                },
+                {
+                  "code": "50544",
+                  "display": "Laparoscopy, surgical; pyeloplasty"
+                },
+                {
+                  "code": "50545",
+                  "display": "Laparoscopy, surgical; radical nephrectomy (includes removal of Gerota's fascia and surrounding fatty tissue, removal of regional lymph nodes, and adrenalectomy)"
+                },
+                {
+                  "code": "50546",
+                  "display": "Laparoscopy, surgical; nephrectomy, including partial ureterectomy"
+                },
+                {
+                  "code": "50547",
+                  "display": "Laparoscopy, surgical; donor nephrectomy (including cold preservation), from living donor"
+                },
+                {
+                  "code": "50548",
+                  "display": "Laparoscopy, surgical; nephrectomy with total ureterectomy"
+                },
+                {
+                  "code": "50945",
+                  "display": "Laparoscopy, surgical; ureterolithotomy"
+                },
+                {
+                  "code": "50947",
+                  "display": "Laparoscopy, surgical; ureteroneocystostomy with cystoscopy and ureteral stent placement"
+                },
+                {
+                  "code": "50948",
+                  "display": "Laparoscopy, surgical; ureteroneocystostomy without cystoscopy and ureteral stent placement"
+                },
+                {
+                  "code": "51030",
+                  "display": "Cystotomy or cystostomy; with cryosurgical destruction of intravesical lesion"
+                },
+                {
+                  "code": "51555",
+                  "display": "Cystectomy, partial; complicated (eg, postradiation, previous surgery, difficult location)"
+                },
+                {
+                  "code": "51990",
+                  "display": "Laparoscopy, surgical; urethral suspension for stress incontinence"
+                },
+                {
+                  "code": "51992",
+                  "display": "Laparoscopy, surgical; sling operation for stress incontinence (eg, fascia or synthetic)"
+                },
+                {
+                  "code": "52214",
+                  "display": "Cystourethroscopy, with fulguration (including cryosurgery or laser surgery) of trigone, bladder neck, prostatic fossa, urethra, or periurethral glands"
+                },
+                {
+                  "code": "52224",
+                  "display": "Cystourethroscopy, with fulguration (including cryosurgery or laser surgery) or treatment of MINOR (less than 0.5 cm) lesion(s) with or without biopsy"
+                },
+                {
+                  "code": "52234",
+                  "display": "Cystourethroscopy, with fulguration (including cryosurgery or laser surgery) and/or resection of; SMALL bladder tumor(s) (0.5 up to 2.0 cm)"
+                },
+                {
+                  "code": "52235",
+                  "display": "Cystourethroscopy, with fulguration (including cryosurgery or laser surgery) and/or resection of; MEDIUM bladder tumor(s) (2.0 to 5.0 cm)"
+                },
+                {
+                  "code": "52240",
+                  "display": "Cystourethroscopy, with fulguration (including cryosurgery or laser surgery) and/or resection of; LARGE bladder tumor(s)"
+                },
+                {
+                  "code": "52601",
+                  "display": "Transurethral electrosurgical resection of prostate, including control of postoperative bleeding, complete (vasectomy, meatotomy, cystourethroscopy, urethral calibration and/or dilation, and internal urethrotomy are included)"
+                },
+                {
+                  "code": "53500",
+                  "display": "Urethrolysis, transvaginal, secondary, open, including cystourethroscopy (eg, postsurgical obstruction, scarring)"
+                },
+                {
+                  "code": "54056",
+                  "display": "Destruction of lesion(s), penis (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), simple; cryosurgery"
+                },
+                {
+                  "code": "54057",
+                  "display": "Destruction of lesion(s), penis (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), simple; laser surgery"
+                },
+                {
+                  "code": "54060",
+                  "display": "Destruction of lesion(s), penis (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), simple; surgical excision"
+                },
+                {
+                  "code": "54065",
+                  "display": "Destruction of lesion(s), penis (eg, condyloma, papilloma, molluscum contagiosum, herpetic vesicle), extensive (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery)"
+                },
+                {
+                  "code": "54160",
+                  "display": "Circumcision, surgical excision other than clamp, device, or dorsal slit; neonate (28 days of age or less)"
+                },
+                {
+                  "code": "54161",
+                  "display": "Circumcision, surgical excision other than clamp, device, or dorsal slit; older than 28 days of age"
+                },
+                {
+                  "code": "54205",
+                  "display": "Injection procedure for Peyronie disease; with surgical exposure of plaque"
+                },
+                {
+                  "code": "54600",
+                  "display": "Reduction of torsion of testis, surgical, with or without fixation of contralateral testis"
+                },
+                {
+                  "code": "54690",
+                  "display": "Laparoscopy, surgical; orchiectomy"
+                },
+                {
+                  "code": "54692",
+                  "display": "Laparoscopy, surgical; orchiopexy for intra-abdominal testis"
+                },
+                {
+                  "code": "55550",
+                  "display": "Laparoscopy, surgical, with ligation of spermatic veins for varicocele"
+                },
+                {
+                  "code": "55866",
+                  "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
+                },
+                {
+                  "code": "55873",
+                  "display": "Cryosurgical ablation of the prostate (includes ultrasonic guidance and monitoring)"
+                },
+                {
+                  "code": "55970",
+                  "display": "Intersex surgery; male to female"
+                },
+                {
+                  "code": "55980",
+                  "display": "Intersex surgery; female to male"
+                },
+                {
+                  "code": "56501",
+                  "display": "Destruction of lesion(s), vulva; simple (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery)"
+                },
+                {
+                  "code": "56515",
+                  "display": "Destruction of lesion(s), vulva; extensive (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery)"
+                },
+                {
+                  "code": "57061",
+                  "display": "Destruction of vaginal lesion(s); simple (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery)"
+                },
+                {
+                  "code": "57065",
+                  "display": "Destruction of vaginal lesion(s); extensive (eg, laser surgery, electrosurgery, cryosurgery, chemosurgery)"
+                },
+                {
+                  "code": "57425",
+                  "display": "Laparoscopy, surgical, colpopexy (suspension of vaginal apex)"
+                },
+                {
+                  "code": "58541",
+                  "display": "Laparoscopy, surgical, supracervical hysterectomy, for uterus 250 g or less"
+                },
+                {
+                  "code": "58542",
+                  "display": "Laparoscopy, surgical, supracervical hysterectomy, for uterus 250 g or less; with removal of tube(s) and/or ovary(s)"
+                },
+                {
+                  "code": "58543",
+                  "display": "Laparoscopy, surgical, supracervical hysterectomy, for uterus greater than 250 g"
+                },
+                {
+                  "code": "58544",
+                  "display": "Laparoscopy, surgical, supracervical hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s)"
+                },
+                {
+                  "code": "58545",
+                  "display": "Laparoscopy, surgical, myomectomy, excision; 1 to 4 intramural myomas with total weight of 250 g or less and/or removal of surface myomas"
+                },
+                {
+                  "code": "58546",
+                  "display": "Laparoscopy, surgical, myomectomy, excision; 5 or more intramural myomas and/or intramural myomas with total weight greater than 250 g"
+                },
+                {
+                  "code": "58548",
+                  "display": "Laparoscopy, surgical, with radical hysterectomy, with bilateral total pelvic lymphadenectomy and para-aortic lymph node sampling (biopsy), with removal of tube(s) and ovary(s), if performed"
+                },
+                {
+                  "code": "58550",
+                  "display": "Laparoscopy, surgical, with vaginal hysterectomy, for uterus 250 g or less"
+                },
+                {
+                  "code": "58552",
+                  "display": "Laparoscopy, surgical, with vaginal hysterectomy, for uterus 250 g or less; with removal of tube(s) and/or ovary(s)"
+                },
+                {
+                  "code": "58553",
+                  "display": "Laparoscopy, surgical, with vaginal hysterectomy, for uterus greater than 250 g"
+                },
+                {
+                  "code": "58554",
+                  "display": "Laparoscopy, surgical, with vaginal hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s)"
+                },
+                {
+                  "code": "58558",
+                  "display": "Hysteroscopy, surgical; with sampling (biopsy) of endometrium and/or polypectomy, with or without D & C"
+                },
+                {
+                  "code": "58559",
+                  "display": "Hysteroscopy, surgical; with lysis of intrauterine adhesions (any method)"
+                },
+                {
+                  "code": "58560",
+                  "display": "Hysteroscopy, surgical; with division or resection of intrauterine septum (any method)"
+                },
+                {
+                  "code": "58561",
+                  "display": "Hysteroscopy, surgical; with removal of leiomyomata"
+                },
+                {
+                  "code": "58562",
+                  "display": "Hysteroscopy, surgical; with removal of impacted foreign body"
+                },
+                {
+                  "code": "58563",
+                  "display": "Hysteroscopy, surgical; with endometrial ablation (eg, endometrial resection, electrosurgical ablation, thermoablation)"
+                },
+                {
+                  "code": "58565",
+                  "display": "Hysteroscopy, surgical; with bilateral fallopian tube cannulation to induce occlusion by placement of permanent implants"
+                },
+                {
+                  "code": "58570",
+                  "display": "Laparoscopy, surgical, with total hysterectomy, for uterus 250 g or less"
+                },
+                {
+                  "code": "58571",
+                  "display": "Laparoscopy, surgical, with total hysterectomy, for uterus 250 g or less; with removal of tube(s) and/or ovary(s)"
+                },
+                {
+                  "code": "58572",
+                  "display": "Laparoscopy, surgical, with total hysterectomy, for uterus greater than 250 g"
+                },
+                {
+                  "code": "58573",
+                  "display": "Laparoscopy, surgical, with total hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s)"
+                },
+                {
+                  "code": "58611",
+                  "display": "Ligation or transection of fallopian tube(s) when done at the time of cesarean delivery or intra-abdominal surgery (not a separate procedure) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "58660",
+                  "display": "Laparoscopy, surgical; with lysis of adhesions (salpingolysis, ovariolysis) (separate procedure)"
+                },
+                {
+                  "code": "58661",
+                  "display": "Laparoscopy, surgical; with removal of adnexal structures (partial or total oophorectomy and/or salpingectomy)"
+                },
+                {
+                  "code": "58662",
+                  "display": "Laparoscopy, surgical; with fulguration or excision of lesions of the ovary, pelvic viscera, or peritoneal surface by any method"
+                },
+                {
+                  "code": "58670",
+                  "display": "Laparoscopy, surgical; with fulguration of oviducts (with or without transection)"
+                },
+                {
+                  "code": "58671",
+                  "display": "Laparoscopy, surgical; with occlusion of oviducts by device (eg, band, clip, or Falope ring)"
+                },
+                {
+                  "code": "58672",
+                  "display": "Laparoscopy, surgical; with fimbrioplasty"
+                },
+                {
+                  "code": "58673",
+                  "display": "Laparoscopy, surgical; with salpingostomy (salpingoneostomy)"
+                },
+                {
+                  "code": "59120",
+                  "display": "Surgical treatment of ectopic pregnancy; tubal or ovarian, requiring salpingectomy and/or oophorectomy, abdominal or vaginal approach"
+                },
+                {
+                  "code": "59121",
+                  "display": "Surgical treatment of ectopic pregnancy; tubal or ovarian, without salpingectomy and/or oophorectomy"
+                },
+                {
+                  "code": "59130",
+                  "display": "Surgical treatment of ectopic pregnancy; abdominal pregnancy"
+                },
+                {
+                  "code": "59135",
+                  "display": "Surgical treatment of ectopic pregnancy; interstitial, uterine pregnancy requiring total hysterectomy"
+                },
+                {
+                  "code": "59136",
+                  "display": "Surgical treatment of ectopic pregnancy; interstitial, uterine pregnancy with partial resection of uterus"
+                },
+                {
+                  "code": "59140",
+                  "display": "Surgical treatment of ectopic pregnancy; cervical, with evacuation"
+                },
+                {
+                  "code": "59812",
+                  "display": "Treatment of incomplete abortion, any trimester, completed surgically"
+                },
+                {
+                  "code": "59820",
+                  "display": "Treatment of missed abortion, completed surgically; first trimester"
+                },
+                {
+                  "code": "59821",
+                  "display": "Treatment of missed abortion, completed surgically; second trimester"
+                },
+                {
+                  "code": "59830",
+                  "display": "Treatment of septic abortion, completed surgically"
+                },
+                {
+                  "code": "60650",
+                  "display": "Laparoscopy, surgical, with adrenalectomy, partial or complete, or exploration of adrenal gland with or without biopsy, transabdominal, lumbar or dorsal"
+                },
+                {
+                  "code": "61250",
+                  "display": "Burr hole(s) or trephine, supratentorial, exploratory, not followed by other surgery"
+                },
+                {
+                  "code": "61534",
+                  "display": "Craniotomy with elevation of bone flap; for excision of epileptogenic focus without electrocorticography during surgery"
+                },
+                {
+                  "code": "61536",
+                  "display": "Craniotomy with elevation of bone flap; for excision of cerebral epileptogenic focus, with electrocorticography during surgery (includes removal of electrode array)"
+                },
+                {
+                  "code": "61537",
+                  "display": "Craniotomy with elevation of bone flap; for lobectomy, temporal lobe, without electrocorticography during surgery"
+                },
+                {
+                  "code": "61538",
+                  "display": "Craniotomy with elevation of bone flap; for lobectomy, temporal lobe, with electrocorticography during surgery"
+                },
+                {
+                  "code": "61539",
+                  "display": "Craniotomy with elevation of bone flap; for lobectomy, other than temporal lobe, partial or total, with electrocorticography during surgery"
+                },
+                {
+                  "code": "61540",
+                  "display": "Craniotomy with elevation of bone flap; for lobectomy, other than temporal lobe, partial or total, without electrocorticography during surgery"
+                },
+                {
+                  "code": "61567",
+                  "display": "Craniotomy with elevation of bone flap; for multiple subpial transections, with electrocorticography during surgery"
+                },
+                {
+                  "code": "61618",
+                  "display": "Secondary repair of dura for cerebrospinal fluid leak, anterior, middle or posterior cranial fossa following surgery of the skull base; by free tissue graft (eg, pericranium, fascia, tensor fascia lata, adipose tissue, homologous or synthetic grafts)"
+                },
+                {
+                  "code": "61619",
+                  "display": "Secondary repair of dura for cerebrospinal fluid leak, anterior, middle or posterior cranial fossa following surgery of the skull base; by local or regionalized vascularized pedicle flap or myocutaneous flap (including galea, temporalis, frontalis or occi"
+                },
+                {
+                  "code": "61680",
+                  "display": "Surgery of intracranial arteriovenous malformation; supratentorial, simple"
+                },
+                {
+                  "code": "61682",
+                  "display": "Surgery of intracranial arteriovenous malformation; supratentorial, complex"
+                },
+                {
+                  "code": "61684",
+                  "display": "Surgery of intracranial arteriovenous malformation; infratentorial, simple"
+                },
+                {
+                  "code": "61686",
+                  "display": "Surgery of intracranial arteriovenous malformation; infratentorial, complex"
+                },
+                {
+                  "code": "61690",
+                  "display": "Surgery of intracranial arteriovenous malformation; dural, simple"
+                },
+                {
+                  "code": "61692",
+                  "display": "Surgery of intracranial arteriovenous malformation; dural, complex"
+                },
+                {
+                  "code": "61697",
+                  "display": "Surgery of complex intracranial aneurysm, intracranial approach; carotid circulation"
+                },
+                {
+                  "code": "61698",
+                  "display": "Surgery of complex intracranial aneurysm, intracranial approach; vertebrobasilar circulation"
+                },
+                {
+                  "code": "61700",
+                  "display": "Surgery of simple intracranial aneurysm, intracranial approach; carotid circulation"
+                },
+                {
+                  "code": "61702",
+                  "display": "Surgery of simple intracranial aneurysm, intracranial approach; vertebrobasilar circulation"
+                },
+                {
+                  "code": "61703",
+                  "display": "Surgery of intracranial aneurysm, cervical approach by application of occluding clamp to cervical carotid artery (Selverstone-Crutchfield type)"
+                },
+                {
+                  "code": "61705",
+                  "display": "Surgery of aneurysm, vascular malformation or carotid-cavernous fistula; by intracranial and cervical occlusion of carotid artery"
+                },
+                {
+                  "code": "61708",
+                  "display": "Surgery of aneurysm, vascular malformation or carotid-cavernous fistula; by intracranial electrothrombosis"
+                },
+                {
+                  "code": "61710",
+                  "display": "Surgery of aneurysm, vascular malformation or carotid-cavernous fistula; by intra-arterial embolization, injection procedure, or balloon catheter"
+                },
+                {
+                  "code": "61796",
+                  "display": "Stereotactic radiosurgery (particle beam, gamma ray, or linear accelerator); 1 simple cranial lesion"
+                },
+                {
+                  "code": "61797",
+                  "display": "Stereotactic radiosurgery (particle beam, gamma ray, or linear accelerator); each additional cranial lesion, simple (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "61798",
+                  "display": "Stereotactic radiosurgery (particle beam, gamma ray, or linear accelerator); 1 complex cranial lesion"
+                },
+                {
+                  "code": "61799",
+                  "display": "Stereotactic radiosurgery (particle beam, gamma ray, or linear accelerator); each additional cranial lesion, complex (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "61800",
+                  "display": "Application of stereotactic headframe for stereotactic radiosurgery (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "62100",
+                  "display": "Craniotomy for repair of dural/cerebrospinal fluid leak, including surgery for rhinorrhea/otorrhea"
+                },
+                {
+                  "code": "62145",
+                  "display": "Cranioplasty for skull defect with reparative brain surgery"
+                },
+                {
+                  "code": "63610",
+                  "display": "Stereotactic stimulation of spinal cord, percutaneous, separate procedure not followed by other surgery"
+                },
+                {
+                  "code": "63620",
+                  "display": "Stereotactic radiosurgery (particle beam, gamma ray, or linear accelerator); 1 spinal lesion"
+                },
+                {
+                  "code": "63621",
+                  "display": "Stereotactic radiosurgery (particle beam, gamma ray, or linear accelerator); each additional spinal lesion (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "64774",
+                  "display": "Excision of neuroma; cutaneous nerve, surgically identifiable"
+                },
+                {
+                  "code": "65772",
+                  "display": "Corneal relaxing incision for correction of surgically induced astigmatism"
+                },
+                {
+                  "code": "65775",
+                  "display": "Corneal wedge resection for correction of surgically induced astigmatism"
+                },
+                {
+                  "code": "65855",
+                  "display": "Trabeculoplasty by laser surgery, 1 or more sessions (defined treatment series)"
+                },
+                {
+                  "code": "66170",
+                  "display": "Fistulization of sclera for glaucoma; trabeculectomy ab externo in absence of previous surgery"
+                },
+                {
+                  "code": "66172",
+                  "display": "Fistulization of sclera for glaucoma; trabeculectomy ab externo with scarring from previous ocular surgery or trauma (includes injection of antifibrotic agents)"
+                },
+                {
+                  "code": "66761",
+                  "display": "Iridotomy/iridectomy by laser surgery (eg, for glaucoma) (per session)"
+                },
+                {
+                  "code": "66821",
+                  "display": "Discission of secondary membranous cataract (opacified posterior lens capsule and/or anterior hyaloid); laser surgery (eg, YAG laser) (1 or more stages)"
+                },
+                {
+                  "code": "67031",
+                  "display": "Severing of vitreous strands, vitreous face adhesions, sheets, membranes or opacities, laser surgery (1 or more stages)"
+                },
+                {
+                  "code": "67311",
+                  "display": "Strabismus surgery, recession or resection procedure; 1 horizontal muscle"
+                },
+                {
+                  "code": "67312",
+                  "display": "Strabismus surgery, recession or resection procedure; 2 horizontal muscles"
+                },
+                {
+                  "code": "67314",
+                  "display": "Strabismus surgery, recession or resection procedure; 1 vertical muscle (excluding superior oblique)"
+                },
+                {
+                  "code": "67316",
+                  "display": "Strabismus surgery, recession or resection procedure; 2 or more vertical muscles (excluding superior oblique)"
+                },
+                {
+                  "code": "67318",
+                  "display": "Strabismus surgery, any procedure, superior oblique muscle"
+                },
+                {
+                  "code": "67331",
+                  "display": "Strabismus surgery on patient with previous eye surgery or injury that did not involve the extraocular muscles (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "67332",
+                  "display": "Strabismus surgery on patient with scarring of extraocular muscles (eg, prior ocular injury, strabismus or retinal detachment surgery) or restrictive myopathy (eg, dysthyroid ophthalmopathy) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "67334",
+                  "display": "Strabismus surgery by posterior fixation suture technique, with or without muscle recession (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "67335",
+                  "display": "Placement of adjustable suture(s) during strabismus surgery, including postoperative adjustment(s) of suture(s) (List separately in addition to code for specific strabismus surgery)"
+                },
+                {
+                  "code": "67340",
+                  "display": "Strabismus surgery involving exploration and/or repair of detached extraocular muscle(s) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "67825",
+                  "display": "Correction of trichiasis; epilation by other than forceps (eg, by electrosurgery, cryotherapy, laser surgery)"
+                },
+                {
+                  "code": "68760",
+                  "display": "Closure of the lacrimal punctum; by thermocauterization, ligation, or laser surgery"
+                },
+                {
+                  "code": "69620",
+                  "display": "Myringoplasty (surgery confined to drumhead and donor area)"
+                },
+                {
+                  "code": "69631",
+                  "display": "Tympanoplasty without mastoidectomy (including canalplasty, atticotomy and/or middle ear surgery), initial or revision; without ossicular chain reconstruction"
+                },
+                {
+                  "code": "69632",
+                  "display": "Tympanoplasty without mastoidectomy (including canalplasty, atticotomy and/or middle ear surgery), initial or revision; with ossicular chain reconstruction (eg, postfenestration)"
+                },
+                {
+                  "code": "69633",
+                  "display": "Tympanoplasty without mastoidectomy (including canalplasty, atticotomy and/or middle ear surgery), initial or revision; with ossicular chain reconstruction and synthetic prosthesis (eg, partial ossicular replacement prosthesis [PORP], total ossicular repl"
+                },
+                {
+                  "code": "69635",
+                  "display": "Tympanoplasty with antrotomy or mastoidotomy (including canalplasty, atticotomy, middle ear surgery, and/or tympanic membrane repair); without ossicular chain reconstruction"
+                },
+                {
+                  "code": "69636",
+                  "display": "Tympanoplasty with antrotomy or mastoidotomy (including canalplasty, atticotomy, middle ear surgery, and/or tympanic membrane repair); with ossicular chain reconstruction"
+                },
+                {
+                  "code": "69637",
+                  "display": "Tympanoplasty with antrotomy or mastoidotomy (including canalplasty, atticotomy, middle ear surgery, and/or tympanic membrane repair); with ossicular chain reconstruction and synthetic prosthesis (eg, partial ossicular replacement prosthesis [PORP], total"
+                },
+                {
+                  "code": "69641",
+                  "display": "Tympanoplasty with mastoidectomy (including canalplasty, middle ear surgery, tympanic membrane repair); without ossicular chain reconstruction"
+                },
+                {
+                  "code": "69642",
+                  "display": "Tympanoplasty with mastoidectomy (including canalplasty, middle ear surgery, tympanic membrane repair); with ossicular chain reconstruction"
+                },
+                {
+                  "code": "69643",
+                  "display": "Tympanoplasty with mastoidectomy (including canalplasty, middle ear surgery, tympanic membrane repair); with intact or reconstructed wall, without ossicular chain reconstruction"
+                },
+                {
+                  "code": "69644",
+                  "display": "Tympanoplasty with mastoidectomy (including canalplasty, middle ear surgery, tympanic membrane repair); with intact or reconstructed canal wall, with ossicular chain reconstruction"
+                },
+                {
+                  "code": "69645",
+                  "display": "Tympanoplasty with mastoidectomy (including canalplasty, middle ear surgery, tympanic membrane repair); radical or complete, without ossicular chain reconstruction"
+                },
+                {
+                  "code": "69646",
+                  "display": "Tympanoplasty with mastoidectomy (including canalplasty, middle ear surgery, tympanic membrane repair); radical or complete, with ossicular chain reconstruction"
+                },
+                {
+                  "code": "69990",
+                  "display": "Microsurgical techniques, requiring use of operating microscope (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "76098",
+                  "display": "Radiological examination, surgical specimen"
+                },
+                {
+                  "code": "77371",
+                  "display": "Radiation treatment delivery, stereotactic radiosurgery (SRS), complete course of treatment of cranial lesion(s) consisting of 1 session; multi-source Cobalt 60 based"
+                },
+                {
+                  "code": "77372",
+                  "display": "Radiation treatment delivery, stereotactic radiosurgery (SRS), complete course of treatment of cranial lesion(s) consisting of 1 session; linear accelerator based"
+                },
+                {
+                  "code": "88300",
+                  "display": "Level I - Surgical pathology, gross examination only"
+                },
+                {
+                  "code": "88302",
+                  "display": "Level II - Surgical pathology, gross and microscopic examination Appendix, incidental Fallopian tube, sterilization Fingers/toes, amputation, traumatic Foreskin, newborn Hernia sac, any location Hydrocele sac Nerve Skin, plastic repair Sympathetic ganglio"
+                },
+                {
+                  "code": "88304",
+                  "display": "Level III - Surgical pathology, gross and microscopic examination Abortion, induced Abscess Aneurysm - arterial/ventricular Anus, tag Appendix, other than incidental Artery, atheromatous plaque Bartholin's gland cyst Bone fragment(s), other than pathologi"
+                },
+                {
+                  "code": "88305",
+                  "display": "Level IV - Surgical pathology, gross and microscopic examination Abortion - spontaneous/missed Artery, biopsy Bone marrow, biopsy Bone exostosis Brain/meninges, other than for tumor resection Breast, biopsy, not requiring microscopic evaluation of surgica"
+                },
+                {
+                  "code": "88307",
+                  "display": "Level V - Surgical pathology, gross and microscopic examination Adrenal, resection Bone - biopsy/curettings Bone fragment(s), pathologic fracture Brain, biopsy Brain/meninges, tumor resection Breast, excision of lesion, requiring microscopic evaluation of"
+                },
+                {
+                  "code": "88309",
+                  "display": "Level VI - Surgical pathology, gross and microscopic examination Bone resection Breast, mastectomy - with regional lymph nodes Colon, segmental resection for tumor Colon, total resection Esophagus, partial/total resection Extremity, disarticulation Fetus,"
+                },
+                {
+                  "code": "88311",
+                  "display": "Decalcification procedure (List separately in addition to code for surgical pathology examination)"
+                },
+                {
+                  "code": "88329",
+                  "display": "Pathology consultation during surgery"
+                },
+                {
+                  "code": "88331",
+                  "display": "Pathology consultation during surgery; first tissue block, with frozen section(s), single specimen"
+                },
+                {
+                  "code": "88332",
+                  "display": "Pathology consultation during surgery; each additional tissue block with frozen section(s) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "88333",
+                  "display": "Pathology consultation during surgery; cytologic examination (eg, touch prep, squash prep), initial site"
+                },
+                {
+                  "code": "88334",
+                  "display": "Pathology consultation during surgery; cytologic examination (eg, touch prep, squash prep), each additional site (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "88399",
+                  "display": "Unlisted surgical pathology procedure"
+                },
+                {
+                  "code": "93286",
+                  "display": "Peri-procedural device evaluation (in person) and programming of device system parameters before or after a surgery, procedure, or test with analysis, review and report by a physician or other qualified health care professional; single, dual, or multiple "
+                },
+                {
+                  "code": "93287",
+                  "display": "Peri-procedural device evaluation (in person) and programming of device system parameters before or after a surgery, procedure, or test with analysis, review and report by a physician or other qualified health care professional; single, dual, or multiple "
+                },
+                {
+                  "code": "93631",
+                  "display": "Intra-operative epicardial and endocardial pacing and mapping to localize the site of tachycardia or zone of slow conduction for surgical correction"
+                },
+                {
+                  "code": "95829",
+                  "display": "Electrocorticogram at surgery (separate procedure)"
+                },
+                {
+                  "code": "95951",
+                  "display": "Monitoring for localization of cerebral seizure focus by cable or radio, 16 or more channel telemetry, combined electroencephalographic (EEG) and video recording and interpretation (eg, for presurgical localization), each 24 hours"
+                },
+                {
+                  "code": "95955",
+                  "display": "Electroencephalogram (EEG) during nonintracranial surgery (eg, carotid surgery)"
+                },
+                {
+                  "code": "56305",
+                  "display": "Laparoscopy, surgical; with biopsy (single or multiple)"
+                },
+                {
+                  "code": "93750",
+                  "display": "Interrogation of ventricular assist device (VAD), in person, with physician or other qualified health care professional analysis of device parameters (eg, drivelines, alarms, power surges), review of device function (eg, flow and volume status, septum sta"
+                },
+                {
+                  "code": "49327",
+                  "display": "Laparoscopy, surgical; with placement of interstitial device(s) for radiation therapy guidance (eg, fiducial markers, dosimeter), intra-abdominal, intrapelvic, and/or retroperitoneum, including imaging guidance, if performed, single or multiple (List sepa"
+                },
+                {
+                  "code": "43775",
+                  "display": "Laparoscopy, surgical, gastric restrictive procedure; longitudinal gastrectomy (ie, sleeve gastrectomy)"
+                },
+                {
+                  "code": "31296",
+                  "display": "Nasal/sinus endoscopy, surgical; with dilation of frontal sinus ostium (eg, balloon dilation)"
+                },
+                {
+                  "code": "29916",
+                  "display": "Arthroscopy, hip, surgical; with labral repair"
+                },
+                {
+                  "code": "43282",
+                  "display": "Laparoscopy, surgical, repair of paraesophageal hernia, includes fundoplasty, when performed; with implantation of mesh"
+                },
+                {
+                  "code": "43283",
+                  "display": "Laparoscopy, surgical, esophageal lengthening procedure (eg, Collis gastroplasty or wedge gastroplasty) (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "29915",
+                  "display": "Arthroscopy, hip, surgical; with acetabuloplasty (ie, treatment of pincer lesion)"
+                },
+                {
+                  "code": "31297",
+                  "display": "Nasal/sinus endoscopy, surgical; with dilation of sphenoid sinus ostium (eg, balloon dilation)"
+                },
+                {
+                  "code": "43281",
+                  "display": "Laparoscopy, surgical, repair of paraesophageal hernia, includes fundoplasty, when performed; without implantation of mesh"
+                },
+                {
+                  "code": "29914",
+                  "display": "Arthroscopy, hip, surgical; with femoroplasty (ie, treatment of cam lesion)"
+                },
+                {
+                  "code": "31295",
+                  "display": "Nasal/sinus endoscopy, surgical; with dilation of maxillary sinus ostium (eg, balloon dilation), transnasal or via canine fossa"
+                },
+                {
+                  "code": "44201",
+                  "display": "Laparoscopy, surgical; jejunostomy (eg, for decompression or feeding)"
+                },
+                {
+                  "code": "0120T",
+                  "display": "Ablation, cryosurgical, of fibroadenoma, including ultrasound guidance, each fibroadenoma"
+                },
+                {
+                  "code": "32666",
+                  "display": "Thoracoscopy, surgical; with therapeutic wedge resection (eg, mass, nodule), initial unilateral"
+                },
+                {
+                  "code": "32667",
+                  "display": "Thoracoscopy, surgical; with therapeutic wedge resection (eg, mass or nodule), each additional resection, ipsilateral (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "32668",
+                  "display": "Thoracoscopy, surgical; with diagnostic wedge resection followed by anatomic lung resection (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "32669",
+                  "display": "Thoracoscopy, surgical; with removal of a single lung segment (segmentectomy)"
+                },
+                {
+                  "code": "32670",
+                  "display": "Thoracoscopy, surgical; with removal of two lobes (bilobectomy)"
+                },
+                {
+                  "code": "32671",
+                  "display": "Thoracoscopy, surgical; with removal of lung (pneumonectomy)"
+                },
+                {
+                  "code": "32672",
+                  "display": "Thoracoscopy, surgical; with resection-plication for emphysematous lung (bullous or non-bullous) for lung volume reduction (LVRS), unilateral includes any pleural procedure, when performed"
+                },
+                {
+                  "code": "32673",
+                  "display": "Thoracoscopy, surgical; with resection of thymus, unilateral or bilateral"
+                },
+                {
+                  "code": "32674",
+                  "display": "Thoracoscopy, surgical; with mediastinal and regional lymphadenectomy (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "0336T",
+                  "display": "Laparoscopy, surgical, ablation of uterine fibroid(s), including intraoperative ultrasound guidance and monitoring, radiofrequency"
+                },
+                {
+                  "code": "0390T",
+                  "display": "Peri-procedural device evaluation (in person) and programming of device system parameters before or after a surgery, procedure or test with analysis, review and report, leadless pacemaker system"
+                },
+                {
+                  "code": "0353T",
+                  "display": "Optical coherence tomography of breast, surgical cavity; real-time intraoperative"
+                },
+                {
+                  "code": "00103",
+                  "display": "Anesthesia for reconstructive procedures of eyelid (eg, blepharoplasty, ptosis surgery)"
+                },
+                {
+                  "code": "0354T",
+                  "display": "Optical coherence tomography of breast, surgical cavity; interpretation and report, real-time or referred"
+                },
+                {
+                  "code": "00142",
+                  "display": "Anesthesia for procedures on eye; lens surgery"
+                },
+                {
+                  "code": "00145",
+                  "display": "Anesthesia for procedures on eye; vitreoretinal surgery"
+                },
+                {
+                  "code": "0014F",
+                  "display": "Comprehensive preoperative assessment performed for cataract surgery with intraocular lens (IOL) placement (includes assessment of all of the following components) (EC): Dilated fundus evaluation performed within 12 months prior to cataract surgery (2020F"
+                },
+                {
+                  "code": "00162",
+                  "display": "Anesthesia for procedures on nose and accessory sinuses; radical surgery"
+                },
+                {
+                  "code": "00176",
+                  "display": "Anesthesia for intraoral procedures, including biopsy; radical surgery"
+                },
+                {
+                  "code": "00192",
+                  "display": "Anesthesia for procedures on facial bones or skull; radical surgery (including prognathism)"
+                },
+                {
+                  "code": "00540",
+                  "display": "Anesthesia for thoracotomy procedures involving lungs, pleura, diaphragm, and mediastinum (including surgical thoracoscopy); not otherwise specified"
+                },
+                {
+                  "code": "00541",
+                  "display": "Anesthesia for thoracotomy procedures involving lungs, pleura, diaphragm, and mediastinum (including surgical thoracoscopy); utilizing 1 lung ventilation"
+                },
+                {
+                  "code": "00542",
+                  "display": "Anesthesia for thoracotomy procedures involving lungs, pleura, diaphragm, and mediastinum (including surgical thoracoscopy); decortication"
+                },
+                {
+                  "code": "00546",
+                  "display": "Anesthesia for thoracotomy procedures involving lungs, pleura, diaphragm, and mediastinum (including surgical thoracoscopy); pulmonary resection with thoracoplasty"
+                },
+                {
+                  "code": "00548",
+                  "display": "Anesthesia for thoracotomy procedures involving lungs, pleura, diaphragm, and mediastinum (including surgical thoracoscopy); intrathoracic procedures on the trachea and bronchi"
+                },
+                {
+                  "code": "0054T",
+                  "display": "Computer-assisted musculoskeletal surgical navigational orthopedic procedure, with image-guidance based on fluoroscopic images (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "0055T",
+                  "display": "Computer-assisted musculoskeletal surgical navigational orthopedic procedure, with image-guidance based on CT/MRI images (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "00836",
+                  "display": "Anesthesia for hernia repairs in the lower abdomen not otherwise specified, infants younger than 37 weeks gestational age at birth and younger than 50 weeks gestational age at time of surgery"
+                },
+                {
+                  "code": "01400",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on knee joint; not otherwise specified"
+                },
+                {
+                  "code": "01402",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on knee joint; total knee arthroplasty"
+                },
+                {
+                  "code": "01404",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on knee joint; disarticulation at knee"
+                },
+                {
+                  "code": "01630",
+                  "display": "Anesthesia for open or surgical arthroscopic procedures on humeral head and neck, sternoclavicular joint, acromioclavicular joint, and shoulder joint; not otherwise specified"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-57",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-57",
+  "status": "active",
+  "name": "PHEKB-12 - Estrogen/Androgen Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "4083",
+            "display": "Estradiol"
+          },
+          {
+            "code": "4100",
+            "display": "Estrogens"
+          },
+          {
+            "code": "214549",
+            "display": "Estrogens, Esterified (USP)"
+          },
+          {
+            "code": "33747",
+            "display": "estropipate"
+          },
+          {
+            "code": "4124",
+            "display": "Ethinyl Estradiol"
+          },
+          {
+            "code": "253166",
+            "display": "synthetic conjugated estrogens, A"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+---
+name: 001 Autism Case
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#299.01 Autistic disorder, residual state
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+results:
+  Has Autism Diagnosis: true
+  Has Autism Exclusion Diagnosis: false
+  Case: true

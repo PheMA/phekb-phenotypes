@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-40",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-40",
+  "status": "active",
+  "name": "Creatine Kinase Lab Test",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2157-6",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

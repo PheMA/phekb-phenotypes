@@ -1,0 +1,24 @@
+---
+name: 004 WBC NOT Case - Dialysis procedure
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Procedure
+    code: CPT#90921 End stage renal disease (ESRD) related services per full month; for patients twenty years of age and over
+    performedDateTime: "1978-11-12T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#5905-5 Monocytes/100 leukocytes in Blood by Automated count
+    valueQuantity: 4 %
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Has HIV Indication: false
+  Has Dialysis Procedure: true
+  Has Splenectomy Procedure: false
+  Has WBC Sample: true
+  Case: false

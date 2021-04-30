@@ -1,0 +1,21 @@
+---
+name: 002 Not Atrial Fibrillation Case - transplant
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Procedure
+    code: CPT#33300 Repair of cardiac wound; without bypass
+
+  - resourceType: Procedure
+    code: CPT#00580 Anesthesia for heart transplant or heart/lung transplant
+
+results:
+  Had Heart Transplant: true
+  Cardiac Procedure: true
+  Cardiac Surgery-Related Condition: false
+  Cardiac Surgery: true
+  Case: false

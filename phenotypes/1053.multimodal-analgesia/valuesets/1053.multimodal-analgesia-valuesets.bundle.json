@@ -1,0 +1,315 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1053.opioids",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1053.opioids",
+        "name": "Opioids",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "317573",
+                  "display": "pioglitazone 15 MG Oral Tablet"
+                },
+                {
+                  "code": "7052",
+                  "display": "Morphine"
+                },
+                {
+                  "code": "261266",
+                  "display": "pioglitazone 15 MG Oral Tablet [Actos]"
+                },
+                {
+                  "code": "996644",
+                  "display": "Codeine Phosphate 2 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML / Triprolidine Hydrochloride 0.25 MG/ML Oral Solution [Allerfrin with Codeine]"
+                },
+                {
+                  "code": "996654",
+                  "display": "Codeine Phosphate 2 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML / Triprolidine Hydrochloride 0.25 MG/ML Oral Solution [Trifed C]"
+                },
+                {
+                  "code": "996652",
+                  "display": "Codeine Phosphate 2 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML / Triprolidine Hydrochloride 0.25 MG/ML Oral Solution [Triafed & Codeine]"
+                },
+                {
+                  "code": "996650",
+                  "display": "Codeine Phosphate 2 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML / Triprolidine Hydrochloride 0.25 MG/ML Oral Solution [Triacin C]"
+                },
+                {
+                  "code": "135775",
+                  "display": "zolmitriptan"
+                },
+                {
+                  "code": "996640",
+                  "display": "Codeine Phosphate 2 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML / Triprolidine Hydrochloride 0.25 MG/ML Oral Solution"
+                },
+                {
+                  "code": "2670",
+                  "display": "Codeine"
+                },
+                {
+                  "code": "996642",
+                  "display": "Codeine Phosphate 2 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML / Triprolidine Hydrochloride 0.25 MG/ML Oral Solution [Actifed with Codeine]"
+                },
+                {
+                  "code": "215241",
+                  "display": "Aminosyn-HBC"
+                },
+                {
+                  "code": "855205",
+                  "display": "docosanol 100 MG/ML Topical Cream [Abreva]"
+                },
+                {
+                  "code": "797534",
+                  "display": "docosanol 100 MG/ML Topical Cream"
+                },
+                {
+                  "code": "220731",
+                  "display": "Valuphed"
+                },
+                {
+                  "code": "7804",
+                  "display": "Oxycodone"
+                },
+                {
+                  "code": "313571",
+                  "display": "Vancomycin 250 MG Oral Capsule"
+                },
+                {
+                  "code": "197975",
+                  "display": "Methyltestosterone 10 MG Oral Capsule"
+                },
+                {
+                  "code": "3423",
+                  "display": "Hydromorphone"
+                },
+                {
+                  "code": "1427171",
+                  "display": "HEPATITIS B VIRUS SUBTYPE ADW2 HBSAG SURFACE PROTEIN ANTIGEN"
+                },
+                {
+                  "code": "201849",
+                  "display": "Vancomycin 250 MG Oral Capsule [Vancocin]"
+                },
+                {
+                  "code": "9895",
+                  "display": "Sodium Nitroprusside"
+                },
+                {
+                  "code": "1673367",
+                  "display": "rolapitant hydrochlorie"
+                },
+                {
+                  "code": "5489",
+                  "display": "Hydrocodone"
+                },
+                {
+                  "code": "864681",
+                  "display": "Atovaquone 62.5 MG / proguanil hydrochloride 25 MG Oral Tablet"
+                },
+                {
+                  "code": "864685",
+                  "display": "Atovaquone 62.5 MG / proguanil hydrochloride 25 MG Oral Tablet [Malarone]"
+                },
+                {
+                  "code": "7814",
+                  "display": "Oxymorphone"
+                },
+                {
+                  "code": "1157663",
+                  "display": "Tramadol Pill"
+                },
+                {
+                  "code": "219611",
+                  "display": "Remular"
+                },
+                {
+                  "code": "6813",
+                  "display": "Methadone"
+                },
+                {
+                  "code": "204836",
+                  "display": "Coal Tar 20 MG/ML Medicated Shampoo"
+                },
+                {
+                  "code": "220000",
+                  "display": "Special C"
+                },
+                {
+                  "code": "1190286",
+                  "display": "Coal Tar 20 MG/ML Medicated Shampoo [X-Seb T Plus]"
+                },
+                {
+                  "code": "1483744",
+                  "display": "Naltrexone hydrochloride 50 MG Oral Tablet"
+                },
+                {
+                  "code": "6754",
+                  "display": "Meperidine"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1053.acetaminophen",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1053.acetaminophen",
+        "name": "Acetaminophen",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "1427052",
+                  "display": "0.25 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vac"
+                },
+                {
+                  "code": "215643",
+                  "display": "Benzac"
+                },
+                {
+                  "code": "358255",
+                  "display": "aprepitant"
+                },
+                {
+                  "code": "161",
+                  "display": "Acetaminophen"
+                },
+                {
+                  "code": "1801174",
+                  "display": "0.25 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
+                },
+                {
+                  "code": "1537556",
+                  "display": "0.25 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe ["
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1053.nsaids",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1053.nsaids",
+        "name": "NSAIDs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "212110",
+                  "display": "Castor Oil 950 MG/ML Oral Suspension [Emulsoil]"
+                },
+                {
+                  "code": "212111",
+                  "display": "Castor Oil 950 MG/ML Oral Suspension [Purge]"
+                },
+                {
+                  "code": "220751",
+                  "display": "Vanquish"
+                },
+                {
+                  "code": "5640",
+                  "display": "Ibuprofen"
+                },
+                {
+                  "code": "204937",
+                  "display": "Castor Oil 950 MG/ML Oral Suspension"
+                },
+                {
+                  "code": "72610",
+                  "display": "troglitazone"
+                },
+                {
+                  "code": "311196",
+                  "display": "24 HR Isosorbide Mononitrate 120 MG Extended Release Oral Tablet"
+                },
+                {
+                  "code": "7258",
+                  "display": "Naproxen"
+                },
+                {
+                  "code": "219675",
+                  "display": "Ridifed"
+                },
+                {
+                  "code": "1648999",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream [Triderm]"
+                },
+                {
+                  "code": "1085779",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream [Flutex]"
+                },
+                {
+                  "code": "3355",
+                  "display": "Diclofenac"
+                },
+                {
+                  "code": "1085748",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream [Kenalog]"
+                },
+                {
+                  "code": "1085686",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream"
+                },
+                {
+                  "code": "1086271",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream [Cinalog]"
+                },
+                {
+                  "code": "1085688",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream [Aristocort]"
+                },
+                {
+                  "code": "38",
+                  "display": "Parlodel"
+                },
+                {
+                  "code": "1085764",
+                  "display": "Triamcinolone Acetonide 5 MG/ML Topical Cream [Aricin]"
+                },
+                {
+                  "code": "35827",
+                  "display": "Ketorolac"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

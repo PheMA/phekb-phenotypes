@@ -1,0 +1,324 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Epoetin Alfa,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Darbepoetin alfa,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Filgrastim,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Pegfilgrastim,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Sargramostim,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Methotrexate,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Azathioprine,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Mercaptopurine,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Cyclophosphamide,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Hydroxyurea,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Imatinib,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Dasatinib,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Nilotinib,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Busulfan,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Etoposide,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Lomustine,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Thioguanine,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Lenalidomide,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Chlorambucil,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Melphalan,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Trofosfamide,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Mycophenolate mofetil,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Capecitabine,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Tegafur,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Carmofur,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Cyclosporine,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Tacrolimus,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Phenytoin,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Fosphenytoin,RxNorm
+17.red-blood-cell-meds,Medications Affecting Red Blood Cells,Valproic acid,RxNorm
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,280.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.3,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.4,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,282.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,282.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,285.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,336.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,280.0,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,280.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,280.8,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.8,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.0,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,281.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,648.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,283.0,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,283.19,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,283.10,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,283.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,282.3,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,283.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,283.11,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,285.29,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,285.22,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,244.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.01,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.89,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,285.0,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,238.72,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,238.73,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.09,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,284.81,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,446.6,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,273.2,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,961.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,984.0,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,984.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,984.8,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,984.9,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,985.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,980.1,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,987.8,ICD9CM
+17.R1.anemias-and-other-hematologic-disorders,Anemias and Other Hematologic Disorders,275.0,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,41.43,ICD9Proc
+17.R2.spleen-disorders,Spleen Disorders,41.5,ICD9Proc
+17.R2.spleen-disorders,Spleen Disorders,285.8,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,289.4,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,289.50,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,289.51,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,289.52,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,289.53,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,759.0,ICD9CM
+17.R2.spleen-disorders,Spleen Disorders,789.2,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.5,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.60,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.62,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.68,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.69,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.41,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.42,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.49,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.0,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.7,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.1,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.63,ICD9CM
+17.IV.hereditary-anemias,Hereditary Anemias,282.64,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^200.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^201.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^202.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^204.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^205.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^206.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^207.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,^203.*,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,238.4,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,289.0,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,273.0,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,273.1,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,273.2,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,273.3,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,273.8,ICD9CM
+17.Ia.hematologic-malignancies,Hematologic Malignancies,273.9,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^150.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^151.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^153.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^154.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^155.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^157.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^162.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^174.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,185,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^189.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^197.*,ICD9CM
+17.Ia.solid-organ-malignancies,Solid Organ Malignancies,^198.*,ICD9CM
+17.III.hepaptic-disorders,III Hepatic Disorders,^571.*,ICD9CM
+17.R3.hepaptic-disorders,R3 Hepaptic Disorders,^070.*,ICD9CM
+17.E2.inflammatory-bowel-disease,Inflammatory Bowel Disease,^555.*,ICD9CM
+17.E2.inflammatory-bowel-disease,Inflammatory Bowel Disease,^556.*,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,^720.*,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,136.1,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,711.2,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,443.1,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,710.1,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,273.2,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,714.1,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,287.0,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,725,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,710.3,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,710.4,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,^359.7*,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,^714.*,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,135,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,710.2,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,710.0,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,^446.*,ICD9CM
+17.E1.autoimmune-connective-tissue-disorders,Autoimmune/Connective Tissue Disorders,447.6,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,585.3,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,585.4,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,585.5,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,585.6,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,585.9,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,788.9,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,^580.*,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,581.0,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,581.1,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,581.2,ICD9CM
+17.R4.renal-disorders,R4 Renal Disorders,^582.*,ICD9CM
+17.R5.renal-procedures,R5 Renal Procedures,39.95,ICD9Proc
+17.R5.renal-procedures,R5 Renal Procedures,54.98,ICD9Proc
+17.R5.renal-procedures,R5 Renal Procedures,90921,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90925,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90935,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90937,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90940,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90945,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90947,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90960,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90961,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90962,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90966,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90970,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90989,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90993,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90997,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,90999,CPT4
+17.R5.renal-procedures,R5 Renal Procedures,99512,CPT4
+17.R6.long-term-oxygen-therapy,R6 Long Term Oxygen Therapy,V46.2,ICD9CM
+17.R6.long-term-oxygen-therapy,R6 Long Term Oxygen Therapy,99503,CPT4
+17.E3.infectuous-diseases,E3 Infectuous Diseases,^421.*,ICD9CM
+17.E3.infectuous-diseases,E3 Infectuous Diseases,^494.*,ICD9CM
+17.E3.infectuous-diseases,E3 Infectuous Diseases,^513.*,ICD9CM
+17.E3.infectuous-diseases,E3 Infectuous Diseases,^730.*,ICD9CM
+17.E3.infectuous-diseases,E3 Infectuous Diseases,^01[0-8].*,ICD9CM
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,41.00,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,41.03,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,41.05,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,33.6,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,52.85,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,55.69,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,50.59,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,50.51,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,33.50,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,52.80,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,52.83,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,52.86,ICD9Proc
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,32851,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,32852,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,32853,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,32854,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,33935,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,33945,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,50360,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,50365,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,47135,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,47136,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,48554,CPT4
+17.II.bone-marrow-and-organ-transplant-procedures,II Bone Marrow And Organ Transplants,38240,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,99.25,ICD9Proc
+17.Ib.chemotherapy,Ib Chemotherapy,96401,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96402,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96405,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96406,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96409,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96411,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96413,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96415,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96416,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96417,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96420,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96422,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96423,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96425,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96440,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96445,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96450,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96542,CPT4
+17.Ib.chemotherapy,Ib Chemotherapy,96549,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00162,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00174,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00176,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00190,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00192,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00210,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00211,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00214,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00215,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00216,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00300,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00320,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00350,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00400,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00404,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00406,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00452,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00472,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00474,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00500,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00539,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00540,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00541,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00542,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00546,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00548,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00560,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00562,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00563,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00566,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00567,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00580,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00626,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00630,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00670,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00756,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00770,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00790,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00792,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00794,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00796,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00797,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00840,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00844,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00846,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00848,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00860,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00862,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00864,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00865,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00866,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00868,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00880,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00904,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00908,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00916,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,00944,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01140,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01150,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01173,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01210,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01212,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01214,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01215,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01230,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01232,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01234,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01260,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01270,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01360,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01392,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01402,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01404,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01440,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01442,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01444,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01482,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01484,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01486,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01500,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01634,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01636,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01638,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01650,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01652,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01654,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01656,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01742,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01756,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01758,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01760,CPT4
+17.VI.anesthesia-for-blood-loss-and-anemia ,IV Anesthesia For Blood Loss And Anemia,01770,CPT4

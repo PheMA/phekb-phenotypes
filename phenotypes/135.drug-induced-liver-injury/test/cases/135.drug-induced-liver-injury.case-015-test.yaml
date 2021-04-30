@@ -1,0 +1,39 @@
+---
+name: 015 Drug Induced Liver Injury NOT Case - Too young
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 2020-09-16  # 1 day old
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+  - resourceType: MedicationRequest
+    code: RXNORM#149 acebutolol
+    authoredOn: "2000-01-01T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9#277.4 Disorders of bilirubin excretion
+    onsetDateTime: "2000-03-01T16:00:00.000Z"
+
+  # ALP 2x ULN within 6mo after medications
+  - resourceType: Observation
+    code: LOINC#6768-6 Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma
+    valueQuantity: 241 U/L
+    effectiveDateTime: "2000-06-01T07:00:00.000Z"
+
+results:
+  In Base Population: false
+  Has Acute Liver Injury Diagnosis: true
+  Qualifies As Drug Induced Liver Injury: true
+  Has Disqualifying Chronic Liver Injury: false
+  Has ALP At Least 2x ULN: true
+  ALP At Least 2x ULN Within 1mo Prior Medications: false
+  Medications Index Date: "2000-01-01T16:00:00.000+00:00"
+  Has Drug Exposure In 3 Month Window: true
+  Has Elevated Labs before Drug Exposure: false
+  Has Disqualifying Diagnosis: false
+  Case: false

@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-31",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-31",
+  "status": "active",
+  "name": "eMERGE T2DM - Random Glucose",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2339-0",
+            "display": "Glucose [Mass/volume] in Blood"
+          },
+          {
+            "code": "2345-7",
+            "display": "Glucose lab"
+          },
+          {
+            "code": "6777-7",
+            "display": "Deprecated Glucose [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

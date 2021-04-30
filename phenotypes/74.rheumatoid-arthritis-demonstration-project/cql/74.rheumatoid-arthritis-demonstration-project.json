@@ -1,0 +1,189 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "74.rheumatoid-arthritis-demonstration-project",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Rheumatoid Arthritis Diagnoses",
+            "id" : "74.rheumatoid-arthritis-dx",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Rheumatoid Arthritis Medications",
+            "id" : "74.rheumatoid-arthritis-meds",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Rheumatoid Arthritis Inflamatory Diagnoses",
+            "id" : "74.rheumatoid-arthritis-inflammatory-dx",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Rheumatoid Arthritis Juvenile Diagnoses",
+            "id" : "74.rheumatoid-arthritis-juvenile-dx",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Case 1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "Exists",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Rheumatoid Arthritis Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  }, {
+                     "type" : "Exists",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Rheumatoid Arthritis Medications",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ]
+               }, {
+                  "type" : "Not",
+                  "operand" : {
+                     "type" : "Exists",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Rheumatoid Arthritis Inflamatory Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Case 2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "Exists",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Rheumatoid Arthritis Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  }, {
+                     "type" : "Exists",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Rheumatoid Arthritis Medications",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ]
+               }, {
+                  "type" : "Not",
+                  "operand" : {
+                     "type" : "Exists",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Rheumatoid Arthritis Juvenile Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "name" : "Case 1",
+                  "type" : "ExpressionRef"
+               }, {
+                  "name" : "Case 2",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

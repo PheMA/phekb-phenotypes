@@ -1,0 +1,15 @@
+---
+library:
+  name: "68.resistant-hypertension"
+  paths:
+    - ../cql
+    - ../../__common/cql
+tests:
+  path: cases
+options:
+  vsac:
+    cache: ../../__common/.vscache
+  date: "2020-09-17T00:00:00.0Z"
+  dumpFiles:
+    enabled: true # Change this to true to generate debugging output
+    path: ../../../debugging_output

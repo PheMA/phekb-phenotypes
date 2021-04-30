@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-55",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-55",
+  "status": "active",
+  "name": "PHEKB-12 - Gemfibrozil/Fibrate Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "4719",
+            "display": "Gemfibrozil"
+          }
+        ]
+      }
+    ]
+  }
+}

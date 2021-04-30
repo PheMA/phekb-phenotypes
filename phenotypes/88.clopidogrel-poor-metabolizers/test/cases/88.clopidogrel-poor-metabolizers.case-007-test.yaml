@@ -1,0 +1,32 @@
+---
+name: 007 Clopidogrel Poor Metabolizers NOT Case - no second event
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # First event (stent)
+
+  - resourceType: Procedure
+    code: CPT#92980 Transcatheter placement of an intracoronary stent(s), percutaneous, with or without other therapeutic intervention, any method; single vessel
+    performedDateTime: "2018-11-12T16:00:00.000Z"
+
+  # Clopidogres but no actual event (MI, stroke, etc)
+
+  - resourceType: MedicationRequest
+    code: RXNORM#32968 clopidogrel
+    authoredOn: "2020-11-15T16:00:00.000Z"
+    status: completed
+
+results:
+  Myocardial Infarction Diagnosis With Clopidogrel: $should have length 0
+  Intracoronary Stent: true
+  Myocardial Infarction Diagnosis With Clopidogrel In Interval: false
+  Revascularization With Clopidogrel In Interval: false
+  Stroke With Clopidogrel In Interval: false
+  Death With Clopidogrel In Interval: false
+  Has Second Event With Clopidogrel: false
+  Has Myocardial Infarction Diagnosis With Clopidogrel: false
+  Case: false

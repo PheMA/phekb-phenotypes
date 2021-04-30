@@ -1,0 +1,30 @@
+---
+name: 003 Not BPH Case - not male
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: unknown
+    birthDate: 1958-07-16
+
+  - resourceType: Procedure
+    code: CPT#52450 Transurethral incision of prostate
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+  - resourceType: Condition
+    code: ICD9CM#600.0 Hypertrophy (benign) of prostate
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#600.2 Benign localized hyperplasia of prostate
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+results:
+  BPH Medications: false
+  BPH Procedures: true
+  Two Or More BPH Diagnoses: true
+  Has Exclusion Diagnoses: false
+  In Base Population: false
+  Case: false

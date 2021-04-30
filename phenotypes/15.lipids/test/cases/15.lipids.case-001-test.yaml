@@ -1,0 +1,17 @@
+---
+name: 001 LDL-C Case
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#2089-1 Cholesterol in LDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 95 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Has LDL-C measure before exclusion date: true
+  Case: true

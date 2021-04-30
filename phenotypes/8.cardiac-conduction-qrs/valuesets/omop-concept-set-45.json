@@ -1,0 +1,477 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-45",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-45",
+  "status": "active",
+  "name": "Heart Disease",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "747.42",
+            "display": "Partial anomalous pulmonary venous connection"
+          },
+          {
+            "code": "212.7",
+            "display": "Benign neoplasm of heart"
+          },
+          {
+            "code": "414.2",
+            "display": "Chronic total occlusion of coronary artery"
+          },
+          {
+            "code": "402",
+            "display": "Hypertensive heart disease"
+          },
+          {
+            "code": "747.41",
+            "display": "Total anomalous pulmonary venous connection"
+          },
+          {
+            "code": "428.4",
+            "display": "Combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "427.4",
+            "display": "Ventricular fibrillation and flutter"
+          },
+          {
+            "code": "398",
+            "display": "Other rheumatic heart disease"
+          },
+          {
+            "code": "746.0",
+            "display": "Anomalies of pulmonary valve, congenital"
+          },
+          {
+            "code": "746.3",
+            "display": "Congenital stenosis of aortic valve"
+          },
+          {
+            "code": "396",
+            "display": "Diseases of mitral and aortic valves"
+          },
+          {
+            "code": "427.41",
+            "display": "Ventricular fibrillation"
+          },
+          {
+            "code": "416",
+            "display": "Chronic pulmonary heart disease"
+          },
+          {
+            "code": "746.6",
+            "display": "Congenital mitral insufficiency"
+          },
+          {
+            "code": "414.02",
+            "display": "Coronary atherosclerosis of autologous vein bypass graft"
+          },
+          {
+            "code": "748",
+            "display": "Anomalies of respiratory system, congenital"
+          },
+          {
+            "code": "747.60",
+            "display": "Anomaly of the peripheral vascular system, unspecified site"
+          },
+          {
+            "code": "421",
+            "display": "Acute and subacute endocarditis"
+          },
+          {
+            "code": "414.1",
+            "display": "Aneurysm and dissection of heart"
+          },
+          {
+            "code": "414.9",
+            "display": "Chronic ischemic heart disease, unspecified"
+          },
+          {
+            "code": "747.63",
+            "display": "Upper limb vessel anomaly"
+          },
+          {
+            "code": "391",
+            "display": "Rheumatic fever with heart involvement"
+          },
+          {
+            "code": "428.21",
+            "display": "Acute systolic heart failure"
+          },
+          {
+            "code": "427.1",
+            "display": "Paroxysmal ventricular tachycardia"
+          },
+          {
+            "code": "425",
+            "display": "Cardiomyopathy"
+          },
+          {
+            "code": "747.29",
+            "display": "Other anomalies of aorta"
+          },
+          {
+            "code": "417",
+            "display": "Other diseases of pulmonary circulation"
+          },
+          {
+            "code": "747.40",
+            "display": "Anomaly of great veins, unspecified"
+          },
+          {
+            "code": "414.07",
+            "display": "Coronary atherosclerosis of bypass graft (artery) (vein) of transplanted heart"
+          },
+          {
+            "code": "746.2",
+            "display": "Ebstein's anomaly"
+          },
+          {
+            "code": "746.87",
+            "display": "Malposition of heart and cardiac apex"
+          },
+          {
+            "code": "747.61",
+            "display": "Gastrointestinal vessel anomaly"
+          },
+          {
+            "code": "424",
+            "display": "Other diseases of endocardium"
+          },
+          {
+            "code": "427",
+            "display": "Cardiac dysrhythmias"
+          },
+          {
+            "code": "414.04",
+            "display": "Coronary atherosclerosis of artery bypass graft"
+          },
+          {
+            "code": "746.4",
+            "display": "Congenital insufficiency of aortic valve"
+          },
+          {
+            "code": "428.3",
+            "display": "Diastolic heart failure"
+          },
+          {
+            "code": "414.05",
+            "display": "Coronary atherosclerosis of unspecified bypass graft"
+          },
+          {
+            "code": "429",
+            "display": "Ill-defined descriptions and complications of heart disease"
+          },
+          {
+            "code": "746.82",
+            "display": "Cor triatriatum"
+          },
+          {
+            "code": "414.11",
+            "display": "Aneurysm of coronary vessels"
+          },
+          {
+            "code": "414.8",
+            "display": "Other specified forms of chronic ischemic heart disease"
+          },
+          {
+            "code": "414.00",
+            "display": "Coronary atherosclerosis of unspecified type of vessel, native or graft"
+          },
+          {
+            "code": "747.2",
+            "display": "Other congenital anomalies of aorta"
+          },
+          {
+            "code": "404",
+            "display": "Hypertensive heart and chronic kidney disease"
+          },
+          {
+            "code": "747.3",
+            "display": "Anomalies of pulmonary artery, congenital"
+          },
+          {
+            "code": "747.39",
+            "display": "Other anomalies of pulmonary artery and pulmonary circulation"
+          },
+          {
+            "code": "428.43",
+            "display": "Acute on chronic combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "414.03",
+            "display": "Coronary atherosclerosis of nonautologous biological bypass graft"
+          },
+          {
+            "code": "747.10",
+            "display": "Coarctation of aorta (preductal) (postductal)"
+          },
+          {
+            "code": "415",
+            "display": "Acute pulmonary heart disease"
+          },
+          {
+            "code": "414.06",
+            "display": "Coronary atherosclerosis of native coronary artery of transplanted heart"
+          },
+          {
+            "code": "747.8",
+            "display": "Other specified congenital anomalies of circulatory system"
+          },
+          {
+            "code": "747.64",
+            "display": "Lower limb vessel anomaly"
+          },
+          {
+            "code": "428.30",
+            "display": "Diastolic heart failure, unspecified"
+          },
+          {
+            "code": "414.19",
+            "display": "Other aneurysm of heart"
+          },
+          {
+            "code": "428.40",
+            "display": "Combined systolic and diastolic heart failure, unspecified"
+          },
+          {
+            "code": "745",
+            "display": "Bulbus cordis anomalies and anomalies of cardiac septal closure"
+          },
+          {
+            "code": "747.82",
+            "display": "Spinal vessel anomaly"
+          },
+          {
+            "code": "420",
+            "display": "Acute pericarditis"
+          },
+          {
+            "code": "414.12",
+            "display": "Dissection of coronary artery"
+          },
+          {
+            "code": "427.5",
+            "display": "Cardiac arrest"
+          },
+          {
+            "code": "746.7",
+            "display": "Hypoplastic left heart syndrome"
+          },
+          {
+            "code": "747.83",
+            "display": "Persistent fetal circulation"
+          },
+          {
+            "code": "747.9",
+            "display": "Unspecified anomaly of circulatory system"
+          },
+          {
+            "code": "747.81",
+            "display": "Anomalies of cerebrovascular system"
+          },
+          {
+            "code": "746.83",
+            "display": "Infundibular pulmonic stenosis"
+          },
+          {
+            "code": "747.21",
+            "display": "Anomalies of aortic arch"
+          },
+          {
+            "code": "393",
+            "display": "Chronic rheumatic pericarditis"
+          },
+          {
+            "code": "414.01",
+            "display": "Coronary atherosclerosis of native coronary artery"
+          },
+          {
+            "code": "414.10",
+            "display": "Aneurysm of heart (wall)"
+          },
+          {
+            "code": "747.62",
+            "display": "Renal vessel anomaly"
+          },
+          {
+            "code": "747.1",
+            "display": "Coarctation of aorta"
+          },
+          {
+            "code": "428.31",
+            "display": "Acute diastolic heart failure"
+          },
+          {
+            "code": "164.1",
+            "display": "Malignant neoplasm of heart"
+          },
+          {
+            "code": "747.5",
+            "display": "Absence or hypoplasia of umbilical artery"
+          },
+          {
+            "code": "411",
+            "display": "Other acute and subacute forms of ischemic heart disease"
+          },
+          {
+            "code": "395",
+            "display": "Diseases of aortic valve"
+          },
+          {
+            "code": "093",
+            "display": "Cardiovascular syphilis"
+          },
+          {
+            "code": "428.32",
+            "display": "Chronic diastolic heart failure"
+          },
+          {
+            "code": "414.3",
+            "display": "Coronary atherosclerosis due to lipid rich plaque"
+          },
+          {
+            "code": "746.00",
+            "display": "Congenital pulmonary valve anomaly, unspecified"
+          },
+          {
+            "code": "414.4",
+            "display": "Coronary atherosclerosis due to calcified coronary lesion"
+          },
+          {
+            "code": "747.0",
+            "display": "Patent ductus arteriosus"
+          },
+          {
+            "code": "747.89",
+            "display": "Other specified anomalies of circulatory system"
+          },
+          {
+            "code": "426",
+            "display": "Conduction disorders"
+          },
+          {
+            "code": "746.85",
+            "display": "Coronary artery anomaly"
+          },
+          {
+            "code": "746.5",
+            "display": "Congenital mitral stenosis"
+          },
+          {
+            "code": "747.20",
+            "display": "Anomaly of aorta, unspecified"
+          },
+          {
+            "code": "412",
+            "display": "Old myocardial infarction"
+          },
+          {
+            "code": "746.01",
+            "display": "Atresia of pulmonary valve, congenital"
+          },
+          {
+            "code": "747.49",
+            "display": "Other anomalies of great veins"
+          },
+          {
+            "code": "397",
+            "display": "Diseases of other endocardial structures"
+          },
+          {
+            "code": "747.22",
+            "display": "Atresia and stenosis of aorta"
+          },
+          {
+            "code": "423",
+            "display": "Other diseases of pericardium"
+          },
+          {
+            "code": "747.6",
+            "display": "Other congenital anomalies of peripheral vascular system"
+          },
+          {
+            "code": "747.31",
+            "display": "Pulmonary artery coarctation and atresia"
+          },
+          {
+            "code": "394",
+            "display": "Diseases of mitral valve"
+          },
+          {
+            "code": "427.42",
+            "display": "Ventricular flutter"
+          },
+          {
+            "code": "428.22",
+            "display": "Chronic systolic heart failure"
+          },
+          {
+            "code": "428.42",
+            "display": "Chronic combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "428.23",
+            "display": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "428.33",
+            "display": "Acute on chronic diastolic heart failure"
+          },
+          {
+            "code": "747",
+            "display": "Other congenital anomalies of circulatory system"
+          },
+          {
+            "code": "747.69",
+            "display": "Anomalies of other specified sites of peripheral vascular system"
+          },
+          {
+            "code": "747.4",
+            "display": "Anomalies of great veins, congenital"
+          },
+          {
+            "code": "428.0",
+            "display": "Congestive heart failure, unspecified"
+          },
+          {
+            "code": "746.86",
+            "display": "Congenital heart block"
+          },
+          {
+            "code": "747.32",
+            "display": "Pulmonary arteriovenous malformation"
+          },
+          {
+            "code": "410",
+            "display": "Acute myocardial infarction"
+          },
+          {
+            "code": "422",
+            "display": "Acute myocarditis"
+          },
+          {
+            "code": "414.0",
+            "display": "Coronary atherosclerosis"
+          },
+          {
+            "code": "747.11",
+            "display": "Interruption of aortic arch"
+          },
+          {
+            "code": "428.41",
+            "display": "Acute combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "414",
+            "display": "Other forms of chronic ischemic heart disease"
+          }
+        ]
+      }
+    ]
+  }
+}

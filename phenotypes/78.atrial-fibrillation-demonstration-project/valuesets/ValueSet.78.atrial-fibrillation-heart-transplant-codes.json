@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "78.atrial-fibrillation-heart-transplant-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/78.atrial-fibrillation-heart-transplant-codes",
+  "status": "active",
+  "name": "Atrial Fibrillation Heart Transplant Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "00580",
+            "display": "Anesthesia for heart transplant or heart/lung transplant"
+          },
+          {
+            "code": "33935",
+            "display": "Heart-lung transplant with recipient cardiectomy-pneumonectomy"
+          },
+          {
+            "code": "33945",
+            "display": "Heart transplant, with or without recipient cardiectomy"
+          }
+        ]
+      }
+    ]
+  }
+}

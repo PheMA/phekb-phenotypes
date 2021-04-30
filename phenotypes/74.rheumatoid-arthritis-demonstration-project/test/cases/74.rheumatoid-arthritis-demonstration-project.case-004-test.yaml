@@ -1,0 +1,25 @@
+---
+name: 004 Rheumatoid Arthritis NOT Case - inflammatory + juvenile dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#714.0 Rheumatoid arthritis
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#135 Sarcoidosis
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#714.33 Monoarticular juvenile rheumatoid arthritis
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+results:
+  Case 1: false
+  Case 2: false
+  Case: false

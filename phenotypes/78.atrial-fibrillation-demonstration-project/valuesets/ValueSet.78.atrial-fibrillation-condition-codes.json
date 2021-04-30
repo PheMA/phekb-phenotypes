@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "78.atrial-fibrillation-condition-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/78.atrial-fibrillation-condition-codes",
+  "status": "active",
+  "name": "Atrial Fibrillation Condition Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "V45.81",
+            "display": "Postsurgical aortocoronary bypass status"
+          },
+          {
+            "code": "V45.82",
+            "display": "Percutaneous transluminal coronary angioplasty, postsurgical status"
+          },
+          {
+            "code": "996.03",
+            "display": "Mechanical complication due to coronary bypass graft"
+          }
+        ]
+      }
+    ]
+  }
+}

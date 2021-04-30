@@ -1,0 +1,234 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "797.developmental-language-disorder",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Developmental Language Disorder Diagnoses",
+            "id" : "797.developmental-language-disorder-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Developmental Language Disorder Exclusion Diagnoses",
+            "id" : "797.developmental-language-disorder-exclusion-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "DLD Category 1 Diagnoses",
+            "id" : "797.dld-category-1-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "DLD Category 2 Diagnoses",
+            "id" : "797.dld-category-2-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "DLD Category 3 Diagnoses",
+            "id" : "797.dld-category-3-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "DLD Category 4 Diagnoses",
+            "id" : "797.dld-category-4-diagnoses",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Has DLD Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Developmental Language Disorder Diagnoses",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Has DLD Exclusion Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Developmental Language Disorder Exclusion Diagnoses",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Category 1 or 2 Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "DLD Category 1 Diagnoses",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               }, {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "DLD Category 2 Diagnoses",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Has Category 3 or 4 Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "DLD Category 3 Diagnoses",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               }, {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "DLD Category 4 Diagnoses",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "name" : "Has DLD Diagnosis",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "type" : "Not",
+                           "operand" : {
+                              "name" : "Has DLD Exclusion Diagnosis",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "type" : "Less",
+                        "operand" : [ {
+                           "precision" : "Year",
+                           "type" : "CalculateAge",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "18",
+                           "type" : "Literal"
+                        } ]
+                     } ]
+                  }, {
+                     "name" : "Has Category 1 or 2 Diagnosis",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "type" : "Not",
+                  "operand" : {
+                     "name" : "Has Category 3 or 4 Diagnosis",
+                     "type" : "ExpressionRef"
+                  }
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

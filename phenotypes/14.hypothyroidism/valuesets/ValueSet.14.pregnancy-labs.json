@@ -1,0 +1,53 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.pregnancy-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.pregnancy-labs",
+        "status": "active",
+        "name": "PHEKB-14 Pregnancy Laboratory Codes",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "80384-1",
+                  "display": "Choriogonadotropin (pregnancy test) [Presence] in Urine by Rapid immunoassay"
+                },
+                {
+                  "code": "2106-3",
+                  "display": "Choriogonadotropin (pregnancy test) [Presence] in Urine"
+                },
+                {
+                  "code": "2110-5",
+                  "display": "Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma"
+                },
+                {
+                  "code": "2112-1",
+                  "display": "Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Urine"
+                },
+                {
+                  "code": "80385-8",
+                  "display": "Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay"
+                },
+                {
+                  "code": "2118-8",
+                  "display": "Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

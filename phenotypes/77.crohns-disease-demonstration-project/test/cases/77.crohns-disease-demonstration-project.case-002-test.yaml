@@ -1,0 +1,25 @@
+---
+name: 002 Not Crohn's Disease Case - no meds
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#555.0 Regional enteritis of small intestine
+    recordedDate: "2012-10-03T11:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#555.0 Regional enteritis of small intestine
+    recordedDate: "2013-10-03T11:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#555.0 Regional enteritis of small intestine
+    recordedDate: "2014-10-03T11:00:00.000Z"
+
+results:
+  Has Medications: false
+  Has More Than Two Diagnoses: true
+  Case: false

@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-43",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-43",
+  "status": "active",
+  "name": "QRS Duration",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8633-0",
+            "display": "QRS duration"
+          }
+        ]
+      }
+    ]
+  }
+}

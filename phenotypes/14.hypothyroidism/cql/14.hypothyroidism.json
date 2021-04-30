@@ -1,0 +1,1267 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "14.hypothyroidism",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Hypothyroidism Diagnosis",
+            "id" : "14.hypothyroidism-dx",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "TSH Labs",
+            "id" : "14.tsh-labs",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "FT4 Labs",
+            "id" : "14.ft4-labs",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Anti-Thyroglobulin Labs",
+            "id" : "14.anti-thyroglobulin-ab",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Anti-Thyroperoxidase Labs",
+            "id" : "14.anti-thyroperoxidase",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Pregnancy Diagnoses",
+            "id" : "14.pregnancy-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Contrast Exposure Procedures",
+            "id" : "14.contrast-exposure-procedures",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Pregnancy Labs",
+            "id" : "14.pregnancy-labs",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Thyroid Replacement Medications",
+            "id" : "14.thyroid-replacement-meds",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Secondary Hypothyroidism Diagnoses",
+            "id" : "14.secondary-hypothyroidism-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Radiation Therapy Procedures",
+            "id" : "14.radiation-therapy-procedures",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Thyroidectomy Procedures",
+            "id" : "14.thyroidectomy-procedures",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Other Thyroid Diseases Diagnosis",
+            "id" : "14.thyroid-disease-exclusions",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Thyroid-Altering Medications",
+            "id" : "14.thyroid-altering-meds",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Effective Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "If",
+               "condition" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "operand" : {
+                     "type" : "Is",
+                     "operand" : {
+                        "name" : "c",
+                        "type" : "OperandRef"
+                     },
+                     "isTypeSpecifier" : {
+                        "name" : "{http://hl7.org/fhir}Observation",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  }
+               },
+               "then" : {
+                  "name" : "Effective Date",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "strict" : false,
+                     "type" : "As",
+                     "operand" : {
+                        "name" : "c",
+                        "type" : "OperandRef"
+                     },
+                     "asTypeSpecifier" : {
+                        "name" : "{http://hl7.org/fhir}Observation",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  } ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "condition" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                     "type" : "As",
+                     "operand" : {
+                        "type" : "Is",
+                        "operand" : {
+                           "name" : "c",
+                           "type" : "OperandRef"
+                        },
+                        "isTypeSpecifier" : {
+                           "name" : "{http://hl7.org/fhir}MedicationRequest",
+                           "type" : "NamedTypeSpecifier"
+                        }
+                     }
+                  },
+                  "then" : {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "strict" : false,
+                        "type" : "As",
+                        "operand" : {
+                           "name" : "c",
+                           "type" : "OperandRef"
+                        },
+                        "asTypeSpecifier" : {
+                           "name" : "{http://hl7.org/fhir}MedicationRequest",
+                           "type" : "NamedTypeSpecifier"
+                        }
+                     } ]
+                  },
+                  "else" : {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "strict" : false,
+                        "type" : "As",
+                        "operand" : {
+                           "name" : "c",
+                           "type" : "OperandRef"
+                        },
+                        "asTypeSpecifier" : {
+                           "name" : "{http://hl7.org/fhir}Condition",
+                           "type" : "NamedTypeSpecifier"
+                        }
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "c",
+               "operandTypeSpecifier" : {
+                  "type" : "ChoiceTypeSpecifier",
+                  "choice" : [ {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier"
+                  } ]
+               }
+            } ]
+         }, {
+            "name" : "Effective Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "If",
+               "condition" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "operand" : {
+                     "type" : "Is",
+                     "operand" : {
+                        "name" : "c",
+                        "type" : "OperandRef"
+                     },
+                     "isTypeSpecifier" : {
+                        "name" : "{http://hl7.org/fhir}Observation",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  }
+               },
+               "then" : {
+                  "name" : "Effective Date",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "strict" : false,
+                     "type" : "As",
+                     "operand" : {
+                        "name" : "c",
+                        "type" : "OperandRef"
+                     },
+                     "asTypeSpecifier" : {
+                        "name" : "{http://hl7.org/fhir}Observation",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  } ]
+               },
+               "else" : {
+                  "name" : "Effective Date",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "strict" : false,
+                     "type" : "As",
+                     "operand" : {
+                        "name" : "c",
+                        "type" : "OperandRef"
+                     },
+                     "asTypeSpecifier" : {
+                        "name" : "{http://hl7.org/fhir}Condition",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "c",
+               "operandTypeSpecifier" : {
+                  "type" : "ChoiceTypeSpecifier",
+                  "choice" : [ {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier"
+                  } ]
+               }
+            } ]
+         }, {
+            "name" : "Pregnancy Exclusion",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "P",
+                     "expression" : {
+                        "type" : "Union",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "dataType" : "{http://hl7.org/fhir}Condition",
+                              "codeProperty" : "code",
+                              "codeComparator" : "in",
+                              "type" : "Retrieve",
+                              "codes" : {
+                                 "name" : "Pregnancy Diagnoses",
+                                 "type" : "ValueSetRef"
+                              }
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ListTypeSpecifier",
+                              "elementType" : {
+                                 "type" : "ChoiceTypeSpecifier",
+                                 "choice" : [ {
+                                    "name" : "{http://hl7.org/fhir}Observation",
+                                    "type" : "NamedTypeSpecifier"
+                                 }, {
+                                    "name" : "{http://hl7.org/fhir}Condition",
+                                    "type" : "NamedTypeSpecifier"
+                                 } ]
+                              }
+                           }
+                        }, {
+                           "type" : "As",
+                           "operand" : {
+                              "dataType" : "{http://hl7.org/fhir}Observation",
+                              "codeProperty" : "code",
+                              "codeComparator" : "in",
+                              "type" : "Retrieve",
+                              "codes" : {
+                                 "name" : "Pregnancy Labs",
+                                 "type" : "ValueSetRef"
+                              }
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ListTypeSpecifier",
+                              "elementType" : {
+                                 "type" : "ChoiceTypeSpecifier",
+                                 "choice" : [ {
+                                    "name" : "{http://hl7.org/fhir}Observation",
+                                    "type" : "NamedTypeSpecifier"
+                                 }, {
+                                    "name" : "{http://hl7.org/fhir}Condition",
+                                    "type" : "NamedTypeSpecifier"
+                                 } ]
+                              }
+                           }
+                        } ]
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "Effective Date",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "sample",
+                           "type" : "OperandRef"
+                        } ]
+                     }, {
+                        "lowClosed" : true,
+                        "highClosed" : true,
+                        "type" : "Interval",
+                        "low" : {
+                           "type" : "Subtract",
+                           "operand" : [ {
+                              "name" : "Effective Date",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "P",
+                                 "type" : "AliasRef"
+                              } ]
+                           }, {
+                              "value" : 6,
+                              "unit" : "months",
+                              "type" : "Quantity"
+                           } ]
+                        },
+                        "high" : {
+                           "type" : "Add",
+                           "operand" : [ {
+                              "name" : "Effective Date",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "P",
+                                 "type" : "AliasRef"
+                              } ]
+                           }, {
+                              "value" : 1,
+                              "unit" : "year",
+                              "type" : "Quantity"
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "sample",
+               "operandTypeSpecifier" : {
+                  "type" : "ChoiceTypeSpecifier",
+                  "choice" : [ {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier"
+                  } ]
+               }
+            } ]
+         }, {
+            "name" : "Contrast Exposure Exclusion",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "P",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Procedure",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Contrast Exposure Procedures",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "Effective Date",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "sample",
+                           "type" : "OperandRef"
+                        } ]
+                     }, {
+                        "lowClosed" : true,
+                        "highClosed" : true,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "P",
+                              "type" : "AliasRef"
+                           } ]
+                        },
+                        "high" : {
+                           "type" : "Add",
+                           "operand" : [ {
+                              "name" : "Effective Date",
+                              "libraryName" : "PhEMAHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "P",
+                                 "type" : "AliasRef"
+                              } ]
+                           }, {
+                              "value" : 6,
+                              "unit" : "weeks",
+                              "type" : "Quantity"
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "sample",
+               "operandTypeSpecifier" : {
+                  "type" : "ChoiceTypeSpecifier",
+                  "choice" : [ {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  } ]
+               }
+            } ]
+         }, {
+            "name" : "Time Dependent Exclusions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "name" : "Pregnancy Exclusion",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "name" : "sample",
+                     "type" : "OperandRef"
+                  } ]
+               }, {
+                  "name" : "Contrast Exposure Exclusion",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "name" : "sample",
+                     "type" : "OperandRef"
+                  } ]
+               } ]
+            },
+            "operand" : [ {
+               "name" : "sample",
+               "operandTypeSpecifier" : {
+                  "type" : "ChoiceTypeSpecifier",
+                  "choice" : [ {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier"
+                  }, {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  } ]
+               }
+            } ]
+         }, {
+            "name" : "Thyroid replacement medication use",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "M",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                     "codeProperty" : "medication",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Thyroid Replacement Medications",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Not",
+                  "operand" : {
+                     "name" : "Time Dependent Exclusions",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "type" : "As",
+                        "operand" : {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        },
+                        "asTypeSpecifier" : {
+                           "type" : "ChoiceTypeSpecifier",
+                           "choice" : [ {
+                              "name" : "{http://hl7.org/fhir}Observation",
+                              "type" : "NamedTypeSpecifier"
+                           }, {
+                              "name" : "{http://hl7.org/fhir}MedicationRequest",
+                              "type" : "NamedTypeSpecifier"
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Abnormal TSH Labs",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "TSH Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Time Dependent Exclusions",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ChoiceTypeSpecifier",
+                              "choice" : [ {
+                                 "name" : "{http://hl7.org/fhir}Observation",
+                                 "type" : "NamedTypeSpecifier"
+                              }, {
+                                 "name" : "{http://hl7.org/fhir}MedicationRequest",
+                                 "type" : "NamedTypeSpecifier"
+                              } ]
+                           }
+                        } ]
+                     }
+                  }, {
+                     "type" : "Greater",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                        "type" : "Instance",
+                        "element" : [ {
+                           "name" : "value",
+                           "value" : {
+                              "type" : "ToDecimal",
+                              "operand" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "5",
+                                 "type" : "Literal"
+                              }
+                           }
+                        }, {
+                           "name" : "unit",
+                           "value" : {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "U/mL",
+                              "type" : "Literal"
+                           }
+                        } ]
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Abnormal FT4 Labs",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "FT4 Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Time Dependent Exclusions",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ChoiceTypeSpecifier",
+                              "choice" : [ {
+                                 "name" : "{http://hl7.org/fhir}Observation",
+                                 "type" : "NamedTypeSpecifier"
+                              }, {
+                                 "name" : "{http://hl7.org/fhir}MedicationRequest",
+                                 "type" : "NamedTypeSpecifier"
+                              } ]
+                           }
+                        } ]
+                     }
+                  }, {
+                     "type" : "Less",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                        "type" : "Instance",
+                        "element" : [ {
+                           "name" : "value",
+                           "value" : {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                              "value" : "0.5",
+                              "type" : "Literal"
+                           }
+                        }, {
+                           "name" : "unit",
+                           "value" : {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "ng/dL",
+                              "type" : "Literal"
+                           }
+                        } ]
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Abnormal Anti-Thyroglobulin Labs",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Anti-Thyroglobulin Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Time Dependent Exclusions",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ChoiceTypeSpecifier",
+                              "choice" : [ {
+                                 "name" : "{http://hl7.org/fhir}Observation",
+                                 "type" : "NamedTypeSpecifier"
+                              }, {
+                                 "name" : "{http://hl7.org/fhir}MedicationRequest",
+                                 "type" : "NamedTypeSpecifier"
+                              } ]
+                           }
+                        } ]
+                     }
+                  }, {
+                     "type" : "Equal",
+                     "operand" : [ {
+                        "name" : "ToString",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}string",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "Positive",
+                        "type" : "Literal"
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Abnormal Anti-Thyroperoxidase Labs",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Anti-Thyroperoxidase Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Time Dependent Exclusions",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ChoiceTypeSpecifier",
+                              "choice" : [ {
+                                 "name" : "{http://hl7.org/fhir}Observation",
+                                 "type" : "NamedTypeSpecifier"
+                              }, {
+                                 "name" : "{http://hl7.org/fhir}MedicationRequest",
+                                 "type" : "NamedTypeSpecifier"
+                              } ]
+                           }
+                        } ]
+                     }
+                  }, {
+                     "type" : "Equal",
+                     "operand" : [ {
+                        "name" : "ToString",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}string",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "Positive",
+                        "type" : "Literal"
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Abnormal TSH or FT4 Labs",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Union",
+               "operand" : [ {
+                  "type" : "Union",
+                  "operand" : [ {
+                     "name" : "Abnormal TSH Labs",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "name" : "Abnormal FT4 Labs",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "type" : "Union",
+                  "operand" : [ {
+                     "name" : "Abnormal Anti-Thyroglobulin Labs",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "name" : "Abnormal Anti-Thyroperoxidase Labs",
+                     "type" : "ExpressionRef"
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "Thyroid altering medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                  "codeProperty" : "medication",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Thyroid-Altering Medications",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Other thyroid diseases",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Other Thyroid Diseases Diagnosis",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "First hypothyroidism diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Hypothyroidism Diagnosis",
+                     "type" : "ValueSetRef"
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Radiation therapy before hypothyroidism diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "P",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Procedure",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Radiation Therapy Procedures",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Before",
+                  "operand" : [ {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "P",
+                        "type" : "AliasRef"
+                     } ]
+                  }, {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "First hypothyroidism diagnosis",
+                        "type" : "ExpressionRef"
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Post surgical or post-radiation hypothyroidism",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Exists",
+                  "operand" : {
+                     "name" : "Radiation therapy before hypothyroidism diagnosis",
+                     "type" : "ExpressionRef"
+                  }
+               }, {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Procedure",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Thyroidectomy Procedures",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Secondary causes of hypothyroidism",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Secondary Hypothyroidism Diagnoses",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Date of earliest lab or med",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "Abnormal TSH or FT4 Labs",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "Thyroid replacement medication use",
+                           "type" : "ExpressionRef"
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Date of latest lab or med",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Latest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "Abnormal TSH or FT4 Labs",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "Thyroid replacement medication use",
+                           "type" : "ExpressionRef"
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Has sufficient time between labs and meds",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "operand" : [ {
+                  "type" : "Coalesce",
+                  "operand" : [ {
+                     "precision" : "Month",
+                     "type" : "DurationBetween",
+                     "operand" : [ {
+                        "name" : "Date of earliest lab or med",
+                        "type" : "ExpressionRef"
+                     }, {
+                        "name" : "Date of latest lab or med",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  } ]
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "3",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "Has thyroid replacement medication use",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "name" : "Thyroid replacement medication use",
+                  "type" : "ExpressionRef"
+               }
+            }
+         }, {
+            "name" : "Has abnormal TSH or FT4 lab",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "name" : "Abnormal TSH or FT4 Labs",
+                  "type" : "ExpressionRef"
+               }
+            }
+         }, {
+            "name" : "Has hypothyroidism diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Hypothyroidism Diagnosis",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Pregnancy Exclusion",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "name" : "C",
+                              "type" : "AliasRef"
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ChoiceTypeSpecifier",
+                              "choice" : [ {
+                                 "name" : "{http://hl7.org/fhir}Observation",
+                                 "type" : "NamedTypeSpecifier"
+                              }, {
+                                 "name" : "{http://hl7.org/fhir}MedicationRequest",
+                                 "type" : "NamedTypeSpecifier"
+                              }, {
+                                 "name" : "{http://hl7.org/fhir}Condition",
+                                 "type" : "NamedTypeSpecifier"
+                              } ]
+                           }
+                        } ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "name" : "Has hypothyroidism diagnosis",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "Has abnormal TSH or FT4 lab",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "name" : "Has thyroid replacement medication use",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "name" : "Has sufficient time between labs and meds",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "type" : "Not",
+                  "operand" : {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Or",
+                           "operand" : [ {
+                              "name" : "Secondary causes of hypothyroidism",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Post surgical or post-radiation hypothyroidism",
+                              "type" : "ExpressionRef"
+                           } ]
+                        }, {
+                           "name" : "Other thyroid diseases",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "name" : "Thyroid altering medication",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

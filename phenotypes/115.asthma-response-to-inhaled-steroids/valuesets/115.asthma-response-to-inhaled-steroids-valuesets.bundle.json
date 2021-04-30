@@ -1,0 +1,778 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.asthma-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.asthma-dx",
+        "name": "Asthma Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "493.21",
+                  "display": "Chronic obstructive asthma with status asthmaticus"
+                },
+                {
+                  "code": "493",
+                  "display": "Asthma"
+                },
+                {
+                  "code": "493.90",
+                  "display": "Asthma, unspecified type, unspecified"
+                },
+                {
+                  "code": "493.92",
+                  "display": "Asthma, unspecified type, with (acute) exacerbation"
+                },
+                {
+                  "code": "493.00",
+                  "display": "Extrinsic asthma, unspecified"
+                },
+                {
+                  "code": "493.01",
+                  "display": "Extrinsic asthma with status asthmaticus"
+                },
+                {
+                  "code": "493.10",
+                  "display": "Intrinsic asthma, unspecified"
+                },
+                {
+                  "code": "493.81",
+                  "display": "Exercise induced bronchospasm"
+                },
+                {
+                  "code": "493.9",
+                  "display": "Asthma, unspecified"
+                },
+                {
+                  "code": "493.2",
+                  "display": "Chronic obstructive asthma"
+                },
+                {
+                  "code": "493.8",
+                  "display": "Other forms of asthma"
+                },
+                {
+                  "code": "493.02",
+                  "display": "Extrinsic asthma with (acute) exacerbation"
+                },
+                {
+                  "code": "493.1",
+                  "display": "Intrinsic asthma"
+                },
+                {
+                  "code": "493.20",
+                  "display": "Chronic obstructive asthma, unspecified"
+                },
+                {
+                  "code": "493.0",
+                  "display": "Extrinsic asthma"
+                },
+                {
+                  "code": "493.91",
+                  "display": "Asthma, unspecified type, with status asthmaticus"
+                },
+                {
+                  "code": "493.82",
+                  "display": "Cough variant asthma"
+                },
+                {
+                  "code": "493.11",
+                  "display": "Intrinsic asthma with status asthmaticus"
+                },
+                {
+                  "code": "493.12",
+                  "display": "Intrinsic asthma with (acute) exacerbation"
+                },
+                {
+                  "code": "493.22",
+                  "display": "Chronic obstructive asthma with (acute) exacerbation"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.asthma-exclusionary-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.asthma-exclusionary-dx",
+        "name": "Asthma ICS Exclusionary Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "277.02",
+                  "display": "Cystic fibrosis with pulmonary manifestations"
+                },
+                {
+                  "code": "277.00",
+                  "display": "Cystic fibrosis without mention of meconium ileus"
+                },
+                {
+                  "code": "277.01",
+                  "display": "Cystic fibrosis with meconium ileus"
+                },
+                {
+                  "code": "297",
+                  "display": "Paranoid states (Delusional disorders)"
+                },
+                {
+                  "code": "297.8",
+                  "display": "Other specified paranoid states"
+                },
+                {
+                  "code": "297.0",
+                  "display": "Paranoid state, simple"
+                },
+                {
+                  "code": "297.1",
+                  "display": "Delusional disorder"
+                },
+                {
+                  "code": "297.2",
+                  "display": "Paraphrenia"
+                },
+                {
+                  "code": "297.3",
+                  "display": "Shared psychotic disorder"
+                },
+                {
+                  "code": "297.9",
+                  "display": "Unspecified paranoid state"
+                },
+                {
+                  "code": "494.1",
+                  "display": "Bronchiectasis with acute exacerbation"
+                },
+                {
+                  "code": "494.0",
+                  "display": "Bronchiectasis without acute exacerbation"
+                },
+                {
+                  "code": "331",
+                  "display": "Other cerebral degenerations"
+                },
+                {
+                  "code": "317",
+                  "display": "Mild intellectual disabilities"
+                },
+                {
+                  "code": "318",
+                  "display": "Other specified intellectual disabilities"
+                },
+                {
+                  "code": "319",
+                  "display": "Unspecified intellectual disabilities"
+                },
+                {
+                  "code": "429.1",
+                  "display": "Myocardial degeneration"
+                },
+                {
+                  "code": "428.21",
+                  "display": "Acute systolic heart failure"
+                },
+                {
+                  "code": "428.42",
+                  "display": "Chronic combined systolic and diastolic heart failure"
+                },
+                {
+                  "code": "429.6",
+                  "display": "Rupture of papillary muscle"
+                },
+                {
+                  "code": "428.43",
+                  "display": "Acute on chronic combined systolic and diastolic heart failure"
+                },
+                {
+                  "code": "429.71",
+                  "display": "Acquired cardiac septal defect"
+                },
+                {
+                  "code": "428.31",
+                  "display": "Acute diastolic heart failure"
+                },
+                {
+                  "code": "429.5",
+                  "display": "Rupture of chordae tendineae"
+                },
+                {
+                  "code": "428.0",
+                  "display": "Congestive heart failure, unspecified"
+                },
+                {
+                  "code": "429.79",
+                  "display": "Certain sequelae of myocardial infarction, not elsewhere classified, other"
+                },
+                {
+                  "code": "428.1",
+                  "display": "Left heart failure"
+                },
+                {
+                  "code": "428.41",
+                  "display": "Acute combined systolic and diastolic heart failure"
+                },
+                {
+                  "code": "428.9",
+                  "display": "Heart failure, unspecified"
+                },
+                {
+                  "code": "429.3",
+                  "display": "Cardiomegaly"
+                },
+                {
+                  "code": "428.20",
+                  "display": "Systolic heart failure, unspecified"
+                },
+                {
+                  "code": "429.2",
+                  "display": "Cardiovascular disease, unspecified"
+                },
+                {
+                  "code": "428.22",
+                  "display": "Chronic systolic heart failure"
+                },
+                {
+                  "code": "428.3",
+                  "display": "Diastolic heart failure"
+                },
+                {
+                  "code": "428.30",
+                  "display": "Diastolic heart failure, unspecified"
+                },
+                {
+                  "code": "429.83",
+                  "display": "Takotsubo syndrome"
+                },
+                {
+                  "code": "428.40",
+                  "display": "Combined systolic and diastolic heart failure, unspecified"
+                },
+                {
+                  "code": "429.8",
+                  "display": "Other ill-defined heart diseases"
+                },
+                {
+                  "code": "429.81",
+                  "display": "Other disorders of papillary muscle"
+                },
+                {
+                  "code": "428.23",
+                  "display": "Acute on chronic systolic heart failure"
+                },
+                {
+                  "code": "428.4",
+                  "display": "Combined systolic and diastolic heart failure"
+                },
+                {
+                  "code": "429.4",
+                  "display": "Functional disturbances following cardiac surgery"
+                },
+                {
+                  "code": "428.2",
+                  "display": "Systolic heart failure"
+                },
+                {
+                  "code": "429.7",
+                  "display": "Certain sequelae of myocardial infarction, not elsewhere classified"
+                },
+                {
+                  "code": "429.82",
+                  "display": "Hyperkinetic heart disease"
+                },
+                {
+                  "code": "428.32",
+                  "display": "Chronic diastolic heart failure"
+                },
+                {
+                  "code": "428.33",
+                  "display": "Acute on chronic diastolic heart failure"
+                },
+                {
+                  "code": "429.89",
+                  "display": "Other ill-defined heart diseases"
+                },
+                {
+                  "code": "429.0",
+                  "display": "Myocarditis, unspecified"
+                },
+                {
+                  "code": "429.9",
+                  "display": "Heart disease, unspecified"
+                },
+                {
+                  "code": "415.12",
+                  "display": "Septic pulmonary embolism"
+                },
+                {
+                  "code": "415.19",
+                  "display": "Other pulmonary embolism and infarction"
+                },
+                {
+                  "code": "415.11",
+                  "display": "Iatrogenic pulmonary embolism and infarction"
+                },
+                {
+                  "code": "415.13",
+                  "display": "Saddle embolus of pulmonary artery"
+                },
+                {
+                  "code": "416.2",
+                  "display": "Chronic pulmonary embolism"
+                },
+                {
+                  "code": "416.0",
+                  "display": "Primary pulmonary hypertension"
+                },
+                {
+                  "code": "416.8",
+                  "display": "Other chronic pulmonary heart diseases"
+                },
+                {
+                  "code": "416.1",
+                  "display": "Kyphoscoliotic heart disease"
+                },
+                {
+                  "code": "417.9",
+                  "display": "Unspecified disease of pulmonary circulation"
+                },
+                {
+                  "code": "417.8",
+                  "display": "Other specified diseases of pulmonary circulation"
+                },
+                {
+                  "code": "417.0",
+                  "display": "Arteriovenous fistula of pulmonary vessels"
+                },
+                {
+                  "code": "417",
+                  "display": "Other diseases of pulmonary circulation"
+                },
+                {
+                  "code": "417.1",
+                  "display": "Aneurysm of pulmonary artery"
+                },
+                {
+                  "code": "496",
+                  "display": "Chronic airway obstruction, not elsewhere classified"
+                },
+                {
+                  "code": "710.0",
+                  "display": "Systemic lupus erythematosus"
+                },
+                {
+                  "code": "714.0",
+                  "display": "Rheumatoid arthritis"
+                },
+                {
+                  "code": "511.1",
+                  "display": "Pleurisy with effusion, with mention of a bacterial cause other than tuberculosis"
+                },
+                {
+                  "code": "162",
+                  "display": "Malignant neoplasm of trachea, bronchus, and lung"
+                },
+                {
+                  "code": "162.3",
+                  "display": "Malignant neoplasm of upper lobe, bronchus or lung"
+                },
+                {
+                  "code": "162.8",
+                  "display": "Malignant neoplasm of other parts of bronchus or lung"
+                },
+                {
+                  "code": "162.0",
+                  "display": "Malignant neoplasm of trachea"
+                },
+                {
+                  "code": "162.9",
+                  "display": "Malignant neoplasm of bronchus and lung, unspecified"
+                },
+                {
+                  "code": "162.2",
+                  "display": "Malignant neoplasm of main bronchus"
+                },
+                {
+                  "code": "162.5",
+                  "display": "Malignant neoplasm of lower lobe, bronchus or lung"
+                },
+                {
+                  "code": "162.4",
+                  "display": "Malignant neoplasm of middle lobe, bronchus or lung"
+                },
+                {
+                  "code": "135",
+                  "display": "Sarcoidosis"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.asthma-meds-no-nasal",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.asthma-meds-no-nasal",
+        "name": "Asthma Medications (Exclude Nasal Route)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "1347",
+                  "display": "Beclomethasone"
+                },
+                {
+                  "code": "202380",
+                  "display": "Beclovent"
+                },
+                {
+                  "code": "226084",
+                  "display": "Qvar"
+                },
+                {
+                  "code": "226654",
+                  "display": "Qvar"
+                },
+                {
+                  "code": "202382",
+                  "display": "Vanceril"
+                },
+                {
+                  "code": "19831",
+                  "display": "Budesonide"
+                },
+                {
+                  "code": "196487",
+                  "display": "Pulmicort"
+                },
+                {
+                  "code": "274964",
+                  "display": "ciclesonide"
+                },
+                {
+                  "code": "356739",
+                  "display": "Alvesco"
+                },
+                {
+                  "code": "25120",
+                  "display": "flunisolide"
+                },
+                {
+                  "code": "215045",
+                  "display": "AeroBid"
+                },
+                {
+                  "code": "41126",
+                  "display": "fluticasone"
+                },
+                {
+                  "code": "723628",
+                  "display": "Flovent Diskus"
+                },
+                {
+                  "code": "352650",
+                  "display": "Flovent HFA"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.asthma-meds-any-route",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.asthma-meds-any-route",
+        "name": "Asthma Medications (Any Route)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "103955",
+                  "display": "Terfenadine 60 MG Oral Tablet [Terfinax]"
+                },
+                {
+                  "code": "327148",
+                  "display": "Symbicort"
+                },
+                {
+                  "code": "643325",
+                  "display": "Advair HFA"
+                },
+                {
+                  "code": "284649",
+                  "display": "Advair Diskus"
+                },
+                {
+                  "code": "1372704",
+                  "display": "Dulera"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.asthma-meds-exclude-nasal-topical",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.asthma-meds-exclude-nasal-topical",
+        "name": "Asthma Medications (Exclude Nasal and Topical)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "108118",
+                  "display": "Mometasone"
+                },
+                {
+                  "code": "616812",
+                  "display": "Asmanex"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.asthma-meds-required-routes",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.asthma-meds-required-routes",
+        "name": "Asthma Medications (Require Inhaled, Topical, IV, Intraarticual, IM, Nasal)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "202878",
+                  "display": "Azmacort"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.corticosteroid-medications-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.corticosteroid-medications-meds",
+        "name": "Corticosteroid Medications",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "2878",
+                  "display": "Cortisone"
+                },
+                {
+                  "code": "21655",
+                  "display": "cortisone acetate"
+                },
+                {
+                  "code": "5492",
+                  "display": "Hydrocortisone"
+                },
+                {
+                  "code": "235482",
+                  "display": "Hydrocortisone sodium phosphate"
+                },
+                {
+                  "code": "235483",
+                  "display": "Hydrocortisone sodium succinate"
+                },
+                {
+                  "code": "27197",
+                  "display": "hydrocortisone acetate"
+                },
+                {
+                  "code": "163524",
+                  "display": "hydrocortisone cypionate"
+                },
+                {
+                  "code": "8640",
+                  "display": "Prednisone"
+                },
+                {
+                  "code": "8638",
+                  "display": "prednisolone"
+                },
+                {
+                  "code": "55062",
+                  "display": "Prednisolone sodium phosphate"
+                },
+                {
+                  "code": "6902",
+                  "display": "Methylprednisolone"
+                },
+                {
+                  "code": "203189",
+                  "display": "Methylprednisolone Sodium Succinate"
+                },
+                {
+                  "code": "665792",
+                  "display": "methylprednisolone sodium succinate"
+                },
+                {
+                  "code": "155323",
+                  "display": "methylprednisolone acetate"
+                },
+                {
+                  "code": "10759",
+                  "display": "Triamcinolone"
+                },
+                {
+                  "code": "10761",
+                  "display": "Triamcinolone Acetonide"
+                },
+                {
+                  "code": "10762",
+                  "display": "triamcinolone diacetate"
+                },
+                {
+                  "code": "38546",
+                  "display": "triamcinolone hexacetonide"
+                },
+                {
+                  "code": "3264",
+                  "display": "Dexamethasone"
+                },
+                {
+                  "code": "22690",
+                  "display": "dexamethasone acetate"
+                },
+                {
+                  "code": "48933",
+                  "display": "Dexamethasone sodium phosphate"
+                },
+                {
+                  "code": "1514",
+                  "display": "Betamethasone"
+                },
+                {
+                  "code": "203220",
+                  "display": "betamethasone sodium phosphate"
+                },
+                {
+                  "code": "1516",
+                  "display": "Betamethasone acetate"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "115.acute-exacerbation-or-wheezing-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/115.acute-exacerbation-or-wheezing-dx",
+        "name": "Acute Exacerbation Or Wheezing Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "786.07",
+                  "display": "Wheezing"
+                },
+                {
+                  "code": "493.02",
+                  "display": "Extrinsic asthma with (acute) exacerbation"
+                },
+                {
+                  "code": "493.12",
+                  "display": "Intrinsic asthma with (acute) exacerbation"
+                },
+                {
+                  "code": "493.22",
+                  "display": "Chronic obstructive asthma with (acute) exacerbation"
+                },
+                {
+                  "code": "493.92",
+                  "display": "Asthma, unspecified type, with (acute) exacerbation"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

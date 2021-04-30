@@ -1,0 +1,49 @@
+---
+name: 001 Systemic Lupus Erythematosus Case
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # 3 Dx codes
+  - resourceType: Condition
+    code: ICD9#710.0 Systemic lupus erythematosus
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#710.0 Systemic lupus erythematosus
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#710.0 Systemic lupus erythematosus
+    onsetDateTime: "2009-12-12T16:00:00.000Z"
+
+  # ANA
+  - resourceType: Observation
+    code: LOINC#5048-4 Nuclear Ab [Titer] in Serum by Immunofluorescence
+    valueRatio:
+      numerator: 1
+      denominator: 39
+    effectiveDateTime: "2007-06-01T07:00:00.000Z" 
+
+  # DMAD
+  - resourceType: MedicationRequest
+    code: RXNORM#226754 Rituxan
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+  # Steroids
+  - resourceType: MedicationRequest
+    code: RXNORM#21655 cortisone acetate
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+results:
+  Has Three Or More SLE Diagnoses: true
+  Has Positive ANA: true
+  Has DMARD: true
+  Has Steroids: true
+  Has Exclusion Diagnosis: false
+  Case: true

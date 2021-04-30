@@ -1,0 +1,45 @@
+---
+name: 003 Drug Induced Liver Injury Case - Bilirubin 2x ULN and ALT 3x ULN
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+  - resourceType: MedicationRequest
+    code: RXNORM#149 acebutolol
+    authoredOn: "2000-01-01T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9#277.4 Disorders of bilirubin excretion
+    onsetDateTime: "2000-03-01T16:00:00.000Z"
+
+  # Bilirubin 2x ULN within 6mo after medications
+  - resourceType: Observation
+    code: LOINC#35194-0 Bilirubin.total [Mass or Moles/volume] in Serum or Plasma
+    valueQuantity: 81 umol/L
+    effectiveDateTime: "2000-06-01T07:00:00.000Z"
+
+  # ALT 3x ULN within 6mo after medications
+  - resourceType: Observation
+    code: LOINC#1742-6 Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+    valueQuantity: 136 U/L
+    effectiveDateTime: "2000-06-01T07:00:00.000Z"
+
+results:
+  In Base Population: true
+  Has Acute Liver Injury Diagnosis: true
+  Qualifies As Drug Induced Liver Injury: true
+  Has Disqualifying Chronic Liver Injury: false
+  Has Bilirubin At Least 2x ULN: true
+  Bilirubin At Least 2x ULN Within 1mo Prior Medications: false
+  Medications Index Date: "2000-01-01T16:00:00.000+00:00"
+  Has Drug Exposure In 3 Month Window: true
+  Has Elevated Labs before Drug Exposure: false
+  Has Disqualifying Diagnosis: false
+  Case: true

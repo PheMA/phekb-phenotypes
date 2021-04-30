@@ -1,0 +1,32 @@
+---
+name: 001 BPH Case from meds
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#17300 alfuzosin
+    authoredOn: "2007-11-12T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+  - resourceType: Condition
+    code: ICD9CM#600.0 Hypertrophy (benign) of prostate
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#600.2 Benign localized hyperplasia of prostate
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+results:
+  BPH Medications: true
+  BPH Procedures: false
+  Two Or More BPH Diagnoses: true
+  Has Exclusion Diagnoses: false
+  In Base Population: true
+  Case: true

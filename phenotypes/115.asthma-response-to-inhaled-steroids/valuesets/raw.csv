@@ -1,0 +1,72 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+115.asthma-dx,Asthma Diagnoses,^493.*,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^277\.0[0-2],ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^297.*,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^494\.[0-1],ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,331,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,317,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,318,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,319,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^42[8-9]\.[0-9]*,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^415\.1[1-9],ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^416\.[0-8],ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^417.*,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,496,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,710.0,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,714.0,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,511.1,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,^162.*,ICD9CM
+115.asthma-exclusionary-dx,Asthma ICS Exclusionary Diagnoses,135,ICD9CM
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),beclomethasone,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),beclovent,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),qvar,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),vanceril,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),budesonide,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),budesonide inhaled,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),pulmicort,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),ciclesonide,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),alvesco,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),flunisolide,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),aerobid,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),fluticasone,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),flovent diskus,RxNorm
+115.asthma-meds-no-nasal,Asthma Medications (Exclude Nasal Route),flovent hfa,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),103955,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),symbicort,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),vannair,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),104676,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),advair hfa,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),advair diskus,RxNorm
+115.asthma-meds-any-route,Asthma Medications (Any Route),dulera,RxNorm
+115.asthma-meds-exclude-nasal-topical,Asthma Medications (Exclude Nasal and Topical),mometasone,RxNorm
+115.asthma-meds-exclude-nasal-topical,Asthma Medications (Exclude Nasal and Topical),asmanex,RxNorm
+115.asthma-meds-required-routes,"Asthma Medications (Require Inhaled, Topical, IV, Intraarticual, IM, Nasal)",ariamcinolone,RxNorm
+115.asthma-meds-required-routes,"Asthma Medications (Require Inhaled, Topical, IV, Intraarticual, IM, Nasal)",azmacort,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,cortisone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,cortisone acetate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,hydrocortisone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,hydrocortisone sodium phosphate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,hydrocortisone sodium succinate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,hydrocortisone acetate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,hydrocortisone cypionate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,prednisone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,prednisolone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,prednisolone sodium phosphate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,methylprednisolone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,methylprednisolone sodium succinate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,methylprednisolone acetate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,triamcinolone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,triamcinolone acetonide,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,triamcinolone diacetate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,triamcinolone hexacetonide,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,dexamethasone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,dexamethasone acetate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,dexamethasone sodium phosphate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,betamethasone,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,betamethasone sodium phosphate,RxNorm
+115.corticosteroid-medications-meds,Corticosteroid Medications,betamethasone acetate,RxNorm
+115.acute-exacerbation-or-wheezing-dx,Acute Exacerbation Or Wheezing Diagnoses,786.07,ICD9CM
+115.acute-exacerbation-or-wheezing-dx,Acute Exacerbation Or Wheezing Diagnoses,493.02,ICD9CM
+115.acute-exacerbation-or-wheezing-dx,Acute Exacerbation Or Wheezing Diagnoses,493.12,ICD9CM
+115.acute-exacerbation-or-wheezing-dx,Acute Exacerbation Or Wheezing Diagnoses,493.22,ICD9CM
+115.acute-exacerbation-or-wheezing-dx,Acute Exacerbation Or Wheezing Diagnoses,493.92,ICD9CM

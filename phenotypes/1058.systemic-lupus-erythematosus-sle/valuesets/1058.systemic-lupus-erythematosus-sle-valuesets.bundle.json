@@ -1,0 +1,316 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1058.sle-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1058.sle-diagnoses",
+        "name": "System Lupus Erythematosus diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "710.0",
+                  "display": "Systemic lupus erythematosus"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1058.ana-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1058.ana-labs",
+        "name": "Anti-Nuclear Antibody Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "5048-4",
+                  "display": "Nuclear Ab [Titer] in Serum by Immunofluorescence"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1058.dmard-drugs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1058.dmard-drugs",
+        "name": "Disease Modifying Antirheumatic Drugs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "1256",
+                  "display": "Azathioprine"
+                },
+                {
+                  "code": "202559",
+                  "display": "Imuran"
+                },
+                {
+                  "code": "287734",
+                  "display": "Methotrexate Sodium"
+                },
+                {
+                  "code": "6851",
+                  "display": "Methotrexate"
+                },
+                {
+                  "code": "284900",
+                  "display": "Trexall"
+                },
+                {
+                  "code": "68149",
+                  "display": "mycophenolate mofetil"
+                },
+                {
+                  "code": "152633",
+                  "display": "Cellcept"
+                },
+                {
+                  "code": "7145",
+                  "display": "Mycophenolic Acid"
+                },
+                {
+                  "code": "485017",
+                  "display": "Mycophenolic Acid"
+                },
+                {
+                  "code": "579570",
+                  "display": "Myfortic"
+                },
+                {
+                  "code": "3002",
+                  "display": "Cyclophosphamide"
+                },
+                {
+                  "code": "202589",
+                  "display": "Cytoxan"
+                },
+                {
+                  "code": "121191",
+                  "display": "rituximab"
+                },
+                {
+                  "code": "226754",
+                  "display": "Rituxan"
+                },
+                {
+                  "code": "214555",
+                  "display": "Etanercept"
+                },
+                {
+                  "code": "216891",
+                  "display": "Enbrel"
+                },
+                {
+                  "code": "327361",
+                  "display": "adalimumab"
+                },
+                {
+                  "code": "353484",
+                  "display": "Humira"
+                },
+                {
+                  "code": "191831",
+                  "display": "infliximab"
+                },
+                {
+                  "code": "219610",
+                  "display": "Remicade"
+                },
+                {
+                  "code": "614391",
+                  "display": "abatacept"
+                },
+                {
+                  "code": "607377",
+                  "display": "Abatacept"
+                },
+                {
+                  "code": "616011",
+                  "display": "Orencia"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1058.corticosteroids",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1058.corticosteroids",
+        "name": "Corticosteroids",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "21655",
+                  "display": "cortisone acetate"
+                },
+                {
+                  "code": "5492",
+                  "display": "Hydrocortisone"
+                },
+                {
+                  "code": "202645",
+                  "display": "Cortef"
+                },
+                {
+                  "code": "8640",
+                  "display": "Prednisone"
+                },
+                {
+                  "code": "3264",
+                  "display": "Dexamethasone"
+                },
+                {
+                  "code": "216523",
+                  "display": "Dexamethasone Intensol"
+                },
+                {
+                  "code": "227682",
+                  "display": "Decadron"
+                },
+                {
+                  "code": "55062",
+                  "display": "Prednisolone sodium phosphate"
+                },
+                {
+                  "code": "219136",
+                  "display": "Pediapred"
+                },
+                {
+                  "code": "582600",
+                  "display": "Prednisone Intensol"
+                },
+                {
+                  "code": "6902",
+                  "display": "Methylprednisolone"
+                },
+                {
+                  "code": "202702",
+                  "display": "Medrol"
+                },
+                {
+                  "code": "93263",
+                  "display": "Medrol Dosepak"
+                },
+                {
+                  "code": "8638",
+                  "display": "prednisolone"
+                },
+                {
+                  "code": "285077",
+                  "display": "Orapred"
+                },
+                {
+                  "code": "219356",
+                  "display": "Prelone"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1058.systemic-sclerosis-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1058.systemic-sclerosis-diagnoses",
+        "name": "Systemic Sclerosis Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "710.1",
+                  "display": "Systemic sclerosis"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1058.dermatomyositis-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1058.dermatomyositis-diagnoses",
+        "name": "Dermatomyositis Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "710.3",
+                  "display": "Dermatomyositis"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

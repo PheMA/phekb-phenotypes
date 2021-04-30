@@ -1,0 +1,13 @@
+---
+name: 003 Autism NOT Case - no diagnosis
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Has Autism Diagnosis: false
+  Has Autism Exclusion Diagnosis: false
+  Case: false

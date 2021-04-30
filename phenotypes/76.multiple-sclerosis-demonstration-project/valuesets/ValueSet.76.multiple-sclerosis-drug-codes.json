@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "76.multiple-sclerosis-drug-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/76.multiple-sclerosis-drug-codes",
+  "status": "active",
+  "name": "Multiple Sclerosis Drugs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "75917",
+            "display": "interferon beta-1a"
+          },
+          {
+            "code": "72257",
+            "display": "interferon beta-1b"
+          },
+          {
+            "code": "214582",
+            "display": "glatiramer"
+          },
+          {
+            "code": "354770",
+            "display": "natalizumab"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "19.white-blood-cell-labs",
+  "url": "https://workbench.phema.science/fhir/ValueSet/19.white-blood-cell-labs",
+  "status": "active",
+  "name": "White Blood Cell Labs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "770-8",
+            "display": "Neutrophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "26508-2",
+            "display": "Band form neutrophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "736-9",
+            "display": "Lymphocytes/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "5905-5",
+            "display": "Monocytes/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "713-8",
+            "display": "Eosinophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "706-2",
+            "display": "Basophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "32623-1",
+            "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+          }
+        ]
+      }
+    ]
+  }
+}

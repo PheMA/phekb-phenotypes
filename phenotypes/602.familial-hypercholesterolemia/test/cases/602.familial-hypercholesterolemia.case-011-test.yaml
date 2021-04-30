@@ -1,0 +1,34 @@
+---
+name: 011 Familial Hypercholesterolemia NOT Case - lipid level too low
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # Two LDL values to make sure we're getting the right index date
+  - resourceType: Observation
+    code: LOINC#2089-1 Cholesterol in LDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 120 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2089-1 Cholesterol in LDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 91 mg/dL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+results:
+  In Base Population: true
+  Has Lipid Profile: true
+  Has High Triglycerides: false
+  Has Secondary Cause Of Hypercholesterolemia: false
+  Has Lipid Lowering Treatment In Interval: false
+  Index Date: '2007-06-01T07:00:00.000+00:00'
+  Stage I: false
+  Has Premature CHD: false
+  Has Premature CVD Or PAD: false
+  Group I: 0
+  Group II: 0
+  Stage II: 0
+  Case: false

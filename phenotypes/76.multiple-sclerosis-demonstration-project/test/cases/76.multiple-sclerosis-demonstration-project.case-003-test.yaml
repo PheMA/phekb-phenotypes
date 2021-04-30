@@ -1,0 +1,20 @@
+---
+name: 003 Multiple Sclerosis Case from other dx and meds
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#75917 interferon beta-1a
+
+  - resourceType: Condition
+    code: ICD9#341.9 Demyelinating disease of the central nervous system unspecified
+
+results:
+  Has Multiple Sclerosis Diagnosis: false
+  Has Other Diagnoses: true
+  Has Medications: true
+  Case: true

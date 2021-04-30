@@ -1,0 +1,1097 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "115.asthma-response-to-inhaled-steroids",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         }, {
+            "localIdentifier" : "PhEMAMedications",
+            "path" : "PhEMAMedications",
+            "version" : "1.0.0"
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "name" : "ActEncounterCode",
+            "id" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Asthma Diagnoses",
+            "id" : "115.asthma-dx",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Asthma ICS Exclusionary Diagnoses",
+            "id" : "115.asthma-exclusionary-dx",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Asthma Medications (Any Route)",
+            "id" : "115.asthma-meds-any-route",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Asthma Medications (Exclude Nasal Route)",
+            "id" : "115.asthma-meds-no-nasal",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Asthma Medications (Exclude Nasal and Topical)",
+            "id" : "115.asthma-meds-exclude-nasal-topical",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Asthma Medications (Require Inhaled, Topical, IV, Intraarticual, IM, Nasal)",
+            "id" : "115.asthma-meds-required-routes",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Corticosteroid Medications",
+            "id" : "115.corticosteroid-medications-meds",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Acute Exacerbation Or Wheezing Diagnoses",
+            "id" : "115.acute-exacerbation-or-wheezing-dx",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "name" : "Inpatient Encounter",
+            "id" : "IMP",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "name" : "ActEncounterCode"
+            }
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Correct Age",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "In",
+               "operand" : [ {
+                  "precision" : "Year",
+                  "type" : "CalculateAgeAt",
+                  "operand" : [ {
+                     "type" : "ToDateTime",
+                     "operand" : {
+                        "path" : "birthDate.value",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "Patient",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  }, {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "dx",
+                        "type" : "OperandRef"
+                     } ]
+                  } ]
+               }, {
+                  "lowClosed" : true,
+                  "highClosed" : true,
+                  "type" : "Interval",
+                  "low" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "4",
+                     "type" : "Literal"
+                  },
+                  "high" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "35",
+                     "type" : "Literal"
+                  }
+               } ]
+            },
+            "operand" : [ {
+               "name" : "dx",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}Condition",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Correct Age",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "In",
+               "operand" : [ {
+                  "precision" : "Year",
+                  "type" : "CalculateAgeAt",
+                  "operand" : [ {
+                     "type" : "ToDateTime",
+                     "operand" : {
+                        "path" : "birthDate.value",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "Patient",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  }, {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "med",
+                        "type" : "OperandRef"
+                     } ]
+                  } ]
+               }, {
+                  "lowClosed" : true,
+                  "highClosed" : true,
+                  "type" : "Interval",
+                  "low" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "4",
+                     "type" : "Literal"
+                  },
+                  "high" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "35",
+                     "type" : "Literal"
+                  }
+               } ]
+            },
+            "operand" : [ {
+               "name" : "med",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}MedicationRequest",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Has Qualifying Asthma Diagnoses",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C1",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Asthma Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "Exists",
+                        "operand" : {
+                           "type" : "Query",
+                           "source" : [ {
+                              "alias" : "C2",
+                              "expression" : {
+                                 "dataType" : "{http://hl7.org/fhir}Condition",
+                                 "codeProperty" : "code",
+                                 "codeComparator" : "in",
+                                 "type" : "Retrieve",
+                                 "codes" : {
+                                    "name" : "Asthma Diagnoses",
+                                    "type" : "ValueSetRef"
+                                 }
+                              }
+                           } ],
+                           "relationship" : [ ],
+                           "where" : {
+                              "type" : "And",
+                              "operand" : [ {
+                                 "type" : "Not",
+                                 "operand" : {
+                                    "type" : "Equal",
+                                    "operand" : [ {
+                                       "type" : "ToDate",
+                                       "operand" : {
+                                          "name" : "Effective Date",
+                                          "libraryName" : "PhEMAHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "name" : "C1",
+                                             "type" : "AliasRef"
+                                          } ]
+                                       }
+                                    }, {
+                                       "type" : "ToDate",
+                                       "operand" : {
+                                          "name" : "Effective Date",
+                                          "libraryName" : "PhEMAHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "name" : "C2",
+                                             "type" : "AliasRef"
+                                          } ]
+                                       }
+                                    } ]
+                                 }
+                              }, {
+                                 "name" : "Correct Age",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "name" : "C2",
+                                    "type" : "AliasRef"
+                                 } ]
+                              } ]
+                           }
+                        }
+                     }, {
+                        "name" : "Correct Age",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "C1",
+                           "type" : "AliasRef"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Exclusionary Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Asthma ICS Exclusionary Diagnoses",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Qualifying Any Route Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "M",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Asthma Medications (Any Route)",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "name" : "Correct Age",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "M",
+                        "type" : "AliasRef"
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Qualifying Non-Nasal Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "M",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Asthma Medications (Exclude Nasal Route)",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "name" : "Correct Age",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        } ]
+                     }, {
+                        "name" : "Medication Does Not Have Route",
+                        "libraryName" : "PhEMAMedications",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        }, {
+                           "name" : "Nasal use",
+                           "libraryName" : "PhEMAMedications",
+                           "type" : "CodeRef"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Qualifying Non-Nasal, Non-Topical Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "M",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Asthma Medications (Exclude Nasal and Topical)",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "name" : "Correct Age",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "M",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "name" : "Medication Does Not Have Route",
+                           "libraryName" : "PhEMAMedications",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "M",
+                              "type" : "AliasRef"
+                           }, {
+                              "name" : "Nasal use",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           } ]
+                        } ]
+                     }, {
+                        "name" : "Medication Does Not Have Route",
+                        "libraryName" : "PhEMAMedications",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        }, {
+                           "name" : "Topical route",
+                           "libraryName" : "PhEMAMedications",
+                           "type" : "CodeRef"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Qualifying Required Route Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "M",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Asthma Medications (Require Inhaled, Topical, IV, Intraarticual, IM, Nasal)",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "name" : "Correct Age",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        } ]
+                     }, {
+                        "name" : "Medication Has Any Route",
+                        "libraryName" : "PhEMAMedications",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        }, {
+                           "type" : "List",
+                           "element" : [ {
+                              "name" : "Respiratory tract route (Inhaled)",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           }, {
+                              "name" : "Topical route",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           }, {
+                              "name" : "Intravenous use (IV)",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           }, {
+                              "name" : "Intra-articular route",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           }, {
+                              "name" : "Intramuscular use (IM)",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           }, {
+                              "name" : "Nasal use",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "CodeRef"
+                           } ]
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Qualifying Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Or",
+                  "operand" : [ {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "name" : "Has Qualifying Any Route Medication",
+                        "type" : "ExpressionRef"
+                     }, {
+                        "name" : "Has Qualifying Non-Nasal Medication",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "name" : "Has Qualifying Non-Nasal, Non-Topical Medication",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "name" : "Has Qualifying Required Route Medication",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Asthma ICS",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "name" : "Has Qualifying Asthma Diagnoses",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Has Exclusionary Diagnosis",
+                        "type" : "ExpressionRef"
+                     }
+                  } ]
+               }, {
+                  "name" : "Has Qualifying Medication",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Exacerbation Or Wheezing During Encounter",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Acute Exacerbation Or Wheezing Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "If",
+                     "condition" : {
+                        "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                        "type" : "As",
+                        "operand" : {
+                           "type" : "IsNull",
+                           "operand" : {
+                              "path" : "end",
+                              "type" : "Property",
+                              "source" : {
+                                 "path" : "period",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "enc",
+                                    "type" : "OperandRef"
+                                 }
+                              }
+                           }
+                        }
+                     },
+                     "then" : {
+                        "type" : "After",
+                        "operand" : [ {
+                           "name" : "ToDateTime",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "onset",
+                                 "scope" : "C",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "name" : "ToDateTime",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "path" : "start",
+                              "type" : "Property",
+                              "source" : {
+                                 "path" : "period",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "enc",
+                                    "type" : "OperandRef"
+                                 }
+                              }
+                           } ]
+                        } ]
+                     },
+                     "else" : {
+                        "type" : "And",
+                        "operand" : [ {
+                           "type" : "After",
+                           "operand" : [ {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "onset",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "path" : "start",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "path" : "period",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "enc",
+                                       "type" : "OperandRef"
+                                    }
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Before",
+                           "operand" : [ {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "onset",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "path" : "end",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "path" : "period",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "enc",
+                                       "type" : "OperandRef"
+                                    }
+                                 }
+                              } ]
+                           } ]
+                        } ]
+                     }
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "enc",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}Encounter",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "TEST",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "M",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "Retrieve"
+                  }
+               } ],
+               "relationship" : [ ],
+               "return" : {
+                  "expression" : {
+                     "type" : "Tuple",
+                     "element" : [ {
+                        "name" : "med",
+                        "value" : {
+                           "name" : "M",
+                           "type" : "AliasRef"
+                        }
+                     }, {
+                        "name" : "matches",
+                        "value" : {
+                           "name" : "Dose Unit Matches Regex",
+                           "libraryName" : "PhEMAMedications",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "M",
+                              "type" : "AliasRef"
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "mg",
+                              "type" : "Literal"
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Qualifying Steroids During Encounter",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "M",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Corticosteroid Medications",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "type" : "If",
+                           "condition" : {
+                              "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                              "type" : "As",
+                              "operand" : {
+                                 "type" : "IsNull",
+                                 "operand" : {
+                                    "path" : "end",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "path" : "period",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "name" : "enc",
+                                          "type" : "OperandRef"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "then" : {
+                              "type" : "After",
+                              "operand" : [ {
+                                 "name" : "ToDateTime",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "path" : "authoredOn",
+                                    "scope" : "M",
+                                    "type" : "Property"
+                                 } ]
+                              }, {
+                                 "name" : "ToDateTime",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "path" : "start",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "path" : "period",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "name" : "enc",
+                                          "type" : "OperandRef"
+                                       }
+                                    }
+                                 } ]
+                              } ]
+                           },
+                           "else" : {
+                              "type" : "And",
+                              "operand" : [ {
+                                 "type" : "After",
+                                 "operand" : [ {
+                                    "name" : "ToDateTime",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "path" : "authoredOn",
+                                       "scope" : "M",
+                                       "type" : "Property"
+                                    } ]
+                                 }, {
+                                    "name" : "ToDateTime",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "path" : "start",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "path" : "period",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "enc",
+                                             "type" : "OperandRef"
+                                          }
+                                       }
+                                    } ]
+                                 } ]
+                              }, {
+                                 "type" : "Before",
+                                 "operand" : [ {
+                                    "name" : "ToDateTime",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "path" : "authoredOn",
+                                       "scope" : "M",
+                                       "type" : "Property"
+                                    } ]
+                                 }, {
+                                    "name" : "ToDateTime",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "path" : "end",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "path" : "period",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "enc",
+                                             "type" : "OperandRef"
+                                          }
+                                       }
+                                    } ]
+                                 } ]
+                              } ]
+                           }
+                        }, {
+                           "type" : "Not",
+                           "operand" : {
+                              "name" : "Dose Unit Matches Regex",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "M",
+                                 "type" : "AliasRef"
+                              }, {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "%",
+                                 "type" : "Literal"
+                              } ]
+                           }
+                        } ]
+                     }, {
+                        "type" : "And",
+                        "operand" : [ {
+                           "type" : "Or",
+                           "operand" : [ {
+                              "name" : "Medication Has Any Route",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "M",
+                                 "type" : "AliasRef"
+                              }, {
+                                 "type" : "List",
+                                 "element" : [ {
+                                    "name" : "Intravenous use (IV)",
+                                    "libraryName" : "PhEMAMedications",
+                                    "type" : "CodeRef"
+                                 }, {
+                                    "name" : "Intramuscular use (IM)",
+                                    "libraryName" : "PhEMAMedications",
+                                    "type" : "CodeRef"
+                                 }, {
+                                    "name" : "Oral use (PO)",
+                                    "libraryName" : "PhEMAMedications",
+                                    "type" : "CodeRef"
+                                 } ]
+                              } ]
+                           }, {
+                              "name" : "Dose Unit Matches Regex",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "M",
+                                 "type" : "AliasRef"
+                              }, {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "mg",
+                                 "type" : "Literal"
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "And",
+                           "operand" : [ {
+                              "type" : "And",
+                              "operand" : [ {
+                                 "name" : "Medication Does Not Have Route",
+                                 "libraryName" : "PhEMAMedications",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "name" : "M",
+                                    "type" : "AliasRef"
+                                 }, {
+                                    "name" : "Nasal use",
+                                    "libraryName" : "PhEMAMedications",
+                                    "type" : "CodeRef"
+                                 } ]
+                              }, {
+                                 "name" : "Medication Does Not Have Route",
+                                 "libraryName" : "PhEMAMedications",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "name" : "M",
+                                    "type" : "AliasRef"
+                                 }, {
+                                    "name" : "Topical route",
+                                    "libraryName" : "PhEMAMedications",
+                                    "type" : "CodeRef"
+                                 } ]
+                              } ]
+                           }, {
+                              "name" : "Medication Does Not Have Route",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "M",
+                                 "type" : "AliasRef"
+                              }, {
+                                 "name" : "Respiratory tract route (Inhaled)",
+                                 "libraryName" : "PhEMAMedications",
+                                 "type" : "CodeRef"
+                              } ]
+                           } ]
+                        } ]
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "enc",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}Encounter",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Inpatient Hospitalization",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "E",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Encounter",
+                        "codeProperty" : "class",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Inpatient Encounter",
+                              "type" : "CodeRef"
+                           }
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "name" : "Exacerbation Or Wheezing During Encounter",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "E",
+                           "type" : "AliasRef"
+                        } ]
+                     }, {
+                        "name" : "Qualifying Steroids During Encounter",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "E",
+                           "type" : "AliasRef"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Asthma Exacerbation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Inpatient Hospitalization",
+               "type" : "ExpressionRef"
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "name" : "Asthma ICS",
+                  "type" : "ExpressionRef"
+               }, {
+                  "name" : "Asthma Exacerbation",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

@@ -1,0 +1,45 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.anti-thyroperoxidase",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.anti-thyroperoxidase",
+        "status": "active",
+        "name": "PHEKB-14 Anti-thyroperoxidase",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "32786-6",
+                  "display": "Thyroperoxidase Ab [Titer] in Serum or Plasma"
+                },
+                {
+                  "code": "32042-4",
+                  "display": "Thyroperoxidase Ab [Presence] in Serum or Plasma"
+                },
+                {
+                  "code": "17706-3",
+                  "display": "Thyroperoxidase Ab [Titer] in Cerebral spinal fluid by Latex agglutination"
+                },
+                {
+                  "code": "5383-5",
+                  "display": "Thyroperoxidase Ab [Titer] in Serum or Plasma by Latex agglutination"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+88.myocardial-infarction,Myocardial Infarction Diagnoses,^410.*,ICD9CM
+88.stent-procedures,Stent Procedures,92980,CPT4
+88.stent-procedures,Stent Procedures,92981,CPT4
+88.revascularization-procedures,Revascularization Procedures,33533,CPT4
+88.revascularization-procedures,Revascularization Procedures,33534,CPT4
+88.revascularization-procedures,Revascularization Procedures,33535,CPT4
+88.revascularization-procedures,Revascularization Procedures,33536,CPT4
+88.revascularization-procedures,Revascularization Procedures,33510,CPT4
+88.revascularization-procedures,Revascularization Procedures,33511,CPT4
+88.revascularization-procedures,Revascularization Procedures,33512,CPT4
+88.revascularization-procedures,Revascularization Procedures,33513,CPT4
+88.revascularization-procedures,Revascularization Procedures,33514,CPT4
+88.revascularization-procedures,Revascularization Procedures,33515,CPT4
+88.revascularization-procedures,Revascularization Procedures,33516,CPT4
+88.revascularization-procedures,Revascularization Procedures,33517,CPT4
+88.revascularization-procedures,Revascularization Procedures,33518,CPT4
+88.revascularization-procedures,Revascularization Procedures,33519,CPT4
+88.revascularization-procedures,Revascularization Procedures,33520,CPT4
+88.revascularization-procedures,Revascularization Procedures,33521,CPT4
+88.revascularization-procedures,Revascularization Procedures,33522,CPT4
+88.revascularization-procedures,Revascularization Procedures,33523,CPT4
+88.revascularization-procedures,Revascularization Procedures,92980,CPT4
+88.revascularization-procedures,Revascularization Procedures,92981,CPT4
+88.revascularization-procedures,Revascularization Procedures,92982,CPT4
+88.revascularization-procedures,Revascularization Procedures,92984,CPT4
+88.revascularization-procedures,Revascularization Procedures,92995,CPT4
+88.revascularization-procedures,Revascularization Procedures,92996,CPT4
+88.stroke-diagnoses,Stroke Diagnoses,433,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,433.01,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,433.11,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,433.21,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,433.31,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,433.81,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,433.91,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,434,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,434.01,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,434.11,ICD9CM
+88.stroke-diagnoses,Stroke Diagnoses,434.91,ICD9CM
+88.clopidogrel,Clopidogrel,clopidogrel,RxNorm

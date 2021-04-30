@@ -1,0 +1,38 @@
+---
+name: 005 Statins and MACE NOT Case - TNT too low
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # Previous Statin Order
+  - resourceType: MedicationRequest
+    code: RXNORM#41127 fluvastatin
+    authoredOn: "2000-10-15T16:00:00.000Z"
+    status: completed
+
+  # There are two potential windows below
+  - resourceType: Condition
+    code: ICD9#410.12 Acute myocardial infarction of other anterior wall, subsequent episode of care
+    onsetDateTime: "2007-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#410.7 Acute myocardial infarction, subendocardial infarction
+    onsetDateTime: "2007-12-16T16:00:00.000Z"
+
+  # Qualifying lab in second window
+  - resourceType: Observation
+    code: LOINC#6598-7 Troponin T.cardiac [Mass/volume] in Serum or Plasma
+    valueQuantity: 0.01 ng/ml
+    effectiveDateTime: "2007-12-17T07:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#410.4 Acute myocardial infarction, of other inferior wall
+    onsetDateTime: "2007-12-20T16:00:00.000Z"
+
+results:
+  Potential 5 Day Windows: $should have length 2
+  Has Revascularization Procedure With Statin Order: false
+  Case: false

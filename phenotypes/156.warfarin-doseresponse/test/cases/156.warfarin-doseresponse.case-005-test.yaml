@@ -1,0 +1,40 @@
+---
+name: 005 Warfarin dose/response NOT Case - only 1 lab
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Encounter
+    id: encounter-4
+    period: "2019-04-12T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-4
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2019-04-12T17:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#6301-6 INR
+    valueQuantity: 2.7
+    effectiveDateTime: "2019-05-21T17:00:00.000Z"
+
+    # 10 week interval between prescriptions
+
+  - resourceType: Encounter
+    id: encounter-5
+    period: "2019-06-21T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-5
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2019-06-21T17:00:00.000Z"
+    status: completed
+
+results:
+  Case: false

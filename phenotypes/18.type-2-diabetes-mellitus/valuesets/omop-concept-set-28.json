@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-28",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-28",
+  "status": "active",
+  "name": "eMERGE T2DM - T1DM Medications",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "139825",
+            "display": "insulin detemir"
+          },
+          {
+            "code": "51428",
+            "display": "Insulin, Aspart, Human"
+          },
+          {
+            "code": "400008",
+            "display": "Insulin, Glulisine, Human"
+          },
+          {
+            "code": "274783",
+            "display": "Insulin Glargine"
+          },
+          {
+            "code": "314684",
+            "display": "Insulin, Protamine Lispro, Human"
+          },
+          {
+            "code": "485207",
+            "display": "Insulin, Glulisine, Human"
+          },
+          {
+            "code": "485206",
+            "display": "Insulin, Glulisine, Human"
+          },
+          {
+            "code": "86009",
+            "display": "Insulin Lispro"
+          },
+          {
+            "code": "352385",
+            "display": "Insulin, Aspart Protamine, Human"
+          },
+          {
+            "code": "486503",
+            "display": "Pramlintide"
+          },
+          {
+            "code": "139953",
+            "display": "Pramlintide"
+          },
+          {
+            "code": "484319",
+            "display": "insulin detemir"
+          }
+        ]
+      }
+    ]
+  }
+}

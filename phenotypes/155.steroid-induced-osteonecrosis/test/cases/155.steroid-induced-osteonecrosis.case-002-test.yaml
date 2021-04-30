@@ -1,0 +1,65 @@
+---
+name: 002 Steroid Induced Osteonecrosis NOT Case - exposure too short
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # - resourceType: Encounter
+  #   id: encounter-2
+  #   period: "1978-11-12T16:00:00.000Z"
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#276 Cardiovascular Disease
+
+  # - resourceType: Procedure
+  #   encounter: Encounter/encounter-2
+  #   code: CPT#34800 Endovascular repair of infrarenal abdominal aortic aneurysm or dissection; using aorto-aortic tube prosthesis
+  #   performedDateTime: "1978-11-12T16:00:00.000Z" # The patient was too young for this procedure to be considered
+
+  # - resourceType: Observation
+  #  code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+  #   valueQuantity: 51 mg/dL
+  #   effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  # - resourceType: Encounter
+  #   id: encounter-1
+  #   period: 2008-11-12T16:00:00.000
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#15 Aromatherapy
+  #   diagnosis:
+  #   condition: Condition/condition-1
+
+  - resourceType: MedicationRequest
+    code: RXNORM#2878 Cortisone
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+    dosageInstruction:
+      - timing:
+          repeat:
+            boundsDuration:
+              value: 36
+              unit: "hours"
+        route: SNOMED#419993007 Intravenous peripheral route
+
+  - resourceType: MedicationRequest
+    code: RXNORM#8640 Prednisone
+    authoredOn: "2019-10-15T16:00:00.000Z"
+    status: completed
+    dosageInstruction:
+      - timing:
+          repeat:
+            boundsDuration:
+              value: 3
+              unit: "days"
+        route: SNOMED#26643006 Oral
+
+  - resourceType: Condition
+    id: condition-1
+    code: ICD9#733.49 Aseptic necrosis of bone, other
+    onsetDateTime: "2020-01-12T16:00:00.000Z"
+
+results:
+  At Least Two Weeks Of Steroid Exposure: false
+  Exclusions: false
+  Necrosis Diagnosis In Query Window: true
+  Case: false

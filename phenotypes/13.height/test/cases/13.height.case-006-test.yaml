@@ -1,0 +1,51 @@
+---
+name: 006 Height Case - has valid height before before exclusion
+
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 1980-05-16
+
+  # - resourceType: Encounter
+  #   id: encounter-2
+  #   period: "1978-11-12T16:00:00.000Z"
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#276 Cardiovascular Disease
+
+  # - resourceType: Procedure
+  #   encounter: Encounter/encounter-2
+  #   code: CPT#34800 Endovascular repair of infrarenal abdominal aortic aneurysm or dissection; using aorto-aortic tube prosthesis
+  #   performedDateTime: "1978-11-12T16:00:00.000Z" # The patient was too young for this procedure to be considered
+
+  - resourceType: Observation
+    code: LOINC#8302-2 Body height
+    valueQuantity: 180 cm
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  # - resourceType: Observation
+  #   code: LOINC#2963-7 Somatotropin [Mass/volume] in Serum or Plasma
+  #   valueQuantity: 5 ng/mL
+  #   effectiveDateTime: "2019-06-01T07:00:00.000Z"
+
+  # - resourceType: Encounter
+  #   id: encounter-1
+  #   period: 2008-11-12T16:00:00.000
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#15 Aromatherapy
+  #   diagnosis:
+  #   condition: Condition/condition-1
+
+  # - resourceType: MedicationRequest
+  #   code: RXNORM#139825 insulin detemir
+  #   authoredOn: "2018-10-15T16:00:00.000Z"
+  #   status: completed
+
+  - resourceType: Condition
+    code: ICD9#V49.76 Lower limb amputation, above knee
+    onsetDateTime: "2015-11-12T16:00:00.000Z"
+
+results:
+  Has Growth Hormone Lab Before Adulthood: false
+  Has Meds Affecting Height Before Adulthood: false
+  Has Childhood Height Affecting Diagnosis: false
+  Has Valid Height Before Height Affecting Diagnosis: true
+  Case: true

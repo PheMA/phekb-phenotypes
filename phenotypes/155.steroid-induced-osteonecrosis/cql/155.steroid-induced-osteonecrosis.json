@@ -1,0 +1,510 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "155.steroid-induced-osteonecrosis",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         }, {
+            "localIdentifier" : "PhEMAMedications",
+            "path" : "PhEMAMedications",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Corticosteroid Medication",
+            "id" : "155.corticosteroid-medications",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Qualifying Routes",
+            "id" : "155.qualifying-routes",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Alcoholism",
+            "id" : "155.alcoholism",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Sickle Cell Disease",
+            "id" : "155.sickle-cell-disease",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Gaucher",
+            "id" : "155.gaucher",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Legg-Calve-Perthes",
+            "id" : "155.legg-calve-perthes",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "HIV",
+            "id" : "155.hiv",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Organ Transplant Diagnosis",
+            "id" : "155.organ-transplant-diagnosis",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Organ Transplant Procedure",
+            "id" : "155.organ-transplant-procedures",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "HIV Labs",
+            "id" : "155.hiv-labs",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Necrosis Diagnosis",
+            "id" : "155.necrosis-diagnosis",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Qualifying Medication Requests",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "M",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "Retrieve"
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "AnyInValueSet",
+                  "codes" : {
+                     "type" : "Query",
+                     "source" : [ {
+                        "alias" : "X",
+                        "expression" : {
+                           "type" : "Query",
+                           "source" : [ {
+                              "alias" : "$this",
+                              "expression" : {
+                                 "path" : "dosageInstruction",
+                                 "scope" : "M",
+                                 "type" : "Property"
+                              }
+                           } ],
+                           "where" : {
+                              "type" : "Not",
+                              "operand" : {
+                                 "type" : "IsNull",
+                                 "operand" : {
+                                    "path" : "route",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "$this",
+                                       "type" : "AliasRef"
+                                    }
+                                 }
+                              }
+                           },
+                           "return" : {
+                              "distinct" : false,
+                              "expression" : {
+                                 "path" : "route",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "$this",
+                                    "type" : "AliasRef"
+                                 }
+                              }
+                           }
+                        }
+                     } ],
+                     "return" : {
+                        "distinct" : false,
+                        "expression" : {
+                           "name" : "ToConcept",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "X",
+                              "type" : "AliasRef"
+                           } ]
+                        }
+                     }
+                  },
+                  "valueset" : {
+                     "name" : "Qualifying Routes",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Exclusions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Union",
+                  "operand" : [ {
+                     "type" : "As",
+                     "operand" : {
+                        "type" : "Union",
+                        "operand" : [ {
+                           "type" : "As",
+                           "operand" : {
+                              "type" : "Union",
+                              "operand" : [ {
+                                 "type" : "Union",
+                                 "operand" : [ {
+                                    "type" : "Union",
+                                    "operand" : [ {
+                                       "dataType" : "{http://hl7.org/fhir}Condition",
+                                       "codeProperty" : "code",
+                                       "codeComparator" : "in",
+                                       "type" : "Retrieve",
+                                       "codes" : {
+                                          "name" : "Alcoholism",
+                                          "type" : "ValueSetRef"
+                                       }
+                                    }, {
+                                       "dataType" : "{http://hl7.org/fhir}Condition",
+                                       "codeProperty" : "code",
+                                       "codeComparator" : "in",
+                                       "type" : "Retrieve",
+                                       "codes" : {
+                                          "name" : "Sickle Cell Disease",
+                                          "type" : "ValueSetRef"
+                                       }
+                                    } ]
+                                 }, {
+                                    "type" : "Union",
+                                    "operand" : [ {
+                                       "dataType" : "{http://hl7.org/fhir}Condition",
+                                       "codeProperty" : "code",
+                                       "codeComparator" : "in",
+                                       "type" : "Retrieve",
+                                       "codes" : {
+                                          "name" : "Gaucher",
+                                          "type" : "ValueSetRef"
+                                       }
+                                    }, {
+                                       "dataType" : "{http://hl7.org/fhir}Condition",
+                                       "codeProperty" : "code",
+                                       "codeComparator" : "in",
+                                       "type" : "Retrieve",
+                                       "codes" : {
+                                          "name" : "Legg-Calve-Perthes",
+                                          "type" : "ValueSetRef"
+                                       }
+                                    } ]
+                                 } ]
+                              }, {
+                                 "type" : "Union",
+                                 "operand" : [ {
+                                    "dataType" : "{http://hl7.org/fhir}Condition",
+                                    "codeProperty" : "code",
+                                    "codeComparator" : "in",
+                                    "type" : "Retrieve",
+                                    "codes" : {
+                                       "name" : "HIV",
+                                       "type" : "ValueSetRef"
+                                    }
+                                 }, {
+                                    "dataType" : "{http://hl7.org/fhir}Condition",
+                                    "codeProperty" : "code",
+                                    "codeComparator" : "in",
+                                    "type" : "Retrieve",
+                                    "codes" : {
+                                       "name" : "Organ Transplant Diagnosis",
+                                       "type" : "ValueSetRef"
+                                    }
+                                 } ]
+                              } ]
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ListTypeSpecifier",
+                              "elementType" : {
+                                 "type" : "ChoiceTypeSpecifier",
+                                 "choice" : [ {
+                                    "name" : "{http://hl7.org/fhir}Procedure",
+                                    "type" : "NamedTypeSpecifier"
+                                 }, {
+                                    "name" : "{http://hl7.org/fhir}Condition",
+                                    "type" : "NamedTypeSpecifier"
+                                 } ]
+                              }
+                           }
+                        }, {
+                           "type" : "As",
+                           "operand" : {
+                              "dataType" : "{http://hl7.org/fhir}Procedure",
+                              "codeProperty" : "code",
+                              "codeComparator" : "in",
+                              "type" : "Retrieve",
+                              "codes" : {
+                                 "name" : "Organ Transplant Procedure",
+                                 "type" : "ValueSetRef"
+                              }
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ListTypeSpecifier",
+                              "elementType" : {
+                                 "type" : "ChoiceTypeSpecifier",
+                                 "choice" : [ {
+                                    "name" : "{http://hl7.org/fhir}Procedure",
+                                    "type" : "NamedTypeSpecifier"
+                                 }, {
+                                    "name" : "{http://hl7.org/fhir}Condition",
+                                    "type" : "NamedTypeSpecifier"
+                                 } ]
+                              }
+                           }
+                        } ]
+                     },
+                     "asTypeSpecifier" : {
+                        "type" : "ListTypeSpecifier",
+                        "elementType" : {
+                           "type" : "ChoiceTypeSpecifier",
+                           "choice" : [ {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier"
+                           }, {
+                              "name" : "{http://hl7.org/fhir}Observation",
+                              "type" : "NamedTypeSpecifier"
+                           }, {
+                              "name" : "{http://hl7.org/fhir}Condition",
+                              "type" : "NamedTypeSpecifier"
+                           } ]
+                        }
+                     }
+                  }, {
+                     "type" : "As",
+                     "operand" : {
+                        "type" : "Query",
+                        "source" : [ {
+                           "alias" : "O",
+                           "expression" : {
+                              "dataType" : "{http://hl7.org/fhir}Observation",
+                              "codeProperty" : "code",
+                              "codeComparator" : "in",
+                              "type" : "Retrieve",
+                              "codes" : {
+                                 "name" : "HIV Labs",
+                                 "type" : "ValueSetRef"
+                              }
+                           }
+                        } ],
+                        "relationship" : [ ],
+                        "where" : {
+                           "type" : "Or",
+                           "operand" : [ {
+                              "type" : "IsNull",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           }, {
+                              "type" : "Not",
+                              "operand" : {
+                                 "type" : "Equivalent",
+                                 "operand" : [ {
+                                    "name" : "ToString",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "asType" : "{http://hl7.org/fhir}string",
+                                       "type" : "As",
+                                       "operand" : {
+                                          "path" : "value",
+                                          "scope" : "O",
+                                          "type" : "Property"
+                                       }
+                                    } ]
+                                 }, {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "undetectable",
+                                    "type" : "Literal"
+                                 } ]
+                              }
+                           } ]
+                        }
+                     },
+                     "asTypeSpecifier" : {
+                        "type" : "ListTypeSpecifier",
+                        "elementType" : {
+                           "type" : "ChoiceTypeSpecifier",
+                           "choice" : [ {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier"
+                           }, {
+                              "name" : "{http://hl7.org/fhir}Observation",
+                              "type" : "NamedTypeSpecifier"
+                           }, {
+                              "name" : "{http://hl7.org/fhir}Condition",
+                              "type" : "NamedTypeSpecifier"
+                           } ]
+                        }
+                     }
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Necrosis Diagnosis In Query Window",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Necrosis Diagnosis",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "Effective Date",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "C",
+                           "type" : "AliasRef"
+                        } ]
+                     }, {
+                        "lowClosed" : true,
+                        "highClosed" : true,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "Earliest Exposure Date",
+                           "libraryName" : "PhEMAMedications",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "Qualifying Medication Requests",
+                              "type" : "ExpressionRef"
+                           } ]
+                        },
+                        "high" : {
+                           "type" : "Add",
+                           "operand" : [ {
+                              "name" : "Latest Exposure Date",
+                              "libraryName" : "PhEMAMedications",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "Qualifying Medication Requests",
+                                 "type" : "ExpressionRef"
+                              } ]
+                           }, {
+                              "value" : 1,
+                              "unit" : "year",
+                              "type" : "Quantity"
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "At Least Two Weeks Of Steroid Exposure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "operand" : [ {
+                  "path" : "value",
+                  "type" : "Property",
+                  "source" : {
+                     "name" : "Get Total Exposure Days",
+                     "libraryName" : "PhEMAMedications",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "Qualifying Medication Requests",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }
+               }, {
+                  "type" : "ToDecimal",
+                  "operand" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "14",
+                     "type" : "Literal"
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "name" : "At Least Two Weeks Of Steroid Exposure",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Exclusions",
+                        "type" : "ExpressionRef"
+                     }
+                  } ]
+               }, {
+                  "name" : "Necrosis Diagnosis In Query Window",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

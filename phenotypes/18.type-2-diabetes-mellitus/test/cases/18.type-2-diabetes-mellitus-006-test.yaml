@@ -1,0 +1,28 @@
+---
+name: 006 Case Type 3 - 0 T1 Dx, 1 T2 Dx, no meds, 1 abnormal fasting glucose
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9CM#250.52 Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled
+    onsetDateTime: "2014-10-10T00:00:00.000Z"
+    recordedDate: "2014-10-10T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#1558-6 Fasting glucose [Mass/volume] in Serum or Plasma
+    valueQuantity: 125 mg/dl
+
+results:
+  No Type 1 DM Diagnosis: true
+  Has Type 2 DM Diagnosis: true
+  Has abnormal lab: true
+  Case Type 1: false
+  Case Type 2: false
+  Case Type 3: true
+  Case Type 4: false
+  Case Type 5: false
+  Case: true

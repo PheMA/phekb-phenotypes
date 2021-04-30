@@ -1,0 +1,38 @@
+---
+name: 018 RBC Indices NOT Case - Infectious disease in [-2yr, +2yr] interval
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # - resourceType: Encounter
+  #   id: encounter-2
+  #   period: "1978-11-12T16:00:00.000Z"
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#276 Cardiovascular Disease
+
+  # - resourceType: Procedure
+  #   code: CPT#01140 Anesthesia for interpelviabdominal (hindquarter) amputation
+  #   performedDateTime: "2007-05-12T16:00:00.000Z" # The patient was too young for this procedure to be considered
+
+  - resourceType: Observation
+    code: LOINC#30341-2 Erythrocyte sedimentation rate
+    valueQuantity: 15 mm/h
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  # - resourceType: Encounter
+  #   id: encounter-1
+  #   period: 2008-11-12T16:00:00.000
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#15 Aromatherapy
+  #   diagnosis:
+  #   condition: Condition/condition-1
+
+  - resourceType: Condition
+    code: ICD9#015.10 Tuberculosis of hip, unspecified
+    onsetDateTime: "2006-12-12T16:00:00.000Z"
+
+results:
+  RBC Candidate: false
+  ESR Candidate: false
+  Case: false

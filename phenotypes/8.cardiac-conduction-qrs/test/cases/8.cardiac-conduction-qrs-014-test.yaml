@@ -1,0 +1,50 @@
+---
+name: 014 Case - multiple exclusions outside period
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # Raw ECG data based on https://www.hl7.org/fhir/observation-example-sample-data.html
+  - resourceType: Observation
+    id: ecg-1
+    code: urn:oid:2.16.840.1.113883.6.24#131328 MDC_ECG_ELEC_POTL
+    # sampledData: <actual ECG data here>
+    effectiveDateTime: "2008-11-12T16:00:00.000Z"
+
+  # Derived QRS duration
+  - resourceType: Observation
+    derivedFrom: Observation/ecg-1
+    code: LOINC#8633-0 QRS duration
+    valueQuantity: 75 ms
+
+  # Derived Heart Rate
+  - resourceType: Observation
+    derivedFrom: Observation/ecg-1
+    code: LOINC#8867-4 Heart rate
+    valueQuantity: 65 /min
+
+  - resourceType: MedicationRequest
+    code: RXNORM#5691 imipramine
+    authoredOn: "2012-11-12T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#10839-9 Troponin I.cardiac [Mass/volume] in Serum or Plasma
+    valueQuantity: 0.8 ng/mL
+    effectiveDateTime: "2008-11-08T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#427.4 Ventricular fibrillation and flutter
+    onsetDateTime: "2014-11-12T16:00:00.000Z"
+    recordedDate: "2014-11-12T16:00:00.000Z"
+
+  - resourceType: Procedure
+    code: CPT#33973 Insertion of intra-aortic balloon assist device through the ascending aorta
+    performedDateTime: "2016-11-12T16:00:00.000Z"
+
+results:
+  Normal ECG: $should have length 1
+  Case: true

@@ -1,0 +1,21 @@
+---
+name: 001 Peripheral Arterial Disease Case - elevated ABI
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#77194-9 Ankle-brachial index
+    valueQuantity: 1.5
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Has Diagnosis Codes For PAD: 0
+  Has Procedure Codes for PAD: 0
+  Has Medications for Claudication: 0
+  Has Additional Qualifying Criteria: false
+  Has Vascular Lab Criteria: true
+  Case: true

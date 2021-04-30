@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1053.28",
+  "url": "https://workbench.phema.science/fhir/ValueSet/2.16.840.1.113762.1.4.1053.28",
+  "status": "active",
+  "name": "BPH Diagnoses",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "600",
+            "display": "Hyperplasia of prostate"
+          },
+          {
+            "code": "600.0",
+            "display": "Hypertrophy (benign) of prostate"
+          },
+          {
+            "code": "600.00",
+            "display": "Hypertrophy (benign) of prostate without urinary obstruction and other lower urinary tract symptom (LUTS)"
+          },
+          {
+            "code": "600.01",
+            "display": "Hypertrophy (benign) of prostate with urinary obstruction and other lower urinary tract symptoms (LUTS)"
+          },
+          {
+            "code": "600.2",
+            "display": "Benign localized hyperplasia of prostate"
+          },
+          {
+            "code": "600.20",
+            "display": "Benign localized hyperplasia of prostate without urinary obstruction and other lower urinary tract symptoms (LUTS)"
+          },
+          {
+            "code": "600.21",
+            "display": "Benign localized hyperplasia of prostate with urinary obstruction and other lower urinary tract symptoms (LUTS)"
+          },
+          {
+            "code": "600.9",
+            "display": "Hyperplasia of prostate unspecified"
+          },
+          {
+            "code": "600.90",
+            "display": "Hyperplasia of prostate, unspecified, without urinary obstruction and other lower urinary symptoms (LUTS)"
+          },
+          {
+            "code": "600.91",
+            "display": "Hyperplasia of prostate, unspecified, with urinary obstruction and other lower urinary symptoms (LUTS)"
+          }
+        ]
+      }
+    ]
+  }
+}

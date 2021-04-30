@@ -1,0 +1,669 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.contrast-exposure-procedures",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.contrast-exposure-procedures",
+        "status": "active",
+        "name": "PHEKB-14 Contrast exposure procedures",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "74160",
+                  "display": "Computed tomography, abdomen; with contrast material(s)"
+                },
+                {
+                  "code": "72147",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, thoracic; with contrast material(s)"
+                },
+                {
+                  "code": "72194",
+                  "display": "Computed tomography, pelvis; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "73725",
+                  "display": "Magnetic resonance angiography, lower extremity, with or without contrast material(s)"
+                },
+                {
+                  "code": "70481",
+                  "display": "Computed tomography, orbit, sella, or posterior fossa or outer, middle, or inner ear; with contrast material(s)"
+                },
+                {
+                  "code": "70498",
+                  "display": "Computed tomographic angiography, neck, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "36254",
+                  "display": "Superselective catheter placement (one or more second order or higher renal artery branches) renal artery and any accessory renal artery(s) for renal angiography, including arterial puncture, catheterization, fluoroscopy, contrast injection(s), image post"
+                },
+                {
+                  "code": "75557",
+                  "display": "Cardiac magnetic resonance imaging for morphology and function without contrast material"
+                },
+                {
+                  "code": "72132",
+                  "display": "Computed tomography, lumbar spine; with contrast material"
+                },
+                {
+                  "code": "73219",
+                  "display": "Magnetic resonance (eg, proton) imaging, upper extremity, other than joint; with contrast material(s)"
+                },
+                {
+                  "code": "73201",
+                  "display": "Computed tomography, upper extremity; with contrast material(s)"
+                },
+                {
+                  "code": "75791",
+                  "display": "Angiography, arteriovenous shunt (eg, dialysis patient fistula/graft), complete evaluation of dialysis access, including fluoroscopy, image documentation and report (includes injections of contrast and all necessary imaging from the arterial anastomosis a"
+                },
+                {
+                  "code": "49440",
+                  "display": "Insertion of gastrostomy tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "70492",
+                  "display": "Computed tomography, soft tissue neck; without contrast material followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "70545",
+                  "display": "Magnetic resonance angiography, head; with contrast material(s)"
+                },
+                {
+                  "code": "72193",
+                  "display": "Computed tomography, pelvis; with contrast material(s)"
+                },
+                {
+                  "code": "72133",
+                  "display": "Computed tomography, lumbar spine; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "72126",
+                  "display": "Computed tomography, cervical spine; with contrast material"
+                },
+                {
+                  "code": "0042T",
+                  "display": "Cerebral perfusion analysis using computed tomography with contrast administration, including post-processing of parametric maps with determination of cerebral blood flow, cerebral blood volume, and mean transit time"
+                },
+                {
+                  "code": "49460",
+                  "display": "Mechanical removal of obstructive material from gastrostomy, duodenostomy, jejunostomy, gastro-jejunostomy, or cecostomy (or other colonic) tube, any method, under fluoroscopic guidance including contrast injection(s), if performed, image documentation an"
+                },
+                {
+                  "code": "73220",
+                  "display": "Magnetic resonance (eg, proton) imaging, upper extremity, other than joint; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "73702",
+                  "display": "Computed tomography, lower extremity; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "74470",
+                  "display": "Radiologic examination, renal cyst study, translumbar, contrast visualization, radiological supervision and interpretation"
+                },
+                {
+                  "code": "71550",
+                  "display": "Magnetic resonance (eg, proton) imaging, chest (eg, for evaluation of hilar and mediastinal lymphadenopathy); without contrast material(s)"
+                },
+                {
+                  "code": "71260",
+                  "display": "Computed tomography, thorax; with contrast material(s)"
+                },
+                {
+                  "code": "74247",
+                  "display": "Radiological examination, gastrointestinal tract, upper, air contrast, with specific high density barium, effervescent agent, with or without glucagon; with or without delayed films, with KUB"
+                },
+                {
+                  "code": "75561",
+                  "display": "Cardiac magnetic resonance imaging for morphology and function without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "73222",
+                  "display": "Magnetic resonance (eg, proton) imaging, any joint of upper extremity; with contrast material(s)"
+                },
+                {
+                  "code": "36598",
+                  "display": "Contrast injection(s) for radiologic evaluation of existing central venous access device, including fluoroscopy, image documentation and report"
+                },
+                {
+                  "code": "70553",
+                  "display": "Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material, followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "75635",
+                  "display": "Computed tomographic angiography, abdominal aorta and bilateral iliofemoral lower extremity runoff, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "70487",
+                  "display": "Computed tomography, maxillofacial area; with contrast material(s)"
+                },
+                {
+                  "code": "73719",
+                  "display": "Magnetic resonance (eg, proton) imaging, lower extremity other than joint; with contrast material(s)"
+                },
+                {
+                  "code": "73701",
+                  "display": "Computed tomography, lower extremity; with contrast material(s)"
+                },
+                {
+                  "code": "74262",
+                  "display": "Computed tomographic (CT) colonography, diagnostic, including image postprocessing; with contrast material(s) including non-contrast images, if performed"
+                },
+                {
+                  "code": "77001",
+                  "display": "Fluoroscopic guidance for central venous access device placement, replacement (catheter only or complete), or removal (includes fluoroscopic guidance for vascular access and catheter manipulation, any necessary contrast injections through access site or c"
+                },
+                {
+                  "code": "70546",
+                  "display": "Magnetic resonance angiography, head; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "70547",
+                  "display": "Magnetic resonance angiography, neck; without contrast material(s)"
+                },
+                {
+                  "code": "72197",
+                  "display": "Magnetic resonance (eg, proton) imaging, pelvis; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "72157",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, without contrast material, followed by contrast material(s) and further sequences; thoracic"
+                },
+                {
+                  "code": "70482",
+                  "display": "Computed tomography, orbit, sella, or posterior fossa or outer, middle, or inner ear; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "73206",
+                  "display": "Computed tomographic angiography, upper extremity, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "72192",
+                  "display": "Computed tomography, pelvis; without contrast material"
+                },
+                {
+                  "code": "75574",
+                  "display": "Computed tomographic angiography, heart, coronary arteries and bypass grafts (when present), with contrast material, including 3D image postprocessing (including evaluation of cardiac structure and morphology, assessment of cardiac function, and evaluatio"
+                },
+                {
+                  "code": "73202",
+                  "display": "Computed tomography, upper extremity; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "74190",
+                  "display": "Peritoneogram (eg, after injection of air or contrast), radiological supervision and interpretation"
+                },
+                {
+                  "code": "74185",
+                  "display": "Magnetic resonance angiography, abdomen, with or without contrast material(s)"
+                },
+                {
+                  "code": "74290",
+                  "display": "Cholecystography, oral contrast"
+                },
+                {
+                  "code": "70551",
+                  "display": "Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material"
+                },
+                {
+                  "code": "77059",
+                  "display": "Magnetic resonance imaging, breast, without and/or with contrast material(s); bilateral"
+                },
+                {
+                  "code": "73721",
+                  "display": "Magnetic resonance (eg, proton) imaging, any joint of lower extremity; without contrast material"
+                },
+                {
+                  "code": "70496",
+                  "display": "Computed tomographic angiography, head, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "49418",
+                  "display": "Insertion of tunneled intraperitoneal catheter (eg, dialysis, intraperitoneal chemotherapy instillation, management of ascites), complete procedure, including imaging guidance, catheter placement, contrast injection when performed, and radiological superv"
+                },
+                {
+                  "code": "62264",
+                  "display": "Percutaneous lysis of epidural adhesions using solution injection (eg, hypertonic saline, enzyme) or mechanical means (eg, catheter) including radiologic localization (includes contrast when administered), multiple adhesiolysis sessions; 1 day"
+                },
+                {
+                  "code": "74270",
+                  "display": "Radiologic examination, colon; contrast (eg, barium) enema, with or without KUB"
+                },
+                {
+                  "code": "72125",
+                  "display": "Computed tomography, cervical spine; without contrast material"
+                },
+                {
+                  "code": "74280",
+                  "display": "Radiologic examination, colon; air contrast with specific high density barium, with or without glucagon"
+                },
+                {
+                  "code": "70373",
+                  "display": "Laryngography, contrast, radiological supervision and interpretation"
+                },
+                {
+                  "code": "71552",
+                  "display": "Magnetic resonance (eg, proton) imaging, chest (eg, for evaluation of hilar and mediastinal lymphadenopathy); without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "75573",
+                  "display": "Computed tomography, heart, with contrast material, for evaluation of cardiac structure and morphology in the setting of congenital heart disease (including 3D image postprocessing, assessment of LV cardiac function, RV structure and function and evaluati"
+                },
+                {
+                  "code": "72149",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, lumbar; with contrast material(s)"
+                },
+                {
+                  "code": "73223",
+                  "display": "Magnetic resonance (eg, proton) imaging, any joint of upper extremity; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "73218",
+                  "display": "Magnetic resonance (eg, proton) imaging, upper extremity, other than joint; without contrast material(s)"
+                },
+                {
+                  "code": "68850",
+                  "display": "Injection of contrast medium for dacryocystography"
+                },
+                {
+                  "code": "75980",
+                  "display": "Percutaneous transhepatic biliary drainage with contrast monitoring, radiological supervision and interpretation"
+                },
+                {
+                  "code": "70557",
+                  "display": "Magnetic resonance (eg, proton) imaging, brain (including brain stem and skull base), during open intracranial procedure (eg, to assess for residual tumor or residual vascular malformation); without contrast material"
+                },
+                {
+                  "code": "49452",
+                  "display": "Replacement of gastro-jejunostomy tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "74176",
+                  "display": "Computed tomography, abdomen and pelvis; without contrast material"
+                },
+                {
+                  "code": "71250",
+                  "display": "Computed tomography, thorax; without contrast material"
+                },
+                {
+                  "code": "70450",
+                  "display": "Computed tomography, head or brain; without contrast material"
+                },
+                {
+                  "code": "70470",
+                  "display": "Computed tomography, head or brain; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "36251",
+                  "display": "Selective catheter placement (first-order), main renal artery and any accessory renal artery(s) for renal angiography, including arterial puncture and catheter placement(s), fluoroscopy, contrast injection(s), image postprocessing, permanent recording of "
+                },
+                {
+                  "code": "73720",
+                  "display": "Magnetic resonance (eg, proton) imaging, lower extremity other than joint; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "70540",
+                  "display": "Magnetic resonance (eg, proton) imaging, orbit, face, and/or neck; without contrast material(s)"
+                },
+                {
+                  "code": "70491",
+                  "display": "Computed tomography, soft tissue neck; with contrast material(s)"
+                },
+                {
+                  "code": "76093",
+                  "display": "Magnetic resonance imaging, breast, without and/or with contrast material(s); unilateral"
+                },
+                {
+                  "code": "49465",
+                  "display": "Contrast injection(s) for radiological evaluation of existing gastrostomy, duodenostomy, jejunostomy, gastro-jejunostomy, or cecostomy (or other colonic) tube, from a percutaneous approach including image documentation and report"
+                },
+                {
+                  "code": "70548",
+                  "display": "Magnetic resonance angiography, neck; with contrast material(s)"
+                },
+                {
+                  "code": "74170",
+                  "display": "Computed tomography, abdomen; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "62263",
+                  "display": "Percutaneous lysis of epidural adhesions using solution injection (eg, hypertonic saline, enzyme) or mechanical means (eg, catheter) including radiologic localization (includes contrast when administered), multiple adhesiolysis sessions; 2 or more days"
+                },
+                {
+                  "code": "74249",
+                  "display": "Radiological examination, gastrointestinal tract, upper, air contrast, with specific high density barium, effervescent agent, with or without glucagon; with small intestine follow-through"
+                },
+                {
+                  "code": "49427",
+                  "display": "Injection procedure (eg, contrast media) for evaluation of previously placed peritoneal-venous shunt"
+                },
+                {
+                  "code": "70558",
+                  "display": "Magnetic resonance (eg, proton) imaging, brain (including brain stem and skull base), during open intracranial procedure (eg, to assess for residual tumor or residual vascular malformation); with contrast material(s)"
+                },
+                {
+                  "code": "73700",
+                  "display": "Computed tomography, lower extremity; without contrast material"
+                },
+                {
+                  "code": "74183",
+                  "display": "Magnetic resonance (eg, proton) imaging, abdomen; without contrast material(s), followed by with contrast material(s) and further sequences"
+                },
+                {
+                  "code": "74178",
+                  "display": "Computed tomography, abdomen and pelvis; without contrast material in one or both body regions, followed by contrast material(s) and further sections in one or both body regions"
+                },
+                {
+                  "code": "72191",
+                  "display": "Computed tomographic angiography, pelvis, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "70549",
+                  "display": "Magnetic resonance angiography, neck; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "73200",
+                  "display": "Computed tomography, upper extremity; without contrast material"
+                },
+                {
+                  "code": "73723",
+                  "display": "Magnetic resonance (eg, proton) imaging, any joint of lower extremity; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "93352",
+                  "display": "Use of echocardiographic contrast agent during stress echocardiography (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "72156",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, without contrast material, followed by contrast material(s) and further sequences; cervical"
+                },
+                {
+                  "code": "73718",
+                  "display": "Magnetic resonance (eg, proton) imaging, lower extremity other than joint; without contrast material(s)"
+                },
+                {
+                  "code": "61120",
+                  "display": "Burr hole(s) for ventricular puncture (including injection of gas, contrast media, dye, or radioactive material)"
+                },
+                {
+                  "code": "49442",
+                  "display": "Insertion of cecostomy or other colonic tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "72128",
+                  "display": "Computed tomography, thoracic spine; without contrast material"
+                },
+                {
+                  "code": "74177",
+                  "display": "Computed tomography, abdomen and pelvis; with contrast material(s)"
+                },
+                {
+                  "code": "72158",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, without contrast material, followed by contrast material(s) and further sequences; lumbar"
+                },
+                {
+                  "code": "49451",
+                  "display": "Replacement of duodenostomy or jejunostomy tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "70488",
+                  "display": "Computed tomography, maxillofacial area; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "58340",
+                  "display": "Catheterization and introduction of saline or contrast material for saline infusion sonohysterography (SIS) or hysterosalpingography"
+                },
+                {
+                  "code": "75572",
+                  "display": "Computed tomography, heart, with contrast material, for evaluation of cardiac structure and morphology (including 3D image postprocessing, assessment of cardiac function, and evaluation of venous structures, if performed)"
+                },
+                {
+                  "code": "72195",
+                  "display": "Magnetic resonance (eg, proton) imaging, pelvis; without contrast material(s)"
+                },
+                {
+                  "code": "74150",
+                  "display": "Computed tomography, abdomen; without contrast material"
+                },
+                {
+                  "code": "70480",
+                  "display": "Computed tomography, orbit, sella, or posterior fossa or outer, middle, or inner ear; without contrast material"
+                },
+                {
+                  "code": "71551",
+                  "display": "Magnetic resonance (eg, proton) imaging, chest (eg, for evaluation of hilar and mediastinal lymphadenopathy); with contrast material(s)"
+                },
+                {
+                  "code": "72141",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, cervical; without contrast material"
+                },
+                {
+                  "code": "73225",
+                  "display": "Magnetic resonance angiography, upper extremity, with or without contrast material(s)"
+                },
+                {
+                  "code": "73706",
+                  "display": "Computed tomographic angiography, lower extremity, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "75559",
+                  "display": "Cardiac magnetic resonance imaging for morphology and function without contrast material; with stress imaging"
+                },
+                {
+                  "code": "73722",
+                  "display": "Magnetic resonance (eg, proton) imaging, any joint of lower extremity; with contrast material(s)"
+                },
+                {
+                  "code": "49446",
+                  "display": "Conversion of gastrostomy tube to gastro-jejunostomy tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "49441",
+                  "display": "Insertion of duodenostomy or jejunostomy tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "51605",
+                  "display": "Injection procedure and placement of chain for contrast and/or chain urethrocystography"
+                },
+                {
+                  "code": "74175",
+                  "display": "Computed tomographic angiography, abdomen, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "36253",
+                  "display": "Superselective catheter placement (one or more second order or higher renal artery branches) renal artery and any accessory renal artery(s) for renal angiography, including arterial puncture, catheterization, fluoroscopy, contrast injection(s), image post"
+                },
+                {
+                  "code": "70490",
+                  "display": "Computed tomography, soft tissue neck; without contrast material"
+                },
+                {
+                  "code": "70559",
+                  "display": "Magnetic resonance (eg, proton) imaging, brain (including brain stem and skull base), during open intracranial procedure (eg, to assess for residual tumor or residual vascular malformation); without contrast material(s), followed by contrast material(s) a"
+                },
+                {
+                  "code": "72198",
+                  "display": "Magnetic resonance angiography, pelvis, with or without contrast material(s)"
+                },
+                {
+                  "code": "70486",
+                  "display": "Computed tomography, maxillofacial area; without contrast material"
+                },
+                {
+                  "code": "72142",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, cervical; with contrast material(s)"
+                },
+                {
+                  "code": "62311",
+                  "display": "Injection(s), of diagnostic or therapeutic substance(s) (including anesthetic, antispasmodic, opioid, steroid, other solution), not including neurolytic substances, including needle or catheter placement, includes contrast for localization when performed,"
+                },
+                {
+                  "code": "72196",
+                  "display": "Magnetic resonance (eg, proton) imaging, pelvis; with contrast material(s)"
+                },
+                {
+                  "code": "74174",
+                  "display": "Computed tomographic angiography, abdomen and pelvis, with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "72131",
+                  "display": "Computed tomography, lumbar spine; without contrast material"
+                },
+                {
+                  "code": "70015",
+                  "display": "Cisternography, positive contrast, radiological supervision and interpretation"
+                },
+                {
+                  "code": "62310",
+                  "display": "Injection(s), of diagnostic or therapeutic substance(s) (including anesthetic, antispasmodic, opioid, steroid, other solution), not including neurolytic substances, including needle or catheter placement, includes contrast for localization when performed,"
+                },
+                {
+                  "code": "75571",
+                  "display": "Computed tomography, heart, without contrast material, with quantitative evaluation of coronary calcium"
+                },
+                {
+                  "code": "72127",
+                  "display": "Computed tomography, cervical spine; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "74261",
+                  "display": "Computed tomographic (CT) colonography, diagnostic, including image postprocessing; without contrast material"
+                },
+                {
+                  "code": "0339T",
+                  "display": "Transcatheter renal sympathetic denervation, percutaneous approach including arterial puncture, selective catheter placement(s) renal artery(ies), fluoroscopy, contrast injection(s), intraprocedural roadmapping and radiological supervision and interpretat"
+                },
+                {
+                  "code": "97034",
+                  "display": "Application of a modality to 1 or more areas; contrast baths, each 15 minutes"
+                },
+                {
+                  "code": "71555",
+                  "display": "Magnetic resonance angiography, chest (excluding myocardium), with or without contrast material(s)"
+                },
+                {
+                  "code": "71275",
+                  "display": "Computed tomographic angiography, chest (noncoronary), with contrast material(s), including noncontrast images, if performed, and image postprocessing"
+                },
+                {
+                  "code": "72129",
+                  "display": "Computed tomography, thoracic spine; with contrast material"
+                },
+                {
+                  "code": "70544",
+                  "display": "Magnetic resonance angiography, head; without contrast material(s)"
+                },
+                {
+                  "code": "72159",
+                  "display": "Magnetic resonance angiography, spinal canal and contents, with or without contrast material(s)"
+                },
+                {
+                  "code": "74246",
+                  "display": "Radiological examination, gastrointestinal tract, upper, air contrast, with specific high density barium, effervescent agent, with or without glucagon; with or without delayed films, without KUB"
+                },
+                {
+                  "code": "75563",
+                  "display": "Cardiac magnetic resonance imaging for morphology and function without contrast material(s), followed by contrast material(s) and further sequences; with stress imaging"
+                },
+                {
+                  "code": "74283",
+                  "display": "Therapeutic enema, contrast or air, for reduction of intussusception or other intraluminal obstruction (eg, meconium ileus)"
+                },
+                {
+                  "code": "75998",
+                  "display": "Fluoroscopic guidance for central venous access device placement, replacement (catheter only or complete), or removal (includes fluoroscopic guidance for vascular access and catheter manipulation, any necessary contrast injections through access site or"
+                },
+                {
+                  "code": "71270",
+                  "display": "Computed tomography, thorax; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "49450",
+                  "display": "Replacement of gastrostomy or cecostomy (or other colonic) tube, percutaneous, under fluoroscopic guidance including contrast injection(s), image documentation and report"
+                },
+                {
+                  "code": "49400",
+                  "display": "Injection of air or contrast into peritoneal cavity (separate procedure)"
+                },
+                {
+                  "code": "0338T",
+                  "display": "Transcatheter renal sympathetic denervation, percutaneous approach including arterial puncture, selective catheter placement(s) renal artery(ies), fluoroscopy, contrast injection(s), intraprocedural roadmapping and radiological supervision and interpretat"
+                },
+                {
+                  "code": "74181",
+                  "display": "Magnetic resonance (eg, proton) imaging, abdomen; without contrast material(s)"
+                },
+                {
+                  "code": "70460",
+                  "display": "Computed tomography, head or brain; with contrast material(s)"
+                },
+                {
+                  "code": "73221",
+                  "display": "Magnetic resonance (eg, proton) imaging, any joint of upper extremity; without contrast material(s)"
+                },
+                {
+                  "code": "70542",
+                  "display": "Magnetic resonance (eg, proton) imaging, orbit, face, and/or neck; with contrast material(s)"
+                },
+                {
+                  "code": "36252",
+                  "display": "Selective catheter placement (first-order), main renal artery and any accessory renal artery(s) for renal angiography, including arterial puncture and catheter placement(s), fluoroscopy, contrast injection(s), image postprocessing, permanent recording of "
+                },
+                {
+                  "code": "74182",
+                  "display": "Magnetic resonance (eg, proton) imaging, abdomen; with contrast material(s)"
+                },
+                {
+                  "code": "76094",
+                  "display": "Magnetic resonance imaging, breast, without and/or with contrast material(s); bilateral"
+                },
+                {
+                  "code": "72146",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, thoracic; without contrast material"
+                },
+                {
+                  "code": "70552",
+                  "display": "Magnetic resonance (eg, proton) imaging, brain (including brain stem); with contrast material(s)"
+                },
+                {
+                  "code": "75984",
+                  "display": "Change of percutaneous tube or drainage catheter with contrast monitoring (eg, genitourinary system, abscess), radiological supervision and interpretation"
+                },
+                {
+                  "code": "70543",
+                  "display": "Magnetic resonance (eg, proton) imaging, orbit, face, and/or neck; without contrast material(s), followed by contrast material(s) and further sequences"
+                },
+                {
+                  "code": "72148",
+                  "display": "Magnetic resonance (eg, proton) imaging, spinal canal and contents, lumbar; without contrast material"
+                },
+                {
+                  "code": "77058",
+                  "display": "Magnetic resonance imaging, breast, without and/or with contrast material(s); unilateral"
+                },
+                {
+                  "code": "72130",
+                  "display": "Computed tomography, thoracic spine; without contrast material, followed by contrast material(s) and further sections"
+                },
+                {
+                  "code": "49424",
+                  "display": "Contrast injection for assessment of abscess or cyst via previously placed drainage catheter or tube (separate procedure)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

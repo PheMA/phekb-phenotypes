@@ -1,0 +1,941 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "156.warfarin-doseresponse",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         }, {
+            "localIdentifier" : "PhEMATemporal",
+            "path" : "PhEMATemporal",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Warfarin Medications",
+            "id" : "156.warfarin-meds",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Anticoagulation Clinic Encounter Types",
+            "id" : "156.anticoagulation-clinic-encounter-types",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "INR Labs",
+            "id" : "156.inr-labs",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "M",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                     "codeProperty" : "medication",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Warfarin Medications",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               }, {
+                  "alias" : "E",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "codeProperty" : "type",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Anticoagulation Clinic Encounter Types",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Equal",
+                  "operand" : [ {
+                     "name" : "ToString",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "path" : "reference",
+                        "type" : "Property",
+                        "source" : {
+                           "path" : "encounter",
+                           "scope" : "M",
+                           "type" : "Property"
+                        }
+                     } ]
+                  }, {
+                     "name" : "ToString",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "path" : "id",
+                        "scope" : "E",
+                        "type" : "Property"
+                     } ]
+                  } ]
+               },
+               "return" : {
+                  "expression" : {
+                     "name" : "M",
+                     "type" : "AliasRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Sorted Prescriptions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Sorted Dates",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Has At Least Two Warfarin Prescriptions In Anticoagulation Clinic",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "operand" : [ {
+                  "type" : "Count",
+                  "source" : {
+                     "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                     "type" : "ExpressionRef"
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "2",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "Qualifying Intervals",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "W",
+                  "expression" : {
+                     "type" : "Query",
+                     "source" : [ {
+                        "alias" : "P",
+                        "expression" : {
+                           "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "return" : {
+                        "expression" : {
+                           "type" : "If",
+                           "condition" : {
+                              "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                              "type" : "As",
+                              "operand" : {
+                                 "type" : "And",
+                                 "operand" : [ {
+                                    "type" : "Greater",
+                                    "operand" : [ {
+                                       "type" : "IndexOf",
+                                       "source" : {
+                                          "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                                          "type" : "ExpressionRef"
+                                       },
+                                       "element" : {
+                                          "name" : "P",
+                                          "type" : "AliasRef"
+                                       }
+                                    }, {
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                       "value" : "0",
+                                       "type" : "Literal"
+                                    } ]
+                                 }, {
+                                    "type" : "In",
+                                    "operand" : [ {
+                                       "precision" : "Week",
+                                       "type" : "DifferenceBetween",
+                                       "operand" : [ {
+                                          "name" : "Effective Date",
+                                          "libraryName" : "PhEMAHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "type" : "Indexer",
+                                             "operand" : [ {
+                                                "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                                                "type" : "ExpressionRef"
+                                             }, {
+                                                "type" : "Subtract",
+                                                "operand" : [ {
+                                                   "type" : "IndexOf",
+                                                   "source" : {
+                                                      "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                                                      "type" : "ExpressionRef"
+                                                   },
+                                                   "element" : {
+                                                      "name" : "P",
+                                                      "type" : "AliasRef"
+                                                   }
+                                                }, {
+                                                   "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                                   "value" : "1",
+                                                   "type" : "Literal"
+                                                } ]
+                                             } ]
+                                          } ]
+                                       }, {
+                                          "name" : "Effective Date",
+                                          "libraryName" : "PhEMAHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "name" : "P",
+                                             "type" : "AliasRef"
+                                          } ]
+                                       } ]
+                                    }, {
+                                       "lowClosed" : true,
+                                       "highClosed" : true,
+                                       "type" : "Interval",
+                                       "low" : {
+                                          "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                          "value" : "3",
+                                          "type" : "Literal"
+                                       },
+                                       "high" : {
+                                          "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                          "value" : "12",
+                                          "type" : "Literal"
+                                       }
+                                    } ]
+                                 } ]
+                              }
+                           },
+                           "then" : {
+                              "lowClosed" : true,
+                              "highClosed" : true,
+                              "type" : "Interval",
+                              "low" : {
+                                 "name" : "Effective Date",
+                                 "libraryName" : "PhEMAHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "type" : "Indexer",
+                                    "operand" : [ {
+                                       "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                                       "type" : "ExpressionRef"
+                                    }, {
+                                       "type" : "Subtract",
+                                       "operand" : [ {
+                                          "type" : "IndexOf",
+                                          "source" : {
+                                             "name" : "Warfarin Prescriptions In Anticoagulation Clinic",
+                                             "type" : "ExpressionRef"
+                                          },
+                                          "element" : {
+                                             "name" : "P",
+                                             "type" : "AliasRef"
+                                          }
+                                       }, {
+                                          "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                          "value" : "1",
+                                          "type" : "Literal"
+                                       } ]
+                                    } ]
+                                 } ]
+                              },
+                              "high" : {
+                                 "name" : "Effective Date",
+                                 "libraryName" : "PhEMAHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "name" : "P",
+                                    "type" : "AliasRef"
+                                 } ]
+                              }
+                           },
+                           "else" : {
+                              "type" : "As",
+                              "operand" : {
+                                 "type" : "Null"
+                              },
+                              "asTypeSpecifier" : {
+                                 "type" : "IntervalTypeSpecifier",
+                                 "pointType" : {
+                                    "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                                    "type" : "NamedTypeSpecifier"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Not",
+                  "operand" : {
+                     "type" : "IsNull",
+                     "operand" : {
+                        "name" : "W",
+                        "type" : "AliasRef"
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "INR Labs In Interval",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "INR Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "In",
+                  "operand" : [ {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "O",
+                        "type" : "AliasRef"
+                     } ]
+                  }, {
+                     "name" : "int",
+                     "type" : "OperandRef"
+                  } ]
+               },
+               "sort" : {
+                  "by" : [ {
+                     "direction" : "asc",
+                     "type" : "ByExpression",
+                     "expression" : {
+                        "type" : "Start",
+                        "operand" : {
+                           "name" : "Normalize Onset",
+                           "libraryName" : "PhEMATemporal",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "type" : "Case",
+                              "caseItem" : [ {
+                                 "when" : {
+                                    "isType" : "{http://hl7.org/fhir}dateTime",
+                                    "type" : "Is",
+                                    "operand" : {
+                                       "name" : "effective",
+                                       "type" : "IdentifierRef"
+                                    }
+                                 },
+                                 "then" : {
+                                    "type" : "As",
+                                    "operand" : {
+                                       "asType" : "{http://hl7.org/fhir}dateTime",
+                                       "type" : "As",
+                                       "operand" : {
+                                          "name" : "effective",
+                                          "type" : "IdentifierRef"
+                                       }
+                                    },
+                                    "asTypeSpecifier" : {
+                                       "type" : "ChoiceTypeSpecifier",
+                                       "choice" : [ {
+                                          "name" : "{http://hl7.org/fhir}dateTime",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}Age",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}Period",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}Range",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}string",
+                                          "type" : "NamedTypeSpecifier"
+                                       } ]
+                                    }
+                                 }
+                              }, {
+                                 "when" : {
+                                    "isType" : "{http://hl7.org/fhir}Period",
+                                    "type" : "Is",
+                                    "operand" : {
+                                       "name" : "effective",
+                                       "type" : "IdentifierRef"
+                                    }
+                                 },
+                                 "then" : {
+                                    "type" : "As",
+                                    "operand" : {
+                                       "asType" : "{http://hl7.org/fhir}Period",
+                                       "type" : "As",
+                                       "operand" : {
+                                          "name" : "effective",
+                                          "type" : "IdentifierRef"
+                                       }
+                                    },
+                                    "asTypeSpecifier" : {
+                                       "type" : "ChoiceTypeSpecifier",
+                                       "choice" : [ {
+                                          "name" : "{http://hl7.org/fhir}dateTime",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}Age",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}Period",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}Range",
+                                          "type" : "NamedTypeSpecifier"
+                                       }, {
+                                          "name" : "{http://hl7.org/fhir}string",
+                                          "type" : "NamedTypeSpecifier"
+                                       } ]
+                                    }
+                                 }
+                              } ],
+                              "else" : {
+                                 "type" : "Null",
+                                 "resultTypeSpecifier" : {
+                                    "type" : "ChoiceTypeSpecifier",
+                                    "choice" : [ {
+                                       "name" : "{http://hl7.org/fhir}dateTime",
+                                       "type" : "NamedTypeSpecifier"
+                                    }, {
+                                       "name" : "{http://hl7.org/fhir}Age",
+                                       "type" : "NamedTypeSpecifier"
+                                    }, {
+                                       "name" : "{http://hl7.org/fhir}Period",
+                                       "type" : "NamedTypeSpecifier"
+                                    }, {
+                                       "name" : "{http://hl7.org/fhir}Range",
+                                       "type" : "NamedTypeSpecifier"
+                                    }, {
+                                       "name" : "{http://hl7.org/fhir}string",
+                                       "type" : "NamedTypeSpecifier"
+                                    } ]
+                                 }
+                              }
+                           } ]
+                        }
+                     }
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "int",
+               "operandTypeSpecifier" : {
+                  "type" : "IntervalTypeSpecifier",
+                  "pointType" : {
+                     "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                     "type" : "NamedTypeSpecifier"
+                  }
+               }
+            } ]
+         }, {
+            "name" : "Has Two Consecutive Good INR Labs In Interval",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Contains",
+               "operand" : [ {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "L",
+                     "expression" : {
+                        "name" : "INR Labs In Interval",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "int",
+                           "type" : "OperandRef"
+                        } ]
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "return" : {
+                     "expression" : {
+                        "type" : "If",
+                        "condition" : {
+                           "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                           "type" : "As",
+                           "operand" : {
+                              "type" : "And",
+                              "operand" : [ {
+                                 "type" : "Greater",
+                                 "operand" : [ {
+                                    "type" : "IndexOf",
+                                    "source" : {
+                                       "name" : "INR Labs In Interval",
+                                       "type" : "FunctionRef",
+                                       "operand" : [ {
+                                          "name" : "int",
+                                          "type" : "OperandRef"
+                                       } ]
+                                    },
+                                    "element" : {
+                                       "name" : "L",
+                                       "type" : "AliasRef"
+                                    }
+                                 }, {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                    "value" : "0",
+                                    "type" : "Literal"
+                                 } ]
+                              }, {
+                                 "type" : "And",
+                                 "operand" : [ {
+                                    "type" : "And",
+                                    "operand" : [ {
+                                       "type" : "In",
+                                       "operand" : [ {
+                                          "name" : "ToDecimal",
+                                          "libraryName" : "FHIRHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "path" : "value",
+                                             "type" : "Property",
+                                             "source" : {
+                                                "strict" : false,
+                                                "type" : "As",
+                                                "operand" : {
+                                                   "path" : "value",
+                                                   "scope" : "L",
+                                                   "type" : "Property"
+                                                },
+                                                "asTypeSpecifier" : {
+                                                   "name" : "{http://hl7.org/fhir}Quantity",
+                                                   "type" : "NamedTypeSpecifier"
+                                                }
+                                             }
+                                          } ]
+                                       }, {
+                                          "lowClosed" : true,
+                                          "highClosed" : true,
+                                          "type" : "Interval",
+                                          "low" : {
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                             "value" : "2.0",
+                                             "type" : "Literal"
+                                          },
+                                          "high" : {
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                             "value" : "3.0",
+                                             "type" : "Literal"
+                                          }
+                                       } ]
+                                    }, {
+                                       "type" : "In",
+                                       "operand" : [ {
+                                          "name" : "ToDecimal",
+                                          "libraryName" : "FHIRHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "path" : "value",
+                                             "type" : "Property",
+                                             "source" : {
+                                                "strict" : false,
+                                                "type" : "As",
+                                                "operand" : {
+                                                   "path" : "value",
+                                                   "type" : "Property",
+                                                   "source" : {
+                                                      "type" : "Indexer",
+                                                      "operand" : [ {
+                                                         "name" : "INR Labs In Interval",
+                                                         "type" : "FunctionRef",
+                                                         "operand" : [ {
+                                                            "name" : "int",
+                                                            "type" : "OperandRef"
+                                                         } ]
+                                                      }, {
+                                                         "type" : "Subtract",
+                                                         "operand" : [ {
+                                                            "type" : "IndexOf",
+                                                            "source" : {
+                                                               "name" : "INR Labs In Interval",
+                                                               "type" : "FunctionRef",
+                                                               "operand" : [ {
+                                                                  "name" : "int",
+                                                                  "type" : "OperandRef"
+                                                               } ]
+                                                            },
+                                                            "element" : {
+                                                               "name" : "L",
+                                                               "type" : "AliasRef"
+                                                            }
+                                                         }, {
+                                                            "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                                            "value" : "1",
+                                                            "type" : "Literal"
+                                                         } ]
+                                                      } ]
+                                                   }
+                                                },
+                                                "asTypeSpecifier" : {
+                                                   "name" : "{http://hl7.org/fhir}Quantity",
+                                                   "type" : "NamedTypeSpecifier"
+                                                }
+                                             }
+                                          } ]
+                                       }, {
+                                          "lowClosed" : true,
+                                          "highClosed" : true,
+                                          "type" : "Interval",
+                                          "low" : {
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                             "value" : "2.0",
+                                             "type" : "Literal"
+                                          },
+                                          "high" : {
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                             "value" : "3.0",
+                                             "type" : "Literal"
+                                          }
+                                       } ]
+                                    } ]
+                                 }, {
+                                    "type" : "GreaterOrEqual",
+                                    "operand" : [ {
+                                       "precision" : "Day",
+                                       "type" : "DifferenceBetween",
+                                       "operand" : [ {
+                                          "name" : "Effective Date",
+                                          "libraryName" : "PhEMAHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "type" : "Indexer",
+                                             "operand" : [ {
+                                                "name" : "INR Labs In Interval",
+                                                "type" : "FunctionRef",
+                                                "operand" : [ {
+                                                   "name" : "int",
+                                                   "type" : "OperandRef"
+                                                } ]
+                                             }, {
+                                                "type" : "Subtract",
+                                                "operand" : [ {
+                                                   "type" : "IndexOf",
+                                                   "source" : {
+                                                      "name" : "INR Labs In Interval",
+                                                      "type" : "FunctionRef",
+                                                      "operand" : [ {
+                                                         "name" : "int",
+                                                         "type" : "OperandRef"
+                                                      } ]
+                                                   },
+                                                   "element" : {
+                                                      "name" : "L",
+                                                      "type" : "AliasRef"
+                                                   }
+                                                }, {
+                                                   "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                                   "value" : "1",
+                                                   "type" : "Literal"
+                                                } ]
+                                             } ]
+                                          } ]
+                                       }, {
+                                          "name" : "Effective Date",
+                                          "libraryName" : "PhEMAHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "name" : "L",
+                                             "type" : "AliasRef"
+                                          } ]
+                                       } ]
+                                    }, {
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                       "value" : "1",
+                                       "type" : "Literal"
+                                    } ]
+                                 } ]
+                              } ]
+                           }
+                        },
+                        "then" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                           "value" : "true",
+                           "type" : "Literal"
+                        },
+                        "else" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                           "value" : "false",
+                           "type" : "Literal"
+                        }
+                     }
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "true",
+                  "type" : "Literal"
+               } ]
+            },
+            "operand" : [ {
+               "name" : "int",
+               "operandTypeSpecifier" : {
+                  "type" : "IntervalTypeSpecifier",
+                  "pointType" : {
+                     "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                     "type" : "NamedTypeSpecifier"
+                  }
+               }
+            } ]
+         }, {
+            "name" : "Has Disqualifying INR Lab In Interval",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Contains",
+               "operand" : [ {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "L",
+                     "expression" : {
+                        "name" : "INR Labs In Interval",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "int",
+                           "type" : "OperandRef"
+                        } ]
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "return" : {
+                     "expression" : {
+                        "type" : "If",
+                        "condition" : {
+                           "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                           "type" : "As",
+                           "operand" : {
+                              "type" : "Not",
+                              "operand" : {
+                                 "type" : "In",
+                                 "operand" : [ {
+                                    "name" : "ToDecimal",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "path" : "value",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "strict" : false,
+                                          "type" : "As",
+                                          "operand" : {
+                                             "path" : "value",
+                                             "scope" : "L",
+                                             "type" : "Property"
+                                          },
+                                          "asTypeSpecifier" : {
+                                             "name" : "{http://hl7.org/fhir}Quantity",
+                                             "type" : "NamedTypeSpecifier"
+                                          }
+                                       }
+                                    } ]
+                                 }, {
+                                    "lowClosed" : true,
+                                    "highClosed" : true,
+                                    "type" : "Interval",
+                                    "low" : {
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                       "value" : "2.0",
+                                       "type" : "Literal"
+                                    },
+                                    "high" : {
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                       "value" : "3.0",
+                                       "type" : "Literal"
+                                    }
+                                 } ]
+                              }
+                           }
+                        },
+                        "then" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                           "value" : "true",
+                           "type" : "Literal"
+                        },
+                        "else" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                           "value" : "false",
+                           "type" : "Literal"
+                        }
+                     }
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "true",
+                  "type" : "Literal"
+               } ]
+            },
+            "operand" : [ {
+               "name" : "int",
+               "operandTypeSpecifier" : {
+                  "type" : "IntervalTypeSpecifier",
+                  "pointType" : {
+                     "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                     "type" : "NamedTypeSpecifier"
+                  }
+               }
+            } ]
+         }, {
+            "name" : "Has Two Qualifying INR Labs And No Disqualifying INR Labs",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "I",
+                     "expression" : {
+                        "name" : "Qualifying Intervals",
+                        "type" : "ExpressionRef"
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "And",
+                     "operand" : [ {
+                        "name" : "Has Two Consecutive Good INR Labs In Interval",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "lowClosed" : true,
+                           "highClosed" : true,
+                           "type" : "Interval",
+                           "low" : {
+                              "type" : "Subtract",
+                              "operand" : [ {
+                                 "path" : "low",
+                                 "scope" : "I",
+                                 "type" : "Property"
+                              }, {
+                                 "value" : 7,
+                                 "unit" : "days",
+                                 "type" : "Quantity"
+                              } ]
+                           },
+                           "high" : {
+                              "path" : "high",
+                              "scope" : "I",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "type" : "Not",
+                        "operand" : {
+                           "name" : "Has Disqualifying INR Lab In Interval",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "lowClosed" : true,
+                              "highClosed" : true,
+                              "type" : "Interval",
+                              "low" : {
+                                 "type" : "Subtract",
+                                 "operand" : [ {
+                                    "path" : "low",
+                                    "scope" : "I",
+                                    "type" : "Property"
+                                 }, {
+                                    "value" : 7,
+                                    "unit" : "days",
+                                    "type" : "Quantity"
+                                 } ]
+                              },
+                              "high" : {
+                                 "path" : "high",
+                                 "scope" : "I",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Has Two Qualifying INR Labs And No Disqualifying INR Labs",
+               "type" : "ExpressionRef"
+            }
+         } ]
+      }
+   }
+}
+

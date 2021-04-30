@@ -1,0 +1,173 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+68.systolic-bp,Systolic Blood Pressure Labs,8480-6,LOINC
+68.diastolic-bp,Diastolic Blood Pressure Labs,8462-4,LOINC
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),194.0,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),227.0,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.0,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.1,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.2,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.3,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.6,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.8,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),255.9,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),^405.*,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),^416.*,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),^581.*,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),^582.*,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),^745.*,ICD9CM
+68.exclusion-any-time-dx,Exclusion Diagnoses (Any Time),^747.1*,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),^242.*,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),246.0,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),246.8,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),246.9,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),252.8,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),252.9,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),320.20,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),327.21,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),327.23,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),327.27,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),327.29,ICD9CM
+68.exclusion-within-5-years-dx,Exclusion Diagnoses (Within 5 Years),^599.6*,ICD9CM
+68.ejection-fraction,Ejection Fraction,10230-1,LOINC
+68.med-class-hydralazine,Medication Class Hydralazine,hydralazine,RxNorm
+68.med-class-hydralazine,Medication Class Hydralazine,apresazide,RxNorm
+68.med-class-hydralazine,Medication Class Hydralazine,bidil,RxNorm
+68.med-class-hydralazine,Medication Class Hydralazine,apressoline,RxNorm
+68.med-class-minoxidil,Medication Class Minoxidil,minoxidil,RxNorm
+68.med-class-minoxidil,Medication Class Minoxidil,loniten,RxNorm
+68.med-class-central-alpha-antagonists,Medication Class Central Alpha Antagonists,clonidine,RxNorm
+68.med-class-central-alpha-antagonists,Medication Class Central Alpha Antagonists,catapres,RxNorm
+68.med-class-central-alpha-antagonists,Medication Class Central Alpha Antagonists,catapress,RxNorm
+68.med-class-central-alpha-antagonists,Medication Class Central Alpha Antagonists,guanabenz,RxNorm
+68.med-class-central-alpha-antagonists,Medication Class Central Alpha Antagonists,methyldopa,RxNorm
+68.med-class-central-alpha-antagonists,Medication Class Central Alpha Antagonists,methyldopate,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,candesartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,atacand,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,irbesartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,avapro,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,lisinopril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,prinivil,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,zestril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,trandolapril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,mavik,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,gopten,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,odrik,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,losartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,cozaar,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,enalapril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,enalaprilat,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,valsartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,diovan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,telmisartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,micardis,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,moexipril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,quinapril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,accupril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,ramipril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,altace,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,fosinopril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,monopril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,eprosartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,olmesartan,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,benicar,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,perindopril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,aceon,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,captopril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,capoten,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,benazepril,RxNorm
+68.med-class-central-acei-arb,Medication Class ACEI/ARB,lotensin,RxNorm
+68.med-class-aldosterone-antagonists,Medication Class Aldosterone Antagonists,spironolactone,RxNorm
+68.med-class-aldosterone-antagonists,Medication Class Aldosterone Antagonists,aldactone,RxNorm
+68.med-class-aldosterone-antagonists,Medication Class Aldosterone Antagonists,eplerenone,RxNorm
+68.med-class-aldosterone-antagonists,Medication Class Aldosterone Antagonists,inspra,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,thiazide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,hydrochlorothiazide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,esidrix,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,indapamide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,lozol,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,natrilix,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,cyclothiazide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,chlorothiazide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,chlorthalidone,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,bendroflumethiazide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,benzothiazide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,amiloride,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,midamor,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,triamterene,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,dyrenium,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,furosemide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,lasix,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,torsemide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,demadex,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,ethacrynic acid,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,ethacrynate,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,edecrin,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,bumetanide,RxNorm
+68.med-class-diuretics,Medication Class Diuretics,bumex,RxNorm
+68.med-class-diuretic-combo,Medication Class Diuretic Combination,dyazide,RxNorm
+68.med-class-diuretic-combo,Medication Class Diuretic Combination,moduretic,RxNorm
+68.med-class-diuretic-combo,Medication Class Diuretic Combination,maxzide,RxNorm
+68.med-class-alpha-antagonists,Medication Class Alpha Antagonists,prazosin,RxNorm
+68.med-class-alpha-antagonists,Medication Class Alpha Antagonists,minipress,RxNorm
+68.med-class-alpha-antagonists,Medication Class Alpha Antagonists,doxazosin,RxNorm
+68.med-class-alpha-antagonists,Medication Class Alpha Antagonists,cardura,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,verapamil,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,calan,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,covera,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,isoptin,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,verelan,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,diltiazem,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,dilt,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,tiazac,RxNorm
+68.med-class-non-dihydro-ccbs,Medication Class Non-Dihydro CCBs,cardizem,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,isradipine,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,dynacirc,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,nicardipine,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,nifedipine,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,procardia,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,nisoldipine,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,felodipine,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,plendil,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,amlodipine,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,norvasc,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,caduet,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,bepridil,RxNorm
+68.med-class-dihydro-ccbs,Medication Class Dihydro CCBs,vascor,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,propranolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,inderal,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,metoprolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,toprol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,labetalol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,trandate,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,nadolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,corgard,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,esmolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,brevibloc,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,pindolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,penbutolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,levatol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,labetalol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,normodyne,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,atenolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,tenormin,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,carvedilol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,coreg,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,bisoprolol,RxNorm
+68.med-class-beta-blockers,Medication Class Beta Blockers,zebeta,RxNorm
+68.med-class-thiazide-bb-combo,Medication Class Thiazide/BB Combination,corzide,RxNorm
+68.med-class-thiazide-bb-combo,Medication Class Thiazide/BB Combination,tenoretic,RxNorm
+68.med-class-thiazide-bb-combo,Medication Class Thiazide/BB Combination,lopressor hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,zestoretic,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,avalide,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,hyzaar,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,uniretic,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,benicar hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,accuretic,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,teveten hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,lotensin hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,micardis hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,atacand hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,diovan hct,RxNorm
+68.med-class-thiazide-acei-arb-combo,Medication Class Thiazide/ACEI/ARB Combination,monopril hct,RxNorm
+68.med-class-thiazide-aldosterone-antagonist-combo,Medication Class Thiazide/Aldosterone Antagonist Combination,aldactazide,RxNorm
+68.med-class-thiazide-renin-antagonist-combo,Medication Class Thiazide/Renin Antagonist Combination,tekturna hct,RxNorm

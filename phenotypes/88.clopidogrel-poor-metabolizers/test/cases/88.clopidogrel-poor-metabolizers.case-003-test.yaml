@@ -1,0 +1,45 @@
+---
+name: 003 Clopidogrel Poor Metabolizers Case - MI + revascularization
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # First MI with clopidogrel
+
+  - resourceType: Condition
+    code: ICD9#410.9 Acute myocardial infarction, unspecified site
+    onsetDateTime: "2019-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#410.9 Acute myocardial infarction, unspecified site
+    onsetDateTime: "2019-12-13T16:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#32968 clopidogrel
+    authoredOn: "2019-12-15T16:00:00.000Z"
+    status: completed
+
+  # Second event (revascularization) with clopidogres
+
+  - resourceType: Procedure
+    code: CPT#33511 Coronary artery bypass, vein only; 2 coronary venous grafts
+    performedDateTime: "2020-12-12T16:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#32968 clopidogrel
+    authoredOn: "2020-11-15T16:00:00.000Z"
+    status: completed
+
+results:
+  Myocardial Infarction Diagnosis With Clopidogrel: $should have length 1
+  Intracoronary Stent: false
+  Myocardial Infarction Diagnosis With Clopidogrel In Interval: false
+  Revascularization With Clopidogrel In Interval: true
+  Stroke With Clopidogrel In Interval: false
+  Death With Clopidogrel In Interval: false
+  Has Second Event With Clopidogrel: true
+  Has Myocardial Infarction Diagnosis With Clopidogrel: true
+  Case: true

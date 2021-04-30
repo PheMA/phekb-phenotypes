@@ -1,0 +1,52 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+15.hormone-therapy-meds,Hormone Therapy Medications,253166,RxNorm
+15.hormone-therapy-meds,Hormone Therapy Medications,618365,RxNorm
+15.hormone-therapy-meds,Hormone Therapy Medications,4099,RxNorm
+15.hormone-therapy-meds,Hormone Therapy Medications,10379,RxNorm
+15.hormone-therapy-meds,Hormone Therapy Medications,37855,RxNorm
+15.hormone-therapy-meds,Hormone Therapy Medications,6904,RxNorm
+15.antilipemic-meds,Antilipemic Medications,221072,RxNorm
+15.antilipemic-meds,Antilipemic Medications,301542,RxNorm
+15.antilipemic-meds,Antilipemic Medications,36567,RxNorm
+15.antilipemic-meds,Antilipemic Medications,41127,RxNorm
+15.antilipemic-meds,Antilipemic Medications,42463,RxNorm
+15.antilipemic-meds,Antilipemic Medications,6472,RxNorm
+15.antilipemic-meds,Antilipemic Medications,83367,RxNorm
+15.antilipemic-meds,Antilipemic Medications,861634,RxNorm
+15.antilipemic-meds,Antilipemic Medications,137732,RxNorm
+15.antilipemic-meds,Antilipemic Medications,7393,RxNorm
+15.antilipemic-meds,Antilipemic Medications,7405,RxNorm
+15.antilipemic-meds,Antilipemic Medications,1525,RxNorm
+15.antilipemic-meds,Antilipemic Medications,21149,RxNorm
+15.antilipemic-meds,Antilipemic Medications,24609,RxNorm
+15.antilipemic-meds,Antilipemic Medications,2594,RxNorm
+15.antilipemic-meds,Antilipemic Medications,4719,RxNorm
+15.antilipemic-meds,Antilipemic Medications,8703,RxNorm
+15.antilipemic-meds,Antilipemic Medications,141626,RxNorm
+15.antilipemic-meds,Antilipemic Medications,2447,RxNorm
+15.antilipemic-meds,Antilipemic Medications,2685,RxNorm
+15.antilipemic-meds,Antilipemic Medications,341248,RxNorm
+15.antilipemic-meds,Antilipemic Medications,4301,RxNorm
+15.antilipemic-meds,Antilipemic Medications,484348,RxNorm
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,^243*,ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,^244.*,ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,245,ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,245.2,ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,245.8,ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,245.9,ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,^242.[0-3][0-3],ICD9CM
+15.thyroid-disorder-dx,Thyroid Disorder Diagnoses,^242.9[0-3],ICD9CM
+15.diabetes-dx,Diabetes Diagnoses,^250.*,ICD9CM
+15.diabetes-dx,Diabetes Diagnoses,357.2,ICD9CM
+15.diabetes-dx,Diabetes Diagnoses,^362.(01|02),ICD9CM
+15.diabetes-dx,Diabetes Diagnoses,583.81,ICD9CM
+15.cancer-dx,Cancer Diagnoses,^(1[4-9][0-9]|20[0-8]).*,ICD9CM
+15.ldl-labs,LDL-C Laboratory Results,12773-8,LOINC
+15.ldl-labs,LDL-C Laboratory Results,13457-7,LOINC
+15.ldl-labs,LDL-C Laboratory Results,18261-8,LOINC
+15.ldl-labs,LDL-C Laboratory Results,18262-6,LOINC
+15.ldl-labs,LDL-C Laboratory Results,2089-1,LOINC
+15.ldl-labs,LDL-C Laboratory Results,22748-8,LOINC
+15.ldl-labs,LDL-C Laboratory Results,39469-2,LOINC
+15.ldl-labs,LDL-C Laboratory Results,49132-4,LOINC
+15.ldl-labs,LDL-C Laboratory Results,55440-2,LOINC

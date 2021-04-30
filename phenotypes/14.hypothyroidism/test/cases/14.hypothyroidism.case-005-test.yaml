@@ -1,0 +1,19 @@
+---
+name: 005 Hypothyroidism Not Case - no relevant data
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Has hypothyroidism diagnosis: false
+  Has abnormal TSH or FT4 lab: false
+  Has thyroid replacement medication use: false
+  Has sufficient time between labs and meds: false
+  Secondary causes of hypothyroidism: false
+  Post surgical or post-radiation hypothyroidism: false
+  Other thyroid diseases: false
+  Thyroid altering medication: false
+  Case: false

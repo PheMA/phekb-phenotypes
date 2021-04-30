@@ -1,0 +1,30 @@
+---
+name: 010 Familial Hypercholesterolemia NOT Case - no lipid profile
+
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 1958-07-16
+
+  # CHD
+  - resourceType: Condition
+    code: ICD9#413.0 Angina decubitus
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#413.9 Other and unspecified angina pectoris
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+results:
+  In Base Population: false
+  Has Lipid Profile: false
+  Has High Triglycerides: false
+  Has Secondary Cause Of Hypercholesterolemia: false
+  Has Lipid Lowering Treatment In Interval: false
+  Index Date: null
+  Has Premature CVD Or PAD: false
+  Has Premature CHD: true
+  Group I: 0
+  Group II: 2
+  Case: false

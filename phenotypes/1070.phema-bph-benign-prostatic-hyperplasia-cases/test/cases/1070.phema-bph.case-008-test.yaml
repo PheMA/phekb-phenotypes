@@ -1,0 +1,27 @@
+---
+name: 008 Not BPH Case - no meds or procs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1970-07-16
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+  - resourceType: Condition
+    code: ICD9CM#600.2 Benign localized hyperplasia of prostate
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#600.91 Hyperplasia of prostate, unspecified, with urinary obstruction and other lower urinary symptoms (LUTS)
+    onsetDateTime: "2016-12-12T16:00:00.000Z"
+
+results:
+  BPH Medications: false
+  BPH Procedures: false
+  Two Or More BPH Diagnoses: true
+  Has Exclusion Diagnoses: false
+  In Base Population: true
+  Case: false

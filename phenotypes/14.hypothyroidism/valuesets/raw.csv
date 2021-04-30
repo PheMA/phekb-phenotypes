@@ -1,0 +1,126 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+14.pregnancy-diagnoses,Pregnancy Diagnoses,V22.1,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,V22.2,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,631,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.0,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.00,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.1,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.10,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.20,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.8,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.80,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.9,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,633.90,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,645.1,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,645.2,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,646.8,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,646.9,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,648.1,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651.0,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651.1,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651.2,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651.8,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651.9,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,651.90,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,761.4,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,V23.89,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,V61.6,ICD9CM
+14.pregnancy-diagnoses,Pregnancy Diagnoses,V61.7,ICD9CM
+14.secondary-hypothyroidism-diagnoses,Secondary Hypothyroidism Diagnoses,244.0,ICD9CM
+14.secondary-hypothyroidism-diagnoses,Secondary Hypothyroidism,244.1,ICD9CM
+14.secondary-hypothyroidism-diagnoses,Secondary Hypothyroidism,244.2,ICD9CM
+14.secondary-hypothyroidism-diagnoses,Secondary Hypothyroidism,244.3,ICD9CM
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77261,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77262,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77263,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77280,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77285,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77290,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77295,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77299,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77300,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77301,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77305,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77310,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77315,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77321,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77326,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77327,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77328,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77331,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77332,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77333,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77334,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77336,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77370,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77399,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77401,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77402,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77403,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77404,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77406,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77408,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77409,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77411,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77412,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77413,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77414,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77416,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77417,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77418,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77427,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77431,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77432,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77470,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77499,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77520,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77522,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77523,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77525,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77750,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77761,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77762,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77763,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77776,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77777,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77778,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77781,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77782,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77783,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77784,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77789,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77790,CPT4
+14.radiation-therapy-procedures,Radiation Therapy Procedures,77799,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60240,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60271,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60260,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60252,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60254,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60270,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60500,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60502,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60505,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60200,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,78020,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60225,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60210,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60212,CPT4
+14.thyroidectomy-procedures,Thyroidectomy Procedures,60220,CPT4
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,^193*,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,242.0,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,242.1,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,242.2,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,242.3,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,242.9,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,244.0,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,244.1,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,244.2,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,244.3,ICD9CM
+14.thyroid-disease-exclusions,Other Thyroid Disease Diagnoses,^258.*,ICD9CM
+14.thyroid-altering-meds,Thyroid-Altering Medication,Phenytoin,RxNorm
+14.thyroid-altering-meds,Thyroid-Altering Medication,Amiodarone,RxNorm
+14.thyroid-altering-meds,Thyroid-Altering Medication,Lithium,RxNorm
+14.thyroid-altering-meds,Thyroid-Altering Medication,Methimazole,RxNorm
+14.thyroid-altering-meds,Thyroid-Altering Medication,Propylthiouracil,RxNorm

@@ -1,0 +1,26 @@
+---
+name: 003 Rheumatoid Arthritis Case - type 2 only
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#714.0 Rheumatoid arthritis
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#121191 rituximab
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9#696.1 Other psoriasis
+    onsetDateTime: "2018-12-12T16:00:00.000Z"
+
+results:
+  Case 1: false
+  Case 2: true
+  Case: true

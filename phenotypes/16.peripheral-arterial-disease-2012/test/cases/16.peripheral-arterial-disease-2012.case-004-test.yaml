@@ -1,0 +1,36 @@
+---
+name: 004 Peripheral Arterial Disease NOT Case - Missing concurrent stent
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Procedure
+    code: CPT#75710 Angiography, extremity, unilateral, radiological supervision and interpretation
+    performedDateTime: "2008-11-12T16:00:00.000Z"
+
+  # NOT concurrent with Angiography procedure
+  - resourceType: Procedure
+    code: CPT#37205 Transcatheter placement of an intravascular stent(s), (non-coronary vessel), percutaneous; initial vessel
+    performedDateTime: "2008-11-15T16:00:00.000Z"
+
+  # This excludes the angiography from qualifying on its own
+  - resourceType: Condition
+    id: condition-1
+    code: ICD9#736.39 Other acquired deformities of hip
+    onsetDateTime: "2011-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    id: condition-1
+    code: ICD9#440.22 Atherosclerosis of native arteries of the extremities with rest pain
+    onsetDateTime: "2011-12-12T16:00:00.000Z"
+
+results:
+  Has Diagnosis Codes For PAD: 1
+  Has Procedure Codes for PAD: 0
+  Has Medications for Claudication: 0
+  Has Additional Qualifying Criteria: false
+  Has Vascular Lab Criteria: false
+  Case: false

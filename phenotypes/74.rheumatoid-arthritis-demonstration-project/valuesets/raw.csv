@@ -1,0 +1,63 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+74.rheumatoid-arthritis-dx,Rheumatoid Arthritis Diagnoses,714,ICD9CM
+74.rheumatoid-arthritis-dx,Rheumatoid Arthritis Diagnoses,714.0,ICD9CM
+74.rheumatoid-arthritis-dx,Rheumatoid Arthritis Diagnoses,714.1,ICD9CM
+74.rheumatoid-arthritis-dx,Rheumatoid Arthritis Diagnoses,714.2,ICD9CM
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,methotrexate,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,amethopterin,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,sulfasalazine,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,azulfidine,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,minocycline,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,minocin,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,solodyn,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,hydroxychloroquine,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,plaquenil,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,adalimumab,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,humira,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,etanercept,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,enbrel,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,infliximab,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,remicade,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,gold,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,myochrysine,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,azathioprine,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,imuran,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,rituximab,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,rituxan,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,mabthera,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,anakinra,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,kineret,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,abatacept,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,orencia,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,leflunomide,RxNorm
+74.rheumatoid-arthritis-meds,Rheumatoid Arthritis Medications,arava,RxNorm
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,099.3,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,135,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,242.0,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,245.0,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,274.0,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,340,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,341.9,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,323.9,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^358.0.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,775.2,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,443.0,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^555.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^556.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,564.1,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,695.4,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,710.0,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,373.34,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^696.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,710.1,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,710.2,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,710.3,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,710.4,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^714.3.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^715.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^719.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,^720.*,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,721.2,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,721.3,ICD9CM
+74.rheumatoid-arthritis-inflammatory-dx,Rheumatoid Arthritis Inflamatory Diagnoses,729.0,ICD9CM
+74.rheumatoid-arthritis-juvenile-dx,Rheumatoid Arthritis Juvenile Diagnoses,^714.3.*,ICD9CM

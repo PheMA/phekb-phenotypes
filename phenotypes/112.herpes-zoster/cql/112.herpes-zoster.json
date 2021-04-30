@@ -1,0 +1,423 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "112.herpes-zoster",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         }, {
+            "localIdentifier" : "PhEMAOperational",
+            "path" : "PhEMAOperational",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Zoster Diagnoses",
+            "id" : "112.zoster-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Zoster Vaccination Procedures",
+            "id" : "112.zoster-vaccination-procedures",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "HIV Diagnoses",
+            "id" : "112.hiv-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Blood Or Bone Marrow Cancer Diagnoses",
+            "id" : "112.blood-or-bone-marrow-cancer-diagnoses",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Chemotherapy Procedures",
+            "id" : "112.chemo-procedures",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "Vaccination On Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "P",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Procedure",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Zoster Vaccination Procedures",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "Equal",
+                     "operand" : [ {
+                        "type" : "ToDate",
+                        "operand" : {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "P",
+                              "type" : "AliasRef"
+                           } ]
+                        }
+                     }, {
+                        "type" : "ToDate",
+                        "operand" : {
+                           "name" : "date",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "date",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Diagnoses On Or After 40",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "C",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Zoster Diagnoses",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "GreaterOrEqual",
+                     "operand" : [ {
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "C",
+                              "type" : "AliasRef"
+                           } ]
+                        } ]
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "value" : "40",
+                        "type" : "Literal"
+                     } ]
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Vaccination On Date",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "C",
+                              "type" : "AliasRef"
+                           } ]
+                        } ]
+                     }
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Index Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "name" : "Effective Dates",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "name" : "Diagnoses On Or After 40",
+                     "type" : "ExpressionRef"
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "Diagnosis On Or After 40",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "name" : "Diagnoses On Or After 40",
+                  "type" : "ExpressionRef"
+               }
+            }
+         }, {
+            "name" : "HIV Diagnosis On Two Distinct Days",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "operand" : [ {
+                  "type" : "Count",
+                  "source" : {
+                     "name" : "Distinct Dates",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "HIV Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     } ]
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "2",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "Blood Or Bone Marrow Cancer Diagnosis In Prior Year",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Blood Or Bone Marrow Cancer Diagnoses",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "After",
+                     "operand" : [ {
+                        "name" : "Effective Date",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "C",
+                           "type" : "AliasRef"
+                        } ]
+                     }, {
+                        "type" : "Subtract",
+                        "operand" : [ {
+                           "name" : "Index Date",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "value" : 365,
+                           "unit" : "days",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Chemotherapy In Prior Six Months",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "P",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Procedure",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Chemotherapy Procedures",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "After",
+                     "operand" : [ {
+                        "name" : "Effective Date",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "P",
+                           "type" : "AliasRef"
+                        } ]
+                     }, {
+                        "type" : "Subtract",
+                        "operand" : [ {
+                           "name" : "Index Date",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "value" : 180,
+                           "unit" : "days",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "type" : "And",
+                           "operand" : [ {
+                              "type" : "GreaterOrEqual",
+                              "operand" : [ {
+                                 "precision" : "Year",
+                                 "type" : "CalculateAge",
+                                 "operand" : {
+                                    "path" : "birthDate.value",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "Patient",
+                                       "type" : "ExpressionRef"
+                                    }
+                                 }
+                              }, {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "40",
+                                 "type" : "Literal"
+                              } ]
+                           }, {
+                              "name" : "Diagnosis On Or After 40",
+                              "type" : "ExpressionRef"
+                           } ]
+                        }, {
+                           "name" : "Continuous Years Of Enrollment",
+                           "libraryName" : "PhEMAOperational",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "5",
+                              "type" : "Literal"
+                           } ]
+                        } ]
+                     }, {
+                        "type" : "Not",
+                        "operand" : {
+                           "name" : "HIV Diagnosis On Two Distinct Days",
+                           "type" : "ExpressionRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Blood Or Bone Marrow Cancer Diagnosis In Prior Year",
+                        "type" : "ExpressionRef"
+                     }
+                  } ]
+               }, {
+                  "type" : "Not",
+                  "operand" : {
+                     "name" : "Chemotherapy In Prior Six Months",
+                     "type" : "ExpressionRef"
+                  }
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

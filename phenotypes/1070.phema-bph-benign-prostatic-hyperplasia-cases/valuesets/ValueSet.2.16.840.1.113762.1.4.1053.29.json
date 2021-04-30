@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1053.29",
+  "url": "https://workbench.phema.science/fhir/ValueSet/2.16.840.1.113762.1.4.1053.29",
+  "status": "active",
+  "name": "BPH Procedures",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "52450",
+            "display": "Transurethral incision of prostate"
+          },
+          {
+            "code": "52601",
+            "display": "Transurethral electrosurgical resection of prostate, including control of postoperative bleeding, complete (vasectomy, meatotomy, cystourethroscopy, urethral calibration and/or dilation, and internal urethrotomy are included)"
+          },
+          {
+            "code": "52630",
+            "display": "Transurethral resection; residual or regrowth of obstructive prostate tissue including control of postoperative bleeding, complete (vasectomy, meatotomy, cystourethroscopy, urethral calibration and/or dilation, and internal urethrotomy are included)"
+          },
+          {
+            "code": "52648",
+            "display": "Laser vaporization of prostate, including control of postoperative bleeding, complete (vasectomy, meatotomy, cystourethroscopy, urethral calibration and/or dilation, internal urethrotomy and transurethral resection of prostate are included if performed)"
+          },
+          {
+            "code": "53850",
+            "display": "Transurethral destruction of prostate tissue; by microwave thermotherapy"
+          },
+          {
+            "code": "53852",
+            "display": "Transurethral destruction of prostate tissue; by radiofrequency thermotherapy"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "60.2",
+            "display": "Transurethral Prostatectomy"
+          }
+        ]
+      }
+    ]
+  }
+}

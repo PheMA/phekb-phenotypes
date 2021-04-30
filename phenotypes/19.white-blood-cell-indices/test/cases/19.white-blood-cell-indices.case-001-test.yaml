@@ -1,0 +1,20 @@
+---
+name: 001 WBC Case
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#5905-5 Monocytes/100 leukocytes in Blood by Automated count
+    valueQuantity: 4 %
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Has HIV Indication: false
+  Has Dialysis Procedure: false
+  Has Splenectomy Procedure: false
+  Has WBC Sample: true
+  Case: true

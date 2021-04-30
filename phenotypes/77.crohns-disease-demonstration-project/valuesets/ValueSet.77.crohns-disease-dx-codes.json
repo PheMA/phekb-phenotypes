@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "77.crohns-disease-dx-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/77.crohns-disease-dx-codes",
+  "status": "active",
+  "name": "Crohn's Disease Diagnosese",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "555.9",
+            "display": "Regional enteritis of unspecified site"
+          },
+          {
+            "code": "555.0",
+            "display": "Regional enteritis of small intestine"
+          },
+          {
+            "code": "555.1",
+            "display": "Regional enteritis of large intestine"
+          },
+          {
+            "code": "555",
+            "display": "Regional enteritis"
+          },
+          {
+            "code": "555.2",
+            "display": "Regional enteritis of small intestine with large intestine"
+          }
+        ]
+      }
+    ]
+  }
+}

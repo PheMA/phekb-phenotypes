@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "13.meds-affecting-growth",
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/13.meds-affecting-growth",
+  "name": "Medications Affecting Growth",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "677",
+            "display": "aminoglutethimide"
+          },
+          {
+            "code": "38668",
+            "display": "trilostane"
+          },
+          {
+            "code": "7813",
+            "display": "oxymetholone"
+          },
+          {
+            "code": "7779",
+            "display": "oxandrolone"
+          },
+          {
+            "code": "10032",
+            "display": "stanozolol"
+          },
+          {
+            "code": "7244",
+            "display": "nandrolone"
+          },
+          {
+            "code": "10379",
+            "display": "testosterone"
+          },
+          {
+            "code": "278739",
+            "display": "pegvisomant"
+          },
+          {
+            "code": "56188",
+            "display": "sermorelin"
+          },
+          {
+            "code": "56570",
+            "display": "somatrem"
+          },
+          {
+            "code": "61148",
+            "display": "somatropin"
+          }
+        ]
+      }
+    ]
+  }
+}

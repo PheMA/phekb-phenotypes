@@ -1,0 +1,27 @@
+---
+name: 005 Urinary incontinence case - no prostate cancer dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Procedure
+    code: CPT#77427 Radiation treatment management, 5 treatments
+    performedDateTime: "2009-02-12T16:00:00.000Z"
+
+  - resourceType: Encounter
+    id: encounter-1
+    period: "1999-11-12T16:00:00.000Z"
+
+  - resourceType: Encounter
+    id: encounter-2
+    period: "2007-11-12T16:00:00.000Z"
+
+results:
+  Has Two Or More Encounters Before First Treatment: true
+  Has Prostate Cancer Treatment: true
+  Has Prostate Cancer Diagnoses: false
+  In Base Population: true
+  Case: false

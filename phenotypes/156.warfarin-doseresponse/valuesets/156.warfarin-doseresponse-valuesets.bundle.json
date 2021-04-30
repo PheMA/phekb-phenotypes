@@ -1,0 +1,95 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "156.anticoagulation-clinic-encounter-types",
+        "url": "https://workbench.phema.science/fhir/ValueSet/156.anticoagulation-clinic-encounter-types",
+        "name": "Anticoagulation Clinic Encounter Types",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "439021005",
+                  "display": "Seen in community anticoagulation clinic"
+                },
+                {
+                  "code": "440678006",
+                  "display": "Seen in hospital anticoagulation clinic"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "156.inr-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/156.inr-labs",
+        "name": "INR Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "6301-6",
+                  "display": "INR"
+                },
+                {
+                  "code": "34714-6",
+                  "display": "INR in Blood by Coagulation assay"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "156.warfarin-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/156.warfarin-meds",
+        "name": "Warfarin Medications",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "11289",
+                  "display": "Warfarin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

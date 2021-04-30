@@ -1,0 +1,34 @@
+---
+name: 002 Low HDL case - diabetes diagnosis after HDLs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2008-11-11T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#250.52 Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled
+    onsetDateTime: "2014-10-11T00:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#250.52 Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled
+    onsetDateTime: "2016-10-11T00:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#250.52 Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled
+    onsetDateTime: "2014-10-10T00:00:00.000Z"
+
+results:
+  Has Two Or More HDLs Before Lipid Impacting Event: true
+  Case: true

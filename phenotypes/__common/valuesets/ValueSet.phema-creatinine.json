@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "phema-creatinine",
+  "url": "https://workbench.phema.science/fhir/ValueSet/phema-creatinine",
+  "name": "Creatinine",
+  "status": "active",
+  "publisher": "Project PhEMA",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14682-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14682-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2160-0",
+            "display": "Creatinine serum/plasma"
+          },
+          {
+            "code": "35203-9",
+            "display": "Creatinine [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "38483-4",
+            "display": "Creatinine [Mass/volume] in Blood"
+          },
+          {
+            "code": "59826-8",
+            "display": "Creatinine [Moles/volume] in Blood"
+          },
+          {
+            "code": "77140-2",
+            "display": "Creatinine [Moles/volume] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "14682-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14682-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

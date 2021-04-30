@@ -1,0 +1,120 @@
+---
+name: 008 Resistant Hypertension Case - high Creatinine, but results in okay eGFR for black male
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+    # This extension is from US Core
+    extension:
+        - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
+          extension:
+              - valueCoding:
+                  system: urn:oid:2.16.840.1.113883.6.238
+                  code: 2054-5
+                  display: Black
+
+  # Medication Class Hydralazine
+  - resourceType: MedicationRequest
+    code: RXNORM#91825 Apresazide
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2001-10-15T00:00:00.000Z"
+        end: "2002-04-15T00:00:00.000Z"
+
+  # Medication Class Minoxidil
+  - resourceType: MedicationRequest
+    code: RXNORM#6984 Minoxidil
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2002-01-15T00:00:00.000Z"
+        end: "2002-10-15T00:00:00.000Z"
+
+  # Medication Class Minoxidil (same class again later)
+  - resourceType: MedicationRequest
+    code: RXNORM#6984 Minoxidil
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2009-01-15T00:00:00.000Z"
+        end: "2012-10-15T00:00:00.000Z"
+
+  # Medication Class Minoxidil (same class again, overlapping)
+  - resourceType: MedicationRequest
+    code: RXNORM#202706 Loniten
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2010-01-15T00:00:00.000Z"
+        end: "2017-10-15T00:00:00.000Z"
+
+  # Medication Class Central Alpha Antagonists
+  - resourceType: MedicationRequest
+    code: RXNORM#202941 Catapres
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2002-07-15T00:00:00.000Z"
+        end: "2004-10-15T00:00:00.000Z"
+
+  # Medication Class Diuretic Combination (counts as 1)
+  - resourceType: MedicationRequest
+    code: RXNORM#23742 Dyazide
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2001-10-15T00:00:00.000Z"
+        end: "2001-10-16T00:00:00.000Z"
+
+  # Medication Class Beta Blockers
+  - resourceType: MedicationRequest
+    code: RXNORM#8787 Propranolol
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2007-01-15T00:00:00.000Z"
+        end: "2011-10-15T00:00:00.000Z"
+
+  # Medication Class Thiazide/Aldosterone Antagonist Combination
+  - resourceType: MedicationRequest
+    code: RXNORM#17276 Aldactazide
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2005-10-15T00:00:00.000Z"
+        end: "2005-10-18T00:00:00.000Z"
+
+  # Medication Class Thiazide/ACEI/ARB Combination
+  - resourceType: MedicationRequest
+    code: RXNORM#85783 Zestoretic
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2005-10-15T00:00:00.000Z"
+        end: "2009-10-18T00:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#220670 Uniretic
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2007-10-15T00:00:00.000Z"
+        end: "2011-10-18T00:00:00.000Z"
+
+  # Creatinine resulting in eGFR > 30 for black male
+  - resourceType: Observation
+    code: LOINC#14682-9 Creatinine [Moles/volume] in Serum or Plasma
+    valueQuantity: 2.5 mg/dL
+    effectiveDateTime: "2003-06-01T07:00:00.000Z"
+
+results:
+  Qualifying BP Measurements: $should have length 0
+  Has Any Time Exclusion Diagnosis: false
+  Race eGFR Factor: 1.21
+  Gender eGFR Factor: 1
+  Case Type 1: true
+  Case Type 2: false
+  Case: true

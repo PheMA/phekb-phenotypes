@@ -1,0 +1,1606 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.systolic-bp",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.systolic-bp",
+        "name": "Systolic Blood Pressure Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "8480-6",
+                  "display": "BP systolic"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.diastolic-bp",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.diastolic-bp",
+        "name": "Diastolic Blood Pressure Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "8462-4",
+                  "display": "BP diastolic"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.exclusion-any-time-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.exclusion-any-time-dx",
+        "name": "Exclusion Diagnoses (Any Time)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "194.0",
+                  "display": "Malignant neoplasm of adrenal gland"
+                },
+                {
+                  "code": "227.0",
+                  "display": "Benign neoplasm of adrenal gland"
+                },
+                {
+                  "code": "255.0",
+                  "display": "Cushing's syndrome"
+                },
+                {
+                  "code": "255.1",
+                  "display": "Hyperaldosteronism"
+                },
+                {
+                  "code": "255.2",
+                  "display": "Adrenogenital disorders"
+                },
+                {
+                  "code": "255.3",
+                  "display": "Other corticoadrenal overactivity"
+                },
+                {
+                  "code": "255.6",
+                  "display": "Medulloadrenal hyperfunction"
+                },
+                {
+                  "code": "255.8",
+                  "display": "Other specified disorders of adrenal glands"
+                },
+                {
+                  "code": "255.9",
+                  "display": "Unspecified disorder of adrenal glands"
+                },
+                {
+                  "code": "405.09",
+                  "display": "Other malignant secondary hypertension"
+                },
+                {
+                  "code": "405.19",
+                  "display": "Other benign secondary hypertension"
+                },
+                {
+                  "code": "405.91",
+                  "display": "Unspecified renovascular hypertension"
+                },
+                {
+                  "code": "405.0",
+                  "display": "Malignant secondary hypertension"
+                },
+                {
+                  "code": "405.01",
+                  "display": "Malignant renovascular hypertension"
+                },
+                {
+                  "code": "405.1",
+                  "display": "Benign secondary hypertension"
+                },
+                {
+                  "code": "405",
+                  "display": "Secondary hypertension"
+                },
+                {
+                  "code": "405.11",
+                  "display": "Benign renovascular hypertension"
+                },
+                {
+                  "code": "405.99",
+                  "display": "Other unspecified secondary hypertension"
+                },
+                {
+                  "code": "405.9",
+                  "display": "Unspecified secondary hypertension"
+                },
+                {
+                  "code": "416.2",
+                  "display": "Chronic pulmonary embolism"
+                },
+                {
+                  "code": "416.0",
+                  "display": "Primary pulmonary hypertension"
+                },
+                {
+                  "code": "416",
+                  "display": "Chronic pulmonary heart disease"
+                },
+                {
+                  "code": "416.8",
+                  "display": "Other chronic pulmonary heart diseases"
+                },
+                {
+                  "code": "416.9",
+                  "display": "Chronic pulmonary heart disease, unspecified"
+                },
+                {
+                  "code": "416.1",
+                  "display": "Kyphoscoliotic heart disease"
+                },
+                {
+                  "code": "581.2",
+                  "display": "Nephrotic syndrome with lesion of membranoproliferative glomerulonephritis"
+                },
+                {
+                  "code": "581",
+                  "display": "Nephrotic syndrome"
+                },
+                {
+                  "code": "581.8",
+                  "display": "Nephrotic syndrome with other specified pathological lesion in kidney"
+                },
+                {
+                  "code": "581.89",
+                  "display": "Nephrotic syndrome with other specified pathological lesion in kidney"
+                },
+                {
+                  "code": "581.81",
+                  "display": "Nephrotic syndrome in diseases classified elsewhere"
+                },
+                {
+                  "code": "581.9",
+                  "display": "Nephrotic syndrome with unspecified pathological lesion in kidney"
+                },
+                {
+                  "code": "581.1",
+                  "display": "Nephrotic syndrome with lesion of membranous glomerulonephritis"
+                },
+                {
+                  "code": "581.3",
+                  "display": "Nephrotic syndrome with lesion of minimal change glomerulonephritis"
+                },
+                {
+                  "code": "581.0",
+                  "display": "Nephrotic syndrome with lesion of proliferative glomerulonephritis"
+                },
+                {
+                  "code": "582.8",
+                  "display": "Chronic glomerulonephritis with other specified pathological lesion in kidney"
+                },
+                {
+                  "code": "582",
+                  "display": "Chronic glomerulonephritis"
+                },
+                {
+                  "code": "582.1",
+                  "display": "Chronic glomerulonephritis with lesion of membranous glomerulonephritis"
+                },
+                {
+                  "code": "582.0",
+                  "display": "Chronic glomerulonephritis with lesion of proliferative glomerulonephritis"
+                },
+                {
+                  "code": "582.4",
+                  "display": "Chronic glomerulonephritis with lesion of rapidly progressive glomerulonephritis"
+                },
+                {
+                  "code": "582.89",
+                  "display": "Chronic glomerulonephritis with other specified pathological lesion in kidney"
+                },
+                {
+                  "code": "582.2",
+                  "display": "Chronic glomerulonephritis with lesion of membranoproliferative glomerulonephritis"
+                },
+                {
+                  "code": "582.81",
+                  "display": "Chronic glomerulonephritis in diseases classified elsewhere"
+                },
+                {
+                  "code": "582.9",
+                  "display": "Chronic glomerulonephritis with unspecified pathological lesion in kidney"
+                },
+                {
+                  "code": "745.10",
+                  "display": "Complete transposition of great vessels"
+                },
+                {
+                  "code": "745.19",
+                  "display": "Other transposition of great vessels"
+                },
+                {
+                  "code": "745.2",
+                  "display": "Tetralogy of fallot"
+                },
+                {
+                  "code": "745.3",
+                  "display": "Common ventricle"
+                },
+                {
+                  "code": "745",
+                  "display": "Bulbus cordis anomalies and anomalies of cardiac septal closure"
+                },
+                {
+                  "code": "745.60",
+                  "display": "Endocardial cushion defect, unspecified type"
+                },
+                {
+                  "code": "745.69",
+                  "display": "Other endocardial cushion defects"
+                },
+                {
+                  "code": "745.9",
+                  "display": "Unspecified defect of septal closure"
+                },
+                {
+                  "code": "745.1",
+                  "display": "Transposition of great vessels"
+                },
+                {
+                  "code": "745.12",
+                  "display": "Corrected transposition of great vessels"
+                },
+                {
+                  "code": "745.8",
+                  "display": "Other bulbus cordis anomalies and anomalies of cardiac septal closure"
+                },
+                {
+                  "code": "745.4",
+                  "display": "Ventricular septal defect"
+                },
+                {
+                  "code": "745.6",
+                  "display": "Endocardial cushion defects"
+                },
+                {
+                  "code": "745.5",
+                  "display": "Ostium secundum type atrial septal defect"
+                },
+                {
+                  "code": "745.7",
+                  "display": "Cor biloculare"
+                },
+                {
+                  "code": "745.11",
+                  "display": "Double outlet right ventricle"
+                },
+                {
+                  "code": "745.61",
+                  "display": "Ostium primum defect"
+                },
+                {
+                  "code": "745.0",
+                  "display": "Common truncus"
+                },
+                {
+                  "code": "747.10",
+                  "display": "Coarctation of aorta (preductal) (postductal)"
+                },
+                {
+                  "code": "747.20",
+                  "display": "Anomaly of aorta, unspecified"
+                },
+                {
+                  "code": "747.41",
+                  "display": "Total anomalous pulmonary venous connection"
+                },
+                {
+                  "code": "747.69",
+                  "display": "Anomalies of other specified sites of peripheral vascular system"
+                },
+                {
+                  "code": "747.3",
+                  "display": "Anomalies of pulmonary artery, congenital"
+                },
+                {
+                  "code": "747.49",
+                  "display": "Other anomalies of great veins"
+                },
+                {
+                  "code": "747.62",
+                  "display": "Renal vessel anomaly"
+                },
+                {
+                  "code": "747.21",
+                  "display": "Anomalies of aortic arch"
+                },
+                {
+                  "code": "747.5",
+                  "display": "Absence or hypoplasia of umbilical artery"
+                },
+                {
+                  "code": "747.64",
+                  "display": "Lower limb vessel anomaly"
+                },
+                {
+                  "code": "747.9",
+                  "display": "Unspecified anomaly of circulatory system"
+                },
+                {
+                  "code": "747.1",
+                  "display": "Coarctation of aorta"
+                },
+                {
+                  "code": "747.39",
+                  "display": "Other anomalies of pulmonary artery and pulmonary circulation"
+                },
+                {
+                  "code": "747.60",
+                  "display": "Anomaly of the peripheral vascular system, unspecified site"
+                },
+                {
+                  "code": "747.81",
+                  "display": "Anomalies of cerebrovascular system"
+                },
+                {
+                  "code": "747.2",
+                  "display": "Other congenital anomalies of aorta"
+                },
+                {
+                  "code": "747.32",
+                  "display": "Pulmonary arteriovenous malformation"
+                },
+                {
+                  "code": "747.11",
+                  "display": "Interruption of aortic arch"
+                },
+                {
+                  "code": "747.29",
+                  "display": "Other anomalies of aorta"
+                },
+                {
+                  "code": "747.0",
+                  "display": "Patent ductus arteriosus"
+                },
+                {
+                  "code": "747.31",
+                  "display": "Pulmonary artery coarctation and atresia"
+                },
+                {
+                  "code": "747.63",
+                  "display": "Upper limb vessel anomaly"
+                },
+                {
+                  "code": "747.89",
+                  "display": "Other specified anomalies of circulatory system"
+                },
+                {
+                  "code": "747.22",
+                  "display": "Atresia and stenosis of aorta"
+                },
+                {
+                  "code": "747.40",
+                  "display": "Anomaly of great veins, unspecified"
+                },
+                {
+                  "code": "747.6",
+                  "display": "Other congenital anomalies of peripheral vascular system"
+                },
+                {
+                  "code": "747.82",
+                  "display": "Spinal vessel anomaly"
+                },
+                {
+                  "code": "747.83",
+                  "display": "Persistent fetal circulation"
+                },
+                {
+                  "code": "747.4",
+                  "display": "Anomalies of great veins, congenital"
+                },
+                {
+                  "code": "747.42",
+                  "display": "Partial anomalous pulmonary venous connection"
+                },
+                {
+                  "code": "747.61",
+                  "display": "Gastrointestinal vessel anomaly"
+                },
+                {
+                  "code": "747.8",
+                  "display": "Other specified congenital anomalies of circulatory system"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.exclusion-within-5-years-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.exclusion-within-5-years-dx",
+        "name": "Exclusion Diagnoses (Within 5 Years)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "242.00",
+                  "display": "Toxic diffuse goiter without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.1",
+                  "display": "Toxic uninodular goiter"
+                },
+                {
+                  "code": "242.01",
+                  "display": "Toxic diffuse goiter with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.10",
+                  "display": "Toxic uninodular goiter without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.80",
+                  "display": "Thyrotoxicosis of other specified origin without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.2",
+                  "display": "Toxic multinodular goiter"
+                },
+                {
+                  "code": "242.41",
+                  "display": "Thyrotoxicosis from ectopic thyroid nodule with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.0",
+                  "display": "Toxic diffuse goiter"
+                },
+                {
+                  "code": "242.21",
+                  "display": "Toxic multinodular goiter with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.20",
+                  "display": "Toxic multinodular goiter without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.40",
+                  "display": "Thyrotoxicosis from ectopic thyroid nodule without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.11",
+                  "display": "Toxic uninodular goiter with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242",
+                  "display": "Thyrotoxicosis with or without goiter"
+                },
+                {
+                  "code": "242.31",
+                  "display": "Toxic nodular goiter, unspecified type, with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.90",
+                  "display": "Thyrotoxicosis without mention of goiter or other cause, and without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.4",
+                  "display": "Thyrotoxicosis from ectopic thyroid nodule"
+                },
+                {
+                  "code": "242.91",
+                  "display": "Thyrotoxicosis without mention of goiter or other cause, with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.30",
+                  "display": "Toxic nodular goiter, unspecified type, without mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.8",
+                  "display": "Thyrotoxicosis of other specified origin"
+                },
+                {
+                  "code": "242.3",
+                  "display": "Toxic nodular goiter, unspecified type"
+                },
+                {
+                  "code": "242.81",
+                  "display": "Thyrotoxicosis of other specified origin with mention of thyrotoxic crisis or storm"
+                },
+                {
+                  "code": "242.9",
+                  "display": "Thyrotoxicosis without mention of goiter or other cause"
+                },
+                {
+                  "code": "246.0",
+                  "display": "Disorders of thyrocalcitonin secretion"
+                },
+                {
+                  "code": "246.8",
+                  "display": "Other specified disorders of thyroid"
+                },
+                {
+                  "code": "246.9",
+                  "display": "Unspecified disorder of thyroid"
+                },
+                {
+                  "code": "252.8",
+                  "display": "Other specified disorders of parathyroid gland"
+                },
+                {
+                  "code": "252.9",
+                  "display": "Unspecified disorder of parathyroid gland"
+                },
+                {
+                  "code": "327.21",
+                  "display": "Primary central sleep apnea"
+                },
+                {
+                  "code": "327.23",
+                  "display": "Obstructive sleep apnea (adult)(pediatric)"
+                },
+                {
+                  "code": "327.27",
+                  "display": "Central sleep apnea in conditions classified elsewhere"
+                },
+                {
+                  "code": "327.29",
+                  "display": "Other organic sleep apnea"
+                },
+                {
+                  "code": "599.69",
+                  "display": "Urinary obstruction, not elsewhere classified"
+                },
+                {
+                  "code": "599.0",
+                  "display": "Urinary tract infection, site not specified"
+                },
+                {
+                  "code": "599.89",
+                  "display": "Other specified disorders of urinary tract"
+                },
+                {
+                  "code": "599.2",
+                  "display": "Urethral diverticulum"
+                },
+                {
+                  "code": "599.8",
+                  "display": "Other specified disorders of urethra and urinary tract"
+                },
+                {
+                  "code": "599.1",
+                  "display": "Urethral fistula"
+                },
+                {
+                  "code": "599.5",
+                  "display": "Prolapsed urethral mucosa"
+                },
+                {
+                  "code": "599.7",
+                  "display": "Hematuria"
+                },
+                {
+                  "code": "599.72",
+                  "display": "Microscopic hematuria"
+                },
+                {
+                  "code": "599.83",
+                  "display": "Urethral instability"
+                },
+                {
+                  "code": "599.84",
+                  "display": "Other specified disorders of urethra"
+                },
+                {
+                  "code": "599.71",
+                  "display": "Gross hematuria"
+                },
+                {
+                  "code": "599.81",
+                  "display": "Urethral hypermobility"
+                },
+                {
+                  "code": "599.3",
+                  "display": "Urethral caruncle"
+                },
+                {
+                  "code": "599.70",
+                  "display": "Hematuria, unspecified"
+                },
+                {
+                  "code": "599.6",
+                  "display": "Urinary obstruction"
+                },
+                {
+                  "code": "599.4",
+                  "display": "Urethral false passage"
+                },
+                {
+                  "code": "599.9",
+                  "display": "Unspecified disorder of urethra and urinary tract"
+                },
+                {
+                  "code": "599.60",
+                  "display": "Urinary obstruction, unspecified"
+                },
+                {
+                  "code": "599.82",
+                  "display": "Intrinsic (urethral) sphincter deficiency [ISD]"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.ejection-fraction",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.ejection-fraction",
+        "name": "Ejection Fraction",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "10230-1",
+                  "display": "Cardiac ejection fraction"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-hydralazine",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-hydralazine",
+        "name": "Medication Class Hydralazine",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "5470",
+                  "display": "Hydralazine"
+                },
+                {
+                  "code": "91825",
+                  "display": "Apresazide"
+                },
+                {
+                  "code": "303838",
+                  "display": "Bidil"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-minoxidil",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-minoxidil",
+        "name": "Medication Class Minoxidil",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "6984",
+                  "display": "Minoxidil"
+                },
+                {
+                  "code": "202706",
+                  "display": "Loniten"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-central-alpha-antagonists",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-central-alpha-antagonists",
+        "name": "Medication Class Central Alpha Antagonists",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "2599",
+                  "display": "Clonidine"
+                },
+                {
+                  "code": "202941",
+                  "display": "Catapres"
+                },
+                {
+                  "code": "5033",
+                  "display": "Guanabenz"
+                },
+                {
+                  "code": "6876",
+                  "display": "Methyldopa"
+                },
+                {
+                  "code": "6877",
+                  "display": "Methyldopate"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-central-acei-arb",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-central-acei-arb",
+        "name": "Medication Class ACEI/ARB",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "214354",
+                  "display": "candesartan"
+                },
+                {
+                  "code": "215458",
+                  "display": "Atacand"
+                },
+                {
+                  "code": "83818",
+                  "display": "irbesartan"
+                },
+                {
+                  "code": "153668",
+                  "display": "Avapro"
+                },
+                {
+                  "code": "29046",
+                  "display": "Lisinopril"
+                },
+                {
+                  "code": "203644",
+                  "display": "Prinivil"
+                },
+                {
+                  "code": "196472",
+                  "display": "Zestril"
+                },
+                {
+                  "code": "38454",
+                  "display": "trandolapril"
+                },
+                {
+                  "code": "218245",
+                  "display": "Mavik"
+                },
+                {
+                  "code": "52175",
+                  "display": "Losartan"
+                },
+                {
+                  "code": "151558",
+                  "display": "Cozaar"
+                },
+                {
+                  "code": "3827",
+                  "display": "Enalapril"
+                },
+                {
+                  "code": "3829",
+                  "display": "Enalaprilat"
+                },
+                {
+                  "code": "69749",
+                  "display": "valsartan"
+                },
+                {
+                  "code": "216652",
+                  "display": "Diovan"
+                },
+                {
+                  "code": "73494",
+                  "display": "telmisartan"
+                },
+                {
+                  "code": "218353",
+                  "display": "Micardis"
+                },
+                {
+                  "code": "30131",
+                  "display": "moexipril"
+                },
+                {
+                  "code": "35208",
+                  "display": "quinapril"
+                },
+                {
+                  "code": "72210",
+                  "display": "Accupril"
+                },
+                {
+                  "code": "35296",
+                  "display": "Ramipril"
+                },
+                {
+                  "code": "262418",
+                  "display": "Altace"
+                },
+                {
+                  "code": "215177",
+                  "display": "Altace"
+                },
+                {
+                  "code": "50166",
+                  "display": "Fosinopril"
+                },
+                {
+                  "code": "225030",
+                  "display": "Monopril"
+                },
+                {
+                  "code": "83515",
+                  "display": "eprosartan"
+                },
+                {
+                  "code": "321064",
+                  "display": "olmesartan"
+                },
+                {
+                  "code": "327503",
+                  "display": "Benicar"
+                },
+                {
+                  "code": "54552",
+                  "display": "Perindopril"
+                },
+                {
+                  "code": "261438",
+                  "display": "Aceon"
+                },
+                {
+                  "code": "1998",
+                  "display": "Captopril"
+                },
+                {
+                  "code": "151482",
+                  "display": "Capoten"
+                },
+                {
+                  "code": "18867",
+                  "display": "benazepril"
+                },
+                {
+                  "code": "218088",
+                  "display": "Lotensin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-aldosterone-antagonists",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-aldosterone-antagonists",
+        "name": "Medication Class Aldosterone Antagonists",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "9997",
+                  "display": "Spironolactone"
+                },
+                {
+                  "code": "151317",
+                  "display": "Aldactone"
+                },
+                {
+                  "code": "298869",
+                  "display": "eplerenone"
+                },
+                {
+                  "code": "342280",
+                  "display": "Inspra"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-diuretics",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-diuretics",
+        "name": "Medication Class Diuretics",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "5487",
+                  "display": "Hydrochlorothiazide"
+                },
+                {
+                  "code": "203273",
+                  "display": "Esidrix"
+                },
+                {
+                  "code": "5764",
+                  "display": "Indapamide"
+                },
+                {
+                  "code": "218102",
+                  "display": "Lozol"
+                },
+                {
+                  "code": "152098",
+                  "display": "Natrilix"
+                },
+                {
+                  "code": "22033",
+                  "display": "cyclothiazide"
+                },
+                {
+                  "code": "2396",
+                  "display": "Chlorothiazide"
+                },
+                {
+                  "code": "2409",
+                  "display": "Chlorthalidone"
+                },
+                {
+                  "code": "1369",
+                  "display": "Bendroflumethiazide"
+                },
+                {
+                  "code": "644",
+                  "display": "Amiloride"
+                },
+                {
+                  "code": "6958",
+                  "display": "Midamor"
+                },
+                {
+                  "code": "10763",
+                  "display": "Triamterene"
+                },
+                {
+                  "code": "203238",
+                  "display": "Dyrenium"
+                },
+                {
+                  "code": "4603",
+                  "display": "Furosemide"
+                },
+                {
+                  "code": "202991",
+                  "display": "Lasix"
+                },
+                {
+                  "code": "38413",
+                  "display": "torsemide"
+                },
+                {
+                  "code": "71974",
+                  "display": "Demadex"
+                },
+                {
+                  "code": "4109",
+                  "display": "Ethacrynic Acid"
+                },
+                {
+                  "code": "62349",
+                  "display": "Ethacrynate"
+                },
+                {
+                  "code": "151689",
+                  "display": "Edecrin"
+                },
+                {
+                  "code": "1808",
+                  "display": "Bumetanide"
+                },
+                {
+                  "code": "203538",
+                  "display": "Bumex"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-diuretic-combo",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-diuretic-combo",
+        "name": "Medication Class Diuretic Combination",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "23742",
+                  "display": "Dyazide"
+                },
+                {
+                  "code": "1372699",
+                  "display": "Moduretic"
+                },
+                {
+                  "code": "52440",
+                  "display": "Maxzide"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-alpha-antagonists",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-alpha-antagonists",
+        "name": "Medication Class Alpha Antagonists",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "8629",
+                  "display": "Prazosin"
+                },
+                {
+                  "code": "71515",
+                  "display": "Minipress"
+                },
+                {
+                  "code": "49276",
+                  "display": "Doxazosin"
+                },
+                {
+                  "code": "196468",
+                  "display": "Cardura"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-non-dihydro-ccbs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-non-dihydro-ccbs",
+        "name": "Medication Class Non-Dihydro CCBs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "11170",
+                  "display": "Verapamil"
+                },
+                {
+                  "code": "203490",
+                  "display": "Calan"
+                },
+                {
+                  "code": "901519",
+                  "display": "Covera"
+                },
+                {
+                  "code": "203489",
+                  "display": "Isoptin"
+                },
+                {
+                  "code": "220778",
+                  "display": "Verelan"
+                },
+                {
+                  "code": "3443",
+                  "display": "Diltiazem"
+                },
+                {
+                  "code": "540618",
+                  "display": "Dilt"
+                },
+                {
+                  "code": "220309",
+                  "display": "Tiazac"
+                },
+                {
+                  "code": "203494",
+                  "display": "Cardizem"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-dihydro-ccbs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-dihydro-ccbs",
+        "name": "Medication Class Dihydro CCBs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "33910",
+                  "display": "Isradipine"
+                },
+                {
+                  "code": "258346",
+                  "display": "Dynacirc"
+                },
+                {
+                  "code": "7396",
+                  "display": "Nicardipine"
+                },
+                {
+                  "code": "7417",
+                  "display": "Nifedipine"
+                },
+                {
+                  "code": "203423",
+                  "display": "Procardia"
+                },
+                {
+                  "code": "7435",
+                  "display": "Nisoldipine"
+                },
+                {
+                  "code": "4316",
+                  "display": "Felodipine"
+                },
+                {
+                  "code": "203016",
+                  "display": "Plendil"
+                },
+                {
+                  "code": "17767",
+                  "display": "Amlodipine"
+                },
+                {
+                  "code": "58927",
+                  "display": "Norvasc"
+                },
+                {
+                  "code": "404914",
+                  "display": "Caduet"
+                },
+                {
+                  "code": "1436",
+                  "display": "Bepridil"
+                },
+                {
+                  "code": "66977",
+                  "display": "Vascor"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-beta-blockers",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-beta-blockers",
+        "name": "Medication Class Beta Blockers",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "8787",
+                  "display": "Propranolol"
+                },
+                {
+                  "code": "151890",
+                  "display": "Inderal"
+                },
+                {
+                  "code": "6918",
+                  "display": "Metoprolol"
+                },
+                {
+                  "code": "865575",
+                  "display": "Toprol"
+                },
+                {
+                  "code": "6185",
+                  "display": "Labetalol"
+                },
+                {
+                  "code": "6185",
+                  "display": "Labetalol"
+                },
+                {
+                  "code": "152440",
+                  "display": "Trandate"
+                },
+                {
+                  "code": "7226",
+                  "display": "Nadolol"
+                },
+                {
+                  "code": "151549",
+                  "display": "Corgard"
+                },
+                {
+                  "code": "49737",
+                  "display": "esmolol"
+                },
+                {
+                  "code": "151448",
+                  "display": "Brevibloc"
+                },
+                {
+                  "code": "8332",
+                  "display": "Pindolol"
+                },
+                {
+                  "code": "7973",
+                  "display": "Penbutolol"
+                },
+                {
+                  "code": "93113",
+                  "display": "Levatol"
+                },
+                {
+                  "code": "6185",
+                  "display": "Labetalol"
+                },
+                {
+                  "code": "6185",
+                  "display": "Labetalol"
+                },
+                {
+                  "code": "155033",
+                  "display": "Normodyne"
+                },
+                {
+                  "code": "1202",
+                  "display": "Atenolol"
+                },
+                {
+                  "code": "152413",
+                  "display": "Tenormin"
+                },
+                {
+                  "code": "20352",
+                  "display": "carvedilol"
+                },
+                {
+                  "code": "216221",
+                  "display": "Coreg"
+                },
+                {
+                  "code": "19484",
+                  "display": "Bisoprolol"
+                },
+                {
+                  "code": "221002",
+                  "display": "Zebeta"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-thiazide-bb-combo",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-thiazide-bb-combo",
+        "name": "Medication Class Thiazide/BB Combination",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "1372756",
+                  "display": "Corzide"
+                },
+                {
+                  "code": "37789",
+                  "display": "Tenoretic"
+                },
+                {
+                  "code": "218072",
+                  "display": "Lopressor HCT"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-thiazide-acei-arb-combo",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-thiazide-acei-arb-combo",
+        "name": "Medication Class Thiazide/ACEI/ARB Combination",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "85783",
+                  "display": "Zestoretic"
+                },
+                {
+                  "code": "261454",
+                  "display": "Avalide"
+                },
+                {
+                  "code": "217681",
+                  "display": "Hyzaar"
+                },
+                {
+                  "code": "220670",
+                  "display": "Uniretic"
+                },
+                {
+                  "code": "404880",
+                  "display": "Benicar HCT"
+                },
+                {
+                  "code": "151293",
+                  "display": "Accuretic"
+                },
+                {
+                  "code": "353022",
+                  "display": "Teveten HCT"
+                },
+                {
+                  "code": "218089",
+                  "display": "Lotensin HCT"
+                },
+                {
+                  "code": "284662",
+                  "display": "Atacand HCT"
+                },
+                {
+                  "code": "216653",
+                  "display": "Diovan HCT"
+                },
+                {
+                  "code": "261577",
+                  "display": "Monopril HCT"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-thiazide-aldosterone-antagonist-combo",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-thiazide-aldosterone-antagonist-combo",
+        "name": "Medication Class Thiazide/Aldosterone Antagonist Combination",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "17276",
+                  "display": "Aldactazide"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "68.med-class-thiazide-renin-antagonist-combo",
+        "url": "https://workbench.phema.science/fhir/ValueSet/68.med-class-thiazide-renin-antagonist-combo",
+        "name": "Medication Class Thiazide/Renin Antagonist Combination",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "1430137",
+                  "display": "Tekturna HCT"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

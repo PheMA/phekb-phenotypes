@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.666.5.307",
+  "meta": {
+    "versionId": "33",
+    "lastUpdated": "2020-03-07T01:00:21.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Encounter Inpatient</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=183452005\">183452005</a></td><td>Emergency hospital admission (procedure)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32485007\">32485007</a></td><td>Hospital admission (procedure)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8715000\">8715000</a></td><td>Hospital admission, elective (procedure)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307",
+  "version": "20200307",
+  "name": "Encounter Inpatient",
+  "status": "active",
+  "date": "2020-03-07T01:00:21-05:00",
+  "publisher": "Lantana EH Steward",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "183452005",
+            "display": "Emergency hospital admission (procedure)"
+          },
+          {
+            "code": "32485007",
+            "display": "Hospital admission (procedure)"
+          },
+          {
+            "code": "8715000",
+            "display": "Hospital admission, elective (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

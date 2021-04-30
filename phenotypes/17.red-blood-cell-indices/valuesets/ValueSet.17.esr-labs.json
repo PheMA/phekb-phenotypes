@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "17.esr-labs",
+  "url": "https://workbench.phema.science/fhir/ValueSet/17.esr-labs",
+  "status": "active",
+  "name": "ESR Labs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "30341-2",
+            "display": "Erythrocyte sedimentation rate"
+          }
+        ]
+      }
+    ]
+  }
+}

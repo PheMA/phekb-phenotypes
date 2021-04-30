@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "13.body-height",
+  "url": "https://workbench.phema.science/fhir/ValueSet/13.body-height",
+  "status": "active",
+  "name": "Growth Hormone Labs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8302-2",
+            "display": "Body height"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+---
+name: 002 WBC NOT Case - No sample
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Has HIV Indication: false
+  Has Dialysis Procedure: false
+  Has Splenectomy Procedure: false
+  Has WBC Sample: false
+  Case: false

@@ -1,0 +1,84 @@
+{
+  "resourceType": "ValueSet",
+  "id": "77.crohns-disease-drug-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/77.crohns-disease-drug-codes",
+  "status": "active",
+  "name": "Crohn's Disease Drugs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "18747",
+            "display": "balsalazide"
+          },
+          {
+            "code": "52582",
+            "display": "mesalamine"
+          },
+          {
+            "code": "9524",
+            "display": "sulfaSALAzine"
+          },
+          {
+            "code": "2551",
+            "display": "ciprofloxacin"
+          },
+          {
+            "code": "82122",
+            "display": "levoFLOXacin"
+          },
+          {
+            "code": "6922",
+            "display": "metroNIDAZOLE"
+          },
+          {
+            "code": "35619",
+            "display": "rifAXIMin"
+          },
+          {
+            "code": "8640",
+            "display": "prednisone"
+          },
+          {
+            "code": "19831",
+            "display": "budesonide"
+          },
+          {
+            "code": "1256",
+            "display": "azathioprine"
+          },
+          {
+            "code": "103",
+            "display": "mercaptopurine"
+          },
+          {
+            "code": "6851",
+            "display": "methotrexate"
+          },
+          {
+            "code": "191831",
+            "display": "inFLIXimab"
+          },
+          {
+            "code": "327361",
+            "display": "adalimumab"
+          },
+          {
+            "code": "709271",
+            "display": "certolizumab pegol"
+          },
+          {
+            "code": "354770",
+            "display": "natalizumab"
+          },
+          {
+            "code": "354770",
+            "display": "natalizumab"
+          }
+        ]
+      }
+    ]
+  }
+}

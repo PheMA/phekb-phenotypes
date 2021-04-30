@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "1197.bone-scan-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/1197.bone-scan-codes",
+  "status": "active",
+  "name": "PHEKB-1197 Bone Scan Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "78315",
+            "display": "Bone and/or joint imaging; 3 phase study"
+          },
+          {
+            "code": "78305",
+            "display": "Bone and/or joint imaging; multiple areas"
+          },
+          {
+            "code": "78306",
+            "display": "Bone and/or joint imaging; whole body"
+          },
+          {
+            "code": "78300",
+            "display": "Bone and/or joint imaging; limited area"
+          },
+          {
+            "code": "78320",
+            "display": "Bone and/or joint imaging; tomographic (SPECT)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-29",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-29",
+  "status": "active",
+  "name": "eMERGE T2DM - T2DM Medications",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "4815",
+            "display": "Glyburide"
+          },
+          {
+            "code": "60548",
+            "display": "exenatide"
+          },
+          {
+            "code": "30009",
+            "display": "miglitol"
+          },
+          {
+            "code": "274332",
+            "display": "nateglinide"
+          },
+          {
+            "code": "84108",
+            "display": "rosiglitazone"
+          },
+          {
+            "code": "16681",
+            "display": "Acarbose"
+          },
+          {
+            "code": "217360",
+            "display": "Glucotrol XL"
+          },
+          {
+            "code": "10633",
+            "display": "Tolazamide"
+          },
+          {
+            "code": "73044",
+            "display": "repaglinide"
+          },
+          {
+            "code": "6809",
+            "display": "Metformin"
+          },
+          {
+            "code": "593411",
+            "display": "sitagliptin"
+          },
+          {
+            "code": "72610",
+            "display": "troglitazone"
+          },
+          {
+            "code": "33738",
+            "display": "pioglitazone"
+          },
+          {
+            "code": "173",
+            "display": "Acetohexamide"
+          },
+          {
+            "code": "4821",
+            "display": "Glipizide"
+          },
+          {
+            "code": "25789",
+            "display": "glimepiride"
+          },
+          {
+            "code": "2404",
+            "display": "Chlorpropamide"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.ami",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.ami",
+        "name": "Acute Myocardial Infarction",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "410.12",
+                  "display": "Acute myocardial infarction of other anterior wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.2",
+                  "display": "Acute myocardial infarction, of inferolateral wall"
+                },
+                {
+                  "code": "410.20",
+                  "display": "Acute myocardial infarction of inferolateral wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.21",
+                  "display": "Acute myocardial infarction of inferolateral wall, initial episode of care"
+                },
+                {
+                  "code": "410.7",
+                  "display": "Acute myocardial infarction, subendocardial infarction"
+                },
+                {
+                  "code": "410.9",
+                  "display": "Acute myocardial infarction, unspecified site"
+                },
+                {
+                  "code": "410.0",
+                  "display": "Acute myocardial infarction, of anterolateral wall"
+                },
+                {
+                  "code": "410.02",
+                  "display": "Acute myocardial infarction of anterolateral wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.22",
+                  "display": "Acute myocardial infarction of inferolateral wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.32",
+                  "display": "Acute myocardial infarction of inferoposterior wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.92",
+                  "display": "Acute myocardial infarction of unspecified site, subsequent episode of care"
+                },
+                {
+                  "code": "410.01",
+                  "display": "Acute myocardial infarction of anterolateral wall, initial episode of care"
+                },
+                {
+                  "code": "410.00",
+                  "display": "Acute myocardial infarction of anterolateral wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.4",
+                  "display": "Acute myocardial infarction, of other inferior wall"
+                },
+                {
+                  "code": "410.71",
+                  "display": "Subendocardial infarction, initial episode of care"
+                },
+                {
+                  "code": "410.91",
+                  "display": "Acute myocardial infarction of unspecified site, initial episode of care"
+                },
+                {
+                  "code": "410.30",
+                  "display": "Acute myocardial infarction of inferoposterior wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.80",
+                  "display": "Acute myocardial infarction of other specified sites, episode of care unspecified"
+                },
+                {
+                  "code": "410.11",
+                  "display": "Acute myocardial infarction of other anterior wall, initial episode of care"
+                },
+                {
+                  "code": "410.60",
+                  "display": "True posterior wall infarction, episode of care unspecified"
+                },
+                {
+                  "code": "410.72",
+                  "display": "Subendocardial infarction, subsequent episode of care"
+                },
+                {
+                  "code": "410.5",
+                  "display": "Acute myocardial infarction, of other lateral wall"
+                },
+                {
+                  "code": "410.10",
+                  "display": "Acute myocardial infarction of other anterior wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.62",
+                  "display": "True posterior wall infarction, subsequent episode of care"
+                },
+                {
+                  "code": "410",
+                  "display": "Acute myocardial infarction"
+                },
+                {
+                  "code": "410.3",
+                  "display": "Acute myocardial infarction, of inferoposterior wall"
+                },
+                {
+                  "code": "410.42",
+                  "display": "Acute myocardial infarction of other inferior wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.50",
+                  "display": "Acute myocardial infarction of other lateral wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.82",
+                  "display": "Acute myocardial infarction of other specified sites, subsequent episode of care"
+                },
+                {
+                  "code": "410.31",
+                  "display": "Acute myocardial infarction of inferoposterior wall, initial episode of care"
+                },
+                {
+                  "code": "410.1",
+                  "display": "Acute myocardial infarction, of other anterior wall"
+                },
+                {
+                  "code": "410.40",
+                  "display": "Acute myocardial infarction of other inferior wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.51",
+                  "display": "Acute myocardial infarction of other lateral wall, initial episode of care"
+                },
+                {
+                  "code": "410.52",
+                  "display": "Acute myocardial infarction of other lateral wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.6",
+                  "display": "Acute myocardial infarction, true posterior wall infarction"
+                },
+                {
+                  "code": "410.8",
+                  "display": "Acute myocardial infarction, of other specified sites"
+                },
+                {
+                  "code": "410.81",
+                  "display": "Acute myocardial infarction of other specified sites, initial episode of care"
+                },
+                {
+                  "code": "410.41",
+                  "display": "Acute myocardial infarction of other inferior wall, initial episode of care"
+                },
+                {
+                  "code": "410.70",
+                  "display": "Subendocardial infarction, episode of care unspecified"
+                },
+                {
+                  "code": "410.90",
+                  "display": "Acute myocardial infarction of unspecified site, episode of care unspecified"
+                },
+                {
+                  "code": "410.61",
+                  "display": "True posterior wall infarction, initial episode of care"
+                },
+                {
+                  "code": "411.8",
+                  "display": "Other acute and subacute forms of ischemic heart disease"
+                },
+                {
+                  "code": "411.89",
+                  "display": "Other acute and subacute forms of ischemic heart disease, other"
+                },
+                {
+                  "code": "411.1",
+                  "display": "Intermediate coronary syndrome"
+                },
+                {
+                  "code": "411.81",
+                  "display": "Acute coronary occlusion without myocardial infarction"
+                },
+                {
+                  "code": "411",
+                  "display": "Other acute and subacute forms of ischemic heart disease"
+                },
+                {
+                  "code": "411.0",
+                  "display": "Postmyocardial infarction syndrome"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.tni-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.tni-labs",
+        "name": "Troponin I Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "10839-9",
+                  "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "49563-0",
+                  "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.tnt-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.tnt-labs",
+        "name": "Troponin T Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "6598-7",
+                  "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "67151-1",
+                  "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by Detection limit <= 5 ng/L"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.ckmb-ratio",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.ckmb-ratio",
+        "name": "CK-MB/CK Ratio",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "49136-5",
+                  "display": "Creatine kinase.MB/Creatine kinase.total [Ratio] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.ckmb-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.ckmb-labs",
+        "name": "Creatinine Kinase Labs",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "13969-1",
+                  "display": "Creatine kinase.MB [Mass/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.revascularization-procs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.revascularization-procs",
+        "name": "Revascularization Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "33533",
+                  "display": "Coronary artery bypass, using arterial graft(s); single arterial graft"
+                },
+                {
+                  "code": "33534",
+                  "display": "Coronary artery bypass, using arterial graft(s); 2 coronary arterial grafts"
+                },
+                {
+                  "code": "33535",
+                  "display": "Coronary artery bypass, using arterial graft(s); 3 coronary arterial grafts"
+                },
+                {
+                  "code": "33536",
+                  "display": "Coronary artery bypass, using arterial graft(s); 4 or more coronary arterial grafts"
+                },
+                {
+                  "code": "33510",
+                  "display": "Coronary artery bypass, vein only; single coronary venous graft"
+                },
+                {
+                  "code": "33511",
+                  "display": "Coronary artery bypass, vein only; 2 coronary venous grafts"
+                },
+                {
+                  "code": "33512",
+                  "display": "Coronary artery bypass, vein only; 3 coronary venous grafts"
+                },
+                {
+                  "code": "33513",
+                  "display": "Coronary artery bypass, vein only; 4 coronary venous grafts"
+                },
+                {
+                  "code": "33514",
+                  "display": "Coronary artery bypass, vein only; 5 coronary venous grafts"
+                },
+                {
+                  "code": "33516",
+                  "display": "Coronary artery bypass, vein only; 6 or more coronary venous grafts"
+                },
+                {
+                  "code": "33517",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); single vein graft (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33518",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 2 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33519",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 3 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33521",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 4 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33522",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 5 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33523",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 6 or more venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92980",
+                  "display": "Transcatheter placement of an intracoronary stent(s), percutaneous, with or without other therapeutic intervention, any method; single vessel"
+                },
+                {
+                  "code": "92981",
+                  "display": "Transcatheter placement of an intracoronary stent(s), percutaneous, with or without other therapeutic intervention, any method; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92982",
+                  "display": "Percutaneous transluminal coronary balloon angioplasty; single vessel"
+                },
+                {
+                  "code": "92984",
+                  "display": "Percutaneous transluminal coronary balloon angioplasty; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92995",
+                  "display": "Percutaneous transluminal coronary atherectomy, by mechanical or other method, with or without balloon angioplasty; single vessel"
+                },
+                {
+                  "code": "92996",
+                  "display": "Percutaneous transluminal coronary atherectomy, by mechanical or other method, with or without balloon angioplasty; each additional vessel (List separately in addition to code for primary procedure)"
+                }
+              ]
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/HCPCS",
+              "concept": [
+                {
+                  "code": "C1874",
+                  "display": "Stent, coated/covered, with delivery system"
+                },
+                {
+                  "code": "C1875",
+                  "display": "Stent, coated/covered, without delivery system"
+                },
+                {
+                  "code": "C1876",
+                  "display": "Stent, non-coated/non-covered, with delivery system"
+                },
+                {
+                  "code": "C1877",
+                  "display": "Stent, non-coated/non-covered, without delivery system"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "170.statin-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/170.statin-meds",
+        "name": "Statin Medications",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "36567",
+                  "display": "Simvastatin"
+                },
+                {
+                  "code": "196503",
+                  "display": "Zocor"
+                },
+                {
+                  "code": "41127",
+                  "display": "fluvastatin"
+                },
+                {
+                  "code": "151972",
+                  "display": "Lescol"
+                },
+                {
+                  "code": "83367",
+                  "display": "atorvastatin"
+                },
+                {
+                  "code": "153165",
+                  "display": "Lipitor"
+                },
+                {
+                  "code": "42463",
+                  "display": "Pravastatin"
+                },
+                {
+                  "code": "203333",
+                  "display": "Pravachol"
+                },
+                {
+                  "code": "6472",
+                  "display": "Lovastatin"
+                },
+                {
+                  "code": "224938",
+                  "display": "Mevacor"
+                },
+                {
+                  "code": "215567",
+                  "display": "Baycol"
+                },
+                {
+                  "code": "153304",
+                  "display": "Lipobay"
+                },
+                {
+                  "code": "301542",
+                  "display": "rosuvastatin"
+                },
+                {
+                  "code": "320864",
+                  "display": "Crestor"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

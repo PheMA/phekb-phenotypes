@@ -1,0 +1,1000 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.pregnancy-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.pregnancy-diagnoses",
+        "name": "Pregnancy Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "V22.1",
+                  "display": "Supervision of other normal pregnancy"
+                },
+                {
+                  "code": "V22.2",
+                  "display": "Pregnant state, incidental"
+                },
+                {
+                  "code": "631",
+                  "display": "Other abnormal product of conception"
+                },
+                {
+                  "code": "633",
+                  "display": "Ectopic pregnancy"
+                },
+                {
+                  "code": "633.0",
+                  "display": "Abdominal pregnancy"
+                },
+                {
+                  "code": "633.00",
+                  "display": "Abdominal pregnancy without intrauterine pregnancy"
+                },
+                {
+                  "code": "633.1",
+                  "display": "Tubal pregnancy"
+                },
+                {
+                  "code": "633.10",
+                  "display": "Tubal pregnancy without intrauterine pregnancy"
+                },
+                {
+                  "code": "633.20",
+                  "display": "Ovarian pregnancy without intrauterine pregnancy"
+                },
+                {
+                  "code": "633.8",
+                  "display": "Other ectopic pregnancy"
+                },
+                {
+                  "code": "633.80",
+                  "display": "Other ectopic pregnancy without intrauterine pregnancy"
+                },
+                {
+                  "code": "633.9",
+                  "display": "Unspecified ectopic pregnancy"
+                },
+                {
+                  "code": "633.90",
+                  "display": "Unspecified ectopic pregnancy without intrauterine pregnancy"
+                },
+                {
+                  "code": "645.1",
+                  "display": "Post term pregnancy"
+                },
+                {
+                  "code": "645.2",
+                  "display": "Prolonged pregnancy"
+                },
+                {
+                  "code": "646.8",
+                  "display": "Other specified complications of pregnancy"
+                },
+                {
+                  "code": "646.9",
+                  "display": "Unspecified complication of pregnancy"
+                },
+                {
+                  "code": "648.1",
+                  "display": "Thyroid dysfunction complicating pregnancy, childbirth, or the puerperium"
+                },
+                {
+                  "code": "651",
+                  "display": "Multiple gestation"
+                },
+                {
+                  "code": "651.0",
+                  "display": "Twin pregnancy"
+                },
+                {
+                  "code": "651.1",
+                  "display": "Triplet pregnancy"
+                },
+                {
+                  "code": "651.2",
+                  "display": "Quadruplet pregnancy"
+                },
+                {
+                  "code": "651.8",
+                  "display": "Other specified multiple gestation"
+                },
+                {
+                  "code": "651.9",
+                  "display": "Unspecified multiple gestation"
+                },
+                {
+                  "code": "651.90",
+                  "display": "Unspecified multiple gestation, unspecified as to episode of care or not applicable"
+                },
+                {
+                  "code": "761.4",
+                  "display": "Ectopic pregnancy affecting fetus or newborn"
+                },
+                {
+                  "code": "V23.89",
+                  "display": "Supervision of other high-risk pregnancy"
+                },
+                {
+                  "code": "V61.6",
+                  "display": "Illegitimacy or illegitimate pregnancy"
+                },
+                {
+                  "code": "V61.7",
+                  "display": "Other unwanted pregnancy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.secondary-hypothyroidism-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.secondary-hypothyroidism-diagnoses",
+        "name": "Secondary Hypothyroidism Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "244.0",
+                  "display": "Postsurgical hypothyroidism"
+                },
+                {
+                  "code": "244.1",
+                  "display": "Other postablative hypothyroidism"
+                },
+                {
+                  "code": "244.2",
+                  "display": "Iodine hypothyroidism"
+                },
+                {
+                  "code": "244.3",
+                  "display": "Other iatrogenic hypothyroidism"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.radiation-therapy-procedures",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.radiation-therapy-procedures",
+        "name": "Radiation Therapy Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "77261",
+                  "display": "Therapeutic radiology treatment planning; simple"
+                },
+                {
+                  "code": "77262",
+                  "display": "Therapeutic radiology treatment planning; intermediate"
+                },
+                {
+                  "code": "77263",
+                  "display": "Therapeutic radiology treatment planning; complex"
+                },
+                {
+                  "code": "77280",
+                  "display": "Therapeutic radiology simulation-aided field setting; simple"
+                },
+                {
+                  "code": "77285",
+                  "display": "Therapeutic radiology simulation-aided field setting; intermediate"
+                },
+                {
+                  "code": "77290",
+                  "display": "Therapeutic radiology simulation-aided field setting; complex"
+                },
+                {
+                  "code": "77295",
+                  "display": "3-dimensional radiotherapy plan, including dose-volume histograms"
+                },
+                {
+                  "code": "77299",
+                  "display": "Unlisted procedure, therapeutic radiology clinical treatment planning"
+                },
+                {
+                  "code": "77300",
+                  "display": "Basic radiation dosimetry calculation, central axis depth dose calculation, TDF, NSD, gap calculation, off axis factor, tissue inhomogeneity factors, calculation of non-ionizing radiation surface and depth dose, as required during course of treatment, onl"
+                },
+                {
+                  "code": "77301",
+                  "display": "Intensity modulated radiotherapy plan, including dose-volume histograms for target and critical structure partial tolerance specifications"
+                },
+                {
+                  "code": "77305",
+                  "display": "Teletherapy, isodose plan (whether hand or computer calculated); simple (1 or 2 parallel opposed unmodified ports directed to a single area of interest)"
+                },
+                {
+                  "code": "77310",
+                  "display": "Teletherapy, isodose plan (whether hand or computer calculated); intermediate (3 or more treatment ports directed to a single area of interest)"
+                },
+                {
+                  "code": "77315",
+                  "display": "Teletherapy, isodose plan (whether hand or computer calculated); complex (mantle or inverted Y, tangential ports, the use of wedges, compensators, complex blocking, rotational beam, or special beam considerations)"
+                },
+                {
+                  "code": "77321",
+                  "display": "Special teletherapy port plan, particles, hemibody, total body"
+                },
+                {
+                  "code": "77326",
+                  "display": "Brachytherapy isodose plan; simple (calculation made from single plane, 1 to 4 sources/ribbon application, remote afterloading brachytherapy, 1 to 8 sources)"
+                },
+                {
+                  "code": "77327",
+                  "display": "Brachytherapy isodose plan; intermediate (multiplane dosage calculations, application involving 5 to 10 sources/ribbons, remote afterloading brachytherapy, 9 to 12 sources)"
+                },
+                {
+                  "code": "77328",
+                  "display": "Brachytherapy isodose plan; complex (multiplane isodose plan, volume implant calculations, over 10 sources/ribbons used, special spatial reconstruction, remote afterloading brachytherapy, over 12 sources)"
+                },
+                {
+                  "code": "77331",
+                  "display": "Special dosimetry (eg, TLD, microdosimetry) (specify), only when prescribed by the treating physician"
+                },
+                {
+                  "code": "77332",
+                  "display": "Treatment devices, design and construction; simple (simple block, simple bolus)"
+                },
+                {
+                  "code": "77333",
+                  "display": "Treatment devices, design and construction; intermediate (multiple blocks, stents, bite blocks, special bolus)"
+                },
+                {
+                  "code": "77334",
+                  "display": "Treatment devices, design and construction; complex (irregular blocks, special shields, compensators, wedges, molds or casts)"
+                },
+                {
+                  "code": "77336",
+                  "display": "Continuing medical physics consultation, including assessment of treatment parameters, quality assurance of dose delivery, and review of patient treatment documentation in support of the radiation oncologist, reported per week of therapy"
+                },
+                {
+                  "code": "77370",
+                  "display": "Special medical radiation physics consultation"
+                },
+                {
+                  "code": "77399",
+                  "display": "Unlisted procedure, medical radiation physics, dosimetry and treatment devices, and special services"
+                },
+                {
+                  "code": "77401",
+                  "display": "Radiation treatment delivery, superficial and/or ortho voltage"
+                },
+                {
+                  "code": "77402",
+                  "display": "Radiation treatment delivery, single treatment area, single port or parallel opposed ports, simple blocks or no blocks; up to 5 MeV"
+                },
+                {
+                  "code": "77403",
+                  "display": "Radiation treatment delivery, single treatment area, single port or parallel opposed ports, simple blocks or no blocks; 6-10 MeV"
+                },
+                {
+                  "code": "77404",
+                  "display": "Radiation treatment delivery, single treatment area, single port or parallel opposed ports, simple blocks or no blocks; 11-19 MeV"
+                },
+                {
+                  "code": "77406",
+                  "display": "Radiation treatment delivery, single treatment area, single port or parallel opposed ports, simple blocks or no blocks; 20 MeV or greater"
+                },
+                {
+                  "code": "77408",
+                  "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks; 6-10 MeV"
+                },
+                {
+                  "code": "77409",
+                  "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks; 11-19 MeV"
+                },
+                {
+                  "code": "77411",
+                  "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks; 20 MeV or greater"
+                },
+                {
+                  "code": "77412",
+                  "display": "Radiation treatment delivery, 3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; up to 5 MeV"
+                },
+                {
+                  "code": "77413",
+                  "display": "Radiation treatment delivery, 3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; 6-10 MeV"
+                },
+                {
+                  "code": "77414",
+                  "display": "Radiation treatment delivery, 3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; 11-19 MeV"
+                },
+                {
+                  "code": "77416",
+                  "display": "Radiation treatment delivery, 3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; 20 MeV or greater"
+                },
+                {
+                  "code": "77417",
+                  "display": "Therapeutic radiology port film(s)"
+                },
+                {
+                  "code": "77418",
+                  "display": "Intensity modulated treatment delivery, single or multiple fields/arcs, via narrow spatially and temporally modulated beams, binary, dynamic MLC, per treatment session"
+                },
+                {
+                  "code": "77427",
+                  "display": "Radiation treatment management, 5 treatments"
+                },
+                {
+                  "code": "77431",
+                  "display": "Radiation therapy management with complete course of therapy consisting of 1 or 2 fractions only"
+                },
+                {
+                  "code": "77432",
+                  "display": "Stereotactic radiation treatment management of cranial lesion(s) (complete course of treatment consisting of 1 session)"
+                },
+                {
+                  "code": "77470",
+                  "display": "Special treatment procedure (eg, total body irradiation, hemibody radiation, per oral or endocavitary irradiation)"
+                },
+                {
+                  "code": "77499",
+                  "display": "Unlisted procedure, therapeutic radiology treatment management"
+                },
+                {
+                  "code": "77520",
+                  "display": "Proton treatment delivery; simple, without compensation"
+                },
+                {
+                  "code": "77522",
+                  "display": "Proton treatment delivery; simple, with compensation"
+                },
+                {
+                  "code": "77523",
+                  "display": "Proton treatment delivery; intermediate"
+                },
+                {
+                  "code": "77525",
+                  "display": "Proton treatment delivery; complex"
+                },
+                {
+                  "code": "77750",
+                  "display": "Infusion or instillation of radioelement solution (includes 3-month follow-up care)"
+                },
+                {
+                  "code": "77761",
+                  "display": "Intracavitary radiation source application; simple"
+                },
+                {
+                  "code": "77762",
+                  "display": "Intracavitary radiation source application; intermediate"
+                },
+                {
+                  "code": "77763",
+                  "display": "Intracavitary radiation source application; complex"
+                },
+                {
+                  "code": "77776",
+                  "display": "Interstitial radiation source application; simple"
+                },
+                {
+                  "code": "77777",
+                  "display": "Interstitial radiation source application; intermediate"
+                },
+                {
+                  "code": "77778",
+                  "display": "Interstitial radiation source application; complex"
+                },
+                {
+                  "code": "77781",
+                  "display": "Remote afterloading high intensity brachytherapy; 1-4 source positions or catheters"
+                },
+                {
+                  "code": "77782",
+                  "display": "Remote afterloading high intensity brachytherapy; 5-8 source positions or catheters"
+                },
+                {
+                  "code": "77783",
+                  "display": "Remote afterloading high intensity brachytherapy; 9-12 source positions or catheters"
+                },
+                {
+                  "code": "77784",
+                  "display": "Remote afterloading high intensity brachytherapy; over 12 source positions or catheters"
+                },
+                {
+                  "code": "77789",
+                  "display": "Surface application of radiation source"
+                },
+                {
+                  "code": "77790",
+                  "display": "Supervision, handling, loading of radiation source"
+                },
+                {
+                  "code": "77799",
+                  "display": "Unlisted procedure, clinical brachytherapy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.thyroidectomy-procedures",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.thyroidectomy-procedures",
+        "name": "Thyroidectomy Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "60240",
+                  "display": "Thyroidectomy, total or complete"
+                },
+                {
+                  "code": "60271",
+                  "display": "Thyroidectomy, including substernal thyroid; cervical approach"
+                },
+                {
+                  "code": "60260",
+                  "display": "Thyroidectomy, removal of all remaining thyroid tissue following previous removal of a portion of thyroid"
+                },
+                {
+                  "code": "60252",
+                  "display": "Thyroidectomy, total or subtotal for malignancy; with limited neck dissection"
+                },
+                {
+                  "code": "60254",
+                  "display": "Thyroidectomy, total or subtotal for malignancy; with radical neck dissection"
+                },
+                {
+                  "code": "60270",
+                  "display": "Thyroidectomy, including substernal thyroid; sternal split or transthoracic approach"
+                },
+                {
+                  "code": "60500",
+                  "display": "Parathyroidectomy or exploration of parathyroid(s)"
+                },
+                {
+                  "code": "60502",
+                  "display": "Parathyroidectomy or exploration of parathyroid(s); re-exploration"
+                },
+                {
+                  "code": "60505",
+                  "display": "Parathyroidectomy or exploration of parathyroid(s); with mediastinal exploration, sternal split or transthoracic approach"
+                },
+                {
+                  "code": "60200",
+                  "display": "Excision of cyst or adenoma of thyroid, or transection of isthmus"
+                },
+                {
+                  "code": "78020",
+                  "display": "Thyroid carcinoma metastases uptake (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "60225",
+                  "display": "Total thyroid lobectomy, unilateral; with contralateral subtotal lobectomy, including isthmusectomy"
+                },
+                {
+                  "code": "60210",
+                  "display": "Partial thyroid lobectomy, unilateral; with or without isthmusectomy"
+                },
+                {
+                  "code": "60212",
+                  "display": "Partial thyroid lobectomy, unilateral; with contralateral subtotal lobectomy, including isthmusectomy"
+                },
+                {
+                  "code": "60220",
+                  "display": "Total thyroid lobectomy, unilateral; with or without isthmusectomy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.thyroid-disease-exclusions",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.thyroid-disease-exclusions",
+        "name": "Other Thyroid Disease Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "194",
+                  "display": "Malignant neoplasm of other endocrine glands and related structures"
+                },
+                {
+                  "code": "197",
+                  "display": "Secondary malignant neoplasm of respiratory and digestive systems"
+                },
+                {
+                  "code": "199.0",
+                  "display": "Disseminated malignant neoplasm without specification of site"
+                },
+                {
+                  "code": "190.2",
+                  "display": "Malignant neoplasm of lacrimal gland"
+                },
+                {
+                  "code": "191",
+                  "display": "Malignant neoplasm of brain"
+                },
+                {
+                  "code": "191.3",
+                  "display": "Malignant neoplasm of parietal lobe"
+                },
+                {
+                  "code": "195.8",
+                  "display": "Malignant neoplasm of other specified sites"
+                },
+                {
+                  "code": "191.7",
+                  "display": "Malignant neoplasm of brain stem"
+                },
+                {
+                  "code": "195",
+                  "display": "Malignant neoplasm of other and ill-defined sites"
+                },
+                {
+                  "code": "195.1",
+                  "display": "Malignant neoplasm of thorax"
+                },
+                {
+                  "code": "196.2",
+                  "display": "Secondary and unspecified malignant neoplasm of intra-abdominal lymph nodes"
+                },
+                {
+                  "code": "196.3",
+                  "display": "Secondary and unspecified malignant neoplasm of lymph nodes of axilla and upper limb"
+                },
+                {
+                  "code": "198.2",
+                  "display": "Secondary malignant neoplasm of skin"
+                },
+                {
+                  "code": "190.9",
+                  "display": "Malignant neoplasm of eye, part unspecified"
+                },
+                {
+                  "code": "194.8",
+                  "display": "Malignant neoplasm of other endocrine glands and related structures"
+                },
+                {
+                  "code": "197.3",
+                  "display": "Secondary malignant neoplasm of other respiratory organs"
+                },
+                {
+                  "code": "198.0",
+                  "display": "Secondary malignant neoplasm of kidney"
+                },
+                {
+                  "code": "191.4",
+                  "display": "Malignant neoplasm of occipital lobe"
+                },
+                {
+                  "code": "192",
+                  "display": "Malignant neoplasm of other and unspecified parts of nervous system"
+                },
+                {
+                  "code": "193",
+                  "display": "Malignant neoplasm of thyroid gland"
+                },
+                {
+                  "code": "192.8",
+                  "display": "Malignant neoplasm of other specified sites of nervous system"
+                },
+                {
+                  "code": "194.5",
+                  "display": "Malignant neoplasm of carotid body"
+                },
+                {
+                  "code": "195.4",
+                  "display": "Malignant neoplasm of upper limb"
+                },
+                {
+                  "code": "198.89",
+                  "display": "Secondary malignant neoplasm of other specified sites"
+                },
+                {
+                  "code": "194.3",
+                  "display": "Malignant neoplasm of pituitary gland and craniopharyngeal duct"
+                },
+                {
+                  "code": "195.2",
+                  "display": "Malignant neoplasm of abdomen"
+                },
+                {
+                  "code": "199.1",
+                  "display": "Other malignant neoplasm without specification of site"
+                },
+                {
+                  "code": "199.2",
+                  "display": "Malignant neoplasm associated with transplant organ"
+                },
+                {
+                  "code": "191.6",
+                  "display": "Malignant neoplasm of cerebellum nos"
+                },
+                {
+                  "code": "191.9",
+                  "display": "Malignant neoplasm of brain, unspecified"
+                },
+                {
+                  "code": "192.3",
+                  "display": "Malignant neoplasm of spinal meninges"
+                },
+                {
+                  "code": "196.8",
+                  "display": "Secondary and unspecified malignant neoplasm of lymph nodes of multiple sites"
+                },
+                {
+                  "code": "198.7",
+                  "display": "Secondary malignant neoplasm of adrenal gland"
+                },
+                {
+                  "code": "198.8",
+                  "display": "Secondary malignant neoplasm of other specified sites"
+                },
+                {
+                  "code": "190.3",
+                  "display": "Malignant neoplasm of conjunctiva"
+                },
+                {
+                  "code": "194.4",
+                  "display": "Malignant neoplasm of pineal gland"
+                },
+                {
+                  "code": "194.9",
+                  "display": "Malignant neoplasm of endocrine gland, site unspecified"
+                },
+                {
+                  "code": "196.5",
+                  "display": "Secondary and unspecified malignant neoplasm of lymph nodes of inguinal region and lower limb"
+                },
+                {
+                  "code": "197.1",
+                  "display": "Secondary malignant neoplasm of mediastinum"
+                },
+                {
+                  "code": "190.7",
+                  "display": "Malignant neoplasm of lacrimal duct"
+                },
+                {
+                  "code": "191.0",
+                  "display": "Malignant neoplasm of cerebrum, except lobes and ventricles"
+                },
+                {
+                  "code": "192.9",
+                  "display": "Malignant neoplasm of nervous system, part unspecified"
+                },
+                {
+                  "code": "194.6",
+                  "display": "Malignant neoplasm of aortic body and other paraganglia"
+                },
+                {
+                  "code": "197.4",
+                  "display": "Secondary malignant neoplasm of small intestine including duodenum"
+                },
+                {
+                  "code": "197.7",
+                  "display": "Malignant neoplasm of liver, secondary"
+                },
+                {
+                  "code": "190",
+                  "display": "Malignant neoplasm of eye"
+                },
+                {
+                  "code": "191.2",
+                  "display": "Malignant neoplasm of temporal lobe"
+                },
+                {
+                  "code": "194.1",
+                  "display": "Malignant neoplasm of parathyroid gland"
+                },
+                {
+                  "code": "195.3",
+                  "display": "Malignant neoplasm of pelvis"
+                },
+                {
+                  "code": "196.0",
+                  "display": "Secondary and unspecified malignant neoplasm of lymph nodes of head, face, and neck"
+                },
+                {
+                  "code": "197.0",
+                  "display": "Secondary malignant neoplasm of lung"
+                },
+                {
+                  "code": "190.0",
+                  "display": "Malignant neoplasm of eyeball, except conjunctiva, cornea, retina, and choroid"
+                },
+                {
+                  "code": "190.6",
+                  "display": "Malignant neoplasm of choroid"
+                },
+                {
+                  "code": "191.8",
+                  "display": "Malignant neoplasm of other parts of brain"
+                },
+                {
+                  "code": "192.1",
+                  "display": "Malignant neoplasm of cerebral meninges"
+                },
+                {
+                  "code": "196.6",
+                  "display": "Secondary and unspecified malignant neoplasm of intrapelvic lymph nodes"
+                },
+                {
+                  "code": "197.2",
+                  "display": "Secondary malignant neoplasm of pleura"
+                },
+                {
+                  "code": "198.4",
+                  "display": "Secondary malignant neoplasm of other parts of nervous system"
+                },
+                {
+                  "code": "199",
+                  "display": "Malignant neoplasm without specification of site"
+                },
+                {
+                  "code": "191.1",
+                  "display": "Malignant neoplasm of frontal lobe"
+                },
+                {
+                  "code": "195.0",
+                  "display": "Malignant neoplasm of head, face, and neck"
+                },
+                {
+                  "code": "196.1",
+                  "display": "Secondary and unspecified malignant neoplasm of intrathoracic lymph nodes"
+                },
+                {
+                  "code": "198.5",
+                  "display": "Secondary malignant neoplasm of bone and bone marrow"
+                },
+                {
+                  "code": "198.6",
+                  "display": "Secondary malignant neoplasm of ovary"
+                },
+                {
+                  "code": "190.1",
+                  "display": "Malignant neoplasm of orbit"
+                },
+                {
+                  "code": "190.5",
+                  "display": "Malignant neoplasm of retina"
+                },
+                {
+                  "code": "190.8",
+                  "display": "Malignant neoplasm of other specified sites of eye"
+                },
+                {
+                  "code": "195.5",
+                  "display": "Malignant neoplasm of lower limb"
+                },
+                {
+                  "code": "197.5",
+                  "display": "Secondary malignant neoplasm of large intestine and rectum"
+                },
+                {
+                  "code": "197.6",
+                  "display": "Secondary malignant neoplasm of retroperitoneum and peritoneum"
+                },
+                {
+                  "code": "198.1",
+                  "display": "Secondary malignant neoplasm of other urinary organs"
+                },
+                {
+                  "code": "198.81",
+                  "display": "Secondary malignant neoplasm of breast"
+                },
+                {
+                  "code": "190.4",
+                  "display": "Malignant neoplasm of cornea"
+                },
+                {
+                  "code": "191.5",
+                  "display": "Malignant neoplasm of ventricles"
+                },
+                {
+                  "code": "192.0",
+                  "display": "Malignant neoplasm of cranial nerves"
+                },
+                {
+                  "code": "192.2",
+                  "display": "Malignant neoplasm of spinal cord"
+                },
+                {
+                  "code": "194.0",
+                  "display": "Malignant neoplasm of adrenal gland"
+                },
+                {
+                  "code": "196",
+                  "display": "Secondary and unspecified malignant neoplasm of lymph nodes"
+                },
+                {
+                  "code": "196.9",
+                  "display": "Secondary and unspecified malignant neoplasm of lymph nodes, site unspecified"
+                },
+                {
+                  "code": "197.8",
+                  "display": "Secondary malignant neoplasm of other digestive organs and spleen"
+                },
+                {
+                  "code": "198",
+                  "display": "Secondary malignant neoplasm of other specified sites"
+                },
+                {
+                  "code": "198.3",
+                  "display": "Secondary malignant neoplasm of brain and spinal cord"
+                },
+                {
+                  "code": "198.82",
+                  "display": "Secondary malignant neoplasm of genital organs"
+                },
+                {
+                  "code": "242.0",
+                  "display": "Toxic diffuse goiter"
+                },
+                {
+                  "code": "242.1",
+                  "display": "Toxic uninodular goiter"
+                },
+                {
+                  "code": "242.2",
+                  "display": "Toxic multinodular goiter"
+                },
+                {
+                  "code": "242.3",
+                  "display": "Toxic nodular goiter, unspecified type"
+                },
+                {
+                  "code": "242.9",
+                  "display": "Thyrotoxicosis without mention of goiter or other cause"
+                },
+                {
+                  "code": "244.0",
+                  "display": "Postsurgical hypothyroidism"
+                },
+                {
+                  "code": "244.1",
+                  "display": "Other postablative hypothyroidism"
+                },
+                {
+                  "code": "244.2",
+                  "display": "Iodine hypothyroidism"
+                },
+                {
+                  "code": "244.3",
+                  "display": "Other iatrogenic hypothyroidism"
+                },
+                {
+                  "code": "258.8",
+                  "display": "Other specified polyglandular dysfunction"
+                },
+                {
+                  "code": "258",
+                  "display": "Polyglandular dysfunction and related disorders"
+                },
+                {
+                  "code": "258.03",
+                  "display": "Multiple endocrine neoplasia [MEN] type IIB"
+                },
+                {
+                  "code": "258.9",
+                  "display": "Polyglandular dysfunction, unspecified"
+                },
+                {
+                  "code": "258.01",
+                  "display": "Multiple endocrine neoplasia [MEN] type I"
+                },
+                {
+                  "code": "258.1",
+                  "display": "Other combinations of endocrine dysfunction"
+                },
+                {
+                  "code": "258.0",
+                  "display": "Polyglandular activity in multiple endocrine adenomatosis"
+                },
+                {
+                  "code": "258.02",
+                  "display": "Multiple endocrine neoplasia [MEN] type IIA"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.thyroid-altering-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.thyroid-altering-meds",
+        "name": "Thyroid-Altering Medication",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "8183",
+                  "display": "Phenytoin"
+                },
+                {
+                  "code": "703",
+                  "display": "Amiodarone"
+                },
+                {
+                  "code": "6448",
+                  "display": "Lithium"
+                },
+                {
+                  "code": "6835",
+                  "display": "Methimazole"
+                },
+                {
+                  "code": "8794",
+                  "display": "Propylthiouracil"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

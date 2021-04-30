@@ -1,0 +1,27 @@
+---
+name: 005 Urinary incontinence case - no prostate cancer tx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD10CM#C61 Malignant neoplasm of prostate
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Encounter
+    id: encounter-1
+    period: "1999-11-12T16:00:00.000Z"
+
+  - resourceType: Encounter
+    id: encounter-2
+    period: "2007-11-12T16:00:00.000Z"
+
+results:
+  Has Two Or More Encounters Before First Treatment: false
+  Has Prostate Cancer Treatment: false
+  Has Prostate Cancer Diagnoses: true
+  In Base Population: true
+  Case: false

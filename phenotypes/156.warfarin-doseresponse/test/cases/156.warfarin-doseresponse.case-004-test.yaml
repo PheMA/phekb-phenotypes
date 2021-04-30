@@ -1,0 +1,89 @@
+---
+name: 004 Warfarin dose/response Case - has disqualifying lab in different interval
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Encounter
+    id: encounter-1
+    period: "2018-11-12T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-1
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2018-11-12T17:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#6301-6 INR
+    valueQuantity: 1.7
+    effectiveDateTime: "2018-12-01T17:00:00.000Z"
+
+    # 4 week interval
+
+  - resourceType: Encounter
+    id: encounter-2
+    period: "2018-12-12T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-2
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2018-12-12T17:00:00.000Z"
+    status: completed  
+
+    # 1 week interval
+
+  - resourceType: Encounter
+    id: encounter-3
+    period: "2018-12-17T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-3
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2018-12-17T17:00:00.000Z"
+    status: completed
+
+    # 4 month (~16 week) interval
+
+  - resourceType: Encounter
+    id: encounter-4
+    period: "2019-04-12T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-4
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2019-04-12T17:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#6301-6 INR
+    valueQuantity: 2.1
+    effectiveDateTime: "2019-04-22T17:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#6301-6 INR
+    valueQuantity: 2.7
+    effectiveDateTime: "2019-05-21T17:00:00.000Z"
+
+    # 10 week interval between prescriptions
+
+  - resourceType: Encounter
+    id: encounter-5
+    period: "2019-06-21T16:00:00.000Z"
+    type: SNOMED#439021005 Seen in community anticoagulation clinic
+
+  - resourceType: MedicationRequest
+    encounter: encounter-5
+    code: RXNORM#11289 Warfarin
+    authoredOn: "2019-06-21T17:00:00.000Z"
+    status: completed
+
+results:
+  Case: true

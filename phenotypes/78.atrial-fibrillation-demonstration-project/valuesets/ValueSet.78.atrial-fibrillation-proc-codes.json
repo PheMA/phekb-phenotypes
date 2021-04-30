@@ -1,0 +1,766 @@
+{
+  "resourceType": "ValueSet",
+  "id": "78.atrial-fibrillation-proc-codes",
+  "url": "https://workbench.phema.science/fhir/ValueSet/78.atrial-fibrillation-proc-codes",
+  "status": "active",
+  "name": "Atrial Fibrillation Procedure Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "00566",
+            "display": "Anesthesia for direct coronary artery bypass grafting without pump oxygenator"
+          },
+          {
+            "code": "32160",
+            "display": "Thoracotomy, major; with cardiac massage"
+          },
+          {
+            "code": "33120",
+            "display": "Excision of intracardiac tumor, resection with cardiopulmonary bypass"
+          },
+          {
+            "code": "33130",
+            "display": "Resection of external cardiac tumor"
+          },
+          {
+            "code": "33141",
+            "display": "Transmyocardial laser revascularization, by thoracotomy; performed at the time of other open cardiac procedure(s) (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "33257",
+            "display": "Operative tissue ablation and reconstruction of atria, performed at the time of other cardiac procedure(s), limited (eg, modified maze procedure) (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "33258",
+            "display": "Operative tissue ablation and reconstruction of atria, performed at the time of other cardiac procedure(s), extensive (eg, maze procedure), without cardiopulmonary bypass (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "33259",
+            "display": "Operative tissue ablation and reconstruction of atria, performed at the time of other cardiac procedure(s), extensive (eg, maze procedure), with cardiopulmonary bypass (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "33300",
+            "display": "Repair of cardiac wound; without bypass"
+          },
+          {
+            "code": "33305",
+            "display": "Repair of cardiac wound; with cardiopulmonary bypass"
+          },
+          {
+            "code": "33310",
+            "display": "Cardiotomy, exploratory (includes removal of foreign body, atrial or ventricular thrombus); without bypass"
+          },
+          {
+            "code": "33315",
+            "display": "Cardiotomy, exploratory (includes removal of foreign body, atrial or ventricular thrombus); with cardiopulmonary bypass"
+          },
+          {
+            "code": "33400",
+            "display": "Valvuloplasty, aortic valve; open, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33401",
+            "display": "Valvuloplasty, aortic valve; open, with inflow occlusion"
+          },
+          {
+            "code": "33403",
+            "display": "Valvuloplasty, aortic valve; using transventricular dilation, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33404",
+            "display": "Construction of apical-aortic conduit"
+          },
+          {
+            "code": "33405",
+            "display": "Replacement, aortic valve, with cardiopulmonary bypass; with prosthetic valve other than homograft or stentless valve"
+          },
+          {
+            "code": "33406",
+            "display": "Replacement, aortic valve, with cardiopulmonary bypass; with allograft valve (freehand)"
+          },
+          {
+            "code": "33410",
+            "display": "Replacement, aortic valve, with cardiopulmonary bypass; with stentless tissue valve"
+          },
+          {
+            "code": "33411",
+            "display": "Replacement, aortic valve; with aortic annulus enlargement, noncoronary cusp"
+          },
+          {
+            "code": "33412",
+            "display": "Replacement, aortic valve; with transventricular aortic annulus enlargement (Konno procedure)"
+          },
+          {
+            "code": "33413",
+            "display": "Replacement, aortic valve; by translocation of autologous pulmonary valve with allograft replacement of pulmonary valve (Ross procedure)"
+          },
+          {
+            "code": "33415",
+            "display": "Resection or incision of subvalvular tissue for discrete subvalvular aortic stenosis"
+          },
+          {
+            "code": "33416",
+            "display": "Ventriculomyotomy (-myectomy) for idiopathic hypertrophic subaortic stenosis (eg, asymmetric septal hypertrophy)"
+          },
+          {
+            "code": "33420",
+            "display": "Valvotomy, mitral valve; closed heart"
+          },
+          {
+            "code": "33422",
+            "display": "Valvotomy, mitral valve; open heart, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33425",
+            "display": "Valvuloplasty, mitral valve, with cardiopulmonary bypass;"
+          },
+          {
+            "code": "33426",
+            "display": "Valvuloplasty, mitral valve, with cardiopulmonary bypass; with prosthetic ring"
+          },
+          {
+            "code": "33427",
+            "display": "Valvuloplasty, mitral valve, with cardiopulmonary bypass; radical reconstruction, with or without ring"
+          },
+          {
+            "code": "33430",
+            "display": "Replacement, mitral valve, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33460",
+            "display": "Valvectomy, tricuspid valve, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33463",
+            "display": "Valvuloplasty, tricuspid valve; without ring insertion"
+          },
+          {
+            "code": "33464",
+            "display": "Valvuloplasty, tricuspid valve; with ring insertion"
+          },
+          {
+            "code": "33465",
+            "display": "Replacement, tricuspid valve, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33468",
+            "display": "Tricuspid valve repositioning and plication for Ebstein anomaly"
+          },
+          {
+            "code": "33470",
+            "display": "Valvotomy, pulmonary valve, closed heart; transventricular"
+          },
+          {
+            "code": "33471",
+            "display": "Valvotomy, pulmonary valve, closed heart; via pulmonary artery"
+          },
+          {
+            "code": "33472",
+            "display": "Valvotomy, pulmonary valve, open heart; with inflow occlusion"
+          },
+          {
+            "code": "33474",
+            "display": "Valvotomy, pulmonary valve, open heart; with cardiopulmonary bypass"
+          },
+          {
+            "code": "33475",
+            "display": "Replacement, pulmonary valve"
+          },
+          {
+            "code": "33500",
+            "display": "Repair of coronary arteriovenous or arteriocardiac chamber fistula; with cardiopulmonary bypass"
+          },
+          {
+            "code": "33501",
+            "display": "Repair of coronary arteriovenous or arteriocardiac chamber fistula; without cardiopulmonary bypass"
+          },
+          {
+            "code": "33507",
+            "display": "REPAIR OF ANOMALOUS AORTIC ORIGIN OF CORONARY ARTERY BY UNROOF OR TRANSLOCA Repair of anomalous (eg, intramural) aortic origin of coronary artery by unroofing or translocation"
+          },
+          {
+            "code": "33572",
+            "display": "Coronary endarterectomy, open, any method, of left anterior descending, circumflex, or right coronary artery performed in conjunction with coronary artery bypass graft procedure, each vessel (List separately in addition to primary procedure)"
+          },
+          {
+            "code": "33600",
+            "display": "Closure of atrioventricular valve (mitral or tricuspid) by suture or patch"
+          },
+          {
+            "code": "33602",
+            "display": "Closure of semilunar valve (aortic or pulmonary) by suture or patch"
+          },
+          {
+            "code": "33608",
+            "display": "Repair of complex cardiac anomaly other than pulmonary atresia with ventricular septal defect by construction or replacement of conduit from right or left ventricle to pulmonary artery"
+          },
+          {
+            "code": "33610",
+            "display": "Repair of complex cardiac anomalies (eg, single ventricle with subaortic obstruction) by surgical enlargement of ventricular septal defect"
+          },
+          {
+            "code": "33615",
+            "display": "Repair of complex cardiac anomalies (eg, tricuspid atresia) by closure of atrial septal defect and anastomosis of atria or vena cava to pulmonary artery (simple Fontan procedure)"
+          },
+          {
+            "code": "33617",
+            "display": "Repair of complex cardiac anomalies (eg, single ventricle) by modified Fontan procedure"
+          },
+          {
+            "code": "33619",
+            "display": "Repair of single ventricle with aortic outflow obstruction and aortic arch hypoplasia (hypoplastic left heart syndrome) (eg, Norwood procedure)"
+          },
+          {
+            "code": "33641",
+            "display": "Repair atrial septal defect, secundum, with cardiopulmonary bypass, with or without patch"
+          },
+          {
+            "code": "33647",
+            "display": "Repair of atrial septal defect and ventricular septal defect, with direct or patch closure"
+          },
+          {
+            "code": "33660",
+            "display": "Repair of incomplete or partial atrioventricular canal (ostium primum atrial septal defect), with or without atrioventricular valve repair"
+          },
+          {
+            "code": "33722",
+            "display": "Closure of aortico-left ventricular tunnel"
+          },
+          {
+            "code": "33730",
+            "display": "Complete repair of anomalous venous return (supracardiac, intracardiac, or infracardiac types)"
+          },
+          {
+            "code": "33732",
+            "display": "Repair of cor triatriatum or supravalvular mitral ring by resection of left atrial membrane"
+          },
+          {
+            "code": "33735",
+            "display": "Atrial septectomy or septostomy; closed heart (Blalock-Hanlon type operation)"
+          },
+          {
+            "code": "33736",
+            "display": "Atrial septectomy or septostomy; open heart with cardiopulmonary bypass"
+          },
+          {
+            "code": "33737",
+            "display": "Atrial septectomy or septostomy; open heart, with inflow occlusion"
+          },
+          {
+            "code": "33774",
+            "display": "Repair of transposition of the great arteries, atrial baffle procedure (eg, Mustard or Senning type) with cardiopulmonary bypass;"
+          },
+          {
+            "code": "33775",
+            "display": "Repair of transposition of the great arteries, atrial baffle procedure (eg, Mustard or Senning type) with cardiopulmonary bypass; with removal of pulmonary band"
+          },
+          {
+            "code": "33776",
+            "display": "Repair of transposition of the great arteries, atrial baffle procedure (eg, Mustard or Senning type) with cardiopulmonary bypass; with closure of ventricular septal defect"
+          },
+          {
+            "code": "33777",
+            "display": "Repair of transposition of the great arteries, atrial baffle procedure (eg, Mustard or Senning type) with cardiopulmonary bypass; with repair of subpulmonic obstruction"
+          },
+          {
+            "code": "33778",
+            "display": "Repair of transposition of the great arteries, aortic pulmonary artery reconstruction (eg, Jatene type);"
+          },
+          {
+            "code": "33779",
+            "display": "Repair of transposition of the great arteries, aortic pulmonary artery reconstruction (eg, Jatene type); with removal of pulmonary band"
+          },
+          {
+            "code": "33780",
+            "display": "Repair of transposition of the great arteries, aortic pulmonary artery reconstruction (eg, Jatene type); with closure of ventricular septal defect"
+          },
+          {
+            "code": "33781",
+            "display": "Repair of transposition of the great arteries, aortic pulmonary artery reconstruction (eg, Jatene type); with repair of subpulmonic obstruction"
+          },
+          {
+            "code": "33800",
+            "display": "Aortic suspension (aortopexy) for tracheal decompression (eg, for tracheomalacia) (separate procedure)"
+          },
+          {
+            "code": "33852",
+            "display": "Repair of hypoplastic or interrupted aortic arch using autogenous or prosthetic material; without cardiopulmonary bypass"
+          },
+          {
+            "code": "33853",
+            "display": "Repair of hypoplastic or interrupted aortic arch using autogenous or prosthetic material; with cardiopulmonary bypass"
+          },
+          {
+            "code": "33863",
+            "display": "Ascending aorta graft, with cardiopulmonary bypass, with or without valve suspension; with aortic root replacement using composite prosthesis and coronary reconstruction"
+          },
+          {
+            "code": "33864",
+            "display": "Ascending aorta graft, with cardiopulmonary bypass with valve suspension, with coronary reconstruction and valve-sparing aortic annulus remodeling (eg, David Procedure, Yacoub Procedure)"
+          },
+          {
+            "code": "33877",
+            "display": "Repair of thoracoabdominal aortic aneurysm with graft, with or without cardiopulmonary bypass"
+          },
+          {
+            "code": "33891",
+            "display": "Bypass graft, with other than vein, transcervical retropharyngeal carotid-carotid, performed in conjunction with endovascular repair of descending thoracic aorta, by neck incision"
+          },
+          {
+            "code": "33967",
+            "display": "Insertion of intra-aortic balloon assist device, percutaneous"
+          },
+          {
+            "code": "33968",
+            "display": "Removal of intra-aortic balloon assist device, percutaneous"
+          },
+          {
+            "code": "33970",
+            "display": "Insertion of intra-aortic balloon assist device through the femoral artery, open approach"
+          },
+          {
+            "code": "33971",
+            "display": "Removal of intra-aortic balloon assist device including repair of femoral artery, with or without graft"
+          },
+          {
+            "code": "33973",
+            "display": "Insertion of intra-aortic balloon assist device through the ascending aorta"
+          },
+          {
+            "code": "33974",
+            "display": "Removal of intra-aortic balloon assist device from the ascending aorta, including repair of the ascending aorta, with or without graft"
+          },
+          {
+            "code": "33999",
+            "display": "Unlisted procedure, cardiac surgery"
+          },
+          {
+            "code": "34830",
+            "display": "Open repair of infrarenal aortic aneurysm or dissection, plus repair of associated arterial trauma, following unsuccessful endovascular repair; tube prosthesis"
+          },
+          {
+            "code": "34831",
+            "display": "Open repair of infrarenal aortic aneurysm or dissection, plus repair of associated arterial trauma, following unsuccessful endovascular repair; aorto-bi-iliac prosthesis"
+          },
+          {
+            "code": "34832",
+            "display": "Open repair of infrarenal aortic aneurysm or dissection, plus repair of associated arterial trauma, following unsuccessful endovascular repair; aorto-bifemoral prosthesis"
+          },
+          {
+            "code": "34833",
+            "display": "Open iliac artery exposure with creation of conduit for delivery of infrarenal aortic or iliac endovascular prosthesis, by abdominal or retroperitoneal incision, unilateral"
+          },
+          {
+            "code": "34834",
+            "display": "Open brachial artery exposure to assist in the deployment of infrarenal aortic or iliac endovascular prosthesis by arm incision, unilateral"
+          },
+          {
+            "code": "35452",
+            "display": "Transluminal balloon angioplasty, open; aortic"
+          },
+          {
+            "code": "35481",
+            "display": "Transluminal peripheral atherectomy, open; aortic"
+          },
+          {
+            "code": "35491",
+            "display": "Transluminal peripheral atherectomy, percutaneous; aortic"
+          },
+          {
+            "code": "35501",
+            "display": "Bypass graft, with vein; carotid"
+          },
+          {
+            "code": "35506",
+            "display": "Bypass graft, with vein; carotid-subclavian"
+          },
+          {
+            "code": "35507",
+            "display": "Bypass graft, with vein; subclavian-carotid"
+          },
+          {
+            "code": "35508",
+            "display": "Bypass graft, with vein; carotid-vertebral"
+          },
+          {
+            "code": "35509",
+            "display": "Bypass graft, with vein; carotid-carotid"
+          },
+          {
+            "code": "35510",
+            "display": "Bypass graft, with vein; carotid-brachial"
+          },
+          {
+            "code": "35511",
+            "display": "Bypass graft, with vein; subclavian-subclavian"
+          },
+          {
+            "code": "35512",
+            "display": "Bypass graft, with vein; subclavian-brachial"
+          },
+          {
+            "code": "35515",
+            "display": "Bypass graft, with vein; subclavian-vertebral"
+          },
+          {
+            "code": "35516",
+            "display": "Bypass graft, with vein; subclavian-axillary"
+          },
+          {
+            "code": "35518",
+            "display": "Bypass graft, with vein; axillary-axillary"
+          },
+          {
+            "code": "35521",
+            "display": "Bypass graft, with vein; axillary-femoral"
+          },
+          {
+            "code": "35522",
+            "display": "Bypass graft, with vein; axillary-brachial"
+          },
+          {
+            "code": "35523",
+            "display": "Bypass graft, with vein; brachial-ulnar or -radial"
+          },
+          {
+            "code": "35525",
+            "display": "Bypass graft, with vein; brachial-brachial"
+          },
+          {
+            "code": "35526",
+            "display": "Bypass graft, with vein; aortosubclavian or carotid"
+          },
+          {
+            "code": "35531",
+            "display": "Bypass graft, with vein; aortoceliac or aortomesenteric"
+          },
+          {
+            "code": "35533",
+            "display": "Bypass graft, with vein; axillary-femoral-femoral"
+          },
+          {
+            "code": "35536",
+            "display": "Bypass graft, with vein; splenorenal"
+          },
+          {
+            "code": "35537",
+            "display": "Bypass graft, with vein; aortoiliac"
+          },
+          {
+            "code": "35538",
+            "display": "Bypass graft, with vein; aortobi-iliac"
+          },
+          {
+            "code": "35539",
+            "display": "Bypass graft, with vein; aortofemoral"
+          },
+          {
+            "code": "35540",
+            "display": "Bypass graft, with vein; aortobifemoral"
+          },
+          {
+            "code": "35548",
+            "display": "Bypass graft, with vein; aortoiliofemoral, unilateral"
+          },
+          {
+            "code": "35549",
+            "display": "Bypass graft, with vein; aortoiliofemoral, bilateral"
+          },
+          {
+            "code": "35551",
+            "display": "Bypass graft, with vein; aortofemoral-popliteal"
+          },
+          {
+            "code": "35556",
+            "display": "Bypass graft, with vein; femoral-popliteal"
+          },
+          {
+            "code": "35558",
+            "display": "Bypass graft, with vein; femoral-femoral"
+          },
+          {
+            "code": "35560",
+            "display": "Bypass graft, with vein; aortorenal"
+          },
+          {
+            "code": "35563",
+            "display": "Bypass graft, with vein; ilioiliac"
+          },
+          {
+            "code": "35565",
+            "display": "Bypass graft, with vein; iliofemoral"
+          },
+          {
+            "code": "35566",
+            "display": "Bypass graft, with vein; femoral-anterior tibial, posterior tibial, peroneal artery or other distal vessels"
+          },
+          {
+            "code": "35571",
+            "display": "Bypass graft, with vein; popliteal-tibial, -peroneal artery or other distal vessels"
+          },
+          {
+            "code": "35572",
+            "display": "Harvest of femoropopliteal vein, one segment, for vascular reconstruction procedure (eg, aortic, vena caval, coronary, peripheral artery) (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "35601",
+            "display": "Bypass graft, with other than vein; carotid"
+          },
+          {
+            "code": "35606",
+            "display": "Bypass graft, with other than vein; carotid-subclavian"
+          },
+          {
+            "code": "35612",
+            "display": "Bypass graft, with other than vein; subclavian-subclavian"
+          },
+          {
+            "code": "35616",
+            "display": "Bypass graft, with other than vein; subclavian-axillary"
+          },
+          {
+            "code": "35621",
+            "display": "Bypass graft, with other than vein; axillary-femoral"
+          },
+          {
+            "code": "35623",
+            "display": "Bypass graft, with other than vein; axillary-popliteal or -tibial"
+          },
+          {
+            "code": "35626",
+            "display": "Bypass graft, with other than vein; aortosubclavian or carotid"
+          },
+          {
+            "code": "35631",
+            "display": "Bypass graft, with other than vein; aortoceliac, aortomesenteric, aortorenal"
+          },
+          {
+            "code": "35636",
+            "display": "Bypass graft, with other than vein; splenorenal (splenic to renal arterial anastomosis)"
+          },
+          {
+            "code": "35637",
+            "display": "Bypass graft, with other than vein; aortoiliac"
+          },
+          {
+            "code": "35638",
+            "display": "Bypass graft, with other than vein; aortobi-iliac"
+          },
+          {
+            "code": "35642",
+            "display": "Bypass graft, with other than vein; carotid-vertebral"
+          },
+          {
+            "code": "35645",
+            "display": "Bypass graft, with other than vein; subclavian-vertebral"
+          },
+          {
+            "code": "35646",
+            "display": "Bypass graft, with other than vein; aortobifemoral"
+          },
+          {
+            "code": "35647",
+            "display": "Bypass graft, with other than vein; aortofemoral"
+          },
+          {
+            "code": "35650",
+            "display": "Bypass graft, with other than vein; axillary-axillary"
+          },
+          {
+            "code": "35651",
+            "display": "Bypass graft, with other than vein; aortofemoral-popliteal"
+          },
+          {
+            "code": "35654",
+            "display": "Bypass graft, with other than vein; axillary-femoral-femoral"
+          },
+          {
+            "code": "35656",
+            "display": "Bypass graft, with other than vein; femoral-popliteal"
+          },
+          {
+            "code": "35661",
+            "display": "Bypass graft, with other than vein; femoral-femoral"
+          },
+          {
+            "code": "35663",
+            "display": "Bypass graft, with other than vein; ilioiliac"
+          },
+          {
+            "code": "35665",
+            "display": "Bypass graft, with other than vein; iliofemoral"
+          },
+          {
+            "code": "35666",
+            "display": "Bypass graft, with other than vein; femoral-anterior tibial, posterior tibial, or peroneal artery"
+          },
+          {
+            "code": "35671",
+            "display": "Bypass graft, with other than vein; popliteal-tibial or -peroneal artery"
+          },
+          {
+            "code": "35681",
+            "display": "Bypass graft; composite, prosthetic and vein (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "35682",
+            "display": "Bypass graft; autogenous composite, two segments of veins from two locations (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "35683",
+            "display": "Bypass graft; autogenous composite, three or more segments of vein from two or more locations (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "35685",
+            "display": "Placement of vein patch or cuff at distal anastomosis of bypass graft, synthetic conduit (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "35697",
+            "display": "Reimplantation, visceral artery to infrarenal aortic prosthesis, each artery (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "38562",
+            "display": "Limited lymphadenectomy for staging (separate procedure); pelvic and para-aortic"
+          },
+          {
+            "code": "38564",
+            "display": "Limited lymphadenectomy for staging (separate procedure); retroperitoneal (aortic and/or splenic)"
+          },
+          {
+            "code": "61020",
+            "display": "Ventricular puncture through previous burr hole, fontanelle, suture, or implanted ventricular catheter/reservoir; without injection"
+          },
+          {
+            "code": "61026",
+            "display": "Ventricular puncture through previous burr hole, fontanelle, suture, or implanted ventricular catheter/reservoir; with injection of medication or other substance for diagnosis or treatment"
+          },
+          {
+            "code": "62190",
+            "display": "Creation of shunt; subarachnoid/subdural-atrial, -jugular, -auricular"
+          },
+          {
+            "code": "62220",
+            "display": "Creation of shunt; ventriculo-atrial, -jugular, -auricular"
+          },
+          {
+            "code": "88305",
+            "display": "Level IV - Surgical pathology, gross and microscopic examination Abortion - Spontaneous/Missed Artery, Biopsy Bone Marrow, Biopsy Bone Exostosis Brain/Meninges, Other than for Tumor Resection Breast, Biopsy, Not Requiring Microscopic Evaluation of Surgical Margins Breast, Reduction Mammoplasty Bronchus, Biopsy Cell Block, Any Source Cervix, Biopsy Colon, Biopsy Duodenum, Biopsy Endocervix, Curettings/Biopsy Endometrium, Curettings/Biopsy Esophagus, Biopsy Extremity, Amputation, Traumatic Fallopian Tube, Biopsy Fallopian Tube, Ectopic Pregnancy Femoral Head, Fracture Fingers/Toes, Amputation, Non-traumatic Gingiva/Oral Mucosa, Biopsy Heart Valve Joint, Resection Kidney, Biopsy Larynx, Biopsy Leiomyoma(s), Uterine Myomectomy - without Uterus Lip, Biopsy/Wedge Resection Lung, Transbronchial B"
+          },
+          {
+            "code": "0081T",
+            "display": "Placement of visceral extension prosthesis for endovascular repair of abdominal aortic aneurysm involving visceral vessels, each visceral branch, radiological supervision and interpretation (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "4110F",
+            "display": "Internal mammary artery graft performed for primary, isolated coronary artery bypass graft procedure (CABG)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-proc",
+        "concept": [
+          {
+            "code": "00.61",
+            "display": "Percutaneous angioplasty or atherectomy of precerebral (extracranial) vessel(s)"
+          },
+          {
+            "code": "00.62",
+            "display": "Percutaneous angioplasty or atherectomy of intracranial vessel(s)"
+          },
+          {
+            "code": "00.66",
+            "display": "Percutaneous transluminal coronary angioplasty [PTCA] or coronary atherectomy"
+          },
+          {
+            "code": "35.01",
+            "display": "Closed heart valvotomy, aortic valve"
+          },
+          {
+            "code": "35.22",
+            "display": "Other replacement of aortic valve"
+          },
+          {
+            "code": "35.11",
+            "display": "Open heart valvuloplasty of aortic valve without replacement"
+          },
+          {
+            "code": "35.15",
+            "display": "Single internal mammary-coronary artery bypass"
+          },
+          {
+            "code": "35.5",
+            "display": "Repair of atrial and ventricular septa with prosthesis"
+          },
+          {
+            "code": "35.6",
+            "display": "Repair of atrial and ventricular septa with tissue graft"
+          },
+          {
+            "code": "35.7",
+            "display": "Other and unspecified repair of atrial and ventricular septa"
+          },
+          {
+            "code": "35.8",
+            "display": "Total repair of certain congenital cardiac anomalies"
+          },
+          {
+            "code": "35.62",
+            "display": "Repair of ventricular septal defect with tissue graft"
+          },
+          {
+            "code": "35.72",
+            "display": "Other and unspecified repair of ventricular septal defect"
+          },
+          {
+            "code": "36.1",
+            "display": "Bypass anastomosis for heart revascularization"
+          },
+          {
+            "code": "36.10",
+            "display": "Aortocoronary bypass for heart revascularization, not otherwise specified"
+          },
+          {
+            "code": "36.03",
+            "display": "Open chest coronary artery angioplasty"
+          },
+          {
+            "code": "36.16",
+            "display": "Double internal mammary-coronary artery bypass"
+          },
+          {
+            "code": "36.19",
+            "display": "Other bypass anastomosis for heart revascularization"
+          },
+          {
+            "code": "39.23",
+            "display": "Other shunt or vascular bypass"
+          },
+          {
+            "code": "39.24",
+            "display": "Aorta-renal bypass"
+          },
+          {
+            "code": "39.25",
+            "display": "Aorta-iliac-femoral bypass"
+          },
+          {
+            "code": "39.29",
+            "display": "Other (peripheral) vascular shunt or bypass"
+          },
+          {
+            "code": "39.50",
+            "display": "Angioplasty or atherectomy of other non-coronary vessel(s)"
+          },
+          {
+            "code": "39.66",
+            "display": "Percutaneous cardiopulmonary bypass"
+          }
+        ]
+      }
+    ]
+  }
+}

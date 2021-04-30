@@ -1,0 +1,75 @@
+---
+name: 003 Familial Hypercholesterolemia Case - using Friedewald
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # Values for Friedewald
+
+  # Total cholesterol levels less than 200 milligrams per deciliter (mg/dL) are
+  # considered desirable for adults. A reading between 200 and 239 mg/dL is
+  # considered borderline high and a reading of 240 mg/dL and above is
+  # considered high
+  - resourceType: Observation
+    code: LOINC#2093-3 Cholesterol [Mass/volume] in Serum or Plasma
+    valueQuantity: 500 mg/dL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  # Typically, doctors recommend an HDL level of 60 milligrams per deciliter
+  # (mg/dL) of blood or higher. HDL that falls within the range of 40 to 59
+  # mg/dL is normal, but could be higher. Having HDL under 40 mg/dL increases
+  # your risk of developing heart disease.
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 88 mg/dL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  # A simple blood test can reveal whether your triglycerides fall into a
+  # healthy range: Normal — Less than 150 milligrams per deciliter (mg/dL), or
+  # less than 1.7 millimoles per liter (mmol/L) Borderline high — 150 to 199
+  # mg/dL (1.8 to 2.2 mmol/L) High — 200 to 499 mg/dL (2.3 to 5.6 mmol/L)  
+  - resourceType: Observation
+    code: LOINC#2571-8 Triglyceride [Mass/volume] in Serum or Plasma
+    valueQuantity: 70 mg/dL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  # Values for Friedewald (different day)
+
+  # Total cholesterol levels less than 200 milligrams per deciliter (mg/dL) are
+  # considered desirable for adults. A reading between 200 and 239 mg/dL is
+  # considered borderline high and a reading of 240 mg/dL and above is
+  # considered high
+  - resourceType: Observation
+    code: LOINC#2093-3 Cholesterol [Mass/volume] in Serum or Plasma
+    valueQuantity: 190 mg/dL
+    effectiveDateTime: "2018-06-13T07:00:00.000Z"
+
+  # Typically, doctors recommend an HDL level of 60 milligrams per deciliter
+  # (mg/dL) of blood or higher. HDL that falls within the range of 40 to 59
+  # mg/dL is normal, but could be higher. Having HDL under 40 mg/dL increases
+  # your risk of developing heart disease.
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 25 mg/dL
+    effectiveDateTime: "2018-06-13T08:00:00.000Z"
+
+  # A simple blood test can reveal whether your triglycerides fall into a
+  # healthy range: Normal — Less than 150 milligrams per deciliter (mg/dL), or
+  # less than 1.7 millimoles per liter (mmol/L) Borderline high — 150 to 199
+  # mg/dL (1.8 to 2.2 mmol/L) High — 200 to 499 mg/dL (2.3 to 5.6 mmol/L)  
+  - resourceType: Observation
+    code: LOINC#2571-8 Triglyceride [Mass/volume] in Serum or Plasma
+    valueQuantity: 44 mg/dL
+    effectiveDateTime: "2018-06-13T07:00:00.000Z"
+
+results:
+  In Base Population: true
+  Has Lipid Profile: true
+  Has High Triglycerides: false
+  Has Secondary Cause Of Hypercholesterolemia: false
+  Has Lipid Lowering Treatment In Interval: false
+  Index Date: '2017-06-01T07:00:00.000+00:00'
+  Case: true

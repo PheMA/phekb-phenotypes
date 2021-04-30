@@ -1,0 +1,45 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.anti-thyroglobulin-ab",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.anti-thyroglobulin-ab",
+        "status": "active",
+        "name": "PHEKB-14 Anti-thyroglobulin antibodies",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "15210-8",
+                  "display": "Thyroglobulin Ab [Presence] in Serum"
+                },
+                {
+                  "code": "5381-9",
+                  "display": "Thyroglobulin Ab [Titer] in Serum by Latex agglutination"
+                },
+                {
+                  "code": "38504-7",
+                  "display": "Thyroglobulin Ab [Titer] in Serum by Immunofluorescence"
+                },
+                {
+                  "code": "10515-5",
+                  "display": "Thyroglobulin Ag [Presence] in Tissue by Immune stain"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

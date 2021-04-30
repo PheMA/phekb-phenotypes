@@ -1,0 +1,21 @@
+---
+name: 002 Peripheral Arterial Disease Case - elevated ankle SBP
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#8511-8 Posterior tibial artery Systolic blood pressure
+    valueQuantity: 256 mm[Hg]
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Has Diagnosis Codes For PAD: 0
+  Has Procedure Codes for PAD: 0
+  Has Medications for Claudication: 0
+  Has Additional Qualifying Criteria: false
+  Has Vascular Lab Criteria: true
+  Case: true

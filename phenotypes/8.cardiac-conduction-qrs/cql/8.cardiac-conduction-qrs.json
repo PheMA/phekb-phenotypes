@@ -1,0 +1,1522 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      }, {
+         "libraryId" : "8.cardiac-conduction-qrs",
+         "libraryVersion" : "1.0.0",
+         "startLine" : 123,
+         "startChar" : 49,
+         "endLine" : 123,
+         "endChar" : 57,
+         "message" : "List-valued expression was demoted to a singleton.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "8.cardiac-conduction-qrs",
+         "libraryVersion" : "1.0.0",
+         "startLine" : 133,
+         "startChar" : 49,
+         "endLine" : 133,
+         "endChar" : 57,
+         "message" : "List-valued expression was demoted to a singleton.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      } ],
+      "identifier" : {
+         "id" : "8.cardiac-conduction-qrs",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAString",
+            "path" : "PhEMAString",
+            "version" : "1.0.0"
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "name" : "MDC",
+            "id" : "urn:oid:2.16.840.1.113883.6.24",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Heart Disease Procedures",
+            "id" : "8.cardiac-conduction-qrs.heart-disease-cpt",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Sodium Channel Blocking Drugs",
+            "id" : "omop-concept-set-36",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Potassium Lab Test",
+            "id" : "omop-concept-set-37",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Calcium Lab Test",
+            "id" : "omop-concept-set-38",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Magnesium Lab Test",
+            "id" : "omop-concept-set-39",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Creatine Kinase Lab Test",
+            "id" : "omop-concept-set-40",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Troponin Lab Test",
+            "id" : "omop-concept-set-41",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "BNP Lab Test",
+            "id" : "omop-concept-set-42",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "QRS Duration",
+            "id" : "omop-concept-set-43",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Heart Rate",
+            "id" : "omop-concept-set-44",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Heart Disease",
+            "id" : "omop-concept-set-45",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "name" : "ECG Measurement",
+            "id" : "131328",
+            "display" : "MDC_ECG_ELEC_POTL",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "name" : "MDC"
+            }
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Sodium Channel Blocking Drugs Before Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "M",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                     "codeProperty" : "medication",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Sodium Channel Blocking Drugs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "SameOrBefore",
+                  "operand" : [ {
+                     "name" : "ToDateTime",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "path" : "authoredOn",
+                        "scope" : "M",
+                        "type" : "Property"
+                     } ]
+                  }, {
+                     "name" : "endDate",
+                     "type" : "OperandRef"
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Heart Disease Diagnosis Before Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "C",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Heart Disease",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "SameOrBefore",
+                  "operand" : [ {
+                     "name" : "ToDateTime",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "asType" : "{http://hl7.org/fhir}dateTime",
+                        "type" : "As",
+                        "operand" : {
+                           "path" : "onset",
+                           "scope" : "C",
+                           "type" : "Property"
+                        }
+                     } ]
+                  }, {
+                     "name" : "endDate",
+                     "type" : "OperandRef"
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Heart Disease Procedure Before Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "P",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Procedure",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Heart Disease Procedures",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "SameOrBefore",
+                  "operand" : [ {
+                     "name" : "ToDateTime",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "asType" : "{http://hl7.org/fhir}dateTime",
+                        "type" : "As",
+                        "operand" : {
+                           "path" : "performed",
+                           "scope" : "P",
+                           "type" : "Property"
+                        }
+                     } ]
+                  }, {
+                     "name" : "endDate",
+                     "type" : "OperandRef"
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Potassium Outside Range In Period Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Potassium Lab Test",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        } ]
+                     }, {
+                        "lowClosed" : false,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "startDate",
+                           "type" : "OperandRef"
+                        },
+                        "high" : {
+                           "name" : "endDate",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "Greater",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "value" : 6,
+                           "unit" : "mmol/L",
+                           "type" : "Quantity"
+                        } ]
+                     }, {
+                        "type" : "Less",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "value" : 3.5,
+                           "unit" : "mmol/L",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "startDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }, {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Calcium Outside Range In Period Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Calcium Lab Test",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        } ]
+                     }, {
+                        "lowClosed" : false,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "startDate",
+                           "type" : "OperandRef"
+                        },
+                        "high" : {
+                           "name" : "endDate",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "Greater",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "value" : 11,
+                           "unit" : "mg/dL",
+                           "type" : "Quantity"
+                        } ]
+                     }, {
+                        "type" : "Less",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "value" : 8,
+                           "unit" : "mg/dL",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "startDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }, {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Magnesium Outside Range In Period Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Magnesium Lab Test",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        } ]
+                     }, {
+                        "lowClosed" : false,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "startDate",
+                           "type" : "OperandRef"
+                        },
+                        "high" : {
+                           "name" : "endDate",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Less",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "value" : 1.7,
+                        "unit" : "mg/dL",
+                        "type" : "Quantity"
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "startDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }, {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Creatine Kinase Outside Range In Period Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Creatine Kinase Lab Test",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        } ]
+                     }, {
+                        "lowClosed" : false,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "startDate",
+                           "type" : "OperandRef"
+                        },
+                        "high" : {
+                           "name" : "endDate",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Greater",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "value" : 8,
+                        "unit" : "U/L",
+                        "type" : "Quantity"
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "startDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }, {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Troponin Outside Range In Period Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Troponin Lab Test",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        } ]
+                     }, {
+                        "lowClosed" : false,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "startDate",
+                           "type" : "OperandRef"
+                        },
+                        "high" : {
+                           "name" : "endDate",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Greater",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "value" : 0.05,
+                        "unit" : "ng/mL",
+                        "type" : "Quantity"
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "startDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }, {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "BNP Outside Range In Period Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "BNP Lab Test",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        } ]
+                     }, {
+                        "lowClosed" : false,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "name" : "startDate",
+                           "type" : "OperandRef"
+                        },
+                        "high" : {
+                           "name" : "endDate",
+                           "type" : "OperandRef"
+                        }
+                     } ]
+                  }, {
+                     "type" : "Greater",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "value" : 100,
+                        "unit" : "pg/mL",
+                        "type" : "Quantity"
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "startDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }, {
+               "name" : "endDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Lab Outside Range In Period",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Or",
+                  "operand" : [ {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Or",
+                           "operand" : [ {
+                              "type" : "Exists",
+                              "operand" : {
+                                 "name" : "Potassium Outside Range In Period Date",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "type" : "Subtract",
+                                    "operand" : [ {
+                                       "name" : "ecgDate",
+                                       "type" : "OperandRef"
+                                    }, {
+                                       "value" : 48,
+                                       "unit" : "hours",
+                                       "type" : "Quantity"
+                                    } ]
+                                 }, {
+                                    "type" : "Add",
+                                    "operand" : [ {
+                                       "name" : "ecgDate",
+                                       "type" : "OperandRef"
+                                    }, {
+                                       "value" : 48,
+                                       "unit" : "hours",
+                                       "type" : "Quantity"
+                                    } ]
+                                 } ]
+                              }
+                           }, {
+                              "type" : "Exists",
+                              "operand" : {
+                                 "name" : "Calcium Outside Range In Period Date",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "type" : "Subtract",
+                                    "operand" : [ {
+                                       "name" : "ecgDate",
+                                       "type" : "OperandRef"
+                                    }, {
+                                       "value" : 48,
+                                       "unit" : "hours",
+                                       "type" : "Quantity"
+                                    } ]
+                                 }, {
+                                    "type" : "Add",
+                                    "operand" : [ {
+                                       "name" : "ecgDate",
+                                       "type" : "OperandRef"
+                                    }, {
+                                       "value" : 48,
+                                       "unit" : "hours",
+                                       "type" : "Quantity"
+                                    } ]
+                                 } ]
+                              }
+                           } ]
+                        }, {
+                           "type" : "Exists",
+                           "operand" : {
+                              "name" : "Magnesium Outside Range In Period Date",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "type" : "Subtract",
+                                 "operand" : [ {
+                                    "name" : "ecgDate",
+                                    "type" : "OperandRef"
+                                 }, {
+                                    "value" : 48,
+                                    "unit" : "hours",
+                                    "type" : "Quantity"
+                                 } ]
+                              }, {
+                                 "type" : "Add",
+                                 "operand" : [ {
+                                    "name" : "ecgDate",
+                                    "type" : "OperandRef"
+                                 }, {
+                                    "value" : 48,
+                                    "unit" : "hours",
+                                    "type" : "Quantity"
+                                 } ]
+                              } ]
+                           }
+                        } ]
+                     }, {
+                        "type" : "Exists",
+                        "operand" : {
+                           "name" : "Creatine Kinase Outside Range In Period Date",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "type" : "Subtract",
+                              "operand" : [ {
+                                 "name" : "ecgDate",
+                                 "type" : "OperandRef"
+                              }, {
+                                 "value" : 48,
+                                 "unit" : "hours",
+                                 "type" : "Quantity"
+                              } ]
+                           }, {
+                              "type" : "Add",
+                              "operand" : [ {
+                                 "name" : "ecgDate",
+                                 "type" : "OperandRef"
+                              }, {
+                                 "value" : 48,
+                                 "unit" : "hours",
+                                 "type" : "Quantity"
+                              } ]
+                           } ]
+                        }
+                     } ]
+                  }, {
+                     "type" : "Exists",
+                     "operand" : {
+                        "name" : "Troponin Outside Range In Period Date",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "Subtract",
+                           "operand" : [ {
+                              "name" : "ecgDate",
+                              "type" : "OperandRef"
+                           }, {
+                              "value" : 48,
+                              "unit" : "hours",
+                              "type" : "Quantity"
+                           } ]
+                        }, {
+                           "type" : "Add",
+                           "operand" : [ {
+                              "name" : "ecgDate",
+                              "type" : "OperandRef"
+                           }, {
+                              "value" : 48,
+                              "unit" : "hours",
+                              "type" : "Quantity"
+                           } ]
+                        } ]
+                     }
+                  } ]
+               }, {
+                  "type" : "Exists",
+                  "operand" : {
+                     "name" : "BNP Outside Range In Period Date",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "type" : "Subtract",
+                        "operand" : [ {
+                           "name" : "ecgDate",
+                           "type" : "OperandRef"
+                        }, {
+                           "value" : 48,
+                           "unit" : "hours",
+                           "type" : "Quantity"
+                        } ]
+                     }, {
+                        "type" : "Add",
+                        "operand" : [ {
+                           "name" : "ecgDate",
+                           "type" : "OperandRef"
+                        }, {
+                           "value" : 48,
+                           "unit" : "hours",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  }
+               } ]
+            },
+            "operand" : [ {
+               "name" : "ecgDate",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Derived Heart Rate In Range",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Heart Rate",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "Equal",
+                        "operand" : [ {
+                           "name" : "GetId",
+                           "libraryName" : "PhEMAString",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "ToString",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "type" : "SingletonFrom",
+                                 "operand" : {
+                                    "type" : "Query",
+                                    "source" : [ {
+                                       "alias" : "$this",
+                                       "expression" : {
+                                          "path" : "derivedFrom",
+                                          "scope" : "O",
+                                          "type" : "Property"
+                                       }
+                                    } ],
+                                    "where" : {
+                                       "type" : "Not",
+                                       "operand" : {
+                                          "type" : "IsNull",
+                                          "operand" : {
+                                             "path" : "reference",
+                                             "type" : "Property",
+                                             "source" : {
+                                                "name" : "$this",
+                                                "type" : "AliasRef"
+                                             }
+                                          }
+                                       }
+                                    },
+                                    "return" : {
+                                       "distinct" : false,
+                                       "expression" : {
+                                          "path" : "reference",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "$this",
+                                             "type" : "AliasRef"
+                                          }
+                                       }
+                                    }
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "name" : "observationId",
+                           "type" : "OperandRef"
+                        } ]
+                     }, {
+                        "type" : "GreaterOrEqual",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "value" : 50,
+                           "unit" : "/min",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  }, {
+                     "type" : "LessOrEqual",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "value" : 100,
+                        "unit" : "/min",
+                        "type" : "Quantity"
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "observationId",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}String",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Derived QRS In Range",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "QRS Duration",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "Equal",
+                        "operand" : [ {
+                           "name" : "GetId",
+                           "libraryName" : "PhEMAString",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "ToString",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "type" : "SingletonFrom",
+                                 "operand" : {
+                                    "type" : "Query",
+                                    "source" : [ {
+                                       "alias" : "$this",
+                                       "expression" : {
+                                          "path" : "derivedFrom",
+                                          "scope" : "O",
+                                          "type" : "Property"
+                                       }
+                                    } ],
+                                    "where" : {
+                                       "type" : "Not",
+                                       "operand" : {
+                                          "type" : "IsNull",
+                                          "operand" : {
+                                             "path" : "reference",
+                                             "type" : "Property",
+                                             "source" : {
+                                                "name" : "$this",
+                                                "type" : "AliasRef"
+                                             }
+                                          }
+                                       }
+                                    },
+                                    "return" : {
+                                       "distinct" : false,
+                                       "expression" : {
+                                          "path" : "reference",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "$this",
+                                             "type" : "AliasRef"
+                                          }
+                                       }
+                                    }
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "name" : "observationId",
+                           "type" : "OperandRef"
+                        } ]
+                     }, {
+                        "type" : "GreaterOrEqual",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "value" : 65,
+                           "unit" : "ms",
+                           "type" : "Quantity"
+                        } ]
+                     } ]
+                  }, {
+                     "type" : "LessOrEqual",
+                     "operand" : [ {
+                        "name" : "ToQuantity",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Quantity",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "value",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "value" : 120,
+                        "unit" : "ms",
+                        "type" : "Quantity"
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "observationId",
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}String",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Normal ECG",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "name" : "ECG Measurement",
+                           "type" : "CodeRef"
+                        }
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "type" : "And",
+                           "operand" : [ {
+                              "type" : "And",
+                              "operand" : [ {
+                                 "type" : "Exists",
+                                 "operand" : {
+                                    "name" : "Derived QRS In Range",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "name" : "ToString",
+                                       "libraryName" : "FHIRHelpers",
+                                       "type" : "FunctionRef",
+                                       "operand" : [ {
+                                          "path" : "id",
+                                          "scope" : "O",
+                                          "type" : "Property"
+                                       } ]
+                                    } ]
+                                 }
+                              }, {
+                                 "type" : "Exists",
+                                 "operand" : {
+                                    "name" : "Derived Heart Rate In Range",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "name" : "ToString",
+                                       "libraryName" : "FHIRHelpers",
+                                       "type" : "FunctionRef",
+                                       "operand" : [ {
+                                          "path" : "id",
+                                          "scope" : "O",
+                                          "type" : "Property"
+                                       } ]
+                                    } ]
+                                 }
+                              } ]
+                           }, {
+                              "type" : "Not",
+                              "operand" : {
+                                 "type" : "Exists",
+                                 "operand" : {
+                                    "name" : "Sodium Channel Blocking Drugs Before Date",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "type" : "Add",
+                                       "operand" : [ {
+                                          "name" : "ToDateTime",
+                                          "libraryName" : "FHIRHelpers",
+                                          "type" : "FunctionRef",
+                                          "operand" : [ {
+                                             "strict" : false,
+                                             "type" : "As",
+                                             "operand" : {
+                                                "path" : "effective",
+                                                "scope" : "O",
+                                                "type" : "Property"
+                                             },
+                                             "asTypeSpecifier" : {
+                                                "name" : "{http://hl7.org/fhir}dateTime",
+                                                "type" : "NamedTypeSpecifier"
+                                             }
+                                          } ]
+                                       }, {
+                                          "value" : 1,
+                                          "unit" : "week",
+                                          "type" : "Quantity"
+                                       } ]
+                                    } ]
+                                 }
+                              }
+                           } ]
+                        }, {
+                           "type" : "Not",
+                           "operand" : {
+                              "type" : "Exists",
+                              "operand" : {
+                                 "name" : "Heart Disease Diagnosis Before Date",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "type" : "Add",
+                                    "operand" : [ {
+                                       "name" : "ToDateTime",
+                                       "libraryName" : "FHIRHelpers",
+                                       "type" : "FunctionRef",
+                                       "operand" : [ {
+                                          "strict" : false,
+                                          "type" : "As",
+                                          "operand" : {
+                                             "path" : "effective",
+                                             "scope" : "O",
+                                             "type" : "Property"
+                                          },
+                                          "asTypeSpecifier" : {
+                                             "name" : "{http://hl7.org/fhir}dateTime",
+                                             "type" : "NamedTypeSpecifier"
+                                          }
+                                       } ]
+                                    }, {
+                                       "value" : 1,
+                                       "unit" : "month",
+                                       "type" : "Quantity"
+                                    } ]
+                                 } ]
+                              }
+                           }
+                        } ]
+                     }, {
+                        "type" : "Not",
+                        "operand" : {
+                           "type" : "Exists",
+                           "operand" : {
+                              "name" : "Heart Disease Procedure Before Date",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "type" : "Add",
+                                 "operand" : [ {
+                                    "name" : "ToDateTime",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "strict" : false,
+                                       "type" : "As",
+                                       "operand" : {
+                                          "path" : "effective",
+                                          "scope" : "O",
+                                          "type" : "Property"
+                                       },
+                                       "asTypeSpecifier" : {
+                                          "name" : "{http://hl7.org/fhir}dateTime",
+                                          "type" : "NamedTypeSpecifier"
+                                       }
+                                    } ]
+                                 }, {
+                                    "value" : 1,
+                                    "unit" : "month",
+                                    "type" : "Quantity"
+                                 } ]
+                              } ]
+                           }
+                        }
+                     } ]
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "name" : "Lab Outside Range In Period",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "ToDateTime",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "strict" : false,
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "effective",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              },
+                              "asTypeSpecifier" : {
+                                 "name" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "NamedTypeSpecifier"
+                              }
+                           } ]
+                        } ]
+                     }
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "name" : "Normal ECG",
+                  "type" : "ExpressionRef"
+               }
+            }
+         } ]
+      }
+   }
+}
+

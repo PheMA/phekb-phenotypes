@@ -1,0 +1,349 @@
+{
+  "resourceType": "ValueSet",
+  "id": "13.dx-affecting-height",
+  "url": "https://workbench.phema.science/fhir/ValueSet/13.dx-affecting-height",
+  "status": "active",
+  "name": "Diagnoses Affecting Height",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "253.3",
+            "display": "Pituitary dwarfism"
+          },
+          {
+            "code": "259.4",
+            "display": "Dwarfism, not elsewhere classified"
+          },
+          {
+            "code": "733.91",
+            "display": "Arrest of bone development or growth"
+          },
+          {
+            "code": "756.4",
+            "display": "Chondrodystrophy"
+          },
+          {
+            "code": "756.51",
+            "display": "Osteogenesis imperfecta"
+          },
+          {
+            "code": "758.0",
+            "display": "Down's syndrome"
+          },
+          {
+            "code": "758.6",
+            "display": "Gonadal dysgenesis"
+          },
+          {
+            "code": "759.81",
+            "display": "Prader-Willi syndrome"
+          },
+          {
+            "code": "759.82",
+            "display": "Marfan's syndrome"
+          },
+          {
+            "code": "243",
+            "display": "Congenital hypothyroidism"
+          },
+          {
+            "code": "759.1",
+            "display": "Congenital anomalies of adrenal gland"
+          },
+          {
+            "code": "759.89",
+            "display": "Other specified congenital anomalies, so described"
+          },
+          {
+            "code": "138",
+            "display": "Post Poliomyelitis Syndrome"
+          },
+          {
+            "code": "897",
+            "display": "Traumatic amputation of leg(s) (complete) (partial)"
+          },
+          {
+            "code": "897.0",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, without mention of complication"
+          },
+          {
+            "code": "897.1",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, complicated"
+          },
+          {
+            "code": "897.2",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, without mention of complication"
+          },
+          {
+            "code": "897.3",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, complicated"
+          },
+          {
+            "code": "897.4",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, level not specified, without mention of complication"
+          },
+          {
+            "code": "897.5",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, level not specified, complicated"
+          },
+          {
+            "code": "897.6",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), bilateral (any level), without mention of complication"
+          },
+          {
+            "code": "897.7",
+            "display": "Traumatic amputation of leg(s) (complete) (partial), bilateral (any level), complicated"
+          },
+          {
+            "code": "V49.7",
+            "display": "Lower limb amputation status"
+          },
+          {
+            "code": "V49.70",
+            "display": "Lower limb amputation, unspecified level"
+          },
+          {
+            "code": "V49.73",
+            "display": "Lower limb amputation, foot"
+          },
+          {
+            "code": "V49.74",
+            "display": "Lower limb amputation, ankle"
+          },
+          {
+            "code": "V49.75",
+            "display": "Lower limb amputation, below knee"
+          },
+          {
+            "code": "V49.76",
+            "display": "Lower limb amputation, above knee"
+          },
+          {
+            "code": "V49.77",
+            "display": "Lower limb amputation, hip"
+          },
+          {
+            "code": "733.0",
+            "display": "Osteoporosis"
+          },
+          {
+            "code": "733.00",
+            "display": "Osteoporosis unspecified"
+          },
+          {
+            "code": "733.01",
+            "display": "Senile Osteoporosis"
+          },
+          {
+            "code": "733.02",
+            "display": "Idiopathic Osteoporosis"
+          },
+          {
+            "code": "733.03",
+            "display": "Disuse Osteoporosis"
+          },
+          {
+            "code": "733.09",
+            "display": "Other Osteoporosis"
+          },
+          {
+            "code": "588.0",
+            "display": "Renal osteodystrophy"
+          },
+          {
+            "code": "722.4",
+            "display": "CERVICAL DISC Degeneration"
+          },
+          {
+            "code": "722.5",
+            "display": "Degeneration of thoracic or lumbar intervertebral"
+          },
+          {
+            "code": "722.51",
+            "display": "THORACIC DISC Degeneration"
+          },
+          {
+            "code": "722.52",
+            "display": "LUMB/LUMBOSAC DISC Degeneration"
+          },
+          {
+            "code": "722.6",
+            "display": "Degeneration of intervertebral disc, site unspecified"
+          },
+          {
+            "code": "737.10",
+            "display": "Kyphosis (Acquired) (Postural)"
+          },
+          {
+            "code": "737.30",
+            "display": "Scoliosis (and Kyphoscoliosis), Idiopathic"
+          },
+          {
+            "code": "733.13",
+            "display": "Pathologic fracture of vertebrae"
+          },
+          {
+            "code": "805",
+            "display": "Fracture of vertebral column without mention of spinal cord injury"
+          },
+          {
+            "code": "805.0",
+            "display": "Closed fracture of cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.00",
+            "display": "Closed fracture of cervical vertebra, unspecified level without mention of spinal cord injury"
+          },
+          {
+            "code": "805.01",
+            "display": "Closed fracture of first cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.02",
+            "display": "Closed fracture of second cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.03",
+            "display": "Closed fracture of third cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.04",
+            "display": "Closed fracture of fourth cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.05",
+            "display": "Closed fracture of fifth cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.06",
+            "display": "Closed fracture of sixth cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.07",
+            "display": "Closed fracture of seventh cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.08",
+            "display": "Closed fracture of multiple cervical vertebrae without mention of spinal cord injury"
+          },
+          {
+            "code": "805.1",
+            "display": "Open fracture of cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.10",
+            "display": "Open fracture of cervical vertebra, unspecified level without mention of spinal cord injury"
+          },
+          {
+            "code": "805.11",
+            "display": "Open fracture of first cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.12",
+            "display": "Open fracture of second cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.13",
+            "display": "Open fracture of third cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.14",
+            "display": "Open fracture of fourth cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.15",
+            "display": "Open fracture of fifth cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.16",
+            "display": "Open fracture of sixth cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.17",
+            "display": "Open fracture of seventh cervical vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.18",
+            "display": "Open fracture of multiple cervical vertebrae without mention of spinal cord injury"
+          },
+          {
+            "code": "805.2",
+            "display": "Closed fracture of dorsal (thoracic) vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.3",
+            "display": "Open fracture of dorsal (thoracic) vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.4",
+            "display": "Closed fracture of lumbar vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.5",
+            "display": "Open fracture of lumbar vertebra without mention of spinal cord injury"
+          },
+          {
+            "code": "805.8",
+            "display": "Closed fracture of unspecified part of vertebral column without mention of spinal cord injury"
+          },
+          {
+            "code": "805.9",
+            "display": "Open fracture of unspecified part of vertebral column without mention of spinal cord injury"
+          },
+          {
+            "code": "806",
+            "display": "Fracture of vertebral column with spinal cord injury"
+          },
+          {
+            "code": "806.0",
+            "display": "Closed fracture of cervical vertebra with spinal cord injury"
+          },
+          {
+            "code": "806.1",
+            "display": "Open fracture of cervical vertebra with spinal cord injury"
+          },
+          {
+            "code": "806.2",
+            "display": "Closed fracture of dorsal (thoracic) vertebra with spinal cord injury"
+          },
+          {
+            "code": "806.3",
+            "display": "Open fracture of dorsal vertebra with spinal cord injury"
+          },
+          {
+            "code": "806.8",
+            "display": "Closed fracture of unspecified vertebra with spinal cord injury"
+          },
+          {
+            "code": "806.9",
+            "display": "Open fracture of unspecified vertebra with spinal cord injury"
+          },
+          {
+            "code": "V54.17",
+            "display": "Aftercare for healing traumatic fracture of vertebrae"
+          },
+          {
+            "code": "V54.27",
+            "display": "Aftercare for healing pathologic fracture of vertebrae"
+          },
+          {
+            "code": "805.50",
+            "display": "FRACTURE OF VERTEBRAL COLUMN W/O MENTION OF SPINAL CORD INJURY;LUMBAR,OPEN;CERVICAL VERTEBRA,UNSPECIFIED LEVEL"
+          },
+          {
+            "code": "336.9",
+            "display": "Unspecified disease of spinal cord"
+          },
+          {
+            "code": "781.91",
+            "display": "Loss of height"
+          }
+        ]
+      }
+    ]
+  }
+}

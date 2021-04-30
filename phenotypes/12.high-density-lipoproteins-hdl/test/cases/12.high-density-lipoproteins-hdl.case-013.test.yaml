@@ -1,0 +1,31 @@
+---
+name: 013 Low HDL NOT case - two hyperthyroidism Dx before HDLs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2015-11-11T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2016-06-01T07:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#252.01 Primary hyperparathyroidism
+    onsetDateTime: "2001-11-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#252.01 Primary hyperparathyroidism
+    onsetDateTime: "2021-11-12T16:00:00.000Z"
+
+results:
+  Has Diabetes Code: false
+  Earliest Hyper/Hypothyroidism Indication: "2001-11-12T16:00:00.000+00:00"
+  Case: false

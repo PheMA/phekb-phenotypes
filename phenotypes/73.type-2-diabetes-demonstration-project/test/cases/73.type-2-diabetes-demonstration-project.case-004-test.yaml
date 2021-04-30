@@ -1,0 +1,14 @@
+---
+name: 004 Diabetes Mellitus Type II NOT Case - no data
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Case 1: false
+  Case 2: false
+  Case 3: false
+  Case: false

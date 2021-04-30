@@ -1,0 +1,260 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+602.total-cholesterol,Total Cholesterol,2093-3,LOINC
+602.total-cholesterol,Total Cholesterol,48620-9,LOINC
+602.total-cholesterol,Total Cholesterol,35200-5,LOINC
+602.total-cholesterol,Total Cholesterol,14647-2,LOINC
+602.ldl-c,LDL-C,2089-1,LOINC
+602.ldl-c,LDL-C,18262-6,LOINC
+602.ldl-c,LDL-C,49132-4,LOINC
+602.ldl-c,LDL-C,35198-1,LOINC
+602.ldl-c,LDL-C,39469-2,LOINC
+602.ldl-c,LDL-C,12773-8,LOINC
+602.ldl-c,LDL-C,18261-8,LOINC
+602.ldl-c,LDL-C,22748-8,LOINC
+602.ldl-c,LDL-C,13457-7,LOINC
+602.ldl-c,LDL-C,9346-8,LOINC
+602.ldl-c,LDL-C,2574-2,LOINC
+602.ldl-c,LDL-C,14815-5,LOINC
+602.hdl,HDL,2085-9,LOINC
+602.hdl,HDL,49130-8,LOINC
+602.hdl,HDL,35197-3,LOINC
+602.hdl,HDL,12771-2,LOINC
+602.hdl,HDL,12772-0,LOINC
+602.hdl,HDL,18263-4,LOINC
+602.hdl,HDL,27340-9,LOINC
+602.hdl,HDL,14646-4,LOINC
+602.triglycerides,Triglycerides,2571-8,LOINC
+602.triglycerides,Triglycerides,30524-3,LOINC
+602.triglycerides,Triglycerides,3048-6,LOINC
+602.triglycerides,Triglycerides,35217-9,LOINC
+602.triglycerides,Triglycerides,28554-4,LOINC
+602.triglycerides,Triglycerides,14927-8,LOINC
+602.triglycerides,Triglycerides,47210-0,LOINC
+602.tsh,Thyroid Stimulating Hormone,11579-0,LOINC
+602.tsh,Thyroid Stimulating Hormone,24348-5,LOINC
+602.alkaline-phosphatase,Alkaline Phosphatase,6768-6,LOINC
+602.alkaline-phosphatase,Alkaline Phosphatase,12805-8,LOINC
+602.total-bilirubin,Total Bilirubin,35194-0,LOINC
+602.total-bilirubin,Total Bilirubin,1975-2,LOINC
+602.total-bilirubin,Total Bilirubin,14631-6,LOINC
+602.protein-in-urine,Protein In 24h Urine Collection,21482-5,LOINC
+602.protein-in-urine,Protein In 24h Urine Collection,2889-4,LOINC
+602.protein-in-urine,Protein In 24h Urine Collection,21028-6,LOINC
+602.urine-protein-creatine-ratio,Urine Protein/Creatine Ratio,13801-6,LOINC
+602.urine-protein-creatine-ratio,Urine Protein/Creatine Ratio,2890-2,LOINC
+602.creatinine,Creatinine,14682-9,LOINC
+602.creatinine,Creatinine,2160-0,LOINC
+602.creatinine,Creatinine,35203-9,LOINC
+602.creatinine,Creatinine,38483-4,LOINC
+602.creatinine,Creatinine,59826-8,LOINC
+602.creatinine,Creatinine,77140-2,LOINC
+602.creatinine,Creatinine,14682-9,LOINC
+602.egfr,Estimated Glomerular Filtration Rate,50261-7,LOINC
+602.egfr,Estimated Glomerular Filtration Rate,45066-8,LOINC
+602.egfr,Estimated Glomerular Filtration Rate,48642-3,LOINC
+602.egfr,Estimated Glomerular Filtration Rate,48642-3,LOINC
+602.egfr,Estimated Glomerular Filtration Rate,48643-1,LOINC
+602.egfr,Estimated Glomerular Filtration Rate,33914-3,LOINC
+602.hba1c,HbA1c,4549-2,LOINC
+602.hba1c,HbA1c,17855-8,LOINC
+602.hba1c,HbA1c,17856-6,LOINC
+602.hba1c,HbA1c,41995-2,LOINC
+602.fasting-glucose-capillary,Fasting Glucose Capillary,1556-0,LOINC
+602.fasting-glucose-serum,Fasting Glucose Serum,1558-6,LOINC
+602.lipid-lowering-meds,Lipid Lowering Medications,36567,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,41127,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,6472,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,42463,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,861634,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,83367,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,301542,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,221072,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1152441,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,7393,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,8703,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,4719,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,341248,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,141626,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,2447,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,2685,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1367839,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1364479,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1665895,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1665900,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1665904,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1665906,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659156,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659161,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659165,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659167,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659177,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659179,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659182,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1659183,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,495215,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1372731,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,327008,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,404914,RxNorm
+602.lipid-lowering-meds,Lipid Lowering Medications,1372754,RxNorm
+602.lipid-lowering-procs,Lipid Lowering Procedures,36515,CPT4
+602.lipid-lowering-procs,Lipid Lowering Procedures,36516,CPT4
+602.lipid-lowering-procs,Lipid Lowering Procedures,99.76,ICD9Proc
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,413.0,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,413.1,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,413.9,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.00,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.01,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.02,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.10,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.11,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.12,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.20,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.21,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.22,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.30,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.31,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.32,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.40,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.41,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.42,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.50,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.51,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.52,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.60,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.61,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.62,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.70,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.71,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.72,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.80,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.81,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.82,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.90,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.91,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,410.92,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,412,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,429.71,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,429.79,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.00,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.01,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.02,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.03,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.04,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.05,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.06,ICD9CM
+602.chd-indicator-dx,Coronary Heart Disease Indicator Diagnoses,414.07,ICD9CM
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92920,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92921,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92924,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92925,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92928,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92929,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92933,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92934,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92937,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92938,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92941,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92943,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92944,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92980,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92981,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92982,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92984,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92995,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92996,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92973,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,92974,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.01,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.02,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.03,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.04,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.05,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.06,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.07,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.09,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,00.66,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33510,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33511,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33512,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33513,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33514,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33516,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33517,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33518,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33519,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33521,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33522,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33523,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33533,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33534,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33535,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,33536,CPT4
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.10,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.11,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.12,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.13,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.14,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.15,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.16,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.17,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.18,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.19,ICD9Proc
+602.chd-indicator-px,Coronary Heart Disease Indicator Procedures,36.2,ICD9Proc
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434.00,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434.01,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434.10,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434.11,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434.90,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,434.91,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,437.0,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,437.1,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,435.0,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,435.1,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,435.2,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,435.3,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,435.8,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,435.9,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.00,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.01,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.10,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.11,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.20,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.21,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.30,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.31,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.80,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.81,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.90,ICD9CM
+602.cvd-indicator-dx,Cerebrovascular Disease Indicator Diagnoses,433.91,ICD9CM
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,38.12,ICD9Proc
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,38.11,ICD9Proc
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,00.61,ICD9Proc
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,39.28,ICD9Proc
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,00.63,ICD9Proc
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,35301,CPT4
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,37215,CPT4
+602.cvd-indicator-px,Cerebrovascular Disease Indicator Procedures,37216,CPT4
+602.pad-indicator-dx,Peripheral Arterial Disease Indicator Diagnoses,440.20,ICD9CM
+602.pad-indicator-dx,Peripheral Arterial Disease Indicator Diagnoses,440.21,ICD9CM
+602.pad-indicator-dx,Peripheral Arterial Disease Indicator Diagnoses,440.22,ICD9CM
+602.pad-indicator-dx,Peripheral Arterial Disease Indicator Diagnoses,440.23,ICD9CM
+602.pad-indicator-dx,Peripheral Arterial Disease Indicator Diagnoses,440.24,ICD9CM
+602.pad-indicator-dx,Peripheral Arterial Disease Indicator Diagnoses,440.29,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),237.70,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),237.71,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),237.72,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),237.73,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),237.79,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),443.1,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),446.0,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),446.4,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),446.5,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),446.6,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),446.7,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),710.1,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),747.10,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),747.11,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),747.22,ICD9CM
+602.pad-indicator-dx-2,Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes),747.64,ICD9CM

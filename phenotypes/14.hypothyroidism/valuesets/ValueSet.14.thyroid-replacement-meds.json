@@ -1,0 +1,191 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.thyroid-replacement-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.thyroid-replacement-meds",
+        "status": "active",
+        "name": "PHEKB-14 Thyroid replacement medications",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/AMT",
+              "concept": [
+                {
+                  "code": "2650011000036104",
+                  "display": "Thyroxine Sodium"
+                },
+                {
+                  "code": "2282011000036105",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "2283011000036103",
+                  "display": "Liothyronine Sodium"
+                },
+                {
+                  "code": "2649011000036107",
+                  "display": "Thyroxine"
+                }
+              ]
+            },
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/BDPM",
+              "concept": [
+                {
+                  "code": "5596",
+                  "display": "liothyronine sodium"
+                },
+                {
+                  "code": "382",
+                  "display": "Levothyroxine sodium"
+                }
+              ]
+            },
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/CIEL",
+              "concept": [
+                {
+                  "code": "85470",
+                  "display": "TRIIODOTHYRONINE"
+                },
+                {
+                  "code": "85080",
+                  "display": "Levothyroid"
+                },
+                {
+                  "code": "85471",
+                  "display": "TRIIODOTHYRONINE SODIUM"
+                },
+                {
+                  "code": "78891",
+                  "display": "LIOTHYRONINE SODIUM"
+                },
+                {
+                  "code": "78809",
+                  "display": "LEVOTHYROXINE SODIUM"
+                }
+              ]
+            },
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/dm+d",
+              "concept": [
+                {
+                  "code": "21268711000001106",
+                  "display": "Levothyroxine"
+                },
+                {
+                  "code": "61275002",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "126204001",
+                  "display": "Liothyronine sodium"
+                },
+                {
+                  "code": "3584111000001100",
+                  "display": "Levothyroxine sodium anhydrous"
+                },
+                {
+                  "code": "21268811000001103",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "73187006",
+                  "display": "Levothyroxine"
+                },
+                {
+                  "code": "13668011000001102",
+                  "display": "Levothyroxine + Liothyronine"
+                },
+                {
+                  "code": "350358003",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "10071011000001106",
+                  "display": "Levothyroxine"
+                }
+              ]
+            },
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/MeSH",
+              "concept": [
+                {
+                  "code": "D014284",
+                  "display": "Triiodothyronine"
+                },
+                {
+                  "code": "D013974",
+                  "display": "Thyroxine"
+                }
+              ]
+            },
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "10814",
+                  "display": "Triiodothyronine"
+                },
+                {
+                  "code": "10582",
+                  "display": "Thyroxine"
+                }
+              ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "38076006",
+                  "display": "Tetraiodothyronine preparation"
+                },
+                {
+                  "code": "350358003",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "710809001",
+                  "display": "Levothyroxine"
+                },
+                {
+                  "code": "73187006",
+                  "display": "Levothyroxine"
+                },
+                {
+                  "code": "61275002",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "36437009",
+                  "display": "Liothyronine sodium preparation"
+                },
+                {
+                  "code": "21268811000001103",
+                  "display": "Liothyronine"
+                },
+                {
+                  "code": "74495008",
+                  "display": "Triiodothyronine preparation"
+                },
+                {
+                  "code": "21268711000001106",
+                  "display": "Levothyroxine"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

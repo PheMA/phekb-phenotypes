@@ -1,0 +1,55 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+170.ami,Acute Myocardial Infarction,^410.*,ICD9CM
+170.ami,Acute Myocardial Infarction,^411.*,ICD9CM
+170.tni-labs,Troponin I Labs,10839-9,LOINC
+170.tni-labs,Troponin I Labs,49563-0,LOINC
+170.tnt-labs,Troponin T Labs,6598-7,LOINC
+170.tnt-labs,Troponin T Labs,67151-1,LOINC
+170.ckmb-ratio,CK-MB/CK Ratio,49136-5,LOINC
+170.ckmb-labs,Creatinine Kinase Labs,13969-1,LOINC
+170.revascularization-procs,Revascularization Procedures,33533,CPT4
+170.revascularization-procs,Revascularization Procedures,33534,CPT4
+170.revascularization-procs,Revascularization Procedures,33535,CPT4
+170.revascularization-procs,Revascularization Procedures,33536,CPT4
+170.revascularization-procs,Revascularization Procedures,33510,CPT4
+170.revascularization-procs,Revascularization Procedures,33511,CPT4
+170.revascularization-procs,Revascularization Procedures,33512,CPT4
+170.revascularization-procs,Revascularization Procedures,33513,CPT4
+170.revascularization-procs,Revascularization Procedures,33514,CPT4
+170.revascularization-procs,Revascularization Procedures,33515,CPT4
+170.revascularization-procs,Revascularization Procedures,33516,CPT4
+170.revascularization-procs,Revascularization Procedures,33517,CPT4
+170.revascularization-procs,Revascularization Procedures,33518,CPT4
+170.revascularization-procs,Revascularization Procedures,33519,CPT4
+170.revascularization-procs,Revascularization Procedures,33520,CPT4
+170.revascularization-procs,Revascularization Procedures,33521,CPT4
+170.revascularization-procs,Revascularization Procedures,33522,CPT4
+170.revascularization-procs,Revascularization Procedures,33523,CPT4
+170.revascularization-procs,Revascularization Procedures,92980,CPT4
+170.revascularization-procs,Revascularization Procedures,92981,CPT4
+170.revascularization-procs,Revascularization Procedures,92982,CPT4
+170.revascularization-procs,Revascularization Procedures,92984,CPT4
+170.revascularization-procs,Revascularization Procedures,92995,CPT4
+170.revascularization-procs,Revascularization Procedures,92996,CPT4
+170.revascularization-procs,Revascularization Procedures,C1874,HCPCS
+170.revascularization-procs,Revascularization Procedures,C1875,HCPCS
+170.revascularization-procs,Revascularization Procedures,C1876,HCPCS
+170.revascularization-procs,Revascularization Procedures,C1877,HCPCS
+170.statin-meds,Statin Medications,simvastatin,RxNorm
+170.statin-meds,Statin Medications,zocor,RxNorm
+170.statin-meds,Statin Medications,fluvastatin,RxNorm
+170.statin-meds,Statin Medications,lescol,RxNorm
+170.statin-meds,Statin Medications,canef,RxNorm
+170.statin-meds,Statin Medications,vastin,RxNorm
+170.statin-meds,Statin Medications,atorvastatin,RxNorm
+170.statin-meds,Statin Medications,lipitor,RxNorm
+170.statin-meds,Statin Medications,pravastatin,RxNorm
+170.statin-meds,Statin Medications,pravachol,RxNorm
+170.statin-meds,Statin Medications,selektine,RxNorm
+170.statin-meds,Statin Medications,lovastatin,RxNorm
+170.statin-meds,Statin Medications,mevacor,RxNorm
+170.statin-meds,Statin Medications,cerivastatin,RxNorm
+170.statin-meds,Statin Medications,baycol,RxNorm
+170.statin-meds,Statin Medications,lipobay,RxNorm
+170.statin-meds,Statin Medications,rosuvastatin,RxNorm
+170.statin-meds,Statin Medications,crestor,RxNorm

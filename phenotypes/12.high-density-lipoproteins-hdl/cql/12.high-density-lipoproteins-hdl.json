@@ -1,0 +1,1482 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      }, {
+         "message" : "List-valued expression was demoted to a singleton.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      } ],
+      "identifier" : {
+         "id" : "12.high-density-lipoproteins-hdl",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         }, {
+            "localIdentifier" : "PhEMADiabetes",
+            "path" : "PhEMADiabetes",
+            "version" : "1.0.0"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "HDL Labs",
+            "id" : "omop-concept-set-47",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Diabetes Codes",
+            "id" : "omop-concept-set-46",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Fasting Glucose",
+            "id" : "omop-concept-set-30",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Random Glucose",
+            "id" : "omop-concept-set-31",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Hemoglobin A1C",
+            "id" : "omop-concept-set-32",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Cancer Codes",
+            "id" : "2.16.840.1.113762.1.4.1116.231",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Hyperthyroidism Codes",
+            "id" : "omop-concept-set-48",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Hypothyroidism Codes",
+            "id" : "omop-concept-set-50",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Levothyroxine Meds",
+            "id" : "omop-concept-set-51",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Gemfibrozil Meds",
+            "id" : "omop-concept-set-55",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Niacin Meds",
+            "id" : "omop-concept-set-56",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Estrogen Meds",
+            "id" : "omop-concept-set-57",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "TSH Labs",
+            "id" : "omop-concept-set-49",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Statin Meds",
+            "id" : "2.16.840.1.113762.1.4.1021.7",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Has Diabetes Code",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Exists",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Diabetes Codes",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Earliest Diabetes Diagnosis Date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "Diabetes Codes",
+                     "type" : "ValueSetRef"
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Bad Random Glucose",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "name" : "Abnormal Random Glucose",
+                  "libraryName" : "PhEMADiabetes",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "type" : "ToDecimal",
+                     "operand" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "value" : "200",
+                        "type" : "Literal"
+                     }
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "Earliest Bad HbA1c",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "name" : "Abnormal Hemoglobin A1C",
+                  "libraryName" : "PhEMADiabetes",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                     "value" : "6.0",
+                     "type" : "Literal"
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "Second Bad Fasting Glucose",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "If",
+               "condition" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "operand" : {
+                     "type" : "GreaterOrEqual",
+                     "operand" : [ {
+                        "type" : "Count",
+                        "source" : {
+                           "name" : "Abnormal Fasting Glucose",
+                           "libraryName" : "PhEMADiabetes",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                              "value" : "126.0",
+                              "type" : "Literal"
+                           } ]
+                        }
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "value" : "2",
+                        "type" : "Literal"
+                     } ]
+                  }
+               },
+               "then" : {
+                  "name" : "Latest",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "name" : "Abnormal Fasting Glucose",
+                     "libraryName" : "PhEMADiabetes",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                        "value" : "126.0",
+                        "type" : "Literal"
+                     } ]
+                  } ]
+               },
+               "else" : {
+                  "asType" : "{http://hl7.org/fhir}Observation",
+                  "type" : "As",
+                  "operand" : {
+                     "type" : "Null"
+                  }
+               }
+            }
+         }, {
+            "name" : "Diabetes Indicators",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "R",
+                  "expression" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Earliest Diabetes Diagnosis Date",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Earliest Bad Random Glucose",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Earliest Bad HbA1c",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Second Bad Fasting Glucose",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Not",
+                  "operand" : {
+                     "type" : "IsNull",
+                     "operand" : {
+                        "name" : "R",
+                        "type" : "AliasRef"
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "HbA1c Test And Bad Random Glucose",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Hemoglobin A1C",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               }, {
+                  "type" : "Exists",
+                  "operand" : {
+                     "name" : "Abnormal Random Glucose",
+                     "libraryName" : "PhEMADiabetes",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "type" : "ToDecimal",
+                        "operand" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "200",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest HbA1C or Bad Random Glucose",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Observation",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Hemoglobin A1C",
+                           "type" : "ValueSetRef"
+                        }
+                     }, {
+                        "name" : "Abnormal Random Glucose",
+                        "libraryName" : "PhEMADiabetes",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToDecimal",
+                           "operand" : {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "200",
+                              "type" : "Literal"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Diabetes Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "If",
+               "condition" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "operand" : {
+                     "name" : "Has Diabetes Code",
+                     "type" : "ExpressionRef"
+                  }
+               },
+               "then" : {
+                  "name" : "Earliest Date",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "type" : "Query",
+                     "source" : [ {
+                        "alias" : "X",
+                        "expression" : {
+                           "name" : "Diabetes Indicators",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "return" : {
+                        "distinct" : false,
+                        "expression" : {
+                           "type" : "SingletonFrom",
+                           "operand" : {
+                              "name" : "X",
+                              "type" : "AliasRef"
+                           }
+                        }
+                     }
+                  } ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "condition" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                     "type" : "As",
+                     "operand" : {
+                        "name" : "HbA1c Test And Bad Random Glucose",
+                        "type" : "ExpressionRef"
+                     }
+                  },
+                  "then" : {
+                     "name" : "Effective Date",
+                     "libraryName" : "PhEMAHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "Earliest HbA1C or Bad Random Glucose",
+                        "type" : "ExpressionRef"
+                     } ]
+                  },
+                  "else" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}DateTime",
+                     "type" : "As",
+                     "operand" : {
+                        "type" : "Null"
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Earliest Cancer Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Effective Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "name" : "Earliest",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Cancer Codes",
+                        "type" : "ValueSetRef"
+                     }
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "Earliest Hyperthyroidism Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Hyperthyroidism Codes",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "GreaterOrEqual",
+                     "operand" : [ {
+                        "name" : "Dx Count",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "ToConcept",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "path" : "code",
+                              "scope" : "C",
+                              "type" : "Property"
+                           } ]
+                        } ]
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "value" : "2",
+                        "type" : "Literal"
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Hypothyroidism Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "C",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Hypothyroidism Codes",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "type" : "GreaterOrEqual",
+                     "operand" : [ {
+                        "name" : "Dx Count",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "ToConcept",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "path" : "code",
+                              "scope" : "C",
+                              "type" : "Property"
+                           } ]
+                        } ]
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "value" : "2",
+                        "type" : "Literal"
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Levothyroxine Med",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "M",
+                     "expression" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Levothyroxine Meds",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "Bad TSH Lab",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "TSH Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Case",
+                  "caseItem" : [ {
+                     "when" : {
+                        "type" : "Before",
+                        "operand" : [ {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "type" : "Date",
+                              "year" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "1990",
+                                 "type" : "Literal"
+                              },
+                              "month" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "2",
+                                 "type" : "Literal"
+                              },
+                              "day" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "6",
+                                 "type" : "Literal"
+                              }
+                           }
+                        } ]
+                     },
+                     "then" : {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Less",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "0.29",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Greater",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "5.00",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        } ]
+                     }
+                  }, {
+                     "when" : {
+                        "type" : "Before",
+                        "operand" : [ {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "type" : "Date",
+                              "year" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "1993",
+                                 "type" : "Literal"
+                              },
+                              "month" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "5",
+                                 "type" : "Literal"
+                              },
+                              "day" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "27",
+                                 "type" : "Literal"
+                              }
+                           }
+                        } ]
+                     },
+                     "then" : {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Less",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "0.46",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Greater",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "3.60",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        } ]
+                     }
+                  }, {
+                     "when" : {
+                        "type" : "Before",
+                        "operand" : [ {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "type" : "Date",
+                              "year" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "1995",
+                                 "type" : "Literal"
+                              },
+                              "month" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "3",
+                                 "type" : "Literal"
+                              },
+                              "day" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "31",
+                                 "type" : "Literal"
+                              }
+                           }
+                        } ]
+                     },
+                     "then" : {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Less",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "0.55",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Greater",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "4.10",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        } ]
+                     }
+                  }, {
+                     "when" : {
+                        "type" : "Before",
+                        "operand" : [ {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "type" : "Date",
+                              "year" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "1999",
+                                 "type" : "Literal"
+                              },
+                              "month" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "5",
+                                 "type" : "Literal"
+                              },
+                              "day" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "18",
+                                 "type" : "Literal"
+                              }
+                           }
+                        } ]
+                     },
+                     "then" : {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Less",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "0.46",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Greater",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "4.88",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        } ]
+                     }
+                  }, {
+                     "when" : {
+                        "type" : "Before",
+                        "operand" : [ {
+                           "name" : "Effective Date",
+                           "libraryName" : "PhEMAHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "O",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "type" : "Date",
+                              "year" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "2004",
+                                 "type" : "Literal"
+                              },
+                              "month" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "5",
+                                 "type" : "Literal"
+                              },
+                              "day" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                 "value" : "10",
+                                 "type" : "Literal"
+                              }
+                           }
+                        } ]
+                     },
+                     "then" : {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "type" : "Less",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "0.40",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Greater",
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}Quantity",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "O",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }, {
+                              "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "Instance",
+                              "element" : [ {
+                                 "name" : "value",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                    "value" : "5.70",
+                                    "type" : "Literal"
+                                 }
+                              }, {
+                                 "name" : "unit",
+                                 "value" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "mU/L",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           } ]
+                        } ]
+                     }
+                  } ],
+                  "else" : {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "Less",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                           "type" : "Instance",
+                           "element" : [ {
+                              "name" : "value",
+                              "value" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                 "value" : "0.35",
+                                 "type" : "Literal"
+                              }
+                           }, {
+                              "name" : "unit",
+                              "value" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "mU/L",
+                                 "type" : "Literal"
+                              }
+                           } ]
+                        } ]
+                     }, {
+                        "type" : "Greater",
+                        "operand" : [ {
+                           "name" : "ToQuantity",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Quantity",
+                              "type" : "As",
+                              "operand" : {
+                                 "path" : "value",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                           "type" : "Instance",
+                           "element" : [ {
+                              "name" : "value",
+                              "value" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                                 "value" : "4.50",
+                                 "type" : "Literal"
+                              }
+                           }, {
+                              "name" : "unit",
+                              "value" : {
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "mU/L",
+                                 "type" : "Literal"
+                              }
+                           } ]
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Earliest Hyper/Hypothyroidism Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Earliest Hyperthyroidism Diagnosis",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Earliest Hypothyroidism Diagnosis",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "Earliest Levothyroxine Med",
+                              "type" : "ExpressionRef"
+                           }
+                        } ]
+                     }, {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "Bad TSH Lab",
+                           "type" : "ExpressionRef"
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Statin Use Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                           "codeProperty" : "medication",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "name" : "Statin Meds",
+                              "type" : "ValueSetRef"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Gemfibrozil Use Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                           "codeProperty" : "medication",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "name" : "Gemfibrozil Meds",
+                              "type" : "ValueSetRef"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Niacin Use Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                           "codeProperty" : "medication",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "name" : "Niacin Meds",
+                              "type" : "ValueSetRef"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Estrogen Use Indication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "List",
+                     "element" : [ {
+                        "name" : "Effective Dates",
+                        "libraryName" : "PhEMAHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                           "codeProperty" : "medication",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "name" : "Estrogen Meds",
+                              "type" : "ValueSetRef"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Earliest Lipid Impacting Event",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Earliest Date",
+               "libraryName" : "PhEMAHelpers",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Flatten",
+                  "operand" : {
+                     "type" : "Query",
+                     "source" : [ {
+                        "alias" : "X",
+                        "expression" : {
+                           "type" : "List",
+                           "element" : [ {
+                              "name" : "Earliest Diabetes Indication",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Earliest Cancer Indication",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Earliest Hyper/Hypothyroidism Indication",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Earliest Statin Use Indication",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Earliest Gemfibrozil Use Indication",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Earliest Niacin Use Indication",
+                              "type" : "ExpressionRef"
+                           }, {
+                              "name" : "Earliest Estrogen Use Indication",
+                              "type" : "ExpressionRef"
+                           } ]
+                        }
+                     } ],
+                     "return" : {
+                        "distinct" : false,
+                        "expression" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "X",
+                              "type" : "AliasRef"
+                           }
+                        }
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Has Two Or More HDLs Before Lipid Impacting Event",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "operand" : [ {
+                  "name" : "Number Of Observations Before Date",
+                  "libraryName" : "PhEMAHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "HDL Labs",
+                        "type" : "ValueSetRef"
+                     }
+                  }, {
+                     "name" : "Earliest Lipid Impacting Event",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "2",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Has Two Or More HDLs Before Lipid Impacting Event",
+               "type" : "ExpressionRef"
+            }
+         } ]
+      }
+   }
+}
+

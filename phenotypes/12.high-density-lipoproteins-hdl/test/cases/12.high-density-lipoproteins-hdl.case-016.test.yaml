@@ -1,0 +1,36 @@
+---
+name: 016 Low HDL case - one hypethyroidism and then two hypothyroidism Dx, both after HDLs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2015-11-11T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2016-06-01T07:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#244.3 Other iatrogenic hypothyroidism
+    onsetDateTime: "2020-11-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#244.3 Other iatrogenic hypothyroidism
+    onsetDateTime: "2018-10-01T13:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#252.01 Primary hyperparathyroidism
+    onsetDateTime: "2015-09-01T13:00:00.000Z"
+
+results:
+  Has Two Or More HDLs Before Lipid Impacting Event: true
+  Has Diabetes Code: false
+  Earliest Hyper/Hypothyroidism Indication: "2018-10-01T13:00:00.000+00:00"
+  Case: true

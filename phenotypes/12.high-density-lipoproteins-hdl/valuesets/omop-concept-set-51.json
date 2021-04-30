@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-51",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-51",
+  "status": "active",
+  "name": "PHEKB-12 Levothyroxine Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "10582",
+            "display": "Thyroxine"
+          }
+        ]
+      }
+    ]
+  }
+}

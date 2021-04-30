@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1053.30",
+  "url": "https://workbench.phema.science/fhir/ValueSet/2.16.840.1.113762.1.4.1053.30",
+  "status": "active",
+  "name": "BPH Medications",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "17300",
+            "display": "alfuzosin"
+          },
+          {
+            "code": "228790",
+            "display": "dutasteride"
+          },
+          {
+            "code": "236495",
+            "display": "tamsulosin hydrochloride"
+          },
+          {
+            "code": "25025",
+            "display": "finasteride"
+          },
+          {
+            "code": "37798",
+            "display": "terazosin"
+          },
+          {
+            "code": "49276",
+            "display": "doxazosin"
+          },
+          {
+            "code": "720825",
+            "display": "silodosin"
+          },
+          {
+            "code": "77492",
+            "display": "tamsulosin"
+          },
+          {
+            "code": "8629",
+            "display": "prazosin"
+          }
+        ]
+      }
+    ]
+  }
+}

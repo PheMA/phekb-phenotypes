@@ -1,0 +1,17 @@
+---
+name: 001 Multiple Sclerosis Case from dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#340 Multiple sclerosis
+
+results:
+  Has Multiple Sclerosis Diagnosis: true
+  Has Other Diagnoses: false
+  Has Medications: false
+  Case: true

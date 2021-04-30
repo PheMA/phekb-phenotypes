@@ -1,0 +1,107 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+155.corticosteroid-medications,Corticosteroid Medications,Cortisone,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Hydrocortisone Sodium Phosphate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Hydrocortisone Sodium Succinate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Hydrocortisone Acetate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Hydrocortisone Cypionate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Prednisone,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Prednisolone Sodium Phosphate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Methylprednisolone Sodium Succinate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Methylprednisolone Acetate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Triamcinolone Acetonide,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Triamcinolone Diacetate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Triamcinolone Hexacetonide,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Dexamethasone Acetate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Dexamethasone Sodium Phosphate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Betamethasone Sodium Phosphate,RxNorm
+155.corticosteroid-medications,Corticosteroid Medications,Betamethasone Acetate,RxNorm
+155.qualifying-routes,Qualifying Routes,419993007,SNOMED
+155.qualifying-routes,Qualifying Routes,418114005,SNOMED
+155.qualifying-routes,Qualifying Routes,47625008,SNOMED
+155.qualifying-routes,Qualifying Routes,78421000,SNOMED
+155.qualifying-routes,Qualifying Routes,26643006,SNOMED
+155.alcoholism,Alcoholism,^291.*,ICD9CM
+155.alcoholism,Alcoholism,^303.*,ICD9CM
+155.alcoholism,Alcoholism,305.0,ICD9CM
+155.alcoholism,Alcoholism,305.00,ICD9CM
+155.alcoholism,Alcoholism,305.01,ICD9CM
+155.alcoholism,Alcoholism,425.5,ICD9CM
+155.alcoholism,Alcoholism,571.0,ICD9CM
+155.alcoholism,Alcoholism,571.1,ICD9CM
+155.alcoholism,Alcoholism,V11.3,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.41,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.42,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.6,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.60,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.63,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.68,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.69,ICD9CM
+155.sickle-cell-disease,Sickle Cell Disease ,282.64,ICD9CM
+155.gaucher,Gaucher,272.7,ICD9CM
+155.gaucher,Gaucher,330.1,ICD9CM
+155.legg-calve-perthes,Legg-Calve-Perthes,732.1,ICD9CM
+155.hiv,HIV,042,ICD9CM
+155.hiv,HIV,043,ICD9CM
+155.hiv,HIV,044,ICD9CM
+155.hiv,HIV,079.53,ICD9CM
+155.hiv,HIV,795.71,ICD9CM
+155.hiv,HIV,V08,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.0,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.1,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.6,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.7,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.8,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.81,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.82,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.83,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.84,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.89,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V42.9,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,V58.44,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.8,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.80,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.81,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.82,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.83,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.84,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.85,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.86,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.87,ICD9CM
+155.organ-transplant-diagnosis,Organ Transplant Diagnosis,996.89,ICD9CM
+155.organ-transplant-procedures,Organ Transplant Procedure,32851,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,32852,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,32853,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,32854,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,33935,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,33945,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,38240,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,00580,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,38241,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,38242,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,0085T,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,50360,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,50365,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,50370,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,50380,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,44135,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,44136,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,44137,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,76776,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,47135,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,47136,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,48160,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,48554,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,48556,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,32851P,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,32852P,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,33945P,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,S2054,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,S2060,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,S2103,CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,^3363[5-9],CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,^3364[0-9],CPT4
+155.organ-transplant-procedures,Organ Transplant Procedure,33650,CPT4
+155.hiv-labs,HIV Labs,29541-0,LOINC
+155.hiv-labs,HIV Labs,48345-3,LOINC
+155.necrosis-diagnosis,Necrosis Diagnosis,^733\.4+,ICD9CM

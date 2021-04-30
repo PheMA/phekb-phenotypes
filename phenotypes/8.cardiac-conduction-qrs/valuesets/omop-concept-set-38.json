@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-38",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-38",
+  "status": "active",
+  "name": "Calcium Lab Test",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "17861-6",
+            "display": "Calcium serum/plasma serum/plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

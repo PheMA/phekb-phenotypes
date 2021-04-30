@@ -1,0 +1,205 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-24",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-24",
+  "status": "active",
+  "name": "eMERGE Cataract - Cataract Diagnosis",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "366.02",
+            "display": "Posterior subcapsular polar cataract"
+          },
+          {
+            "code": "366.10",
+            "display": "Senile cataract, unspecified"
+          },
+          {
+            "code": "366.3",
+            "display": "Cataract secondary to ocular disorders"
+          },
+          {
+            "code": "366.34",
+            "display": "Cataract in degenerative ocular disorders"
+          },
+          {
+            "code": "366.09",
+            "display": "Other and combined forms of nonsenile cataract"
+          },
+          {
+            "code": "366.42",
+            "display": "Tetanic cataract"
+          },
+          {
+            "code": "366.03",
+            "display": "Cortical, lamellar, or zonular cataract"
+          },
+          {
+            "code": "366.21",
+            "display": "Localized traumatic opacities"
+          },
+          {
+            "code": "366.22",
+            "display": "Total traumatic cataract"
+          },
+          {
+            "code": "366.33",
+            "display": "Cataract with neovascularization"
+          },
+          {
+            "code": "366.00",
+            "display": "Nonsenile cataract, unspecified"
+          },
+          {
+            "code": "743.33",
+            "display": "Congenital nuclear cataract"
+          },
+          {
+            "code": "743.31",
+            "display": "Congenital capsular and subcapsular cataract"
+          },
+          {
+            "code": "366.11",
+            "display": "Pseudoexfoliation of lens capsule"
+          },
+          {
+            "code": "366.18",
+            "display": "Hypermature cataract"
+          },
+          {
+            "code": "366.51",
+            "display": "Soemmering's ring"
+          },
+          {
+            "code": "366.46",
+            "display": "Cataract associated with radiation and other physical influences"
+          },
+          {
+            "code": "366.15",
+            "display": "Cortical senile cataract"
+          },
+          {
+            "code": "366.53",
+            "display": "After-cataract, obscuring vision"
+          },
+          {
+            "code": "366.17",
+            "display": "Total or mature cataract"
+          },
+          {
+            "code": "366.50",
+            "display": "After-cataract, unspecified"
+          },
+          {
+            "code": "366.44",
+            "display": "Cataract associated with other syndromes"
+          },
+          {
+            "code": "366.19",
+            "display": "Other and combined forms of senile cataract"
+          },
+          {
+            "code": "366.43",
+            "display": "Myotonic cataract"
+          },
+          {
+            "code": "366.9",
+            "display": "Unspecified cataract"
+          },
+          {
+            "code": "366.41",
+            "display": "Diabetic cataract"
+          },
+          {
+            "code": "366.32",
+            "display": "Cataract in inflammatory ocular disorders"
+          },
+          {
+            "code": "366.30",
+            "display": "Cataracta complicata, unspecified"
+          },
+          {
+            "code": "366.8",
+            "display": "Other cataract"
+          },
+          {
+            "code": "366.23",
+            "display": "Partially resolved traumatic cataract"
+          },
+          {
+            "code": "366.45",
+            "display": "Toxic cataract"
+          },
+          {
+            "code": "366.01",
+            "display": "Anterior subcapsular polar cataract"
+          },
+          {
+            "code": "366.12",
+            "display": "Incipient senile cataract"
+          },
+          {
+            "code": "743.34",
+            "display": "Total and subtotal cataract, congenital"
+          },
+          {
+            "code": "743.32",
+            "display": "Congenital cortical and zonular cataract"
+          },
+          {
+            "code": "366.16",
+            "display": "Senile nuclear sclerosis"
+          },
+          {
+            "code": "366.04",
+            "display": "Nuclear cataract"
+          },
+          {
+            "code": "366.14",
+            "display": "Posterior subcapsular polar senile cataract"
+          },
+          {
+            "code": "366.31",
+            "display": "Glaucomatous flecks (subcapsular)"
+          },
+          {
+            "code": "743.30",
+            "display": "Congenital cataract, unspecified"
+          },
+          {
+            "code": "366.13",
+            "display": "Anterior subcapsular polar senile cataract"
+          },
+          {
+            "code": "366.2",
+            "display": "Traumatic cataract"
+          },
+          {
+            "code": "366.1",
+            "display": "Senile cataract"
+          },
+          {
+            "code": "366.5",
+            "display": "After-cataract"
+          },
+          {
+            "code": "366.20",
+            "display": "Traumatic cataract, unspecified"
+          },
+          {
+            "code": "366.52",
+            "display": "Other after-cataract, not obscuring vision"
+          },
+          {
+            "code": "366.4",
+            "display": "Cataract associated with other disorders"
+          }
+        ]
+      }
+    ]
+  }
+}

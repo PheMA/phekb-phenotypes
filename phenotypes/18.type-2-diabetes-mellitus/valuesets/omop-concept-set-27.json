@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-27",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-27",
+  "status": "active",
+  "name": "eMERGE T2DM - T2DM Diagnosis",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "250.50",
+            "display": "Diabetes with ophthalmic manifestations, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.00",
+            "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.02",
+            "display": "Diabetes mellitus without mention of complication, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.72",
+            "display": "Diabetes with peripheral circulatory disorders, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.80",
+            "display": "Diabetes with other specified manifestations, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.40",
+            "display": "Diabetes with renal manifestations, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.30",
+            "display": "Diabetes with other coma, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.82",
+            "display": "Diabetes with other specified manifestations, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.70",
+            "display": "Diabetes with peripheral circulatory disorders, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.52",
+            "display": "Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.90",
+            "display": "Diabetes with unspecified complication, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.62",
+            "display": "Diabetes with neurological manifestations, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.42",
+            "display": "Diabetes with renal manifestations, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.92",
+            "display": "Diabetes with unspecified complication, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.60",
+            "display": "Diabetes with neurological manifestations, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.22",
+            "display": "Diabetes with hyperosmolarity, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.32",
+            "display": "Diabetes with other coma, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.20",
+            "display": "Diabetes with hyperosmolarity, type II or unspecified type, not stated as uncontrolled"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1111.143",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2020-03-05T01:00:20.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Observation Services</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=448951000124107\">448951000124107</a></td><td>Admission to observation unit (procedure)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143",
+  "version": "20200305",
+  "name": "Observation Services",
+  "status": "active",
+  "date": "2020-03-05T01:00:20-05:00",
+  "publisher": "TJC EH Steward",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "448951000124107",
+            "display": "Admission to observation unit (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

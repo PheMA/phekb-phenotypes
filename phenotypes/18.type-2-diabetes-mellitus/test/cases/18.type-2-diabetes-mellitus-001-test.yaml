@@ -1,0 +1,18 @@
+---
+# Patient is disqualified in all case definitions because they have a T1DM diagnosis
+name: 001 Not a case - has T1DM diagnosis
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9CM#250.73 Diabetes with peripheral circulatory disorders, type I [juvenile type], uncontrolled
+    onsetDateTime: "2008-11-12T16:00:00.000Z"
+    recordedDate: "2008-11-12T16:00:00.000Z"
+
+results:
+  No Type 1 DM Diagnosis: false
+  Case: false

@@ -1,0 +1,92 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "615.sickle-cell-disease-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/615.sickle-cell-disease-diagnoses",
+        "name": "Sickle Cell Disease Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "282.41",
+                  "display": "Sickle-cell thalassemia without crisis"
+                },
+                {
+                  "code": "282.42",
+                  "display": "Sickle-cell thalassemia with crisis"
+                },
+                {
+                  "code": "282.60",
+                  "display": "Sickle-cell disease, unspecified"
+                },
+                {
+                  "code": "282.61",
+                  "display": "Hb-SS disease without crisis"
+                },
+                {
+                  "code": "282.62",
+                  "display": "Hb-SS disease with crisis"
+                },
+                {
+                  "code": "282.63",
+                  "display": "Sickle-cell/Hb-C disease without crisis"
+                },
+                {
+                  "code": "282.64",
+                  "display": "Sickle-cell/Hb-C disease with crisis"
+                },
+                {
+                  "code": "282.68",
+                  "display": "Other sickle-cell disease without crisis"
+                },
+                {
+                  "code": "282.69",
+                  "display": "Other sickle-cell disease with crisis"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "615.sickle-cell-trait-diagnoses",
+        "url": "https://workbench.phema.science/fhir/ValueSet/615.sickle-cell-trait-diagnoses",
+        "name": "Sickle Cell Trait Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "282.5",
+                  "display": "Sickle-cell trait"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

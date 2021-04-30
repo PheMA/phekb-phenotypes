@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-22",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-22",
+  "status": "active",
+  "name": "eMERGE Cataract - Cataract Surgery",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "66982",
+            "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1-stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification), complex, requiring devices or techniques not generally used in routine"
+          },
+          {
+            "code": "66930",
+            "display": "Removal of lens material; intracapsular, for dislocated lens"
+          },
+          {
+            "code": "66852",
+            "display": "Removal of lens material; pars plana approach, with or without vitrectomy"
+          },
+          {
+            "code": "66840",
+            "display": "Removal of lens material; aspiration technique, 1 or more stages"
+          },
+          {
+            "code": "66985",
+            "display": "Insertion of intraocular lens prosthesis (secondary implant), not associated with concurrent cataract removal"
+          },
+          {
+            "code": "66940",
+            "display": "Removal of lens material; extracapsular (other than 66840, 66850, 66852)"
+          },
+          {
+            "code": "66984",
+            "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification)"
+          },
+          {
+            "code": "66983",
+            "display": "Intracapsular cataract extraction with insertion of intraocular lens prosthesis (1 stage procedure)"
+          },
+          {
+            "code": "66920",
+            "display": "Removal of lens material; intracapsular"
+          },
+          {
+            "code": "66830",
+            "display": "Removal of secondary membranous cataract (opacified posterior lens capsule and/or anterior hyaloid) with corneo-scleral section, with or without iridectomy (iridocapsulotomy, iridocapsulectomy)"
+          },
+          {
+            "code": "66986",
+            "display": "Exchange of intraocular lens"
+          },
+          {
+            "code": "66850",
+            "display": "Removal of lens material; phacofragmentation technique (mechanical or ultrasonic) (eg, phacoemulsification), with aspiration"
+          }
+        ]
+      }
+    ]
+  }
+}

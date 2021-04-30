@@ -1,0 +1,34 @@
+---
+name: 012 Low HDL NOT case - two bad Thyrotropin, one before HDLs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2015-11-11T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 51 mg/dL
+    effectiveDateTime: "2016-06-01T07:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#3016-3 Thyrotropin [Units/volume] in Serum or Plasma
+    valueQuantity: 7 mU/L
+    effectiveDateTime: "1980-06-01T07:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#3016-3 Thyrotropin [Units/volume] in Serum or Plasma
+    valueQuantity: 7 mU/L
+    effectiveDateTime: "1981-06-01T07:00:00.000Z"
+
+results:
+  Has Two Or More HDLs Before Lipid Impacting Event: false
+  Has Diabetes Code: false
+  Earliest Hyper/Hypothyroidism Indication: "1980-06-01T07:00:00.000+00:00"
+  Case: false

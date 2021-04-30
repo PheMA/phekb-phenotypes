@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.117.1.7.1.292",
+  "meta": {
+    "versionId": "20",
+    "lastUpdated": "2019-02-26T22:31:15.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Emergency Department Visit</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4525004\">4525004</a></td><td>Emergency department patient visit (procedure)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292",
+  "version": "20170726",
+  "name": "Emergency Department Visit",
+  "status": "active",
+  "date": "2017-07-26T01:00:04-04:00",
+  "publisher": "TJC EH Steward",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "4525004",
+            "display": "Emergency department patient visit (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

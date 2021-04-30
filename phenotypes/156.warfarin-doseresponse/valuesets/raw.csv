@@ -1,0 +1,6 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+156.anticoagulation-clinic-encounter-types,Anticoagulation Clinic Encounter Types,439021005,SNOMED
+156.anticoagulation-clinic-encounter-types,Anticoagulation Clinic Encounter Types,440678006,SNOMED
+156.inr-labs,INR Labs,6301-6,LOINC
+156.inr-labs,INR Labs,34714-6,LOINC
+156.warfarin-meds,Warfarin Medications,11289,RxNorm

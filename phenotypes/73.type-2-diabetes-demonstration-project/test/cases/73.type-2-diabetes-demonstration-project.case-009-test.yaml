@@ -1,0 +1,24 @@
+---
+name: 009 Diabetes Mellitus Type II NOT Case - type 3, missing HbA1c
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#72610 troglitazone
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#2339-0 Glucose [Mass/volume] in Blood
+    valueQuantity: 375 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Case 1: false
+  Case 2: false
+  Case 3: false
+  Case: false

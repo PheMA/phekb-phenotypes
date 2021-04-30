@@ -1,0 +1,16 @@
+---
+name: 009 Peripheral Arterial Disease NOT Case - No criteria
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Has Diagnosis Codes For PAD: 0
+  Has Procedure Codes for PAD: 0
+  Has Medications for Claudication: 0
+  Has Additional Qualifying Criteria: false
+  Has Vascular Lab Criteria: false
+  Case: false

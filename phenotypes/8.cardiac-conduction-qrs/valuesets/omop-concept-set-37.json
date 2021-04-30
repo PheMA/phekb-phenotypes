@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-37",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-37",
+  "status": "active",
+  "name": "Potassium Lab Test",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2823-3",
+            "display": "Potassium serum/plasma"
+          },
+          {
+            "code": "22760-3",
+            "display": "Potassium [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

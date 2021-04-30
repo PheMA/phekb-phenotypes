@@ -1,0 +1,29 @@
+---
+name: 004 Multimodal Analgesia NOT Case - no other analgesic
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Encounter
+    id: encounter-1
+    period: 2018-11-11T16:00:00.000Z
+
+  - resourceType: Procedure
+    encounter: Encounter/encounter-1
+    code: CPT#32654 Thoracoscopy, surgical; with control of traumatic hemorrhage
+    performedDateTime: "2018-11-12T16:00:00.000Z" 
+
+  - resourceType: MedicationRequest
+    encounter: Encounter/encounter-1
+    code: RXNORM#7052 Morphine
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    category: http://terminology.hl7.org/CodeSystem/medicationrequest-category#discharge Discharge
+    status: completed
+
+results:
+  Has Surgery Procedure: true
+  Has Surgery With Multimodal Analgesia At Discharge: false
+  Case: false

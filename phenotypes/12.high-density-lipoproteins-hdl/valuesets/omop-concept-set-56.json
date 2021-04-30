@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-56",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-56",
+  "status": "active",
+  "name": "PHEKB-12 - Niacin Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "7393",
+            "display": "Niacin"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+1058.sle-diagnoses,System Lupus Erythematosus diagnoses,710.0,ICD9CM
+1058.ana-labs,Anti-Nuclear Antibody Labs,5048-4,LOINC
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,azathioprine,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,imuran,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,methotrexate sodium,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,methotrexate,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,trexall,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,mycophenolate mofetil,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,cellcept,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,mycophenolic acid,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,myfortic,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,cyclophosphamide,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,cytoxan,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,rituximab,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,rituxan,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,etanercept,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,enbrel,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,enbrel sureclick,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,adalimumab,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,humira,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,humira pen,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,infliximab,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,remicade,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,abatacept,RxNorm
+1058.dmard-drugs,Disease Modifying Antirheumatic Drugs,orencia,RxNorm
+1058.corticosteroids,Corticosteroids,cortisone acetate,RxNorm
+1058.corticosteroids,Corticosteroids,hydrocortisone,RxNorm
+1058.corticosteroids,Corticosteroids,cortef,RxNorm
+1058.corticosteroids,Corticosteroids,prednisone,RxNorm
+1058.corticosteroids,Corticosteroids,dexamethasone,RxNorm
+1058.corticosteroids,Corticosteroids,dexamethasone intensol,RxNorm
+1058.corticosteroids,Corticosteroids,decadron,RxNorm
+1058.corticosteroids,Corticosteroids,prednisolone sodium phosphate,RxNorm
+1058.corticosteroids,Corticosteroids,pediapred,RxNorm
+1058.corticosteroids,Corticosteroids,prednisone intensol,RxNorm
+1058.corticosteroids,Corticosteroids,methylprednisolone,RxNorm
+1058.corticosteroids,Corticosteroids,medrol,RxNorm
+1058.corticosteroids,Corticosteroids,medrol dosepak,RxNorm
+1058.corticosteroids,Corticosteroids,prednisolone,RxNorm
+1058.corticosteroids,Corticosteroids,orapred,RxNorm
+1058.corticosteroids,Corticosteroids,prelone,RxNorm
+1058.systemic-sclerosis-diagnoses,Systemic Sclerosis Diagnoses,710.1,ICD9CM
+1058.dermatomyositis-diagnoses,Dermatomyositis Diagnoses,710.3,ICD9CM

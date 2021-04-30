@@ -1,0 +1,36 @@
+---
+name: 006 Not Case - calcium outside range in period
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # Raw ECG data based on https://www.hl7.org/fhir/observation-example-sample-data.html
+  - resourceType: Observation
+    id: ecg-1
+    code: urn:oid:2.16.840.1.113883.6.24#131328 MDC_ECG_ELEC_POTL
+    # sampledData: <actual ECG data here>
+    effectiveDateTime: "2008-11-12T16:00:00.000Z"
+
+  # Derived QRS duration
+  - resourceType: Observation
+    derivedFrom: Observation/ecg-1
+    code: LOINC#8633-0 QRS duration
+    valueQuantity: 75 ms
+
+  # Derived Heart Rate
+  - resourceType: Observation
+    derivedFrom: Observation/ecg-1
+    code: LOINC#8867-4 Heart rate
+    valueQuantity: 65 /min
+
+  - resourceType: Observation
+    code: LOINC#17861-6 Calcium serum/plasma serum/plasma
+    valueQuantity: 2 mg/dL
+    effectiveDateTime: "2008-11-11T16:00:00.000Z"
+
+results:
+  Normal ECG: $should have length 0
+  Case: false

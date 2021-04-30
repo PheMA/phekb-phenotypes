@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-46",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-46",
+  "status": "active",
+  "name": "PHEKB-12 HDL Diabetes Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "362.01",
+            "display": "Background diabetic retinopathy"
+          },
+          {
+            "code": "250.61",
+            "display": "Diabetes with neurological manifestations, type I [juvenile type], not stated as uncontrolled"
+          },
+          {
+            "code": "250.51",
+            "display": "Diabetes with ophthalmic manifestations, type I [juvenile type], not stated as uncontrolled"
+          },
+          {
+            "code": "250.03",
+            "display": "Diabetes mellitus without mention of complication, type I [juvenile type], uncontrolled"
+          },
+          {
+            "code": "250.50",
+            "display": "Diabetes with ophthalmic manifestations, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.00",
+            "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "250.02",
+            "display": "Diabetes mellitus without mention of complication, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "357.2",
+            "display": "Polyneuropathy in diabetes"
+          },
+          {
+            "code": "250.63",
+            "display": "Diabetes with neurological manifestations, type I [juvenile type], uncontrolled"
+          },
+          {
+            "code": "250.52",
+            "display": "Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.01",
+            "display": "Diabetes mellitus without mention of complication, type I [juvenile type], not stated as uncontrolled"
+          },
+          {
+            "code": "250.3",
+            "display": "Diabetes with other coma"
+          },
+          {
+            "code": "250.62",
+            "display": "Diabetes with neurological manifestations, type II or unspecified type, uncontrolled"
+          },
+          {
+            "code": "250.0",
+            "display": "Diabetes mellitus without mention of complication"
+          },
+          {
+            "code": "250.60",
+            "display": "Diabetes with neurological manifestations, type II or unspecified type, not stated as uncontrolled"
+          },
+          {
+            "code": "583.81",
+            "display": "Nephritis and nephropathy, not specified as acute or chronic, in diseases classified elsewhere"
+          },
+          {
+            "code": "250.6",
+            "display": "Diabetes with neurological manifestations"
+          },
+          {
+            "code": "362.02",
+            "display": "Proliferative diabetic retinopathy"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+---
+name: 011 Resistant Hypertension NOT Case - high BP, but not 3 concurrent med classes
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+    # This extension is from US Core
+    extension:
+        - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
+          extension:
+              - valueCoding:
+                  system: urn:oid:2.16.840.1.113883.6.238
+                  # code: 2054-5
+                  # display: Black
+                  code: 2106-3
+                  display: White
+
+  # Medication Class Hydralazine
+  - resourceType: MedicationRequest
+    code: RXNORM#91825 Apresazide
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2001-10-15T00:00:00.000Z"
+        end: "2002-04-15T00:00:00.000Z"
+
+  # Medication Class Minoxidil
+  - resourceType: MedicationRequest
+    code: RXNORM#6984 Minoxidil
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2002-01-15T00:00:00.000Z"
+        end: "2002-10-15T00:00:00.000Z"
+
+  # Medication Class Diuretic Combination (counts as 1)
+  - resourceType: MedicationRequest
+    code: RXNORM#23742 Dyazide
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2001-10-15T00:00:00.000Z"
+        end: "2001-10-16T00:00:00.000Z"
+
+  # Medication Class Beta Blockers
+  - resourceType: MedicationRequest
+    code: RXNORM#8787 Propranolol
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2007-01-15T00:00:00.000Z"
+        end: "2011-10-15T00:00:00.000Z"
+
+  # Medication Class Thiazide/Aldosterone Antagonist Combination
+  - resourceType: MedicationRequest
+    code: RXNORM#17276 Aldactazide
+    status: completed
+    dispenseRequest:
+      validityPeriod:
+        start: "2005-10-15T00:00:00.000Z"
+        end: "2005-10-18T00:00:00.000Z"
+
+  - resourceType: Encounter
+    id: encounter-1
+    period: "2008-03-01T07:00:00.000Z"
+    class: http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#AMB Outpatient Encounter
+
+  - resourceType: Observation
+    encounter: Encounter/encounter-1
+    code: LOINC#8462-4 BP diastolic
+    valueQuantity: 105 mm[Hg]
+    effectiveDateTime: "2008-03-01T07:00:00.000Z"
+
+  - resourceType: Encounter
+    id: encounter-2
+    period: "2008-04-01T07:00:00.000Z"
+    class: http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#AMB Outpatient Encounter
+
+  - resourceType: Observation
+    encounter: Encounter/encounter-2
+    code: LOINC#8480-6 BP systolic
+    valueQuantity: 213 mm[Hg]
+    effectiveDateTime: "2008-04-01T07:00:00.000Z"
+
+results:
+  Qualifying BP Measurements: $should have length 0
+  Has Any Time Exclusion Diagnosis: false
+  Race eGFR Factor: 1
+  Gender eGFR Factor: 1
+  Case Type 1: false
+  Case Type 2: false
+  Case: false

@@ -1,0 +1,22 @@
+---
+name: 001 Cataract Case from Surgery
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Procedure
+    code: CPT#66840 Removal of lens material; aspiration technique, 1 or more stages
+    performedDateTime: "2008-11-12T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+results:
+  Has Cataract Surgery Procedure: true
+  Has Cataract Diagnoses: false
+  Earliest diagnosis or surgery: "2008-11-12T16:00:00.000+00:00"
+  50 years or older at first qualifying event: true
+  Case: true

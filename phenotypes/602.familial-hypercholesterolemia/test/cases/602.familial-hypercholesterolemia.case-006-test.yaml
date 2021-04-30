@@ -1,0 +1,35 @@
+---
+name: 006 Familial Hypercholesterolemia Case - with premature CVD
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # Direct
+  - resourceType: Observation
+    code: LOINC#2089-1 Cholesterol in LDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 251 mg/dL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  # CVD
+  - resourceType: Condition
+    code: ICD9#437.0 Cerebral atherosclerosis
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#434.91 Cerebral artery occlusion, unspecified with cerebral infarction
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+results:
+  In Base Population: true
+  Has Lipid Profile: true
+  Has High Triglycerides: false
+  Has Secondary Cause Of Hypercholesterolemia: false
+  Has Lipid Lowering Treatment In Interval: false
+  Index Date: '2017-06-01T07:00:00.000+00:00'
+  Has Premature CVD Or PAD: true
+  Group I: 5
+  Group II: 1
+  Case: true

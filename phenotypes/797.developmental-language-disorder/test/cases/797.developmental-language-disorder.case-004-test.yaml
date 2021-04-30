@@ -1,0 +1,23 @@
+---
+name: 004 Development Language Disorder Case - with category 2 dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 2012-07-16
+
+  - resourceType: Condition
+    code: ICD9#315.32 Mixed receptive-expressive language disorder
+    onsetDateTime: "2015-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#746.9 Unspecified congenital anomaly of heart
+    onsetDateTime: "2016-12-12T16:00:00.000Z"
+
+results:
+  Has DLD Diagnosis: true
+  Has DLD Exclusion Diagnosis: false
+  Has Category 1 or 2 Diagnosis: true
+  Has Category 3 or 4 Diagnosis: false
+  Case: true

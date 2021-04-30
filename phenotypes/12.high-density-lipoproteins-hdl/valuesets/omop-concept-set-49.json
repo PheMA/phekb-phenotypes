@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-49",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-49",
+  "status": "active",
+  "name": "PHEKB-12 TSH Lab Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "3016-3",
+            "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14297-6",
+            "display": "Thyrotropin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "27975-2",
+            "display": "Thyrotropin [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

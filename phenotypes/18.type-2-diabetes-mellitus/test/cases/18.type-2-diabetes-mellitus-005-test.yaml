@@ -1,0 +1,23 @@
+---
+# Patient is disqualified from all but case 4 because they are lacking a T2DM Diagnosis
+name: 005 Not Case - 0 T2 Dx, 1 T2 Meds
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#84108 rosiglitazone
+    authoredOn: "2014-10-15T16:00:00.000Z"
+    status: completed
+
+results:
+  No Type 1 DM Diagnosis: true
+  Case Type 1: false
+  Case Type 2: false
+  Case Type 3: false
+  Case Type 4: false
+  Case Type 5: false
+  Case: false

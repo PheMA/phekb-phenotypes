@@ -1,0 +1,257 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+16.ankle-brachial-index,Ankle Brachial Index,77194-9,LOINC
+16.ankle-systolic-blood-pressure,Ankle Systolic Blood Pressure,8511-8,LOINC
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,747.22,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,237.7,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,443.1,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,446.0,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,446.4,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,446.5,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,446.6,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,446.7,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,447.6,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,710.1,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,747.1,ICD9CM
+16.non-atherosclerotic-pad-dx,Non-Atheroscleroic PAD,747.64,ICD9CM
+16.pad-dx,PAD,^440\.2.*,ICD9CM
+16.pad-dx,PAD,^440\.3.*,ICD9CM
+16.pad-dx,PAD,^440\.8.*,ICD9CM
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,88.48,ICD9CM
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75710,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75711,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75712,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75716,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75717,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75718,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75630,CPT4
+16.lower-extremity-artery-angiography,Lower Extremity Artery Angiography Procedure,75631,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,39.50,ICD9CM
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,39.90,ICD9CM
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37205,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37206,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37207,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37208,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37184,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37185,CPT4
+16.non-coronary-vessel-stent,Non Coronary Vessel Stent Procedure,37186,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,38.18,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.50,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.25,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.29,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,38.08,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,38.38,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,38.48,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.49,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.56,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.57,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.58,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,39.90,ICD9CM
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35302,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35303,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35304,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35305,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35306,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35331,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35351,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35355,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35361,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35363,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35371,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35372,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35381,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35452,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35454,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35456,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35459,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35470,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35472,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35473,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35474,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35481,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35482,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35483,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35485,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35491,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35492,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35493,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35495,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35521,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35533,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35537,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35538,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35539,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35540,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35541,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35546,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35548,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35549,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35551,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35556,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35558,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35563,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35565,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35566,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35571,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35582,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35583,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35585,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35587,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35621,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35623,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35637,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35638,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35641,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35646,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35647,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35651,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35654,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35656,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35661,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35663,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35665,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35666,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35671,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35226,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35256,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35286,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35700,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35721,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35741,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35876,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35879,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35881,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35883,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,35884,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37184,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37185,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37186,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37205,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37206,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37207,CPT4
+16.lower-extremity-surgery-vascular-interventions,Lower Extremity Artery Surgery Procedure,37208,CPT4
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^736\.3.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^736\.4.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,736.5,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,736.6,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^736\.7.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^736\.8.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,736.9,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^735\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^754\.3.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^754\.4.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^754\.5.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^754\.6.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^754\.7.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,755.02,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,755.13,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,755.14,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,755.3,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,755.4,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^755\.6.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,755.8,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,759.7,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,759.89,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,895\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,896\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,897\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,820\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,821\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,822\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,823\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,824\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,825\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,826\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,827\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,828\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,829\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,835\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,836\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,837\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,838\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,904\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,928\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,929\..*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,959.6,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,959.7,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,^996\.4.*,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,996.66,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,996.67,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,996.77,ICD9CM
+16.lower-extremity-alternate-surgery-reason,Alternate Reason for Lower Extremity Artery Surgery,996.78,ICD9CM
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,^84\.1.*,ICD9CM
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,84.91,ICD9CM
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27295,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27590,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27591,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27592,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27598,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27880,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27781,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27782,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27888,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,27889,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,28800,CPT4
+16.lower-extremitiy-amputation,Lower Extremity Amputation Procedure,28805,CPT4
+16.non-vascular-amputation,Non-Vascular Amputation,170.6,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,170.7,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,170.8,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,170.9,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,171.3,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,172.7,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,173.7,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,198.5,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,344.1,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,711.0,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,728.86,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,733.2,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^736\.3.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^736\.4.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,736.5,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,736.6,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^736\.7.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^736\.8.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,736.9,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^735\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^754\.3.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^754\.4.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^754\.5.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^754\.6.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^754\.7.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,755.02,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,755.13,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,755.14,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,755.3,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,755.4,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^755\.6.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,755.8,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,759.7,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,759.89,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,895\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,896\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,897\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,820\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,821\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,822\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,823\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,824\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,825\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,826\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,827\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,828\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,829\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,835\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,836\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,837\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,838\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,904\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,928\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,929\..*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,959.6,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,959.7,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,^996\.4.*,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,996.66,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,996.67,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,996.77,ICD9CM
+16.non-vascular-amputation,Non-Vascular Amputation,996.78,ICD9CM
+16.claudication-meds,Claudication Meds,cilostazol,RxNorm
+16.claudication-meds,Claudication Meds,pentoxifylline,RxNorm

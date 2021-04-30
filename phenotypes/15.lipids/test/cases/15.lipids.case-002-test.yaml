@@ -1,0 +1,22 @@
+---
+name: 002 LDL-C Case - Has LDL before hormone therapy med
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#253166 estrogens, conjugated synthetic A
+    authoredOn: "2008-11-12T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#2089-1 Cholesterol in LDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 95 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Has LDL-C measure before exclusion date: true
+  Case: true

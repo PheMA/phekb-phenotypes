@@ -1,0 +1,441 @@
+{
+  "resourceType": "ValueSet",
+  "id": "13.childhood-dx-affecting-height",
+  "url": "https://workbench.phema.science/fhir/ValueSet/13.childhood-dx-affecting-height",
+  "status": "active",
+  "name": "Diagnoses Affecting Height",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "017.5",
+            "display": "Tuberculosis of thyroid gland"
+          },
+          {
+            "code": "017.50",
+            "display": "Tuberculosis of thyroid gland, confirmation unspecified"
+          },
+          {
+            "code": "017.51",
+            "display": "Tuberculosis of thyroid gland, bacteriological or histological examination not done"
+          },
+          {
+            "code": "017.52",
+            "display": "Tuberculosis of thyroid gland, bacteriological or histological examination unknown (at present)"
+          },
+          {
+            "code": "017.53",
+            "display": "Tuberculosis of thyroid gland, tubercle bacilli found (in sputum) by microscopy"
+          },
+          {
+            "code": "017.54",
+            "display": "Tuberculosis of thyroid gland, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+          },
+          {
+            "code": "017.55",
+            "display": "Tuberculosis of thyroid gland, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+          },
+          {
+            "code": "017.56",
+            "display": "Tuberculosis of thyroid gland, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods (inoculation of animals)"
+          },
+          {
+            "code": "017.6",
+            "display": "Tuberculosis of adrenal glands"
+          },
+          {
+            "code": "017.60",
+            "display": "Tuberculosis of adrenal glands, confirmation unspecified"
+          },
+          {
+            "code": "017.61",
+            "display": "Tuberculosis of adrenal glands, bacteriological or histological examination not done"
+          },
+          {
+            "code": "017.62",
+            "display": "Tuberculosis of adrenal glands, bacteriological or histological examination unknown (at present)"
+          },
+          {
+            "code": "017.63",
+            "display": "Tuberculosis of adrenal glands, tubercle bacilli found (in sputum) by microscopy"
+          },
+          {
+            "code": "017.64",
+            "display": "Tuberculosis of adrenal glands, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+          },
+          {
+            "code": "017.65",
+            "display": "Tuberculosis of adrenal glands, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+          },
+          {
+            "code": "017.66",
+            "display": "Tuberculosis of adrenal glands, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods (inoculation of animals)"
+          },
+          {
+            "code": "122.2",
+            "display": "Echinococcus granulosus infection of thyroid"
+          },
+          {
+            "code": "193",
+            "display": "Malignant neoplasm of thyroid gland"
+          },
+          {
+            "code": "194.0",
+            "display": "Malignant neoplasm of adrenal gland"
+          },
+          {
+            "code": "194.1",
+            "display": "Malignant neoplasm of parathyroid gland"
+          },
+          {
+            "code": "194.3",
+            "display": "Malignant neoplasm of pituitary gland and craniopharyngeal duct"
+          },
+          {
+            "code": "198.7",
+            "display": "Secondary malignant neoplasm of adrenal gland"
+          },
+          {
+            "code": "226",
+            "display": "Benign neoplasm of thyroid glands"
+          },
+          {
+            "code": "227.0",
+            "display": "Benign neoplasm of adrenal gland"
+          },
+          {
+            "code": "227.1",
+            "display": "Benign neoplasm of parathyroid gland"
+          },
+          {
+            "code": "227.3",
+            "display": "Benign neoplasm of pituitary gland and craniopharyngeal duct (pouch)"
+          },
+          {
+            "code": "237.0",
+            "display": "Neoplasm of uncertain behavior of pituitary gland and craniopharyngeal duct"
+          },
+          {
+            "code": "237.2",
+            "display": "Neoplasm of uncertain behavior of adrenal gland"
+          },
+          {
+            "code": "242.4",
+            "display": "Thyrotoxicosis from ectopic thyroid nodule"
+          },
+          {
+            "code": "242.40",
+            "display": "Thyrotoxicosis from ectopic thyroid nodule without mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.41",
+            "display": "Thyrotoxicosis from ectopic thyroid nodule with mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "V10.87",
+            "display": "Personal history of malignant neoplasm of thyroid"
+          },
+          {
+            "code": "244",
+            "display": "Acquired hypothyroidism"
+          },
+          {
+            "code": "244.0",
+            "display": "Postsurgical hypothyroidism"
+          },
+          {
+            "code": "244.1",
+            "display": "Other postablative hypothyroidism"
+          },
+          {
+            "code": "244.2",
+            "display": "Iodine hypothyroidism"
+          },
+          {
+            "code": "244.3",
+            "display": "Other iatrogenic hypothyroidism"
+          },
+          {
+            "code": "244.8",
+            "display": "Other specified acquired hypothyroidism"
+          },
+          {
+            "code": "244.9",
+            "display": "Unspecified hypothyroidism"
+          },
+          {
+            "code": "245",
+            "display": "Thyroiditis"
+          },
+          {
+            "code": "245.0",
+            "display": "Acute thyroiditis"
+          },
+          {
+            "code": "245.1",
+            "display": "Subacute thyroiditis"
+          },
+          {
+            "code": "245.2",
+            "display": "Chronic lymphocytic thyroiditis"
+          },
+          {
+            "code": "245.3",
+            "display": "Chronic fibrous thyroiditis"
+          },
+          {
+            "code": "245.4",
+            "display": "Iatrogenic thyroiditis"
+          },
+          {
+            "code": "245.8",
+            "display": "Other and unspecified chronic thyroiditis"
+          },
+          {
+            "code": "245.9",
+            "display": "Unspecified thyroiditis"
+          },
+          {
+            "code": "246",
+            "display": "Other disorders of thyroid"
+          },
+          {
+            "code": "246.2",
+            "display": "Cyst of thyroid"
+          },
+          {
+            "code": "246.3",
+            "display": "Hemorrhage and infarction of thyroid"
+          },
+          {
+            "code": "246.8",
+            "display": "Other specified disorders of thyroid"
+          },
+          {
+            "code": "246.9",
+            "display": "Unspecified disorder of thyroid"
+          },
+          {
+            "code": "252",
+            "display": "Disorders of parathyroid gland 252.0 Hyperparathyroidism"
+          },
+          {
+            "code": "252.00",
+            "display": "Hyperparathyroidism, unspecified"
+          },
+          {
+            "code": "252.01",
+            "display": "Primary hyperparathyroidism"
+          },
+          {
+            "code": "252.02",
+            "display": "Secondary hyperparathyroidism, non-renal"
+          },
+          {
+            "code": "252.08",
+            "display": "Other hyperparathyroidism 252.1 Hypoparathyroidism"
+          },
+          {
+            "code": "252.8",
+            "display": "Other specified disorders of parathyroid gland"
+          },
+          {
+            "code": "252.9",
+            "display": "Unspecified disorder of parathyroid gland"
+          },
+          {
+            "code": "253",
+            "display": "Disorders of the pituitary gland and its hypothalamic control 253.1 Other and unspecified anterior pituitary hyperfunction 253.4 Other anterior pituitary disorders"
+          },
+          {
+            "code": "253.7",
+            "display": "Iatrogenic pituitary disorders"
+          },
+          {
+            "code": "253.8",
+            "display": "Other disorders of the pituitary and other syndromes of diencephalohypophyseal origin"
+          },
+          {
+            "code": "253.9",
+            "display": "Unspecified disorder of the pituitary gland and its hypothalamic control"
+          },
+          {
+            "code": "255",
+            "display": "Disorders of adrenal glands"
+          },
+          {
+            "code": "255.3",
+            "display": "Other corticoadrenal overactivity"
+          },
+          {
+            "code": "255.4",
+            "display": "Corticoadrenal insufficiency"
+          },
+          {
+            "code": "255.5",
+            "display": "Other adrenal hypofunction"
+          },
+          {
+            "code": "255.6",
+            "display": "Medulloadrenal hyperfunction"
+          },
+          {
+            "code": "255.8",
+            "display": "Other specified disorders of adrenal glands"
+          },
+          {
+            "code": "255.9",
+            "display": "Unspecified disorder of adrenal glands"
+          },
+          {
+            "code": "263.2",
+            "display": "Arrested development following protein-calorie malnutrition"
+          },
+          {
+            "code": "270.0",
+            "display": "Disturbances of amino-acid transport"
+          },
+          {
+            "code": "277.5",
+            "display": "Mucopolysaccharidosis"
+          },
+          {
+            "code": "377.51",
+            "display": "Disorders of optic chiasm associated with pituitary neoplasms and disorders"
+          },
+          {
+            "code": "577.8",
+            "display": "Other specified disease of pancreas"
+          },
+          {
+            "code": "588.81",
+            "display": "Secondary hyperparathyroidism (of renal origin)"
+          },
+          {
+            "code": "628.1",
+            "display": "Female infertility of pituitary-hypothalamic origin"
+          },
+          {
+            "code": "648.1",
+            "display": "Thyroid dysfunction complicating pregnancy, childbirth, or the puerperium"
+          },
+          {
+            "code": "648.10",
+            "display": "Thyroid dysfunction of mother, complicating pregnancy, childbirth, or the puerperium, unspecified as to episode of care"
+          },
+          {
+            "code": "648.11",
+            "display": "Thyroid dysfunction of mother, with delivery"
+          },
+          {
+            "code": "648.12",
+            "display": "Thyroid dysfunction of mother, with delivery, with mention of postpartum complication"
+          },
+          {
+            "code": "648.13",
+            "display": "Thyroid dysfunction, antepartum"
+          },
+          {
+            "code": "648.14",
+            "display": "Thyroid dysfunction, postpartum"
+          },
+          {
+            "code": "790.94",
+            "display": "Euthyroid sick syndrome"
+          },
+          {
+            "code": "794.5",
+            "display": "Nonspecific abnormal results of thyroid function study"
+          },
+          {
+            "code": "848.2",
+            "display": "Sprain and strain of thyroid region"
+          },
+          {
+            "code": "868.01",
+            "display": "Adrenal gland injury without mention of open wound into cavity"
+          },
+          {
+            "code": "868.11",
+            "display": "Adrenal gland injury, with open wound into cavity"
+          },
+          {
+            "code": "874.2",
+            "display": "Open wound of thyroid gland, without mention of complication"
+          },
+          {
+            "code": "874.3",
+            "display": "Open wound of thyroid gland, complicated"
+          },
+          {
+            "code": "962.0",
+            "display": "Poisoning by adrenal cortical steroids"
+          },
+          {
+            "code": "962.4",
+            "display": "Poisoning by anterior pituitary hormones"
+          },
+          {
+            "code": "962.5",
+            "display": "Poisoning by posterior pituitary hormones"
+          },
+          {
+            "code": "962.6",
+            "display": "Poisoning by parathyroid and parathyroid derivatives"
+          },
+          {
+            "code": "962.7",
+            "display": "Poisoning by thyroid and thyroid derivatives"
+          },
+          {
+            "code": "962.8",
+            "display": "Poisoning by antithyroid agents"
+          },
+          {
+            "code": "E932.0",
+            "display": "Adrenal cortical steroids causing adverse effect in therapeutic use"
+          },
+          {
+            "code": "E932.4",
+            "display": "Anterior pituitary hormones causing adverse effect in therapeutic use"
+          },
+          {
+            "code": "E932.5",
+            "display": "Posterior pituitary hormones causing adverse effect in therapeutic use"
+          },
+          {
+            "code": "E932.6",
+            "display": "Parathyroid and parathyroid derivatives causing adverse effect in therapeutic use"
+          },
+          {
+            "code": "E932.7",
+            "display": "Thyroid and thyroid derivatives causing adverse effect in therapeutic use"
+          },
+          {
+            "code": "E932.8",
+            "display": "Antithyroid agents causing adverse effect in therapeutic use"
+          },
+          {
+            "code": "V21.0",
+            "display": "Period of rapid growth in childhood"
+          },
+          {
+            "code": "V54.02",
+            "display": "Encounter for lengthening/adjustment of growth rod"
+          },
+          {
+            "code": "783.4",
+            "display": "Lack of expected normal physiological development in childhood"
+          },
+          {
+            "code": "783.40",
+            "display": "Lack of normal physiological development, unspecified"
+          }
+        ]
+      }
+    ]
+  }
+}

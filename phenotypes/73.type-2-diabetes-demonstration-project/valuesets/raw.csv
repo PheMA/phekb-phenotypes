@@ -1,0 +1,86 @@
+valueSetId,valueSetName,searchTerm,vocabularyId
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.30,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.32,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.20,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.22,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.90,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.92,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.80,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.82,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.70,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.72,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.60,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.62,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.50,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.52,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.40,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.42,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.00,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,250.02,ICD9CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.00,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.01,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.21,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.22,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.29,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.311,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.319,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.321,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.329,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.331,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.339,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.341,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.349,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.351,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.359,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.36,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.39,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.40,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.41,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.42,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.43,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.44,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.49,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.51,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.52,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.59,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.610,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.618,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.620,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.621,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.622,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.628,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.630,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.638,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.641,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.649,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.65,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.69,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.8,ICD10CM
+73.t2dm-dx,Diabetes Mellitus Type II Diagnoses,E11.9,ICD10CM
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,chlorpropamide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,glipizide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,glyburide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,glimepiride,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,repaglinide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,nateglinide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,metformin,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,rosiglitazone,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,pioglitazone,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,acarbose,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,miglitol,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,sitagliptin,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,exenatide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,tolazamide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,acetohexamide,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,troglitazone,RxNorm
+73.t2dm-non-insulin-meds,Non-Insulin Diabetes Mellitus Type II Medications,tolbutamide,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,insulin,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,pramlintide,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,ultralente,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,lente,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,semilente,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,protamine,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,aspart,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,lispro,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,glargine,RxNorm
+73.t2dm-insulin-meds,Diabetes Mellitus Type II Insulin Medications,detemirlevemir,RxNorm

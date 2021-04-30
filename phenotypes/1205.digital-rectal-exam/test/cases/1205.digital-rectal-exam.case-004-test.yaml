@@ -1,0 +1,26 @@
+---
+name: 004 Digital rectal exam case - not male
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: unknown
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD10CM#C61 Malignant neoplasm of prostate
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Procedure
+    code: CPT#77427 Radiation treatment management, 5 treatments
+    performedDateTime: "2009-02-12T16:00:00.000Z"
+
+  - resourceType: Procedure
+    code: ICD9P#89.34 Digital examination of rectum
+    performedDateTime: "2008-12-12T16:00:00.000Z"
+
+results:
+  Has DRE Up To 6 Months Before First Treatment: true
+  Has Prostate Cancer Diagnoses: true
+  In Base Population: false
+  Case: false

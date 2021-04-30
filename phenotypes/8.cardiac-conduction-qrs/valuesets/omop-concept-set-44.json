@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-44",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-44",
+  "status": "active",
+  "name": "Heart Rate",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8867-4",
+            "display": "Heart rate"
+          }
+        ]
+      }
+    ]
+  }
+}

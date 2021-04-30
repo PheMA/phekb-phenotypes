@@ -1,0 +1,18 @@
+---
+name: 002 Rheumatoid Arthritis NOT Case - no dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#121191 rituximab
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+results:
+  Case 1: false
+  Case 2: false
+  Case: false

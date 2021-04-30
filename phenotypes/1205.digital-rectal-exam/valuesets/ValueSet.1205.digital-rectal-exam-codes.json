@@ -1,0 +1,51 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "1205.digital-rectal-exam-codes",
+        "url": "https://workbench.phema.science/fhir/ValueSet/1205.digital-rectal-exam-codes",
+        "status": "active",
+        "name": "PHEKB-1205 Digital Rectal Exam Codes",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/MedDRA",
+              "concept": [
+                {
+                  "code": "10048892",
+                  "display": "Rectal examination"
+                }
+              ]
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "89.34",
+                  "display": "Digital examination of rectum"
+                }
+              ]
+            },
+            {
+              "system": "https://workbench.phema.science/fhir/CodeSystem/MeSH",
+              "concept": [
+                {
+                  "code": "D051517",
+                  "display": "Digital Rectal Examination"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

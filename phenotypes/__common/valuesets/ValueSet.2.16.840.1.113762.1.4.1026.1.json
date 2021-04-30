@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1026.1",
+  "url": "https://workbench.phema.science/fhir/ValueSet/2.16.840.1.113762.1.4.1026.1",
+  "status": "active",
+  "name": "BPH Specimens",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "75520-7",
+            "display": "Biobank specimens are stored and available for research"
+          },
+          {
+            "code": "LP185886-1",
+            "display": "Biobank specimens are stored and available for research"
+          }
+        ]
+      }
+    ]
+  }
+}

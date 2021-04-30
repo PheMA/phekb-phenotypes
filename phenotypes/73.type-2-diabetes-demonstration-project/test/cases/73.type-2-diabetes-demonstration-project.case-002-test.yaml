@@ -1,0 +1,28 @@
+---
+name: 002 Diabetes Mellitus Type II Case - type 2
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#250.32 Diabetes with other coma, type II or unspecified type, uncontrolled
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2339-0 Glucose [Mass/volume] in Blood
+    valueQuantity: 375 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#17855-8 Hemoglobin A1c/Hemoglobin.total in Blood by calculation
+    valueQuantity: 8 %
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Case 1: false
+  Case 2: true
+  Case 3: false
+  Case: true

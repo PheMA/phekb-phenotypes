@@ -1,0 +1,85 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-36",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-36",
+  "status": "active",
+  "name": "Sodium Channel Blocking Drugs",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "4441",
+            "display": "flecainide"
+          },
+          {
+            "code": "8754",
+            "display": "propafenone"
+          },
+          {
+            "code": "6926",
+            "display": "mexiletine"
+          },
+          {
+            "code": "6387",
+            "display": "lidocaine"
+          },
+          {
+            "code": "9068",
+            "display": "quinidine"
+          },
+          {
+            "code": "8700",
+            "display": "procainamide"
+          },
+          {
+            "code": "3541",
+            "display": "disopyramide"
+          },
+          {
+            "code": "703",
+            "display": "amiodarone"
+          },
+          {
+            "code": "5691",
+            "display": "imipramine"
+          },
+          {
+            "code": "704",
+            "display": "amitriptyline"
+          },
+          {
+            "code": "6448",
+            "display": "lithium"
+          },
+          {
+            "code": "42368",
+            "display": "encainide"
+          },
+          {
+            "code": "40169",
+            "display": "moricizine"
+          },
+          {
+            "code": "9071",
+            "display": "quinine"
+          },
+          {
+            "code": "3247",
+            "display": "desipramine"
+          },
+          {
+            "code": "8785",
+            "display": "propoxyphene"
+          },
+          {
+            "code": "42359",
+            "display": "tocainide"
+          }
+        ]
+      }
+    ]
+  }
+}

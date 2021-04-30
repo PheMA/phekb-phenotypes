@@ -1,0 +1,627 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      }, {
+         "libraryId" : "18.type-2-diabetes-mellitus",
+         "libraryVersion" : "1.0.0",
+         "startLine" : 48,
+         "startChar" : 13,
+         "endLine" : 48,
+         "endChar" : 20,
+         "message" : "List-valued expression was demoted to a singleton.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      } ],
+      "identifier" : {
+         "id" : "18.type-2-diabetes-mellitus",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.0"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.0"
+         }, {
+            "localIdentifier" : "PhEMAHelpers",
+            "path" : "PhEMAHelpers",
+            "version" : "1.0.0"
+         }, {
+            "localIdentifier" : "PhEMADiabetes",
+            "path" : "PhEMADiabetes",
+            "version" : "1.0.0"
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "name" : "ConditionCategoryCodes",
+            "id" : "http://terminology.hl7.org/CodeSystem/condition-category",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Type 1 DM",
+            "id" : "omop-concept-set-26",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Type 2 DM",
+            "id" : "omop-concept-set-27",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "T1DM Medications",
+            "id" : "omop-concept-set-28",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "T2DM Medications",
+            "id" : "omop-concept-set-29",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Fasting Glucose",
+            "id" : "omop-concept-set-30",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Random Glucose",
+            "id" : "omop-concept-set-31",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Hemoglobin A1C",
+            "id" : "omop-concept-set-32",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "name" : "problem-list-item",
+            "id" : "problem-list-item",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "name" : "ConditionCategoryCodes"
+            }
+         }, {
+            "name" : "encounter-diagnosis",
+            "id" : "encounter-diagnosis",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "name" : "ConditionCategoryCodes"
+            }
+         } ]
+      },
+      "concepts" : {
+         "def" : [ {
+            "name" : "PhysicianDiagnosisCategory",
+            "display" : "Physician Diagnosis Category",
+            "accessLevel" : "Public",
+            "code" : [ {
+               "name" : "problem-list-item"
+            }, {
+               "name" : "encounter-diagnosis"
+            } ]
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "No Type 1 DM Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Not",
+               "operand" : {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Type 1 DM",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "No Type 2 DM Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Not",
+               "operand" : {
+                  "type" : "Exists",
+                  "operand" : {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "name" : "Type 2 DM",
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Has Type 2 DM Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Greater",
+               "operand" : [ {
+                  "type" : "Count",
+                  "source" : {
+                     "type" : "Distinct",
+                     "operand" : {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "Type 2 DM",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "0",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "Has Physician T2DM Diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "operand" : [ {
+                  "type" : "Count",
+                  "source" : {
+                     "type" : "Query",
+                     "source" : [ {
+                        "alias" : "C",
+                        "expression" : {
+                           "dataType" : "{http://hl7.org/fhir}Condition",
+                           "codeProperty" : "code",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "name" : "Type 2 DM",
+                              "type" : "ValueSetRef"
+                           }
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "type" : "Equivalent",
+                        "operand" : [ {
+                           "name" : "ToConcept",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "type" : "SingletonFrom",
+                              "operand" : {
+                                 "path" : "category",
+                                 "scope" : "C",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "name" : "PhysicianDiagnosisCategory",
+                           "type" : "ConceptRef"
+                        } ]
+                     }
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "2",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "First T1DM Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "First",
+               "source" : {
+                  "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                  "codeProperty" : "medication",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "T1DM Medications",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "First T2DM Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "First",
+               "source" : {
+                  "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                  "codeProperty" : "medication",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "name" : "T2DM Medications",
+                     "type" : "ValueSetRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Has abnormal fasting glucose",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Has Abnormal Fasting Glucose",
+               "libraryName" : "PhEMADiabetes",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "ToDecimal",
+                  "operand" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "125",
+                     "type" : "Literal"
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Has abnormal random glucose",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Has Abnormal Random Glucose",
+               "libraryName" : "PhEMADiabetes",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "ToDecimal",
+                  "operand" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "200",
+                     "type" : "Literal"
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Has abnormal hemoglobin A1c",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "name" : "Has Abnormal Hemoglobin A1C",
+               "libraryName" : "PhEMADiabetes",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                  "value" : "6.5",
+                  "type" : "Literal"
+               } ]
+            }
+         }, {
+            "name" : "Has abnormal lab",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Or",
+                  "operand" : [ {
+                     "name" : "Has abnormal fasting glucose",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "name" : "Has abnormal random glucose",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "name" : "Has abnormal hemoglobin A1c",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Case Type 1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "name" : "No Type 1 DM Diagnosis",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "Has Type 2 DM Diagnosis",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "type" : "Exists",
+                        "operand" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "First T1DM Medication",
+                              "type" : "ExpressionRef"
+                           }
+                        }
+                     } ]
+                  }, {
+                     "type" : "Exists",
+                     "operand" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "name" : "First T2DM Medication",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  } ]
+               }, {
+                  "type" : "Less",
+                  "operand" : [ {
+                     "type" : "Count",
+                     "source" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "T2DM Medications",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  }, {
+                     "type" : "Count",
+                     "source" : {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "name" : "T1DM Medications",
+                           "type" : "ValueSetRef"
+                        }
+                     }
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "Case Type 2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "name" : "No Type 1 DM Diagnosis",
+                        "type" : "ExpressionRef"
+                     }, {
+                        "name" : "Has Type 2 DM Diagnosis",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "type" : "Exists",
+                        "operand" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "First T1DM Medication",
+                              "type" : "ExpressionRef"
+                           }
+                        }
+                     }
+                  } ]
+               }, {
+                  "type" : "Exists",
+                  "operand" : {
+                     "type" : "ToList",
+                     "operand" : {
+                        "name" : "First T2DM Medication",
+                        "type" : "ExpressionRef"
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Case Type 3",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "name" : "No Type 1 DM Diagnosis",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "Has Type 2 DM Diagnosis",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "type" : "Not",
+                        "operand" : {
+                           "type" : "Exists",
+                           "operand" : {
+                              "type" : "ToList",
+                              "operand" : {
+                                 "name" : "First T1DM Medication",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }
+                     } ]
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "type" : "Exists",
+                        "operand" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "First T2DM Medication",
+                              "type" : "ExpressionRef"
+                           }
+                        }
+                     }
+                  } ]
+               }, {
+                  "name" : "Has abnormal lab",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Case Type 4",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "name" : "No Type 1 DM Diagnosis",
+                        "type" : "ExpressionRef"
+                     }, {
+                        "name" : "No Type 2 DM Diagnosis",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "type" : "Exists",
+                     "operand" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "name" : "First T2DM Medication",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  } ]
+               }, {
+                  "name" : "Has abnormal lab",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Case Type 5",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "And",
+               "operand" : [ {
+                  "type" : "And",
+                  "operand" : [ {
+                     "type" : "And",
+                     "operand" : [ {
+                        "type" : "And",
+                        "operand" : [ {
+                           "name" : "No Type 1 DM Diagnosis",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "Has Type 2 DM Diagnosis",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "type" : "Exists",
+                        "operand" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "First T1DM Medication",
+                              "type" : "ExpressionRef"
+                           }
+                        }
+                     } ]
+                  }, {
+                     "type" : "Not",
+                     "operand" : {
+                        "type" : "Exists",
+                        "operand" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "name" : "First T2DM Medication",
+                              "type" : "ExpressionRef"
+                           }
+                        }
+                     }
+                  } ]
+               }, {
+                  "name" : "Has Physician T2DM Diagnosis",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "name" : "Case",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Or",
+               "operand" : [ {
+                  "type" : "Or",
+                  "operand" : [ {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "Or",
+                        "operand" : [ {
+                           "name" : "Case Type 1",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "Case Type 2",
+                           "type" : "ExpressionRef"
+                        } ]
+                     }, {
+                        "name" : "Case Type 3",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "name" : "Case Type 4",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "name" : "Case Type 5",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         } ]
+      }
+   }
+}
+

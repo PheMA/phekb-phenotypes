@@ -1,0 +1,29 @@
+---
+name: 015 Hypothyroidism Not Case - FT4 lab not abnormal
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#3024-7 Thyroxine (T4) free [Mass/volume] in Serum or Plasma
+    valueQuantity: 1.0 ng/dL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#10814 Triiodothyronine
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+results:
+  Has hypothyroidism diagnosis: false
+  Has abnormal TSH or FT4 lab: false
+  Has thyroid replacement medication use: true
+  Has sufficient time between labs and meds: false
+  Secondary causes of hypothyroidism: false
+  Post surgical or post-radiation hypothyroidism: false
+  Other thyroid diseases: false
+  Thyroid altering medication: false
+  Case: false

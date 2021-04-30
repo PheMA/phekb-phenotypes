@@ -1,0 +1,55 @@
+---
+name: 009 Asthma Response To Inhaled Steroids NOT Case - too young at one diagnosis
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#493 Asthma
+    onsetDateTime: "1960-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#493.1 Intrinsic asthma, unspecified
+    onsetDateTime: "1978-12-17T16:00:00.000Z"
+
+  # Non-nasal, non-topical route medication
+  - resourceType: MedicationRequest
+    code: RXNORM#108118 Mometasone
+    authoredOn: "1978-10-15T16:00:00.000Z"
+    status: completed
+    dosageInstruction:
+      route: SNOMED#47625008 Intravenous use (IV)
+
+  # Exacerbation
+  - resourceType: Encounter
+    period:
+      start: "2015-11-12T16:00:00.000Z"
+      end: "2015-11-15T16:00:00.000Z"
+    class: http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#IMP Inpatient Encounter
+
+  - resourceType: Condition
+    code: ICD9#493.02 Extrinsic asthma with (acute) exacerbation
+    onsetDateTime: "2015-11-13T16:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#2878 Cortisone
+    authoredOn: "2015-11-13T16:00:00.000Z"
+    status: completed
+    dosageInstruction:
+      route: SNOMED#78421000 Intramuscular use (IM)
+
+results:
+  Has Qualifying Asthma Diagnoses: false
+  Has Exclusionary Diagnosis: false
+  Has Qualifying Any Route Medication: false
+  Has Qualifying Non-Nasal Medication: false
+  Has Qualifying Non-Nasal, Non-Topical Medication: true
+  Has Qualifying Required Route Medication: false
+  Has Qualifying Medication: true
+  Asthma ICS: false
+  Inpatient Hospitalization: true
+  Asthma Exacerbation: true
+  Case: false

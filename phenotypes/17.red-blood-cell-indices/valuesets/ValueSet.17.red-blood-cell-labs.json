@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "17.red-blood-cell-labs",
+  "url": "https://workbench.phema.science/fhir/ValueSet/17.red-blood-cell-labs",
+  "status": "active",
+  "name": "Red Blood Cell Labs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "789-8",
+            "display": "Erythrocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "4544-3",
+            "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+          },
+          {
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "785-6",
+            "display": "MCH [Entitic mass] by Automated count"
+          },
+          {
+            "code": "786-4",
+            "display": "MCHC [Mass/volume] by Automated count"
+          },
+          {
+            "code": "787-2",
+            "display": "MCV [Entitic volume] by Automated count"
+          },
+          {
+            "code": "32623-1",
+            "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+          },
+          {
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "788-0",
+            "display": "Erythrocyte distribution width [Ratio] by Automated count"
+          },
+          {
+            "code": "4679-7",
+            "display": "Reticulocytes/100 erythrocytes in Blood"
+          },
+          {
+            "code": "14196-0",
+            "display": "Reticulocytes [#/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1575 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.total-cholesterol",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.total-cholesterol",
+        "name": "Total Cholesterol",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "2093-3",
+                  "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "48620-9",
+                  "display": "Cholesterol [Mass/volume] in Serum or Plasma ultracentrifugate"
+                },
+                {
+                  "code": "35200-5",
+                  "display": "Cholesterol [Mass or Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "14647-2",
+                  "display": "Cholesterol [Moles/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.ldl-c",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.ldl-c",
+        "name": "LDL-C",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "2089-1",
+                  "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "18262-6",
+                  "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"
+                },
+                {
+                  "code": "49132-4",
+                  "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Electrophoresis"
+                },
+                {
+                  "code": "35198-1",
+                  "display": "Cholesterol in LDL [Mass or Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "39469-2",
+                  "display": "Cholesterol in LDL [Moles/volume] in Serum or Plasma by calculation"
+                },
+                {
+                  "code": "12773-8",
+                  "display": "Cholesterol in LDL [Units/volume] in Serum or Plasma by Electrophoresis"
+                },
+                {
+                  "code": "18261-8",
+                  "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma ultracentrifugate"
+                },
+                {
+                  "code": "22748-8",
+                  "display": "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "13457-7",
+                  "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"
+                },
+                {
+                  "code": "9346-8",
+                  "display": "Lipoprotein.beta [Mass/volume] in Serum or Plasma by calculation"
+                },
+                {
+                  "code": "2574-2",
+                  "display": "Lipoprotein.beta [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "14815-5",
+                  "display": "Lipoprotein.beta [Moles/volume] in Serum or Plasma by calculation"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.hdl",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.hdl",
+        "name": "HDL",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "2085-9",
+                  "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "49130-8",
+                  "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma by Electrophoresis"
+                },
+                {
+                  "code": "35197-3",
+                  "display": "Cholesterol in HDL [Mass or Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "12771-2",
+                  "display": "Cholesterol in HDL [Presence] in Serum or Plasma by Electrophoresis"
+                },
+                {
+                  "code": "12772-0",
+                  "display": "Cholesterol in HDL [Units/volume] in Serum or Plasma by Electrophoresis"
+                },
+                {
+                  "code": "18263-4",
+                  "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma ultracentrifugate"
+                },
+                {
+                  "code": "27340-9",
+                  "display": "Cholesterol in HDL [Presence] in Serum or Plasma"
+                },
+                {
+                  "code": "14646-4",
+                  "display": "Cholesterol in HDL [Moles/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.triglycerides",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.triglycerides",
+        "name": "Triglycerides",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "2571-8",
+                  "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "30524-3",
+                  "display": "Triglyceride [Moles/volume] in Serum or Plasma --12 hours fasting"
+                },
+                {
+                  "code": "3048-6",
+                  "display": "Triglyceride [Mass/volume] in Serum or Plasma --fasting"
+                },
+                {
+                  "code": "35217-9",
+                  "display": "Triglyceride [Mass or Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "28554-4",
+                  "display": "Triglyceride [Presence] in Serum or Plasma"
+                },
+                {
+                  "code": "14927-8",
+                  "display": "Triglyceride [Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "47210-0",
+                  "display": "Triglyceride [Moles/volume] in Serum or Plasma --fasting"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.tsh",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.tsh",
+        "name": "Thyroid Stimulating Hormone",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "11579-0",
+                  "display": "Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.05 mIU/L"
+                },
+                {
+                  "code": "24348-5",
+                  "display": "Free T4 and TSH panel - Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.alkaline-phosphatase",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.alkaline-phosphatase",
+        "name": "Alkaline Phosphatase",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "6768-6",
+                  "display": "Alkaline phosphatase serum/plasma"
+                },
+                {
+                  "code": "12805-8",
+                  "display": "Alkaline phosphatase isoenzyme [Units/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.total-bilirubin",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.total-bilirubin",
+        "name": "Total Bilirubin",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "35194-0",
+                  "display": "Bilirubin.total [Mass or Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "1975-2",
+                  "display": "Total Bilirubin serum/plasma"
+                },
+                {
+                  "code": "14631-6",
+                  "display": "Bilirubin.total [Moles/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.protein-in-urine",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.protein-in-urine",
+        "name": "Protein In 24h Urine Collection",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "21482-5",
+                  "display": "Protein [Mass/volume] in 24 hour Urine"
+                },
+                {
+                  "code": "2889-4",
+                  "display": "Protein [Mass/time] in 24 hour Urine"
+                },
+                {
+                  "code": "21028-6",
+                  "display": "Protein [Interpretation] in 24 hour Urine"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.urine-protein-creatine-ratio",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.urine-protein-creatine-ratio",
+        "name": "Urine Protein/Creatine Ratio",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "13801-6",
+                  "display": "Protein/Creatinine [Mass Ratio] in 24 hour Urine"
+                },
+                {
+                  "code": "2890-2",
+                  "display": "Protein/Creatinine [Mass Ratio] in Urine"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.creatinine",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.creatinine",
+        "name": "Creatinine",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "14682-9",
+                  "display": "Creatinine [Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "14682-9",
+                  "display": "Creatinine [Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "2160-0",
+                  "display": "Creatinine serum/plasma"
+                },
+                {
+                  "code": "35203-9",
+                  "display": "Creatinine [Mass or Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "38483-4",
+                  "display": "Creatinine [Mass/volume] in Blood"
+                },
+                {
+                  "code": "59826-8",
+                  "display": "Creatinine [Moles/volume] in Blood"
+                },
+                {
+                  "code": "77140-2",
+                  "display": "Creatinine [Moles/volume] in Serum, Plasma or Blood"
+                },
+                {
+                  "code": "14682-9",
+                  "display": "Creatinine [Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "14682-9",
+                  "display": "Creatinine [Moles/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.egfr",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.egfr",
+        "name": "Estimated Glomerular Filtration Rate",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "50261-7",
+                  "display": "Deprecated Renal function panel & Glomerular filtration rate.predicted"
+                },
+                {
+                  "code": "45066-8",
+                  "display": "Creatinine and Glomerular filtration rate.predicted panel - Serum or Plasma"
+                },
+                {
+                  "code": "48642-3",
+                  "display": "eGFR with normals for non-black"
+                },
+                {
+                  "code": "48642-3",
+                  "display": "eGFR with normals for non-black"
+                },
+                {
+                  "code": "48642-3",
+                  "display": "eGFR with normals for non-black"
+                },
+                {
+                  "code": "48642-3",
+                  "display": "eGFR with normals for non-black"
+                },
+                {
+                  "code": "48643-1",
+                  "display": "eGFR with normals for black"
+                },
+                {
+                  "code": "33914-3",
+                  "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.hba1c",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.hba1c",
+        "name": "HbA1c",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "4549-2",
+                  "display": "Hemoglobin A1c/Hemoglobin.total in Blood by Electrophoresis"
+                },
+                {
+                  "code": "17855-8",
+                  "display": "Hemoglobin A1c/Hemoglobin.total in Blood by calculation"
+                },
+                {
+                  "code": "17856-6",
+                  "display": "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+                },
+                {
+                  "code": "41995-2",
+                  "display": "Hemoglobin A1c [Mass/volume] in Blood"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.fasting-glucose-capillary",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.fasting-glucose-capillary",
+        "name": "Fasting Glucose Capillary",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "1556-0",
+                  "display": "Fasting glucose [Mass/volume] in Capillary blood"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.fasting-glucose-serum",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.fasting-glucose-serum",
+        "name": "Fasting Glucose Serum",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "1558-6",
+                  "display": "Fasting glucose [Mass/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.lipid-lowering-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.lipid-lowering-meds",
+        "name": "Lipid Lowering Medications",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "36567",
+                  "display": "Simvastatin"
+                },
+                {
+                  "code": "41127",
+                  "display": "fluvastatin"
+                },
+                {
+                  "code": "6472",
+                  "display": "Lovastatin"
+                },
+                {
+                  "code": "42463",
+                  "display": "Pravastatin"
+                },
+                {
+                  "code": "861634",
+                  "display": "pitavastatin"
+                },
+                {
+                  "code": "83367",
+                  "display": "atorvastatin"
+                },
+                {
+                  "code": "301542",
+                  "display": "rosuvastatin"
+                },
+                {
+                  "code": "221072",
+                  "display": "Cerivastatin sodium"
+                },
+                {
+                  "code": "1152441",
+                  "display": "Cerivastatin sodium Oral Product"
+                },
+                {
+                  "code": "7393",
+                  "display": "Niacin"
+                },
+                {
+                  "code": "8703",
+                  "display": "Fenofibrate"
+                },
+                {
+                  "code": "4719",
+                  "display": "Gemfibrozil"
+                },
+                {
+                  "code": "341248",
+                  "display": "ezetimibe"
+                },
+                {
+                  "code": "141626",
+                  "display": "colesevelam"
+                },
+                {
+                  "code": "2447",
+                  "display": "Cholestyramine Resin"
+                },
+                {
+                  "code": "2685",
+                  "display": "Colestipol"
+                },
+                {
+                  "code": "1367839",
+                  "display": "mipomersen"
+                },
+                {
+                  "code": "1364479",
+                  "display": "lomitapide"
+                },
+                {
+                  "code": "1665895",
+                  "display": "1 ML evolocumab 140 MG/ML Auto-Injector"
+                },
+                {
+                  "code": "1665900",
+                  "display": "1 ML evolocumab 140 MG/ML Auto-Injector [Repatha]"
+                },
+                {
+                  "code": "1665904",
+                  "display": "1 ML evolocumab 140 MG/ML Prefilled Syringe"
+                },
+                {
+                  "code": "1665906",
+                  "display": "1 ML evolocumab 140 MG/ML Prefilled Syringe [Repatha]"
+                },
+                {
+                  "code": "1659156",
+                  "display": "1 ML alirocumab 150 MG/ML Auto-Injector"
+                },
+                {
+                  "code": "1659161",
+                  "display": "1 ML alirocumab 150 MG/ML Auto-Injector [Praluent]"
+                },
+                {
+                  "code": "1659165",
+                  "display": "1 ML alirocumab 150 MG/ML Prefilled Syringe"
+                },
+                {
+                  "code": "1659167",
+                  "display": "1 ML alirocumab 150 MG/ML Prefilled Syringe [Praluent]"
+                },
+                {
+                  "code": "1659177",
+                  "display": "1 ML alirocumab 75 MG/ML Prefilled Syringe"
+                },
+                {
+                  "code": "1659179",
+                  "display": "1 ML alirocumab 75 MG/ML Prefilled Syringe [Praluent]"
+                },
+                {
+                  "code": "1659182",
+                  "display": "1 ML alirocumab 75 MG/ML Auto-Injector"
+                },
+                {
+                  "code": "1659183",
+                  "display": "1 ML alirocumab 75 MG/ML Auto-Injector [Praluent]"
+                },
+                {
+                  "code": "495215",
+                  "display": "Vytorin"
+                },
+                {
+                  "code": "1372731",
+                  "display": "Simcor"
+                },
+                {
+                  "code": "327008",
+                  "display": "Advicor"
+                },
+                {
+                  "code": "404914",
+                  "display": "Caduet"
+                },
+                {
+                  "code": "1372754",
+                  "display": "Juvisync"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.lipid-lowering-procs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.lipid-lowering-procs",
+        "name": "Lipid Lowering Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "36515",
+                  "display": "Therapeutic apheresis; with extracorporeal immunoadsorption and plasma reinfusion"
+                },
+                {
+                  "code": "36516",
+                  "display": "Therapeutic apheresis; with extracorporeal selective adsorption or selective filtration and plasma reinfusion"
+                }
+              ]
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "99.76",
+                  "display": "Extracorporeal immunoadsorption"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.chd-indicator-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.chd-indicator-dx",
+        "name": "Coronary Heart Disease Indicator Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "413.0",
+                  "display": "Angina decubitus"
+                },
+                {
+                  "code": "413.1",
+                  "display": "Prinzmetal angina"
+                },
+                {
+                  "code": "413.9",
+                  "display": "Other and unspecified angina pectoris"
+                },
+                {
+                  "code": "410.00",
+                  "display": "Acute myocardial infarction of anterolateral wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.01",
+                  "display": "Acute myocardial infarction of anterolateral wall, initial episode of care"
+                },
+                {
+                  "code": "410.02",
+                  "display": "Acute myocardial infarction of anterolateral wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.10",
+                  "display": "Acute myocardial infarction of other anterior wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.11",
+                  "display": "Acute myocardial infarction of other anterior wall, initial episode of care"
+                },
+                {
+                  "code": "410.12",
+                  "display": "Acute myocardial infarction of other anterior wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.20",
+                  "display": "Acute myocardial infarction of inferolateral wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.21",
+                  "display": "Acute myocardial infarction of inferolateral wall, initial episode of care"
+                },
+                {
+                  "code": "410.22",
+                  "display": "Acute myocardial infarction of inferolateral wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.30",
+                  "display": "Acute myocardial infarction of inferoposterior wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.31",
+                  "display": "Acute myocardial infarction of inferoposterior wall, initial episode of care"
+                },
+                {
+                  "code": "410.32",
+                  "display": "Acute myocardial infarction of inferoposterior wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.40",
+                  "display": "Acute myocardial infarction of other inferior wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.41",
+                  "display": "Acute myocardial infarction of other inferior wall, initial episode of care"
+                },
+                {
+                  "code": "410.42",
+                  "display": "Acute myocardial infarction of other inferior wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.50",
+                  "display": "Acute myocardial infarction of other lateral wall, episode of care unspecified"
+                },
+                {
+                  "code": "410.51",
+                  "display": "Acute myocardial infarction of other lateral wall, initial episode of care"
+                },
+                {
+                  "code": "410.52",
+                  "display": "Acute myocardial infarction of other lateral wall, subsequent episode of care"
+                },
+                {
+                  "code": "410.60",
+                  "display": "True posterior wall infarction, episode of care unspecified"
+                },
+                {
+                  "code": "410.61",
+                  "display": "True posterior wall infarction, initial episode of care"
+                },
+                {
+                  "code": "410.62",
+                  "display": "True posterior wall infarction, subsequent episode of care"
+                },
+                {
+                  "code": "410.70",
+                  "display": "Subendocardial infarction, episode of care unspecified"
+                },
+                {
+                  "code": "410.71",
+                  "display": "Subendocardial infarction, initial episode of care"
+                },
+                {
+                  "code": "410.72",
+                  "display": "Subendocardial infarction, subsequent episode of care"
+                },
+                {
+                  "code": "410.80",
+                  "display": "Acute myocardial infarction of other specified sites, episode of care unspecified"
+                },
+                {
+                  "code": "410.81",
+                  "display": "Acute myocardial infarction of other specified sites, initial episode of care"
+                },
+                {
+                  "code": "410.82",
+                  "display": "Acute myocardial infarction of other specified sites, subsequent episode of care"
+                },
+                {
+                  "code": "410.90",
+                  "display": "Acute myocardial infarction of unspecified site, episode of care unspecified"
+                },
+                {
+                  "code": "410.91",
+                  "display": "Acute myocardial infarction of unspecified site, initial episode of care"
+                },
+                {
+                  "code": "410.92",
+                  "display": "Acute myocardial infarction of unspecified site, subsequent episode of care"
+                },
+                {
+                  "code": "412",
+                  "display": "Old myocardial infarction"
+                },
+                {
+                  "code": "429.71",
+                  "display": "Acquired cardiac septal defect"
+                },
+                {
+                  "code": "429.79",
+                  "display": "Certain sequelae of myocardial infarction, not elsewhere classified, other"
+                },
+                {
+                  "code": "414.00",
+                  "display": "Coronary atherosclerosis of unspecified type of vessel, native or graft"
+                },
+                {
+                  "code": "414.01",
+                  "display": "Coronary atherosclerosis of native coronary artery"
+                },
+                {
+                  "code": "414.02",
+                  "display": "Coronary atherosclerosis of autologous vein bypass graft"
+                },
+                {
+                  "code": "414.03",
+                  "display": "Coronary atherosclerosis of nonautologous biological bypass graft"
+                },
+                {
+                  "code": "414.04",
+                  "display": "Coronary atherosclerosis of artery bypass graft"
+                },
+                {
+                  "code": "414.05",
+                  "display": "Coronary atherosclerosis of unspecified bypass graft"
+                },
+                {
+                  "code": "414.06",
+                  "display": "Coronary atherosclerosis of native coronary artery of transplanted heart"
+                },
+                {
+                  "code": "414.07",
+                  "display": "Coronary atherosclerosis of bypass graft (artery) (vein) of transplanted heart"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.chd-indicator-px",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.chd-indicator-px",
+        "name": "Coronary Heart Disease Indicator Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "92920",
+                  "display": "Percutaneous transluminal coronary angioplasty; single major coronary artery or branch"
+                },
+                {
+                  "code": "92921",
+                  "display": "Percutaneous transluminal coronary angioplasty; each additional branch of a major coronary artery (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92924",
+                  "display": "Percutaneous transluminal coronary atherectomy, with coronary angioplasty when performed; single major coronary artery or branch"
+                },
+                {
+                  "code": "92925",
+                  "display": "Percutaneous transluminal coronary atherectomy, with coronary angioplasty when performed; each additional branch of a major coronary artery (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92928",
+                  "display": "Percutaneous transcatheter placement of intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+                },
+                {
+                  "code": "92929",
+                  "display": "Percutaneous transcatheter placement of intracoronary stent(s), with coronary angioplasty when performed; each additional branch of a major coronary artery (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92933",
+                  "display": "Percutaneous transluminal coronary atherectomy, with intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+                },
+                {
+                  "code": "92934",
+                  "display": "Percutaneous transluminal coronary atherectomy, with intracoronary stent, with coronary angioplasty when performed; each additional branch of a major coronary artery (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92937",
+                  "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vesse"
+                },
+                {
+                  "code": "92938",
+                  "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of intracoronary stent, atherectomy and angioplasty, including distal protection when performed; each additio"
+                },
+                {
+                  "code": "92941",
+                  "display": "Percutaneous transluminal revascularization of acute total/subtotal occlusion during acute myocardial infarction, coronary artery or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty, including aspiration th"
+                },
+                {
+                  "code": "92943",
+                  "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty; single vessel"
+                },
+                {
+                  "code": "92944",
+                  "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty; each additional coronary artery, coronar"
+                },
+                {
+                  "code": "92980",
+                  "display": "Transcatheter placement of an intracoronary stent(s), percutaneous, with or without other therapeutic intervention, any method; single vessel"
+                },
+                {
+                  "code": "92981",
+                  "display": "Transcatheter placement of an intracoronary stent(s), percutaneous, with or without other therapeutic intervention, any method; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92982",
+                  "display": "Percutaneous transluminal coronary balloon angioplasty; single vessel"
+                },
+                {
+                  "code": "92984",
+                  "display": "Percutaneous transluminal coronary balloon angioplasty; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92995",
+                  "display": "Percutaneous transluminal coronary atherectomy, by mechanical or other method, with or without balloon angioplasty; single vessel"
+                },
+                {
+                  "code": "92996",
+                  "display": "Percutaneous transluminal coronary atherectomy, by mechanical or other method, with or without balloon angioplasty; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92973",
+                  "display": "Percutaneous transluminal coronary thrombectomy mechanical (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "92974",
+                  "display": "Transcatheter placement of radiation delivery device for subsequent coronary intravascular brachytherapy (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33510",
+                  "display": "Coronary artery bypass, vein only; single coronary venous graft"
+                },
+                {
+                  "code": "33511",
+                  "display": "Coronary artery bypass, vein only; 2 coronary venous grafts"
+                },
+                {
+                  "code": "33512",
+                  "display": "Coronary artery bypass, vein only; 3 coronary venous grafts"
+                },
+                {
+                  "code": "33513",
+                  "display": "Coronary artery bypass, vein only; 4 coronary venous grafts"
+                },
+                {
+                  "code": "33514",
+                  "display": "Coronary artery bypass, vein only; 5 coronary venous grafts"
+                },
+                {
+                  "code": "33516",
+                  "display": "Coronary artery bypass, vein only; 6 or more coronary venous grafts"
+                },
+                {
+                  "code": "33517",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); single vein graft (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33518",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 2 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33519",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 3 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33521",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 4 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33522",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 5 venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33523",
+                  "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 6 or more venous grafts (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "33533",
+                  "display": "Coronary artery bypass, using arterial graft(s); single arterial graft"
+                },
+                {
+                  "code": "33534",
+                  "display": "Coronary artery bypass, using arterial graft(s); 2 coronary arterial grafts"
+                },
+                {
+                  "code": "33535",
+                  "display": "Coronary artery bypass, using arterial graft(s); 3 coronary arterial grafts"
+                },
+                {
+                  "code": "33536",
+                  "display": "Coronary artery bypass, using arterial graft(s); 4 or more coronary arterial grafts"
+                }
+              ]
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "36.01",
+                  "display": "Single vessel percutaneous transluminal coronary angioplasty [PTCA] or coronary atherectomy without mention of thrombolytic agent"
+                },
+                {
+                  "code": "36.02",
+                  "display": "Single vessel percutaneous transluminal coronary angioplasty [PTCA] or coronary atherectomy with mention of thrombolytic agent"
+                },
+                {
+                  "code": "36.03",
+                  "display": "Open chest coronary artery angioplasty"
+                },
+                {
+                  "code": "36.04",
+                  "display": "Intracoronary artery thrombolytic infusion"
+                },
+                {
+                  "code": "36.05",
+                  "display": "Multiple vessel percutaneous transluminal coronary angioplasty [PTCA] or coronary atherectomy performed during the same operation, with or without mention of thrombolytic agent"
+                },
+                {
+                  "code": "36.06",
+                  "display": "Insertion of non-drug-eluting coronary artery stent(s)"
+                },
+                {
+                  "code": "36.07",
+                  "display": "Insertion of drug-eluting coronary artery stent(s)"
+                },
+                {
+                  "code": "36.09",
+                  "display": "Other removal of coronary artery obstruction"
+                },
+                {
+                  "code": "00.66",
+                  "display": "Percutaneous transluminal coronary angioplasty [PTCA]"
+                },
+                {
+                  "code": "36.10",
+                  "display": "Aortocoronary bypass for heart revascularization, not otherwise specified"
+                },
+                {
+                  "code": "36.11",
+                  "display": "(Aorto)coronary bypass of one coronary artery"
+                },
+                {
+                  "code": "36.12",
+                  "display": "(Aorto)coronary bypass of two coronary arteries"
+                },
+                {
+                  "code": "36.13",
+                  "display": "(Aorto)coronary bypass of three coronary arteries"
+                },
+                {
+                  "code": "36.14",
+                  "display": "(Aorto)coronary bypass of four or more coronary arteries"
+                },
+                {
+                  "code": "36.15",
+                  "display": "Single internal mammary-coronary artery bypass"
+                },
+                {
+                  "code": "36.16",
+                  "display": "Double internal mammary-coronary artery bypass"
+                },
+                {
+                  "code": "36.17",
+                  "display": "Abdominal-coronary artery bypass"
+                },
+                {
+                  "code": "36.19",
+                  "display": "Other bypass anastomosis for heart revascularization"
+                },
+                {
+                  "code": "36.2",
+                  "display": "Heart revascularization by arterial implant"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.cvd-indicator-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.cvd-indicator-dx",
+        "name": "Cerebrovascular Disease Indicator Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "434",
+                  "display": "Occlusion of cerebral arteries"
+                },
+                {
+                  "code": "434.00",
+                  "display": "Cerebral thrombosis without mention of cerebral infarction"
+                },
+                {
+                  "code": "434.01",
+                  "display": "Cerebral thrombosis with cerebral infarction"
+                },
+                {
+                  "code": "434.10",
+                  "display": "Cerebral embolism without mention of cerebral infarction"
+                },
+                {
+                  "code": "434.11",
+                  "display": "Cerebral embolism with cerebral infarction"
+                },
+                {
+                  "code": "434.90",
+                  "display": "Cerebral artery occlusion, unspecified without mention of cerebral infarction"
+                },
+                {
+                  "code": "434.91",
+                  "display": "Cerebral artery occlusion, unspecified with cerebral infarction"
+                },
+                {
+                  "code": "437.0",
+                  "display": "Cerebral atherosclerosis"
+                },
+                {
+                  "code": "437.1",
+                  "display": "Other generalized ischemic cerebrovascular disease"
+                },
+                {
+                  "code": "435.0",
+                  "display": "Basilar artery syndrome"
+                },
+                {
+                  "code": "435.1",
+                  "display": "Vertebral artery syndrome"
+                },
+                {
+                  "code": "435.2",
+                  "display": "Subclavian steal syndrome"
+                },
+                {
+                  "code": "435.3",
+                  "display": "Vertebrobasilar artery syndrome"
+                },
+                {
+                  "code": "435.8",
+                  "display": "Other specified transient cerebral ischemias"
+                },
+                {
+                  "code": "435.9",
+                  "display": "Unspecified transient cerebral ischemia"
+                },
+                {
+                  "code": "433",
+                  "display": "Occlusion and stenosis of precerebral arteries"
+                },
+                {
+                  "code": "433.00",
+                  "display": "Occlusion and stenosis of basilar artery without mention of cerebral infarction"
+                },
+                {
+                  "code": "433.01",
+                  "display": "Occlusion and stenosis of basilar artery with cerebral infarction"
+                },
+                {
+                  "code": "433.10",
+                  "display": "Occlusion and stenosis of carotid artery without mention of cerebral infarction"
+                },
+                {
+                  "code": "433.11",
+                  "display": "Occlusion and stenosis of carotid artery with cerebral infarction"
+                },
+                {
+                  "code": "433.20",
+                  "display": "Occlusion and stenosis of vertebral artery without mention of cerebral infarction"
+                },
+                {
+                  "code": "433.21",
+                  "display": "Occlusion and stenosis of vertebral artery with cerebral infarction"
+                },
+                {
+                  "code": "433.30",
+                  "display": "Occlusion and stenosis of multiple and bilateral precerebral arteries without mention of cerebral infarction"
+                },
+                {
+                  "code": "433.31",
+                  "display": "Occlusion and stenosis of multiple and bilateral precerebral arteries with cerebral infarction"
+                },
+                {
+                  "code": "433.80",
+                  "display": "Occlusion and stenosis of other specified precerebral artery without mention of cerebral infarction"
+                },
+                {
+                  "code": "433.81",
+                  "display": "Occlusion and stenosis of other specified precerebral artery with cerebral infarction"
+                },
+                {
+                  "code": "433.90",
+                  "display": "Occlusion and stenosis of unspecified precerebral artery without mention of cerebral infarction"
+                },
+                {
+                  "code": "433.91",
+                  "display": "Occlusion and stenosis of unspecified precerebral artery with cerebral infarction"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.cvd-indicator-px",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.cvd-indicator-px",
+        "name": "Cerebrovascular Disease Indicator Procedures",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "38.12",
+                  "display": "Endarterectomy, other vessels of head and neck"
+                },
+                {
+                  "code": "38.11",
+                  "display": "Endarterectomy, intracranial vessels"
+                },
+                {
+                  "code": "00.61",
+                  "display": "Percutaneous angioplasty of extracranial vessel(s)"
+                },
+                {
+                  "code": "39.28",
+                  "display": "Extracranial-intracranial (EC-IC) vascular bypass"
+                },
+                {
+                  "code": "00.63",
+                  "display": "Percutaneous insertion of carotid artery stent(s)"
+                }
+              ]
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "35301",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; carotid, vertebral, subclavian, by neck incision"
+                },
+                {
+                  "code": "37215",
+                  "display": "Transcatheter placement of intravascular stent(s), cervical carotid artery, percutaneous; with distal embolic protection"
+                },
+                {
+                  "code": "37216",
+                  "display": "Transcatheter placement of intravascular stent(s), cervical carotid artery, percutaneous; without distal embolic protection"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.pad-indicator-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.pad-indicator-dx",
+        "name": "Peripheral Arterial Disease Indicator Diagnoses",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "440.20",
+                  "display": "Atherosclerosis of native arteries of the extremities, unspecified"
+                },
+                {
+                  "code": "440.21",
+                  "display": "Atherosclerosis of native arteries of the extremities with intermittent claudication"
+                },
+                {
+                  "code": "440.22",
+                  "display": "Atherosclerosis of native arteries of the extremities with rest pain"
+                },
+                {
+                  "code": "440.23",
+                  "display": "Atherosclerosis of native arteries of the extremities with ulceration"
+                },
+                {
+                  "code": "440.24",
+                  "display": "Atherosclerosis of native arteries of the extremities with gangrene"
+                },
+                {
+                  "code": "440.29",
+                  "display": "Other atherosclerosis of native arteries of the extremities"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "602.pad-indicator-dx-2",
+        "url": "https://workbench.phema.science/fhir/ValueSet/602.pad-indicator-dx-2",
+        "name": "Peripheral Arterial Disease Indicator Diagnoses (Need 2 Codes)",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "237.70",
+                  "display": "Neurofibromatosis, unspecified"
+                },
+                {
+                  "code": "237.71",
+                  "display": "Neurofibromatosis, type 1 [von recklinghausen's disease]"
+                },
+                {
+                  "code": "237.72",
+                  "display": "Neurofibromatosis, type 2 [acoustic neurofibromatosis]"
+                },
+                {
+                  "code": "237.73",
+                  "display": "Schwannomatosis"
+                },
+                {
+                  "code": "237.79",
+                  "display": "Other neurofibromatosis"
+                },
+                {
+                  "code": "443.1",
+                  "display": "Thromboangiitis obliterans [Buerger's disease]"
+                },
+                {
+                  "code": "446.0",
+                  "display": "Polyarteritis nodosa"
+                },
+                {
+                  "code": "446.4",
+                  "display": "Wegener's granulomatosis"
+                },
+                {
+                  "code": "446.5",
+                  "display": "Giant cell arteritis"
+                },
+                {
+                  "code": "446.6",
+                  "display": "Thrombotic microangiopathy"
+                },
+                {
+                  "code": "446.7",
+                  "display": "Takayasu's disease"
+                },
+                {
+                  "code": "710.1",
+                  "display": "Systemic sclerosis"
+                },
+                {
+                  "code": "747.10",
+                  "display": "Coarctation of aorta (preductal) (postductal)"
+                },
+                {
+                  "code": "747.11",
+                  "display": "Interruption of aortic arch"
+                },
+                {
+                  "code": "747.22",
+                  "display": "Atresia and stenosis of aorta"
+                },
+                {
+                  "code": "747.64",
+                  "display": "Lower limb vessel anomaly"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

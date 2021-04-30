@@ -1,0 +1,40 @@
+---
+name: 007 Hypothyroidism Not Case - secondary hypothyroidism
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#3016-3 Thyrotropin [Units/volume] in Serum or Plasma
+    valueQuantity: 7 U/mL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#10814 Triiodothyronine
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9#245.9 Thyroiditis, unspecified
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#244.0 Postsurgical hypothyroid
+    onsetDateTime: "2004-12-12T16:00:00.000Z"
+
+results:
+  Has hypothyroidism diagnosis: true
+  Has abnormal TSH or FT4 lab: true
+  Has thyroid replacement medication use: true
+  Has sufficient time between labs and meds: true
+  Secondary causes of hypothyroidism: true
+  Post surgical or post-radiation hypothyroidism: false
+  # There's overlap between the list of other thyroid codes and the
+  # secondary causes.  This will always be true if the secondary
+  # casues of hypothyroidism criteria is met.
+  Other thyroid diseases: true
+  Thyroid altering medication: false
+  Case: false

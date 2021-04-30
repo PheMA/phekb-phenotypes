@@ -1,0 +1,31 @@
+---
+name: 015 Peripheral Arterial Disease NOT Case - ABI and 2 dx exclusion
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#77194-9 Ankle-brachial index
+    valueQuantity: 1.5
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Condition
+    id: condition-1
+    code: ICD9#747.22 Atresia and stenosis of aorta
+    onsetDateTime: "2011-12-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    id: condition-1
+    code: ICD9#747.22 Atresia and stenosis of aorta
+    onsetDateTime: "2005-07-12T16:00:00.000Z"
+
+results:
+  Has Diagnosis Codes For PAD: 0
+  Has Procedure Codes for PAD: 0
+  Has Medications for Claudication: 0
+  Has Additional Qualifying Criteria: false
+  Has Vascular Lab Criteria: false
+  Case: false

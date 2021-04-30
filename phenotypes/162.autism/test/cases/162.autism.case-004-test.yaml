@@ -1,0 +1,17 @@
+---
+name: 004 Autism Case - Asperger's
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#299.81 Other specified pervasive developmental disorders, residual state
+    onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+results:
+  Has Autism Diagnosis: true
+  Has Autism Exclusion Diagnosis: false
+  Case: true

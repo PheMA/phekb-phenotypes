@@ -1,0 +1,22 @@
+---
+name: 008 RBC Indices NOT Case - Had transplant in 3 years prior to sample
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#789-8 Erythrocytes [#/volume] in Blood by Automated count
+    valueQuantity: 5 10*6/uL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Procedure
+    code: ICD9#41.00 Bone marrow transplant, not otherwise specified
+    performedDateTime: "2006-03-12T16:00:00.000Z"
+
+results:
+  RBC Candidate: false
+  ESR Candidate: false
+  Case: false

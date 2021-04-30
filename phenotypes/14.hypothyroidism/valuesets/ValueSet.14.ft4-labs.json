@@ -1,0 +1,37 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "14.ft4-labs",
+        "url": "https://workbench.phema.science/fhir/ValueSet/14.ft4-labs",
+        "status": "active",
+        "name": "PHEKB-14 FT4 Labs",
+        "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "53349-7",
+                  "display": "Thyroxine (T4) free [Mass/volume] in Dried blood spot"
+                },
+                {
+                  "code": "3024-7",
+                  "display": "Thyroxine (T4) free [Mass/volume] in Serum or Plasma"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

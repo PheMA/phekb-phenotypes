@@ -1,0 +1,33 @@
+---
+name: 002 Hypothyroidism Case - two meds and 1 dx, no labs
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#10814 Triiodothyronine
+    authoredOn: "2017-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: MedicationRequest
+    code: RXNORM#10814 Triiodothyronine
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9#245.9 Thyroiditis, unspecified
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+results:
+  Has hypothyroidism diagnosis: true
+  Has abnormal TSH or FT4 lab: false
+  Has thyroid replacement medication use: true
+  Has sufficient time between labs and meds: true
+  Secondary causes of hypothyroidism: false
+  Post surgical or post-radiation hypothyroidism: false
+  Other thyroid diseases: false
+  Thyroid altering medication: false
+  Case: true

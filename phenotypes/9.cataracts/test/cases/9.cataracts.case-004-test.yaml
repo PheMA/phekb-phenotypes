@@ -1,0 +1,14 @@
+---
+name: 004 Not Cataract Case - No Surgery or Diagnosis
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Has Cataract Surgery Procedure: false
+  Has Cataract Diagnoses: false
+  Earliest diagnosis or surgery: null
+  Case: false

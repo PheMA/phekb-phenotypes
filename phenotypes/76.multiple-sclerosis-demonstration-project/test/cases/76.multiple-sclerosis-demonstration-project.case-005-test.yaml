@@ -1,0 +1,17 @@
+---
+name: 005 NOT Multiple Sclerosis Case - med but no other dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#75917 interferon beta-1a
+
+results:
+  Has Multiple Sclerosis Diagnosis: false
+  Has Other Diagnoses: false
+  Has Medications: true
+  Case: false

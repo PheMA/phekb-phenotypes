@@ -1,0 +1,37 @@
+---
+name: 010 Hypothyroidism Case - post radiation hypothyroidism after dx
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#3016-3 Thyrotropin [Units/volume] in Serum or Plasma
+    valueQuantity: 7 U/mL
+    effectiveDateTime: "2017-06-01T07:00:00.000Z"
+
+  - resourceType: MedicationRequest
+    code: RXNORM#10814 Triiodothyronine
+    authoredOn: "2018-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9#245.9 Thyroiditis, unspecified
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Procedure
+    code: CPT#77261 Radiation therapy planning
+    performedDateTime: "2010-02-12T16:00:00.000Z"
+
+results:
+  Has hypothyroidism diagnosis: true
+  Has abnormal TSH or FT4 lab: true
+  Has thyroid replacement medication use: true
+  Has sufficient time between labs and meds: true
+  Secondary causes of hypothyroidism: false
+  Post surgical or post-radiation hypothyroidism: false
+  Other thyroid diseases: false
+  Thyroid altering medication: false
+  Case: true

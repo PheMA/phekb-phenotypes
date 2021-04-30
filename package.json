@@ -1,0 +1,41 @@
+{
+  "name": "phema-workbench-repository",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "git@github.com:PheMA/phema-workbench-repository.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "update-elm": "./tools/cql-to-elm/install/cql-to-elm/bin/cql-to-elm --input phenotypes --format JSON --libs phenotypes/__common/cql",
+    "prep-vscache": "node scripts/prepare-valueset-cache.js",
+    "run-tests": "mocha --reporter spec --recursive",
+    "test": "yarn update-elm && yarn run-tests",
+    "test:no-compile": "yarn run-tests",
+    "test:travis": "yarn prep-vscache && yarn test",
+    "scaffold": "node scripts/scaffold.js",
+    "package": "node scripts/package-phenotypes.js",
+    "new-test": "node scripts/new-test.js",
+    "postinstall": "yarn --cwd ./node_modules/cql-execution install"
+  },
+  "dependencies": {
+    "@phema/terminology-utils": "1.0.13",
+    "cloc": "^2.7.0",
+    "cors": "^2.8.5",
+    "cql-testing": "2.3.0",
+    "csv": "^5.4.0",
+    "current-git-branch": "^1.1.0",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "js-yaml": "^4.1.0",
+    "mocha": "^8.1.1",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "papaparse": "^5.3.0",
+    "pg": "^8.5.1",
+    "treeverse": "^1.0.4",
+    "yargs": "^16.2.0"
+  },
+  "resolutions": {
+    "cql-execution": "cqframework/cql-execution#160b69e"
+  }
+}

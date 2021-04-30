@@ -1,0 +1,28 @@
+---
+name: 002 Cataract Case from 2 Diagnoses
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9CM#366.22 Total traumatic cataract
+    onsetDateTime: "2008-11-12T16:00:00.000Z"
+    recordedDate: "2008-11-12T16:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9CM#366.22 Total traumatic cataract
+    onsetDateTime: "2008-12-12T16:00:00.000Z"
+    recordedDate: "2008-12-12T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#75520-7 Biobank specimens are stored and available for research
+
+results:
+  Has Cataract Surgery Procedure: false
+  Has Cataract Diagnoses: true
+  Earliest diagnosis or surgery: "2008-11-12T16:00:00.000+00:00"
+  50 years or older at first qualifying event: true
+  Case: true

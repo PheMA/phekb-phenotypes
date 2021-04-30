@@ -1,0 +1,14 @@
+---
+name: 002 NOT Multiple Sclerosis Case - no dx or meds
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+results:
+  Has Multiple Sclerosis Diagnosis: false
+  Has Other Diagnoses: false
+  Has Medications: false
+  Case: false

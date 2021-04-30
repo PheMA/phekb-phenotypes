@@ -1,0 +1,28 @@
+---
+name: 006 Not LDL-C Case - Has LDL after cancer dx and antilipemic med
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#301542 rosuvastatin
+    authoredOn: "2008-07-01T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Condition
+    code: ICD9CM#145.6 Malignant neoplasm of retromolar area
+    onsetDateTime: "2008-11-12T16:00:00.000Z"
+    recordedDate: "2008-11-12T16:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#2089-1 Cholesterol in LDL [Mass/volume] in Serum or Plasma
+    valueQuantity: 95 mg/dL
+    effectiveDateTime: "2009-06-01T07:00:00.000Z"
+
+results:
+  Earliest exclusion date: "2008-07-01T16:00:00.000+00:00"
+  Has LDL-C measure before exclusion date: false
+  Case: false

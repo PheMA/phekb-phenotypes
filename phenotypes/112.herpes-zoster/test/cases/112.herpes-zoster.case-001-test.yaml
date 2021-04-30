@@ -1,0 +1,47 @@
+---
+name: 001 Herpes Zoster Case
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  # - resourceType: Encounter
+  #   id: encounter-2
+  #   period: "1978-11-12T16:00:00.000Z"
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#276 Cardiovascular Disease
+
+  # - resourceType: Procedure
+  #   encounter: Encounter/encounter-2
+  #   code: CPT#34800 Endovascular repair of infrarenal abdominal aortic aneurysm or dissection; using aorto-aortic tube prosthesis
+  #   performedDateTime: "1978-11-12T16:00:00.000Z" # The patient was too young for this procedure to be considered
+
+  - resourceType: Condition
+    code: ICD9#053.0 Herpes zoster with meningitis
+    onsetDateTime: "2007-06-01T07:00:00.000Z"
+
+  # - resourceType: Encounter
+  #   id: encounter-1
+  #   period: 2008-11-12T16:00:00.000
+  #   serviceType: http://terminology.hl7.org/CodeSystem/service-type#15 Aromatherapy
+  #   diagnosis:
+  #   condition: Condition/condition-1
+
+  # - resourceType: MedicationRequest
+  #   code: RXNORM#139825 insulin detemir
+  #   authoredOn: "2018-10-15T16:00:00.000Z"
+  #   status: completed
+
+  # - resourceType: Condition
+  #   id: condition-1
+  #   code: ICD9#441.3 Abdominal aortic aneurysm, ruptured
+  #   onsetDateTime: "1998-12-12T16:00:00.000Z"
+
+results:
+  Index Date: '2007-06-01T07:00:00.000+00:00'
+  Diagnosis On Or After 40: true
+  HIV Diagnosis On Two Distinct Days: false
+  Blood Or Bone Marrow Cancer Diagnosis In Prior Year: false
+  Chemotherapy In Prior Six Months: false
+  Case: true

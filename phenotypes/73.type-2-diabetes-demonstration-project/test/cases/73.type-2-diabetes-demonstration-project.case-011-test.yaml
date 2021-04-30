@@ -1,0 +1,29 @@
+---
+name: 011 Diabetes Mellitus Type II NOT Case - too young
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 2015-07-16
+
+  - resourceType: MedicationRequest
+    code: RXNORM#72610 troglitazone
+    authoredOn: "2007-10-15T16:00:00.000Z"
+    status: completed
+
+  - resourceType: Observation
+    code: LOINC#2339-0 Glucose [Mass/volume] in Blood
+    valueQuantity: 533 mg/dL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Observation
+    code: LOINC#17855-8 Hemoglobin A1c/Hemoglobin.total in Blood by calculation
+    valueQuantity: 8 %
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+results:
+  Case 1: false
+  Case 2: false
+  Case 3: true
+  Case: false

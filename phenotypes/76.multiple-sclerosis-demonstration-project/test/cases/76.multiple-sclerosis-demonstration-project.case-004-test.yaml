@@ -1,0 +1,17 @@
+---
+name: 004 NOT Multiple Sclerosis Case - other dx but no meds
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Condition
+    code: ICD9#341.9 Demyelinating disease of the central nervous system unspecified
+
+results:
+  Has Multiple Sclerosis Diagnosis: false
+  Has Other Diagnoses: true
+  Has Medications: false
+  Case: false

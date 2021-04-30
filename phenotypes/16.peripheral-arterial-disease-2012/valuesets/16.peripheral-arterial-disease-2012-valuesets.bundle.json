@@ -1,0 +1,4355 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.ankle-brachial-index",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.ankle-brachial-index",
+        "name": "Ankle Brachial Index",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "77194-9",
+                  "display": "Ankle-brachial index"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.ankle-systolic-blood-pressure",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.ankle-systolic-blood-pressure",
+        "name": "Ankle Systolic Blood Pressure",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "8511-8",
+                  "display": "Posterior tibial artery Systolic blood pressure"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.non-atherosclerotic-pad-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.non-atherosclerotic-pad-dx",
+        "name": "Non-Atheroscleroic PAD",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "747.22",
+                  "display": "Atresia and stenosis of aorta"
+                },
+                {
+                  "code": "237.7",
+                  "display": "Neurofibromatosis"
+                },
+                {
+                  "code": "443.1",
+                  "display": "Thromboangiitis obliterans [Buerger's disease]"
+                },
+                {
+                  "code": "446.0",
+                  "display": "Polyarteritis nodosa"
+                },
+                {
+                  "code": "446.4",
+                  "display": "Wegener's granulomatosis"
+                },
+                {
+                  "code": "446.5",
+                  "display": "Giant cell arteritis"
+                },
+                {
+                  "code": "446.6",
+                  "display": "Thrombotic microangiopathy"
+                },
+                {
+                  "code": "446.7",
+                  "display": "Takayasu's disease"
+                },
+                {
+                  "code": "447.6",
+                  "display": "Arteritis, unspecified"
+                },
+                {
+                  "code": "710.1",
+                  "display": "Systemic sclerosis"
+                },
+                {
+                  "code": "747.1",
+                  "display": "Coarctation of aorta"
+                },
+                {
+                  "code": "747.64",
+                  "display": "Lower limb vessel anomaly"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.pad-dx",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.pad-dx",
+        "name": "PAD",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "440.22",
+                  "display": "Atherosclerosis of native arteries of the extremities with rest pain"
+                },
+                {
+                  "code": "440.29",
+                  "display": "Other atherosclerosis of native arteries of the extremities"
+                },
+                {
+                  "code": "440.21",
+                  "display": "Atherosclerosis of native arteries of the extremities with intermittent claudication"
+                },
+                {
+                  "code": "440.23",
+                  "display": "Atherosclerosis of native arteries of the extremities with ulceration"
+                },
+                {
+                  "code": "440.2",
+                  "display": "Atherosclerosis of native arteries of the extremities"
+                },
+                {
+                  "code": "440.24",
+                  "display": "Atherosclerosis of native arteries of the extremities with gangrene"
+                },
+                {
+                  "code": "440.20",
+                  "display": "Atherosclerosis of native arteries of the extremities, unspecified"
+                },
+                {
+                  "code": "440.31",
+                  "display": "Atherosclerosis of autologous vein bypass graft of the extremities"
+                },
+                {
+                  "code": "440.32",
+                  "display": "Atherosclerosis of nonautologous biological bypass graft of the extremities"
+                },
+                {
+                  "code": "440.3",
+                  "display": "Of bypass graft of the extremities"
+                },
+                {
+                  "code": "440.30",
+                  "display": "Atherosclerosis of unspecified bypass graft of the extremities"
+                },
+                {
+                  "code": "440.8",
+                  "display": "Atherosclerosis of other specified arteries"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.lower-extremity-artery-angiography",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.lower-extremity-artery-angiography",
+        "name": "Lower Extremity Artery Angiography Procedure",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": []
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "75710",
+                  "display": "Angiography, extremity, unilateral, radiological supervision and interpretation"
+                },
+                {
+                  "code": "75716",
+                  "display": "Angiography, extremity, bilateral, radiological supervision and interpretation"
+                },
+                {
+                  "code": "75630",
+                  "display": "Aortography, abdominal plus bilateral iliofemoral lower extremity, catheter, by serialography, radiological supervision and interpretation"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.non-coronary-vessel-stent",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.non-coronary-vessel-stent",
+        "name": "Non Coronary Vessel Stent Procedure",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": []
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "37205",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), percutaneous; initial vessel"
+                },
+                {
+                  "code": "37206",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), percutaneous; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "37207",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), open; initial vessel"
+                },
+                {
+                  "code": "37208",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), open; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "37184",
+                  "display": "Primary percutaneous transluminal mechanical thrombectomy, noncoronary, arterial or arterial bypass graft, including fluoroscopic guidance and intraprocedural pharmacological thrombolytic injection(s); initial vessel"
+                },
+                {
+                  "code": "37185",
+                  "display": "Primary percutaneous transluminal mechanical thrombectomy, noncoronary, arterial or arterial bypass graft, including fluoroscopic guidance and intraprocedural pharmacological thrombolytic injection(s); second and all subsequent vessel(s) within the same v"
+                },
+                {
+                  "code": "37186",
+                  "display": "Secondary percutaneous transluminal thrombectomy (eg, nonprimary mechanical, snare basket, suction technique), noncoronary, arterial or arterial bypass graft, including fluoroscopic guidance and intraprocedural pharmacological thrombolytic injections, pro"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.lower-extremity-surgery-vascular-interventions",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.lower-extremity-surgery-vascular-interventions",
+        "name": "Lower Extremity Artery Surgery Procedure",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": []
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "35302",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; superficial femoral artery"
+                },
+                {
+                  "code": "35303",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; popliteal artery"
+                },
+                {
+                  "code": "35304",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; tibioperoneal trunk artery"
+                },
+                {
+                  "code": "35305",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; tibial or peroneal artery, initial vessel"
+                },
+                {
+                  "code": "35306",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; each additional tibial or peroneal artery (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "35331",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; abdominal aorta"
+                },
+                {
+                  "code": "35351",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; iliac"
+                },
+                {
+                  "code": "35355",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; iliofemoral"
+                },
+                {
+                  "code": "35361",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; combined aortoiliac"
+                },
+                {
+                  "code": "35363",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; combined aortoiliofemoral"
+                },
+                {
+                  "code": "35371",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; common femoral"
+                },
+                {
+                  "code": "35372",
+                  "display": "Thromboendarterectomy, including patch graft, if performed; deep (profunda) femoral"
+                },
+                {
+                  "code": "35381",
+                  "display": "Thromboendarterectomy, with or without patch graft; femoral and/or popliteal, and/or tibioperoneal"
+                },
+                {
+                  "code": "35452",
+                  "display": "Transluminal balloon angioplasty, open; aortic"
+                },
+                {
+                  "code": "35454",
+                  "display": "Transluminal balloon angioplasty, open; iliac"
+                },
+                {
+                  "code": "35456",
+                  "display": "Transluminal balloon angioplasty, open; femoral-popliteal"
+                },
+                {
+                  "code": "35459",
+                  "display": "Transluminal balloon angioplasty, open; tibioperoneal trunk and branches"
+                },
+                {
+                  "code": "35470",
+                  "display": "Transluminal balloon angioplasty, percutaneous; tibioperoneal trunk or branches, each vessel"
+                },
+                {
+                  "code": "35472",
+                  "display": "Transluminal balloon angioplasty, percutaneous; aortic"
+                },
+                {
+                  "code": "35473",
+                  "display": "Transluminal balloon angioplasty, percutaneous; iliac"
+                },
+                {
+                  "code": "35474",
+                  "display": "Transluminal balloon angioplasty, percutaneous; femoral-popliteal"
+                },
+                {
+                  "code": "35481",
+                  "display": "Transluminal peripheral atherectomy, open; aortic"
+                },
+                {
+                  "code": "35482",
+                  "display": "Transluminal peripheral atherectomy, open; iliac"
+                },
+                {
+                  "code": "35483",
+                  "display": "Transluminal peripheral atherectomy, open; femoral-popliteal"
+                },
+                {
+                  "code": "35485",
+                  "display": "Transluminal peripheral atherectomy, open; tibioperoneal trunk and branches"
+                },
+                {
+                  "code": "35491",
+                  "display": "Transluminal peripheral atherectomy, percutaneous; aortic"
+                },
+                {
+                  "code": "35492",
+                  "display": "Transluminal peripheral atherectomy, percutaneous; iliac"
+                },
+                {
+                  "code": "35493",
+                  "display": "Transluminal peripheral atherectomy, percutaneous; femoral-popliteal"
+                },
+                {
+                  "code": "35495",
+                  "display": "Transluminal peripheral atherectomy, percutaneous; tibioperoneal trunk and branches"
+                },
+                {
+                  "code": "35521",
+                  "display": "Bypass graft, with vein; axillary-femoral"
+                },
+                {
+                  "code": "35533",
+                  "display": "Bypass graft, with vein; axillary-femoral-femoral"
+                },
+                {
+                  "code": "35537",
+                  "display": "Bypass graft, with vein; aortoiliac"
+                },
+                {
+                  "code": "35538",
+                  "display": "Bypass graft, with vein; aortobi-iliac"
+                },
+                {
+                  "code": "35539",
+                  "display": "Bypass graft, with vein; aortofemoral"
+                },
+                {
+                  "code": "35540",
+                  "display": "Bypass graft, with vein; aortobifemoral"
+                },
+                {
+                  "code": "35541",
+                  "display": "Bypass graft, with vein; aortoiliac or bi-iliac"
+                },
+                {
+                  "code": "35546",
+                  "display": "Bypass graft, with vein; aortofemoral or bifemoral"
+                },
+                {
+                  "code": "35548",
+                  "display": "Bypass graft, with vein; aortoiliofemoral, unilateral"
+                },
+                {
+                  "code": "35549",
+                  "display": "Bypass graft, with vein; aortoiliofemoral, bilateral"
+                },
+                {
+                  "code": "35551",
+                  "display": "Bypass graft, with vein; aortofemoral-popliteal"
+                },
+                {
+                  "code": "35556",
+                  "display": "Bypass graft, with vein; femoral-popliteal"
+                },
+                {
+                  "code": "35558",
+                  "display": "Bypass graft, with vein; femoral-femoral"
+                },
+                {
+                  "code": "35563",
+                  "display": "Bypass graft, with vein; ilioiliac"
+                },
+                {
+                  "code": "35565",
+                  "display": "Bypass graft, with vein; iliofemoral"
+                },
+                {
+                  "code": "35566",
+                  "display": "Bypass graft, with vein; femoral-anterior tibial, posterior tibial, peroneal artery or other distal vessels"
+                },
+                {
+                  "code": "35571",
+                  "display": "Bypass graft, with vein; popliteal-tibial, -peroneal artery or other distal vessels"
+                },
+                {
+                  "code": "35582",
+                  "display": "In-situ vein bypass; aortofemoral-popliteal (only femoral-popliteal portion in-situ)"
+                },
+                {
+                  "code": "35583",
+                  "display": "In-situ vein bypass; femoral-popliteal"
+                },
+                {
+                  "code": "35585",
+                  "display": "In-situ vein bypass; femoral-anterior tibial, posterior tibial, or peroneal artery"
+                },
+                {
+                  "code": "35587",
+                  "display": "In-situ vein bypass; popliteal-tibial, peroneal"
+                },
+                {
+                  "code": "35621",
+                  "display": "Bypass graft, with other than vein; axillary-femoral"
+                },
+                {
+                  "code": "35623",
+                  "display": "Bypass graft, with other than vein; axillary-popliteal or -tibial"
+                },
+                {
+                  "code": "35637",
+                  "display": "Bypass graft, with other than vein; aortoiliac"
+                },
+                {
+                  "code": "35638",
+                  "display": "Bypass graft, with other than vein; aortobi-iliac"
+                },
+                {
+                  "code": "35641",
+                  "display": "Bypass graft, with other than vein; aortoiliac or bi-iliac"
+                },
+                {
+                  "code": "35646",
+                  "display": "Bypass graft, with other than vein; aortobifemoral"
+                },
+                {
+                  "code": "35647",
+                  "display": "Bypass graft, with other than vein; aortofemoral"
+                },
+                {
+                  "code": "35651",
+                  "display": "Bypass graft, with other than vein; aortofemoral-popliteal"
+                },
+                {
+                  "code": "35654",
+                  "display": "Bypass graft, with other than vein; axillary-femoral-femoral"
+                },
+                {
+                  "code": "35656",
+                  "display": "Bypass graft, with other than vein; femoral-popliteal"
+                },
+                {
+                  "code": "35661",
+                  "display": "Bypass graft, with other than vein; femoral-femoral"
+                },
+                {
+                  "code": "35663",
+                  "display": "Bypass graft, with other than vein; ilioiliac"
+                },
+                {
+                  "code": "35665",
+                  "display": "Bypass graft, with other than vein; iliofemoral"
+                },
+                {
+                  "code": "35666",
+                  "display": "Bypass graft, with other than vein; femoral-anterior tibial, posterior tibial, or peroneal artery"
+                },
+                {
+                  "code": "35671",
+                  "display": "Bypass graft, with other than vein; popliteal-tibial or -peroneal artery"
+                },
+                {
+                  "code": "35226",
+                  "display": "Repair blood vessel, direct; lower extremity"
+                },
+                {
+                  "code": "35256",
+                  "display": "Repair blood vessel with vein graft; lower extremity"
+                },
+                {
+                  "code": "35286",
+                  "display": "Repair blood vessel with graft other than vein; lower extremity"
+                },
+                {
+                  "code": "35700",
+                  "display": "Reoperation, femoral-popliteal or femoral (popliteal)-anterior tibial, posterior tibial, peroneal artery, or other distal vessels, more than 1 month after original operation (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "35721",
+                  "display": "Exploration (not followed by surgical repair), with or without lysis of artery; femoral artery"
+                },
+                {
+                  "code": "35741",
+                  "display": "Exploration (not followed by surgical repair), with or without lysis of artery; popliteal artery"
+                },
+                {
+                  "code": "35876",
+                  "display": "Thrombectomy of arterial or venous graft (other than hemodialysis graft or fistula); with revision of arterial or venous graft"
+                },
+                {
+                  "code": "35879",
+                  "display": "Revision, lower extremity arterial bypass, without thrombectomy, open; with vein patch angioplasty"
+                },
+                {
+                  "code": "35881",
+                  "display": "Revision, lower extremity arterial bypass, without thrombectomy, open; with segmental vein interposition"
+                },
+                {
+                  "code": "35883",
+                  "display": "Revision, femoral anastomosis of synthetic arterial bypass graft in groin, open; with nonautogenous patch graft (eg, Dacron, ePTFE, bovine pericardium)"
+                },
+                {
+                  "code": "35884",
+                  "display": "Revision, femoral anastomosis of synthetic arterial bypass graft in groin, open; with autogenous vein patch graft"
+                },
+                {
+                  "code": "37184",
+                  "display": "Primary percutaneous transluminal mechanical thrombectomy, noncoronary, arterial or arterial bypass graft, including fluoroscopic guidance and intraprocedural pharmacological thrombolytic injection(s); initial vessel"
+                },
+                {
+                  "code": "37185",
+                  "display": "Primary percutaneous transluminal mechanical thrombectomy, noncoronary, arterial or arterial bypass graft, including fluoroscopic guidance and intraprocedural pharmacological thrombolytic injection(s); second and all subsequent vessel(s) within the same v"
+                },
+                {
+                  "code": "37186",
+                  "display": "Secondary percutaneous transluminal thrombectomy (eg, nonprimary mechanical, snare basket, suction technique), noncoronary, arterial or arterial bypass graft, including fluoroscopic guidance and intraprocedural pharmacological thrombolytic injections, pro"
+                },
+                {
+                  "code": "37205",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), percutaneous; initial vessel"
+                },
+                {
+                  "code": "37206",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), percutaneous; each additional vessel (List separately in addition to code for primary procedure)"
+                },
+                {
+                  "code": "37207",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), open; initial vessel"
+                },
+                {
+                  "code": "37208",
+                  "display": "Transcatheter placement of an intravascular stent(s), (non-coronary vessel), open; each additional vessel (List separately in addition to code for primary procedure)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.lower-extremity-alternate-surgery-reason",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.lower-extremity-alternate-surgery-reason",
+        "name": "Alternate Reason for Lower Extremity Artery Surgery",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "736.39",
+                  "display": "Other acquired deformities of hip"
+                },
+                {
+                  "code": "736.30",
+                  "display": "Unspecified acquired deformity of hip"
+                },
+                {
+                  "code": "736.31",
+                  "display": "Coxa valga (acquired)"
+                },
+                {
+                  "code": "736.32",
+                  "display": "Coxa vara (acquired)"
+                },
+                {
+                  "code": "736.3",
+                  "display": "Acquired deformities of hip"
+                },
+                {
+                  "code": "736.4",
+                  "display": "Genu valgum or varum (acquired)"
+                },
+                {
+                  "code": "736.41",
+                  "display": "Genu valgum (acquired)"
+                },
+                {
+                  "code": "736.42",
+                  "display": "Genu varum (acquired)"
+                },
+                {
+                  "code": "736.5",
+                  "display": "Genu recurvatum (acquired)"
+                },
+                {
+                  "code": "736.6",
+                  "display": "Other acquired deformities of knee"
+                },
+                {
+                  "code": "736.72",
+                  "display": "Equinus deformity of foot, acquired"
+                },
+                {
+                  "code": "736.73",
+                  "display": "Cavus deformity of foot, acquired"
+                },
+                {
+                  "code": "736.75",
+                  "display": "Cavovarus deformity of foot, acquired"
+                },
+                {
+                  "code": "736.70",
+                  "display": "Unspecified deformity of ankle and foot, acquired"
+                },
+                {
+                  "code": "736.74",
+                  "display": "Claw foot, acquired"
+                },
+                {
+                  "code": "736.7",
+                  "display": "Other acquired deformities of ankle and foot"
+                },
+                {
+                  "code": "736.76",
+                  "display": "Other acquired calcaneus deformity"
+                },
+                {
+                  "code": "736.79",
+                  "display": "Other acquired deformities of ankle and foot"
+                },
+                {
+                  "code": "736.71",
+                  "display": "Acquired equinovarus deformity"
+                },
+                {
+                  "code": "736.8",
+                  "display": "Acquired deformities of other parts of limbs"
+                },
+                {
+                  "code": "736.81",
+                  "display": "Unequal leg length (acquired)"
+                },
+                {
+                  "code": "736.89",
+                  "display": "Other acquired deformity of other parts of limb"
+                },
+                {
+                  "code": "736.9",
+                  "display": "Acquired deformity of limb, site unspecified"
+                },
+                {
+                  "code": "735.0",
+                  "display": "Hallux valgus (acquired)"
+                },
+                {
+                  "code": "735.3",
+                  "display": "Hallux malleus"
+                },
+                {
+                  "code": "735.5",
+                  "display": "Claw toe (acquired)"
+                },
+                {
+                  "code": "735.1",
+                  "display": "Hallux varus (acquired)"
+                },
+                {
+                  "code": "735.4",
+                  "display": "Other hammer toe (acquired)"
+                },
+                {
+                  "code": "735.8",
+                  "display": "Other acquired deformities of toe"
+                },
+                {
+                  "code": "735.2",
+                  "display": "Hallux rigidus"
+                },
+                {
+                  "code": "735.9",
+                  "display": "Unspecified acquired deformity of toe"
+                },
+                {
+                  "code": "754.30",
+                  "display": "Congenital dislocation of hip, unilateral"
+                },
+                {
+                  "code": "754.33",
+                  "display": "Congenital subluxation of hip, bilateral"
+                },
+                {
+                  "code": "754.35",
+                  "display": "Congenital dislocation of one hip with subluxation of other hip"
+                },
+                {
+                  "code": "754.32",
+                  "display": "Congenital subluxation of hip, unilateral"
+                },
+                {
+                  "code": "754.3",
+                  "display": "Congenital dislocation of hip"
+                },
+                {
+                  "code": "754.31",
+                  "display": "Congenital dislocation of hip, bilateral"
+                },
+                {
+                  "code": "754.42",
+                  "display": "Congenital bowing of femur"
+                },
+                {
+                  "code": "754.40",
+                  "display": "Genu recurvatum"
+                },
+                {
+                  "code": "754.43",
+                  "display": "Congenital bowing of tibia and fibula"
+                },
+                {
+                  "code": "754.4",
+                  "display": "Congenital genu recurvatum and bowing of long bones of leg"
+                },
+                {
+                  "code": "754.41",
+                  "display": "Congenital dislocation of knee (with genu recurvatum)"
+                },
+                {
+                  "code": "754.44",
+                  "display": "Congenital bowing of unspecified long bones of leg"
+                },
+                {
+                  "code": "754.53",
+                  "display": "Metatarsus varus"
+                },
+                {
+                  "code": "754.50",
+                  "display": "Talipes varus"
+                },
+                {
+                  "code": "754.51",
+                  "display": "Talipes equinovarus"
+                },
+                {
+                  "code": "754.52",
+                  "display": "Metatarsus primus varus"
+                },
+                {
+                  "code": "754.5",
+                  "display": "Varus deformities of feet, congenital"
+                },
+                {
+                  "code": "754.59",
+                  "display": "Other varus deformities of feet"
+                },
+                {
+                  "code": "754.61",
+                  "display": "Congenital pes planus"
+                },
+                {
+                  "code": "754.62",
+                  "display": "Talipes calcaneovalgus"
+                },
+                {
+                  "code": "754.69",
+                  "display": "Other valgus deformities of feet"
+                },
+                {
+                  "code": "754.6",
+                  "display": "Valgus deformities of feet, congenital"
+                },
+                {
+                  "code": "754.60",
+                  "display": "Talipes valgus"
+                },
+                {
+                  "code": "754.70",
+                  "display": "Talipes, unspecified"
+                },
+                {
+                  "code": "754.7",
+                  "display": "Other congenital deformities of feet"
+                },
+                {
+                  "code": "754.71",
+                  "display": "Talipes cavus"
+                },
+                {
+                  "code": "754.79",
+                  "display": "Other deformities of feet"
+                },
+                {
+                  "code": "755.02",
+                  "display": "Polydactyly of toes"
+                },
+                {
+                  "code": "755.13",
+                  "display": "Syndactyly of toes without fusion of bone"
+                },
+                {
+                  "code": "755.14",
+                  "display": "Syndactyly of toes with fusion of bone"
+                },
+                {
+                  "code": "755.3",
+                  "display": "Reduction deformities of lower limb, congenital"
+                },
+                {
+                  "code": "755.4",
+                  "display": "Reduction deformities, unspecified limb"
+                },
+                {
+                  "code": "755.60",
+                  "display": "Unspecified anomaly of lower limb"
+                },
+                {
+                  "code": "755.66",
+                  "display": "Other anomalies of toes"
+                },
+                {
+                  "code": "755.69",
+                  "display": "Other anomalies of lower limb, including pelvic girdle"
+                },
+                {
+                  "code": "755.6",
+                  "display": "Other congenital anomalies of lower limb, including pelvic girdle"
+                },
+                {
+                  "code": "755.61",
+                  "display": "Coxa valga, congenital"
+                },
+                {
+                  "code": "755.63",
+                  "display": "Other congenital deformity of hip (joint)"
+                },
+                {
+                  "code": "755.67",
+                  "display": "Anomalies of foot, not elsewhere classified"
+                },
+                {
+                  "code": "755.62",
+                  "display": "Coxa vara, congenital"
+                },
+                {
+                  "code": "755.65",
+                  "display": "Macrodactylia of toes"
+                },
+                {
+                  "code": "755.64",
+                  "display": "Congenital deformity of knee (joint)"
+                },
+                {
+                  "code": "755.8",
+                  "display": "Other specified anomalies of unspecified limb"
+                },
+                {
+                  "code": "759.7",
+                  "display": "Multiple congenital anomalies, so described"
+                },
+                {
+                  "code": "759.89",
+                  "display": "Other specified congenital anomalies"
+                },
+                {
+                  "code": "895.1",
+                  "display": "Traumatic amputation of toe(s) (complete) (partial), complicated"
+                },
+                {
+                  "code": "895.0",
+                  "display": "Traumatic amputation of toe(s) (complete) (partial), without mention of complication"
+                },
+                {
+                  "code": "896.2",
+                  "display": "Traumatic amputation of foot (complete) (partial), bilateral, without mention of complication"
+                },
+                {
+                  "code": "896.1",
+                  "display": "Traumatic amputation of foot (complete) (partial), unilateral, complicated"
+                },
+                {
+                  "code": "896.3",
+                  "display": "Traumatic amputation of foot (complete) (partial), bilateral, complicated"
+                },
+                {
+                  "code": "896.0",
+                  "display": "Traumatic amputation of foot (complete) (partial), unilateral, without mention of complication"
+                },
+                {
+                  "code": "897.1",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, complicated"
+                },
+                {
+                  "code": "897.5",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, level not specified, complicated"
+                },
+                {
+                  "code": "897.4",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, level not specified, without mention of complication"
+                },
+                {
+                  "code": "897.6",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), bilateral [any level]), without mention of complication"
+                },
+                {
+                  "code": "897.0",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, without mention of complication"
+                },
+                {
+                  "code": "897.3",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, complicated"
+                },
+                {
+                  "code": "897.7",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), bilateral [any level], complicated"
+                },
+                {
+                  "code": "897.2",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, without mention of complication"
+                },
+                {
+                  "code": "820.20",
+                  "display": "Closed fracture of trochanteric section of neck of femur"
+                },
+                {
+                  "code": "820.30",
+                  "display": "Open fracture of trochanteric section of neck of femur, unspecified"
+                },
+                {
+                  "code": "820.1",
+                  "display": "Transcervical fracture, open"
+                },
+                {
+                  "code": "820.13",
+                  "display": "Open fracture of base of neck of femur"
+                },
+                {
+                  "code": "820.3",
+                  "display": "Pertrochanteric fracture of femur, open"
+                },
+                {
+                  "code": "E820.5",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "820.19",
+                  "display": "Other open transcervical fracture of neck of femur"
+                },
+                {
+                  "code": "E820.7",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring pedestrian"
+                },
+                {
+                  "code": "E820.8",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring other specified person"
+                },
+                {
+                  "code": "820.21",
+                  "display": "Closed fracture of intertrochanteric section of neck of femur"
+                },
+                {
+                  "code": "E820.1",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E820.9",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring unspecified person"
+                },
+                {
+                  "code": "820.22",
+                  "display": "Closed fracture of subtrochanteric section of neck of femur"
+                },
+                {
+                  "code": "820.11",
+                  "display": "Open fracture of epiphysis (separation) (upper) of neck of femur"
+                },
+                {
+                  "code": "820.8",
+                  "display": "Closed fracture of unspecified part of neck of femur"
+                },
+                {
+                  "code": "820.9",
+                  "display": "Open fracture of unspecified part of neck of femur"
+                },
+                {
+                  "code": "820.02",
+                  "display": "Closed fracture of midcervical section of neck of femur"
+                },
+                {
+                  "code": "820.2",
+                  "display": "Pertrochanteric fracture of femur, closed"
+                },
+                {
+                  "code": "E820.0",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "820.09",
+                  "display": "Other closed transcervical fracture of neck of femur"
+                },
+                {
+                  "code": "820.12",
+                  "display": "Open fracture of midcervical section of neck of femur"
+                },
+                {
+                  "code": "E820.4",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring occupant of streetcar"
+                },
+                {
+                  "code": "E820.3",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring passenger on motorcycle"
+                },
+                {
+                  "code": "820.0",
+                  "display": "Transcervical fracture, closed"
+                },
+                {
+                  "code": "820.00",
+                  "display": "Closed fracture of intracapsular section of neck of femur, unspecified"
+                },
+                {
+                  "code": "820.32",
+                  "display": "Open fracture of subtrochanteric section of neck of femur"
+                },
+                {
+                  "code": "820.10",
+                  "display": "Open fracture of intracapsular section of neck of femur, unspecified"
+                },
+                {
+                  "code": "820.03",
+                  "display": "Closed fracture of base of neck of femur"
+                },
+                {
+                  "code": "E820.2",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring motorcyclist"
+                },
+                {
+                  "code": "820.01",
+                  "display": "Closed fracture of epiphysis (separation) (upper) of neck of femur"
+                },
+                {
+                  "code": "820.31",
+                  "display": "Open fracture of intertrochanteric section of neck of femur"
+                },
+                {
+                  "code": "E820.6",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring pedal cyclist"
+                },
+                {
+                  "code": "821.00",
+                  "display": "Closed fracture of unspecified part of femur"
+                },
+                {
+                  "code": "821.01",
+                  "display": "Closed fracture of shaft of femur"
+                },
+                {
+                  "code": "821.39",
+                  "display": "Other open fracture of lower end of femur"
+                },
+                {
+                  "code": "E821.3",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring passenger on motorcycle"
+                },
+                {
+                  "code": "821.33",
+                  "display": "Open supracondylar fracture of femur"
+                },
+                {
+                  "code": "821.21",
+                  "display": "Closed fracture of condyle, femoral"
+                },
+                {
+                  "code": "821.31",
+                  "display": "Open fracture of condyle, femoral"
+                },
+                {
+                  "code": "E821.7",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring pedestrian"
+                },
+                {
+                  "code": "E821.2",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring motorcyclist"
+                },
+                {
+                  "code": "821.10",
+                  "display": "Open fracture of unspecified part of femur"
+                },
+                {
+                  "code": "E821.9",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring unspecified person"
+                },
+                {
+                  "code": "821.1",
+                  "display": "Fracture of shaft or unspecified part of femur, open"
+                },
+                {
+                  "code": "821.3",
+                  "display": "Fracture of lower end of femur, open"
+                },
+                {
+                  "code": "E821.0",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E821.1",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E821.5",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "821.20",
+                  "display": "Closed fracture of lower end of femur, unspecified part"
+                },
+                {
+                  "code": "821.2",
+                  "display": "Fracture of lower end of femur, closed"
+                },
+                {
+                  "code": "E821.4",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring occupant of streetcar"
+                },
+                {
+                  "code": "E821.6",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring pedal cyclist"
+                },
+                {
+                  "code": "821.22",
+                  "display": "Closed fracture of epiphysis, lower (separation) of femur"
+                },
+                {
+                  "code": "821.30",
+                  "display": "Open fracture of lower end of femur, unspecified part"
+                },
+                {
+                  "code": "821.32",
+                  "display": "Open fracture of epiphysis. Lower (separation) of femur"
+                },
+                {
+                  "code": "E821.8",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring other specified person"
+                },
+                {
+                  "code": "821.0",
+                  "display": "Fracture of shaft or unspecified part of femur, closed"
+                },
+                {
+                  "code": "821.29",
+                  "display": "Other closed fracture of lower end of femur"
+                },
+                {
+                  "code": "821.11",
+                  "display": "Open fracture of shaft of femur"
+                },
+                {
+                  "code": "821.23",
+                  "display": "Closed supracondylar fracture of femur"
+                },
+                {
+                  "code": "822.1",
+                  "display": "Open fracture of patella"
+                },
+                {
+                  "code": "E822.3",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring passenger on motorcycle"
+                },
+                {
+                  "code": "E822.4",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring occupant of streetcar"
+                },
+                {
+                  "code": "E822.9",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring unspecified person"
+                },
+                {
+                  "code": "822.0",
+                  "display": "Closed fracture of patella"
+                },
+                {
+                  "code": "E822.6",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring pedal cyclist"
+                },
+                {
+                  "code": "E822.0",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E822.8",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring other specified person"
+                },
+                {
+                  "code": "E822.2",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring motorcyclist"
+                },
+                {
+                  "code": "E822.7",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring pedestrian"
+                },
+                {
+                  "code": "E822.1",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E822.5",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "823.80",
+                  "display": "Closed fracture of unspecified part of tibia alone"
+                },
+                {
+                  "code": "E823.6",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring pedal cyclist"
+                },
+                {
+                  "code": "823.21",
+                  "display": "Closed fracture of shaft of fibula alone"
+                },
+                {
+                  "code": "823.4",
+                  "display": "Torus fracture"
+                },
+                {
+                  "code": "823.00",
+                  "display": "Closed fracture of upper end of tibia alone"
+                },
+                {
+                  "code": "823.3",
+                  "display": "Fracture of shaft of tibia and fibula, open"
+                },
+                {
+                  "code": "E823.8",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring other specified person"
+                },
+                {
+                  "code": "823.11",
+                  "display": "Open fracture of upper end of fibula alone"
+                },
+                {
+                  "code": "E823.2",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring motorcyclist"
+                },
+                {
+                  "code": "823.0",
+                  "display": "Fracture of upper end of tibia and fibula, closed"
+                },
+                {
+                  "code": "823.1",
+                  "display": "Fracture of upper end of tibia and fibula, open"
+                },
+                {
+                  "code": "823.2",
+                  "display": "Fracture of shaft of tibia and fibula, closed"
+                },
+                {
+                  "code": "823.20",
+                  "display": "Closed fracture of shaft of tibia alone"
+                },
+                {
+                  "code": "823.30",
+                  "display": "Open fracture of shaft of tibia alone"
+                },
+                {
+                  "code": "E823.0",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E823.9",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring unspecified person"
+                },
+                {
+                  "code": "823.10",
+                  "display": "Open fracture of upper end of tibia alone"
+                },
+                {
+                  "code": "823.12",
+                  "display": "Open fracture of upper end of fibula with tibia"
+                },
+                {
+                  "code": "823.81",
+                  "display": "Closed fracture of unspecified part of fibula alone"
+                },
+                {
+                  "code": "823.31",
+                  "display": "Open fracture of shaft of fibula alone"
+                },
+                {
+                  "code": "823.82",
+                  "display": "Closed fracture of unspecified part of fibula with tibia"
+                },
+                {
+                  "code": "E823.7",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring pedestrian"
+                },
+                {
+                  "code": "823.8",
+                  "display": "Fracture of unspecified part of tibia and fibula, closed"
+                },
+                {
+                  "code": "823.90",
+                  "display": "Open fracture of unspecified part of tibia alone"
+                },
+                {
+                  "code": "823.91",
+                  "display": "Open fracture of unspecified part of fibula alone"
+                },
+                {
+                  "code": "E823.1",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E823.3",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring passenger on motorcycle"
+                },
+                {
+                  "code": "E823.4",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring occupant of streetcar"
+                },
+                {
+                  "code": "823.40",
+                  "display": "Torus fracture, tibia alone"
+                },
+                {
+                  "code": "823.42",
+                  "display": "Torus fracture, fibula with tibia"
+                },
+                {
+                  "code": "823.92",
+                  "display": "Open fracture of unspecified part of fibula with tibia"
+                },
+                {
+                  "code": "E823.5",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "823.02",
+                  "display": "Closed fracture of upper end of fibula with tibia"
+                },
+                {
+                  "code": "823.22",
+                  "display": "Closed fracture of shaft of fibula with tibia"
+                },
+                {
+                  "code": "823.01",
+                  "display": "Closed fracture of upper end of fibula alone"
+                },
+                {
+                  "code": "823.32",
+                  "display": "Open fracture of shaft of fibula with tibia"
+                },
+                {
+                  "code": "823.41",
+                  "display": "Torus fracture, fibula alone"
+                },
+                {
+                  "code": "823.9",
+                  "display": "Fracture of unspecified part of tibia and fibula, open"
+                },
+                {
+                  "code": "E824.1",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E824.5",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "824.3",
+                  "display": "Fracture of lateral malleolus, open"
+                },
+                {
+                  "code": "824.4",
+                  "display": "Bimalleolar fracture, closed"
+                },
+                {
+                  "code": "E824.4",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring occupant of streetcar"
+                },
+                {
+                  "code": "E824.2",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring motorcyclist"
+                },
+                {
+                  "code": "824.8",
+                  "display": "Unspecified fracture of ankle, closed"
+                },
+                {
+                  "code": "E824.8",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring other specified person"
+                },
+                {
+                  "code": "824.5",
+                  "display": "Bimalleolar fracture, open"
+                },
+                {
+                  "code": "E824.3",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring passenger on motorcycle"
+                },
+                {
+                  "code": "824.7",
+                  "display": "Trimalleolar fracture, open"
+                },
+                {
+                  "code": "E824.0",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "824.2",
+                  "display": "Fracture of lateral malleolus, closed"
+                },
+                {
+                  "code": "E824.6",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring pedal cyclist"
+                },
+                {
+                  "code": "824.0",
+                  "display": "Fracture of medial malleolus, closed"
+                },
+                {
+                  "code": "824.6",
+                  "display": "Trimalleolar fracture, closed"
+                },
+                {
+                  "code": "824.9",
+                  "display": "Unspecified fracture of ankle, open"
+                },
+                {
+                  "code": "824.1",
+                  "display": "Fracture of medial malleolus, open"
+                },
+                {
+                  "code": "E824.7",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring pedestrian"
+                },
+                {
+                  "code": "E824.9",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring unspecified person"
+                },
+                {
+                  "code": "825.23",
+                  "display": "Closed fracture of cuboid"
+                },
+                {
+                  "code": "E825.1",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E825.2",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring motorcyclist"
+                },
+                {
+                  "code": "825.0",
+                  "display": "Fracture of calcaneus, closed"
+                },
+                {
+                  "code": "825.35",
+                  "display": "Open fracture of metatarsal bone(s)"
+                },
+                {
+                  "code": "825.24",
+                  "display": "Closed fracture of cuneiform, foot"
+                },
+                {
+                  "code": "825.31",
+                  "display": "Open fracture of astragalus"
+                },
+                {
+                  "code": "E825.9",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring unspecified person"
+                },
+                {
+                  "code": "E825.6",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring pedal cyclist"
+                },
+                {
+                  "code": "825.39",
+                  "display": "Other open fracture of tarsal and metatarsal bones"
+                },
+                {
+                  "code": "E825.4",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring occupant of streetcar"
+                },
+                {
+                  "code": "E825.8",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring other specified person"
+                },
+                {
+                  "code": "825.1",
+                  "display": "Fracture of calcaneus, open"
+                },
+                {
+                  "code": "825.32",
+                  "display": "Open fracture of navicular [scaphoid], foot"
+                },
+                {
+                  "code": "825.33",
+                  "display": "Open fracture of cuboid"
+                },
+                {
+                  "code": "E825.3",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring passenger on motorcycle"
+                },
+                {
+                  "code": "825.3",
+                  "display": "Fracture of other tarsal and metatarsal bones, open"
+                },
+                {
+                  "code": "825.34",
+                  "display": "Open fracture of cuneiform, foot"
+                },
+                {
+                  "code": "825.30",
+                  "display": "Open fracture of unspecified bone(s) of foot [except toes]"
+                },
+                {
+                  "code": "825.21",
+                  "display": "Closed fracture of astragalus"
+                },
+                {
+                  "code": "825.20",
+                  "display": "Closed fracture of unspecified bone(s) of foot [except toes]"
+                },
+                {
+                  "code": "825.25",
+                  "display": "Closed fracture of metatarsal bone(s)"
+                },
+                {
+                  "code": "825.29",
+                  "display": "Other closed fracture of tarsal and metatarsal bones"
+                },
+                {
+                  "code": "825.2",
+                  "display": "Fracture of other tarsal and metatarsal bones, closed"
+                },
+                {
+                  "code": "E825.0",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E825.5",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "825.22",
+                  "display": "Closed fracture of navicular [scaphoid], foot"
+                },
+                {
+                  "code": "E825.7",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring pedestrian"
+                },
+                {
+                  "code": "E826.0",
+                  "display": "Pedal cycle accident injuring pedestrian"
+                },
+                {
+                  "code": "E826.9",
+                  "display": "Pedal cycle accident injuring unspecified person"
+                },
+                {
+                  "code": "826.0",
+                  "display": "Closed fracture of one or more phalanges of foot"
+                },
+                {
+                  "code": "E826.8",
+                  "display": "Pedal cycle accident injuring other specified person"
+                },
+                {
+                  "code": "E826.2",
+                  "display": "Pedal cycle accident injuring rider of animal"
+                },
+                {
+                  "code": "E826.3",
+                  "display": "Pedal cycle accident injuring occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "826.1",
+                  "display": "Open fracture of one or more phalanges of foot"
+                },
+                {
+                  "code": "E826.1",
+                  "display": "Pedal cycle accident injuring pedal cyclist"
+                },
+                {
+                  "code": "E826.4",
+                  "display": "Pedal cycle accident injuring occupant of streetcar"
+                },
+                {
+                  "code": "827.0",
+                  "display": "Other, multiple and ill-defined fractures of lower limb, closed"
+                },
+                {
+                  "code": "E827.4",
+                  "display": "Animal-drawn vehicle accident injuring occupant of streetcar"
+                },
+                {
+                  "code": "E827.0",
+                  "display": "Animal-drawn vehicle accident injuring pedestrian"
+                },
+                {
+                  "code": "E827.3",
+                  "display": "Animal-drawn vehicle accident injuring occupant of animal drawn vehicle"
+                },
+                {
+                  "code": "E827.9",
+                  "display": "Animal-drawn vehicle accident injuring unspecified person"
+                },
+                {
+                  "code": "827.1",
+                  "display": "Other, multiple and ill-defined fractures of lower limb, open"
+                },
+                {
+                  "code": "E827.8",
+                  "display": "Animal-drawn vehicle accident injuring other specified person"
+                },
+                {
+                  "code": "E827.2",
+                  "display": "Animal-drawn vehicle accident injuring rider of animal"
+                },
+                {
+                  "code": "828.1",
+                  "display": "Open multiple fractures involving both lower limbs, lower with upper limb, and lower limb(s) with rib(s) and sternum"
+                },
+                {
+                  "code": "828.0",
+                  "display": "Closed multiple fractures involving both lower limbs, lower with upper limb, and lower limb(s) with rib(s) and sternum"
+                },
+                {
+                  "code": "E828.4",
+                  "display": "Accident involving animal being ridden injuring occupant of streetcar"
+                },
+                {
+                  "code": "E828.8",
+                  "display": "Accident involving animal being ridden injuring other specified person"
+                },
+                {
+                  "code": "E828.9",
+                  "display": "Accident involving animal being ridden injuring unspecified person"
+                },
+                {
+                  "code": "E828.2",
+                  "display": "Accident involving animal being ridden injuring rider of animal"
+                },
+                {
+                  "code": "E828.0",
+                  "display": "Accident involving animal being ridden injuring pedestrian"
+                },
+                {
+                  "code": "E829.8",
+                  "display": "Other road vehicle accidents injuring other specified person"
+                },
+                {
+                  "code": "E829.4",
+                  "display": "Other road vehicle accidents injuring occupant of streetcar"
+                },
+                {
+                  "code": "829.1",
+                  "display": "Fracture of unspecified bone, open"
+                },
+                {
+                  "code": "829.0",
+                  "display": "Fracture of unspecified bone, closed"
+                },
+                {
+                  "code": "E829.9",
+                  "display": "Other road vehicle accidents injuring unspecified person"
+                },
+                {
+                  "code": "E829.0",
+                  "display": "Other road vehicle accidents injuring pedestrian"
+                },
+                {
+                  "code": "835.0",
+                  "display": "Closed dislocation of hip"
+                },
+                {
+                  "code": "E835.3",
+                  "display": "Other and unspecified fall in water transport injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "E835.9",
+                  "display": "Other and unspecified fall in water transport injuring unspecified person"
+                },
+                {
+                  "code": "835.02",
+                  "display": "Closed obturator dislocation of hip"
+                },
+                {
+                  "code": "835.00",
+                  "display": "Closed dislocation of hip, unspecified site"
+                },
+                {
+                  "code": "835.01",
+                  "display": "Closed posterior dislocation of hip"
+                },
+                {
+                  "code": "835.11",
+                  "display": "Open posterior dislocation of hip"
+                },
+                {
+                  "code": "E835.0",
+                  "display": "Other and unspecified fall in water transport injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "E835.4",
+                  "display": "Other and unspecified fall in water transport injuring water skier"
+                },
+                {
+                  "code": "E835.7",
+                  "display": "Other and unspecified fall in water transport, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "E835.8",
+                  "display": "Other and unspecified fall in water transport injuring other specified person"
+                },
+                {
+                  "code": "835.03",
+                  "display": "Other closed anterior dislocation of hip"
+                },
+                {
+                  "code": "835.10",
+                  "display": "Open dislocation of hip, unspecified site"
+                },
+                {
+                  "code": "835.13",
+                  "display": "Other open anterior dislocation of hip"
+                },
+                {
+                  "code": "E835.6",
+                  "display": "Other and unspecified fall in water transport injuring dockers, stevedores"
+                },
+                {
+                  "code": "E835.2",
+                  "display": "Other and unspecified fall in water transport injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E835.5",
+                  "display": "Other and unspecified fall in water transport injuring swimmer"
+                },
+                {
+                  "code": "835.12",
+                  "display": "Open obturator dislocation of hip"
+                },
+                {
+                  "code": "835.1",
+                  "display": "Open dislocation of hip"
+                },
+                {
+                  "code": "E835.1",
+                  "display": "Other and unspecified fall in water transport injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "E836.8",
+                  "display": "Machinery accident in water transport injuring other specified person"
+                },
+                {
+                  "code": "E836.0",
+                  "display": "Machinery accident in water transport injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "836.54",
+                  "display": "Lateral dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "836.62",
+                  "display": "Posterior dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "836.51",
+                  "display": "Anterior dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "836.69",
+                  "display": "Other dislocation of knee, open"
+                },
+                {
+                  "code": "836.52",
+                  "display": "Posterior dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "E836.4",
+                  "display": "Machinery accident in water transport injuring water skier"
+                },
+                {
+                  "code": "E836.1",
+                  "display": "Machinery accident in water transport injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "E836.3",
+                  "display": "Machinery accident in water transport injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "836.5",
+                  "display": "Other dislocation of knee, closed"
+                },
+                {
+                  "code": "836.59",
+                  "display": "Other dislocation of knee, closed"
+                },
+                {
+                  "code": "836.63",
+                  "display": "Medial dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "E836.2",
+                  "display": "Machinery accident in water transport injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E836.9",
+                  "display": "Machinery accident in water transport injuring unspecified person"
+                },
+                {
+                  "code": "836.61",
+                  "display": "Anterior dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "836.0",
+                  "display": "Tear of medial cartilage or meniscus of knee, current"
+                },
+                {
+                  "code": "836.2",
+                  "display": "Other tear of cartilage or meniscus of knee, current"
+                },
+                {
+                  "code": "836.53",
+                  "display": "Medial dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "836.64",
+                  "display": "Lateral dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "836.1",
+                  "display": "Tear of lateral cartilage or meniscus of knee, current"
+                },
+                {
+                  "code": "836.6",
+                  "display": "Other dislocation of knee, open"
+                },
+                {
+                  "code": "E836.5",
+                  "display": "Machinery accident in water transport injuring swimmer"
+                },
+                {
+                  "code": "E836.6",
+                  "display": "Machinery accident in water transport injuring dockers, stevedores"
+                },
+                {
+                  "code": "E836.7",
+                  "display": "Machinery accident in water transport, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "836.3",
+                  "display": "Dislocation of patella, closed"
+                },
+                {
+                  "code": "836.50",
+                  "display": "Dislocation of knee, unspecified, closed"
+                },
+                {
+                  "code": "836.4",
+                  "display": "Dislocation of patella, open"
+                },
+                {
+                  "code": "836.60",
+                  "display": "Dislocation of knee, unspecified, open"
+                },
+                {
+                  "code": "E837.9",
+                  "display": "Explosion, fire, or burning in watercraft injuring unspecified person"
+                },
+                {
+                  "code": "E837.6",
+                  "display": "Explosion, fire, or burning in watercraft injuring dockers, stevedores"
+                },
+                {
+                  "code": "837.1",
+                  "display": "Open dislocation of ankle"
+                },
+                {
+                  "code": "E837.2",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E837.7",
+                  "display": "Explosion, fire, or burning in watercraft, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "837.0",
+                  "display": "Closed dislocation of ankle"
+                },
+                {
+                  "code": "E837.0",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "E837.3",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "E837.4",
+                  "display": "Explosion, fire, or burning in watercraft injuring water skier"
+                },
+                {
+                  "code": "E837.5",
+                  "display": "Explosion, fire, or burning in watercraft injuring swimmer"
+                },
+                {
+                  "code": "E837.1",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "E837.8",
+                  "display": "Explosion, fire, or burning in watercraft injuring other specified person"
+                },
+                {
+                  "code": "E838.5",
+                  "display": "Other and unspecified water transport accident injuring swimmer"
+                },
+                {
+                  "code": "E838.7",
+                  "display": "Other and unspecified water transport accident, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "838.16",
+                  "display": "Open dislocation of interphalangeal (joint), foot"
+                },
+                {
+                  "code": "838.09",
+                  "display": "Closed dislocation of foot, other"
+                },
+                {
+                  "code": "E838.3",
+                  "display": "Other and unspecified water transport accident injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "838.00",
+                  "display": "Closed dislocation of foot, unspecified"
+                },
+                {
+                  "code": "838.06",
+                  "display": "Closed dislocation of interphalangeal (joint), foot"
+                },
+                {
+                  "code": "838.11",
+                  "display": "Open dislocation of tarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "E838.2",
+                  "display": "Other and unspecified water transport accident injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E838.6",
+                  "display": "Other and unspecified water transport accident injuring dockers, stevedores"
+                },
+                {
+                  "code": "E838.8",
+                  "display": "Other and unspecified water transport accident injuring other specified person"
+                },
+                {
+                  "code": "838.04",
+                  "display": "Closed dislocation of metatarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "838.15",
+                  "display": "Open dislocation of metatarsophalangeal (joint)"
+                },
+                {
+                  "code": "E838.0",
+                  "display": "Other and unspecified water transport accident injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "838.10",
+                  "display": "Open dislocation of foot, unspecified"
+                },
+                {
+                  "code": "838.02",
+                  "display": "Closed dislocation of midtarsal (joint)"
+                },
+                {
+                  "code": "838.12",
+                  "display": "Open dislocation of midtarsal (joint)"
+                },
+                {
+                  "code": "838.1",
+                  "display": "Open dislocation of foot"
+                },
+                {
+                  "code": "838.13",
+                  "display": "Open dislocation of tarsometatarsal (joint)"
+                },
+                {
+                  "code": "838.19",
+                  "display": "Open dislocation of foot, other"
+                },
+                {
+                  "code": "838.0",
+                  "display": "Closed dislocation of foot"
+                },
+                {
+                  "code": "E838.1",
+                  "display": "Other and unspecified water transport accident injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "838.01",
+                  "display": "Closed dislocation of tarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "E838.4",
+                  "display": "Other and unspecified water transport accident injuring water skier"
+                },
+                {
+                  "code": "838.03",
+                  "display": "Closed dislocation of tarsometatarsal (joint)"
+                },
+                {
+                  "code": "838.05",
+                  "display": "Closed dislocation of metatarsophalangeal (joint)"
+                },
+                {
+                  "code": "838.14",
+                  "display": "Open dislocation of metatarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "E838.9",
+                  "display": "Other and unspecified water transport accident injuring unspecified person"
+                },
+                {
+                  "code": "904.40",
+                  "display": "Injury to popliteal vessel(s), unspecified"
+                },
+                {
+                  "code": "904.42",
+                  "display": "Injury to popliteal vein"
+                },
+                {
+                  "code": "904.50",
+                  "display": "Injury to tibial vessel(s), unspecified"
+                },
+                {
+                  "code": "904.1",
+                  "display": "Injury to superficial femoral artery"
+                },
+                {
+                  "code": "904.41",
+                  "display": "Injury to popliteal artery"
+                },
+                {
+                  "code": "904.6",
+                  "display": "Injury to deep plantar blood vessels"
+                },
+                {
+                  "code": "E904.2",
+                  "display": "Accident due to lack of water"
+                },
+                {
+                  "code": "E904.9",
+                  "display": "Accident due to privation, unqualified"
+                },
+                {
+                  "code": "904.4",
+                  "display": "Injury to popliteal blood vessels"
+                },
+                {
+                  "code": "904.51",
+                  "display": "Injury to anterior tibial artery"
+                },
+                {
+                  "code": "904.8",
+                  "display": "Injury to unspecified blood vessel of lower extremity"
+                },
+                {
+                  "code": "904.52",
+                  "display": "Injury to anterior tibial vein"
+                },
+                {
+                  "code": "904.54",
+                  "display": "Injury to posterior tibial vein"
+                },
+                {
+                  "code": "904.2",
+                  "display": "Injury to femoral veins"
+                },
+                {
+                  "code": "904.5",
+                  "display": "Injury to tibial blood vessels"
+                },
+                {
+                  "code": "904.0",
+                  "display": "Injury to common femoral artery"
+                },
+                {
+                  "code": "E904.3",
+                  "display": "Accident due to exposure (to weather conditions), not elsewhere classifiable"
+                },
+                {
+                  "code": "904.9",
+                  "display": "Injury to blood vessels of unspecified site"
+                },
+                {
+                  "code": "904.3",
+                  "display": "Injury to saphenous veins"
+                },
+                {
+                  "code": "904.7",
+                  "display": "Injury to other specified blood vessels of lower extremity"
+                },
+                {
+                  "code": "904.53",
+                  "display": "Injury to posterior tibial artery"
+                },
+                {
+                  "code": "E904.0",
+                  "display": "Accident due to abandonment or neglect of infants and helpless persons"
+                },
+                {
+                  "code": "E904.1",
+                  "display": "Accident due to lack of food"
+                },
+                {
+                  "code": "928.10",
+                  "display": "Crushing injury of lower leg"
+                },
+                {
+                  "code": "928.21",
+                  "display": "Crushing injury of ankle"
+                },
+                {
+                  "code": "E928.2",
+                  "display": "Vibration"
+                },
+                {
+                  "code": "E928.1",
+                  "display": "Exposure to noise"
+                },
+                {
+                  "code": "E928.4",
+                  "display": "External constriction caused by hair"
+                },
+                {
+                  "code": "928.01",
+                  "display": "Crushing injury of hip"
+                },
+                {
+                  "code": "928.9",
+                  "display": "Crushing injury of unspecified site of lower limb"
+                },
+                {
+                  "code": "928.0",
+                  "display": "Crushing injury of hip and thigh"
+                },
+                {
+                  "code": "928.11",
+                  "display": "Crushing injury of knee"
+                },
+                {
+                  "code": "E928.6",
+                  "display": "Environmental exposure to harmful algae and toxins"
+                },
+                {
+                  "code": "928.3",
+                  "display": "Crushing injury of toe(s)"
+                },
+                {
+                  "code": "928.1",
+                  "display": "Crushing injury of knee and lower leg"
+                },
+                {
+                  "code": "928.8",
+                  "display": "Crushing injury of multiple sites of lower limb"
+                },
+                {
+                  "code": "928.00",
+                  "display": "Crushing injury of thigh"
+                },
+                {
+                  "code": "928.20",
+                  "display": "Crushing injury of foot"
+                },
+                {
+                  "code": "928.2",
+                  "display": "Crushing injury of ankle and foot, excluding toe(s) alone"
+                },
+                {
+                  "code": "E928.8",
+                  "display": "Other accidents"
+                },
+                {
+                  "code": "E928.0",
+                  "display": "Prolonged stay in weightless environment"
+                },
+                {
+                  "code": "E928.5",
+                  "display": "External constriction caused by other object"
+                },
+                {
+                  "code": "E928.7",
+                  "display": "Environmental and accidental causes, mechanism or component of firearm and air gun"
+                },
+                {
+                  "code": "E928.3",
+                  "display": "Human bite"
+                },
+                {
+                  "code": "E928.9",
+                  "display": "Unspecified accident"
+                },
+                {
+                  "code": "929.9",
+                  "display": "Crushing injury of unspecified site"
+                },
+                {
+                  "code": "E929.5",
+                  "display": "Late effects of accident due to natural and environmental factors"
+                },
+                {
+                  "code": "E929.8",
+                  "display": "Late effects of other accidents"
+                },
+                {
+                  "code": "929.0",
+                  "display": "Crushing injury of multiple sites, not elsewhere classified"
+                },
+                {
+                  "code": "E929.4",
+                  "display": "Late effects of accident caused by fire"
+                },
+                {
+                  "code": "E929.2",
+                  "display": "Late effects of accidental poisoning"
+                },
+                {
+                  "code": "E929.0",
+                  "display": "Late effects of motor vehicle accident"
+                },
+                {
+                  "code": "E929.1",
+                  "display": "Late effects of other transport accident"
+                },
+                {
+                  "code": "E929.3",
+                  "display": "Late effects of accidental fall"
+                },
+                {
+                  "code": "E929.9",
+                  "display": "Late effects of unspecified accident"
+                },
+                {
+                  "code": "959.6",
+                  "display": "Hip and thigh injury"
+                },
+                {
+                  "code": "959.7",
+                  "display": "Knee, leg, ankle, and foot injury"
+                },
+                {
+                  "code": "996.42",
+                  "display": "Dislocation of prosthetic joint"
+                },
+                {
+                  "code": "996.44",
+                  "display": "Peri-prosthetic fracture around prosthetic joint"
+                },
+                {
+                  "code": "996.46",
+                  "display": "Articular bearing surface wear of prosthetic joint"
+                },
+                {
+                  "code": "996.4",
+                  "display": "Mechanical complication of internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.40",
+                  "display": "Unspecified mechanical complication of internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.41",
+                  "display": "Mechanical loosening of prosthetic joint"
+                },
+                {
+                  "code": "996.47",
+                  "display": "Other mechanical complication of prosthetic joint implant"
+                },
+                {
+                  "code": "996.43",
+                  "display": "Broken prosthetic joint implant"
+                },
+                {
+                  "code": "996.45",
+                  "display": "Peri-prosthetic osteolysis"
+                },
+                {
+                  "code": "996.49",
+                  "display": "Other mechanical complication of other internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.66",
+                  "display": "Infection and inflammatory reaction due to internal joint prosthesis"
+                },
+                {
+                  "code": "996.67",
+                  "display": "Infection and inflammatory reaction due to other internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.77",
+                  "display": "Other complications due to internal joint prosthesis"
+                },
+                {
+                  "code": "996.78",
+                  "display": "Other complications due to other internal orthopedic device, implant, and graft"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.lower-extremitiy-amputation",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.lower-extremitiy-amputation",
+        "name": "Lower Extremity Amputation Procedure",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": []
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "concept": [
+                {
+                  "code": "27295",
+                  "display": "Disarticulation of hip"
+                },
+                {
+                  "code": "27590",
+                  "display": "Amputation, thigh, through femur, any level"
+                },
+                {
+                  "code": "27591",
+                  "display": "Amputation, thigh, through femur, any level; immediate fitting technique including first cast"
+                },
+                {
+                  "code": "27592",
+                  "display": "Amputation, thigh, through femur, any level; open, circular (guillotine)"
+                },
+                {
+                  "code": "27598",
+                  "display": "Disarticulation at knee"
+                },
+                {
+                  "code": "27880",
+                  "display": "Amputation, leg, through tibia and fibula"
+                },
+                {
+                  "code": "27781",
+                  "display": "Closed treatment of proximal fibula or shaft fracture; with manipulation"
+                },
+                {
+                  "code": "27888",
+                  "display": "Amputation, ankle, through malleoli of tibia and fibula (eg, Syme, Pirogoff type procedures), with plastic closure and resection of nerves"
+                },
+                {
+                  "code": "27889",
+                  "display": "Ankle disarticulation"
+                },
+                {
+                  "code": "28800",
+                  "display": "Amputation, foot; midtarsal (eg, Chopart type procedure)"
+                },
+                {
+                  "code": "28805",
+                  "display": "Amputation, foot; transmetatarsal"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.non-vascular-amputation",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.non-vascular-amputation",
+        "name": "Non-Vascular Amputation",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "concept": [
+                {
+                  "code": "170.6",
+                  "display": "Malignant neoplasm of pelvic bones, sacrum, and coccyx"
+                },
+                {
+                  "code": "170.7",
+                  "display": "Malignant neoplasm of long bones of lower limb"
+                },
+                {
+                  "code": "170.8",
+                  "display": "Malignant neoplasm of short bones of lower limb"
+                },
+                {
+                  "code": "170.9",
+                  "display": "Malignant neoplasm of bone and articular cartilage, site unspecified"
+                },
+                {
+                  "code": "171.3",
+                  "display": "Malignant neoplasm of connective and other soft tissue of lower limb, including hip"
+                },
+                {
+                  "code": "172.7",
+                  "display": "Malignant melanoma of skin of lower limb, including hip"
+                },
+                {
+                  "code": "173.7",
+                  "display": "Other and unspecified malignant neoplasm of skin of lower limb, including hip"
+                },
+                {
+                  "code": "198.5",
+                  "display": "Secondary malignant neoplasm of bone and bone marrow"
+                },
+                {
+                  "code": "344.1",
+                  "display": "Paraplegia"
+                },
+                {
+                  "code": "711.0",
+                  "display": "Pyogenic arthritis"
+                },
+                {
+                  "code": "728.86",
+                  "display": "Necrotizing fasciitis"
+                },
+                {
+                  "code": "733.2",
+                  "display": "Cyst of bone"
+                },
+                {
+                  "code": "736.39",
+                  "display": "Other acquired deformities of hip"
+                },
+                {
+                  "code": "736.30",
+                  "display": "Unspecified acquired deformity of hip"
+                },
+                {
+                  "code": "736.31",
+                  "display": "Coxa valga (acquired)"
+                },
+                {
+                  "code": "736.32",
+                  "display": "Coxa vara (acquired)"
+                },
+                {
+                  "code": "736.3",
+                  "display": "Acquired deformities of hip"
+                },
+                {
+                  "code": "736.4",
+                  "display": "Genu valgum or varum (acquired)"
+                },
+                {
+                  "code": "736.41",
+                  "display": "Genu valgum (acquired)"
+                },
+                {
+                  "code": "736.42",
+                  "display": "Genu varum (acquired)"
+                },
+                {
+                  "code": "736.5",
+                  "display": "Genu recurvatum (acquired)"
+                },
+                {
+                  "code": "736.6",
+                  "display": "Other acquired deformities of knee"
+                },
+                {
+                  "code": "736.72",
+                  "display": "Equinus deformity of foot, acquired"
+                },
+                {
+                  "code": "736.73",
+                  "display": "Cavus deformity of foot, acquired"
+                },
+                {
+                  "code": "736.75",
+                  "display": "Cavovarus deformity of foot, acquired"
+                },
+                {
+                  "code": "736.70",
+                  "display": "Unspecified deformity of ankle and foot, acquired"
+                },
+                {
+                  "code": "736.74",
+                  "display": "Claw foot, acquired"
+                },
+                {
+                  "code": "736.7",
+                  "display": "Other acquired deformities of ankle and foot"
+                },
+                {
+                  "code": "736.76",
+                  "display": "Other acquired calcaneus deformity"
+                },
+                {
+                  "code": "736.79",
+                  "display": "Other acquired deformities of ankle and foot"
+                },
+                {
+                  "code": "736.71",
+                  "display": "Acquired equinovarus deformity"
+                },
+                {
+                  "code": "736.8",
+                  "display": "Acquired deformities of other parts of limbs"
+                },
+                {
+                  "code": "736.81",
+                  "display": "Unequal leg length (acquired)"
+                },
+                {
+                  "code": "736.89",
+                  "display": "Other acquired deformity of other parts of limb"
+                },
+                {
+                  "code": "736.9",
+                  "display": "Acquired deformity of limb, site unspecified"
+                },
+                {
+                  "code": "735.0",
+                  "display": "Hallux valgus (acquired)"
+                },
+                {
+                  "code": "735.3",
+                  "display": "Hallux malleus"
+                },
+                {
+                  "code": "735.5",
+                  "display": "Claw toe (acquired)"
+                },
+                {
+                  "code": "735.1",
+                  "display": "Hallux varus (acquired)"
+                },
+                {
+                  "code": "735.4",
+                  "display": "Other hammer toe (acquired)"
+                },
+                {
+                  "code": "735.8",
+                  "display": "Other acquired deformities of toe"
+                },
+                {
+                  "code": "735.2",
+                  "display": "Hallux rigidus"
+                },
+                {
+                  "code": "735.9",
+                  "display": "Unspecified acquired deformity of toe"
+                },
+                {
+                  "code": "754.30",
+                  "display": "Congenital dislocation of hip, unilateral"
+                },
+                {
+                  "code": "754.33",
+                  "display": "Congenital subluxation of hip, bilateral"
+                },
+                {
+                  "code": "754.35",
+                  "display": "Congenital dislocation of one hip with subluxation of other hip"
+                },
+                {
+                  "code": "754.32",
+                  "display": "Congenital subluxation of hip, unilateral"
+                },
+                {
+                  "code": "754.3",
+                  "display": "Congenital dislocation of hip"
+                },
+                {
+                  "code": "754.31",
+                  "display": "Congenital dislocation of hip, bilateral"
+                },
+                {
+                  "code": "754.42",
+                  "display": "Congenital bowing of femur"
+                },
+                {
+                  "code": "754.40",
+                  "display": "Genu recurvatum"
+                },
+                {
+                  "code": "754.43",
+                  "display": "Congenital bowing of tibia and fibula"
+                },
+                {
+                  "code": "754.4",
+                  "display": "Congenital genu recurvatum and bowing of long bones of leg"
+                },
+                {
+                  "code": "754.41",
+                  "display": "Congenital dislocation of knee (with genu recurvatum)"
+                },
+                {
+                  "code": "754.44",
+                  "display": "Congenital bowing of unspecified long bones of leg"
+                },
+                {
+                  "code": "754.53",
+                  "display": "Metatarsus varus"
+                },
+                {
+                  "code": "754.50",
+                  "display": "Talipes varus"
+                },
+                {
+                  "code": "754.51",
+                  "display": "Talipes equinovarus"
+                },
+                {
+                  "code": "754.52",
+                  "display": "Metatarsus primus varus"
+                },
+                {
+                  "code": "754.5",
+                  "display": "Varus deformities of feet, congenital"
+                },
+                {
+                  "code": "754.59",
+                  "display": "Other varus deformities of feet"
+                },
+                {
+                  "code": "754.61",
+                  "display": "Congenital pes planus"
+                },
+                {
+                  "code": "754.62",
+                  "display": "Talipes calcaneovalgus"
+                },
+                {
+                  "code": "754.69",
+                  "display": "Other valgus deformities of feet"
+                },
+                {
+                  "code": "754.6",
+                  "display": "Valgus deformities of feet, congenital"
+                },
+                {
+                  "code": "754.60",
+                  "display": "Talipes valgus"
+                },
+                {
+                  "code": "754.70",
+                  "display": "Talipes, unspecified"
+                },
+                {
+                  "code": "754.7",
+                  "display": "Other congenital deformities of feet"
+                },
+                {
+                  "code": "754.71",
+                  "display": "Talipes cavus"
+                },
+                {
+                  "code": "754.79",
+                  "display": "Other deformities of feet"
+                },
+                {
+                  "code": "755.02",
+                  "display": "Polydactyly of toes"
+                },
+                {
+                  "code": "755.13",
+                  "display": "Syndactyly of toes without fusion of bone"
+                },
+                {
+                  "code": "755.14",
+                  "display": "Syndactyly of toes with fusion of bone"
+                },
+                {
+                  "code": "755.3",
+                  "display": "Reduction deformities of lower limb, congenital"
+                },
+                {
+                  "code": "755.4",
+                  "display": "Reduction deformities, unspecified limb"
+                },
+                {
+                  "code": "755.60",
+                  "display": "Unspecified anomaly of lower limb"
+                },
+                {
+                  "code": "755.66",
+                  "display": "Other anomalies of toes"
+                },
+                {
+                  "code": "755.69",
+                  "display": "Other anomalies of lower limb, including pelvic girdle"
+                },
+                {
+                  "code": "755.6",
+                  "display": "Other congenital anomalies of lower limb, including pelvic girdle"
+                },
+                {
+                  "code": "755.61",
+                  "display": "Coxa valga, congenital"
+                },
+                {
+                  "code": "755.63",
+                  "display": "Other congenital deformity of hip (joint)"
+                },
+                {
+                  "code": "755.67",
+                  "display": "Anomalies of foot, not elsewhere classified"
+                },
+                {
+                  "code": "755.62",
+                  "display": "Coxa vara, congenital"
+                },
+                {
+                  "code": "755.65",
+                  "display": "Macrodactylia of toes"
+                },
+                {
+                  "code": "755.64",
+                  "display": "Congenital deformity of knee (joint)"
+                },
+                {
+                  "code": "755.8",
+                  "display": "Other specified anomalies of unspecified limb"
+                },
+                {
+                  "code": "759.7",
+                  "display": "Multiple congenital anomalies, so described"
+                },
+                {
+                  "code": "759.89",
+                  "display": "Other specified congenital anomalies"
+                },
+                {
+                  "code": "895.1",
+                  "display": "Traumatic amputation of toe(s) (complete) (partial), complicated"
+                },
+                {
+                  "code": "895.0",
+                  "display": "Traumatic amputation of toe(s) (complete) (partial), without mention of complication"
+                },
+                {
+                  "code": "896.2",
+                  "display": "Traumatic amputation of foot (complete) (partial), bilateral, without mention of complication"
+                },
+                {
+                  "code": "896.1",
+                  "display": "Traumatic amputation of foot (complete) (partial), unilateral, complicated"
+                },
+                {
+                  "code": "896.3",
+                  "display": "Traumatic amputation of foot (complete) (partial), bilateral, complicated"
+                },
+                {
+                  "code": "896.0",
+                  "display": "Traumatic amputation of foot (complete) (partial), unilateral, without mention of complication"
+                },
+                {
+                  "code": "897.1",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, complicated"
+                },
+                {
+                  "code": "897.5",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, level not specified, complicated"
+                },
+                {
+                  "code": "897.4",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, level not specified, without mention of complication"
+                },
+                {
+                  "code": "897.6",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), bilateral [any level]), without mention of complication"
+                },
+                {
+                  "code": "897.0",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, without mention of complication"
+                },
+                {
+                  "code": "897.3",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, complicated"
+                },
+                {
+                  "code": "897.7",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), bilateral [any level], complicated"
+                },
+                {
+                  "code": "897.2",
+                  "display": "Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, without mention of complication"
+                },
+                {
+                  "code": "820.20",
+                  "display": "Closed fracture of trochanteric section of neck of femur"
+                },
+                {
+                  "code": "820.30",
+                  "display": "Open fracture of trochanteric section of neck of femur, unspecified"
+                },
+                {
+                  "code": "820.1",
+                  "display": "Transcervical fracture, open"
+                },
+                {
+                  "code": "820.13",
+                  "display": "Open fracture of base of neck of femur"
+                },
+                {
+                  "code": "820.3",
+                  "display": "Pertrochanteric fracture of femur, open"
+                },
+                {
+                  "code": "E820.5",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "820.19",
+                  "display": "Other open transcervical fracture of neck of femur"
+                },
+                {
+                  "code": "E820.7",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring pedestrian"
+                },
+                {
+                  "code": "E820.8",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring other specified person"
+                },
+                {
+                  "code": "820.21",
+                  "display": "Closed fracture of intertrochanteric section of neck of femur"
+                },
+                {
+                  "code": "E820.1",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E820.9",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring unspecified person"
+                },
+                {
+                  "code": "820.22",
+                  "display": "Closed fracture of subtrochanteric section of neck of femur"
+                },
+                {
+                  "code": "820.11",
+                  "display": "Open fracture of epiphysis (separation) (upper) of neck of femur"
+                },
+                {
+                  "code": "820.8",
+                  "display": "Closed fracture of unspecified part of neck of femur"
+                },
+                {
+                  "code": "820.9",
+                  "display": "Open fracture of unspecified part of neck of femur"
+                },
+                {
+                  "code": "820.02",
+                  "display": "Closed fracture of midcervical section of neck of femur"
+                },
+                {
+                  "code": "820.2",
+                  "display": "Pertrochanteric fracture of femur, closed"
+                },
+                {
+                  "code": "E820.0",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "820.09",
+                  "display": "Other closed transcervical fracture of neck of femur"
+                },
+                {
+                  "code": "820.12",
+                  "display": "Open fracture of midcervical section of neck of femur"
+                },
+                {
+                  "code": "E820.4",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring occupant of streetcar"
+                },
+                {
+                  "code": "E820.3",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring passenger on motorcycle"
+                },
+                {
+                  "code": "820.0",
+                  "display": "Transcervical fracture, closed"
+                },
+                {
+                  "code": "820.00",
+                  "display": "Closed fracture of intracapsular section of neck of femur, unspecified"
+                },
+                {
+                  "code": "820.32",
+                  "display": "Open fracture of subtrochanteric section of neck of femur"
+                },
+                {
+                  "code": "820.10",
+                  "display": "Open fracture of intracapsular section of neck of femur, unspecified"
+                },
+                {
+                  "code": "820.03",
+                  "display": "Closed fracture of base of neck of femur"
+                },
+                {
+                  "code": "E820.2",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring motorcyclist"
+                },
+                {
+                  "code": "820.01",
+                  "display": "Closed fracture of epiphysis (separation) (upper) of neck of femur"
+                },
+                {
+                  "code": "820.31",
+                  "display": "Open fracture of intertrochanteric section of neck of femur"
+                },
+                {
+                  "code": "E820.6",
+                  "display": "Nontraffic accident involving motor-driven snow vehicle injuring pedal cyclist"
+                },
+                {
+                  "code": "821.00",
+                  "display": "Closed fracture of unspecified part of femur"
+                },
+                {
+                  "code": "821.01",
+                  "display": "Closed fracture of shaft of femur"
+                },
+                {
+                  "code": "821.39",
+                  "display": "Other open fracture of lower end of femur"
+                },
+                {
+                  "code": "E821.3",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring passenger on motorcycle"
+                },
+                {
+                  "code": "821.33",
+                  "display": "Open supracondylar fracture of femur"
+                },
+                {
+                  "code": "821.21",
+                  "display": "Closed fracture of condyle, femoral"
+                },
+                {
+                  "code": "821.31",
+                  "display": "Open fracture of condyle, femoral"
+                },
+                {
+                  "code": "E821.7",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring pedestrian"
+                },
+                {
+                  "code": "E821.2",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring motorcyclist"
+                },
+                {
+                  "code": "821.10",
+                  "display": "Open fracture of unspecified part of femur"
+                },
+                {
+                  "code": "E821.9",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring unspecified person"
+                },
+                {
+                  "code": "821.1",
+                  "display": "Fracture of shaft or unspecified part of femur, open"
+                },
+                {
+                  "code": "821.3",
+                  "display": "Fracture of lower end of femur, open"
+                },
+                {
+                  "code": "E821.0",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E821.1",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E821.5",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "821.20",
+                  "display": "Closed fracture of lower end of femur, unspecified part"
+                },
+                {
+                  "code": "821.2",
+                  "display": "Fracture of lower end of femur, closed"
+                },
+                {
+                  "code": "E821.4",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring occupant of streetcar"
+                },
+                {
+                  "code": "E821.6",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring pedal cyclist"
+                },
+                {
+                  "code": "821.22",
+                  "display": "Closed fracture of epiphysis, lower (separation) of femur"
+                },
+                {
+                  "code": "821.30",
+                  "display": "Open fracture of lower end of femur, unspecified part"
+                },
+                {
+                  "code": "821.32",
+                  "display": "Open fracture of epiphysis. Lower (separation) of femur"
+                },
+                {
+                  "code": "E821.8",
+                  "display": "Nontraffic accident involving other off-road motor vehicle injuring other specified person"
+                },
+                {
+                  "code": "821.0",
+                  "display": "Fracture of shaft or unspecified part of femur, closed"
+                },
+                {
+                  "code": "821.29",
+                  "display": "Other closed fracture of lower end of femur"
+                },
+                {
+                  "code": "821.11",
+                  "display": "Open fracture of shaft of femur"
+                },
+                {
+                  "code": "821.23",
+                  "display": "Closed supracondylar fracture of femur"
+                },
+                {
+                  "code": "822.1",
+                  "display": "Open fracture of patella"
+                },
+                {
+                  "code": "E822.3",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring passenger on motorcycle"
+                },
+                {
+                  "code": "E822.4",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring occupant of streetcar"
+                },
+                {
+                  "code": "E822.9",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring unspecified person"
+                },
+                {
+                  "code": "822.0",
+                  "display": "Closed fracture of patella"
+                },
+                {
+                  "code": "E822.6",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring pedal cyclist"
+                },
+                {
+                  "code": "E822.0",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E822.8",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring other specified person"
+                },
+                {
+                  "code": "E822.2",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring motorcyclist"
+                },
+                {
+                  "code": "E822.7",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring pedestrian"
+                },
+                {
+                  "code": "E822.1",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E822.5",
+                  "display": "Other motor vehicle nontraffic accident involving collision with moving object injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "823.80",
+                  "display": "Closed fracture of unspecified part of tibia alone"
+                },
+                {
+                  "code": "E823.6",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring pedal cyclist"
+                },
+                {
+                  "code": "823.21",
+                  "display": "Closed fracture of shaft of fibula alone"
+                },
+                {
+                  "code": "823.4",
+                  "display": "Torus fracture"
+                },
+                {
+                  "code": "823.00",
+                  "display": "Closed fracture of upper end of tibia alone"
+                },
+                {
+                  "code": "823.3",
+                  "display": "Fracture of shaft of tibia and fibula, open"
+                },
+                {
+                  "code": "E823.8",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring other specified person"
+                },
+                {
+                  "code": "823.11",
+                  "display": "Open fracture of upper end of fibula alone"
+                },
+                {
+                  "code": "E823.2",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring motorcyclist"
+                },
+                {
+                  "code": "823.0",
+                  "display": "Fracture of upper end of tibia and fibula, closed"
+                },
+                {
+                  "code": "823.1",
+                  "display": "Fracture of upper end of tibia and fibula, open"
+                },
+                {
+                  "code": "823.2",
+                  "display": "Fracture of shaft of tibia and fibula, closed"
+                },
+                {
+                  "code": "823.20",
+                  "display": "Closed fracture of shaft of tibia alone"
+                },
+                {
+                  "code": "823.30",
+                  "display": "Open fracture of shaft of tibia alone"
+                },
+                {
+                  "code": "E823.0",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E823.9",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring unspecified person"
+                },
+                {
+                  "code": "823.10",
+                  "display": "Open fracture of upper end of tibia alone"
+                },
+                {
+                  "code": "823.12",
+                  "display": "Open fracture of upper end of fibula with tibia"
+                },
+                {
+                  "code": "823.81",
+                  "display": "Closed fracture of unspecified part of fibula alone"
+                },
+                {
+                  "code": "823.31",
+                  "display": "Open fracture of shaft of fibula alone"
+                },
+                {
+                  "code": "823.82",
+                  "display": "Closed fracture of unspecified part of fibula with tibia"
+                },
+                {
+                  "code": "E823.7",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring pedestrian"
+                },
+                {
+                  "code": "823.8",
+                  "display": "Fracture of unspecified part of tibia and fibula, closed"
+                },
+                {
+                  "code": "823.90",
+                  "display": "Open fracture of unspecified part of tibia alone"
+                },
+                {
+                  "code": "823.91",
+                  "display": "Open fracture of unspecified part of fibula alone"
+                },
+                {
+                  "code": "E823.1",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E823.3",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring passenger on motorcycle"
+                },
+                {
+                  "code": "E823.4",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring occupant of streetcar"
+                },
+                {
+                  "code": "823.40",
+                  "display": "Torus fracture, tibia alone"
+                },
+                {
+                  "code": "823.42",
+                  "display": "Torus fracture, fibula with tibia"
+                },
+                {
+                  "code": "823.92",
+                  "display": "Open fracture of unspecified part of fibula with tibia"
+                },
+                {
+                  "code": "E823.5",
+                  "display": "Other motor vehicle nontraffic accident involving collision with stationary object injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "823.02",
+                  "display": "Closed fracture of upper end of fibula with tibia"
+                },
+                {
+                  "code": "823.22",
+                  "display": "Closed fracture of shaft of fibula with tibia"
+                },
+                {
+                  "code": "823.01",
+                  "display": "Closed fracture of upper end of fibula alone"
+                },
+                {
+                  "code": "823.32",
+                  "display": "Open fracture of shaft of fibula with tibia"
+                },
+                {
+                  "code": "823.41",
+                  "display": "Torus fracture, fibula alone"
+                },
+                {
+                  "code": "823.9",
+                  "display": "Fracture of unspecified part of tibia and fibula, open"
+                },
+                {
+                  "code": "E824.1",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E824.5",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "824.3",
+                  "display": "Fracture of lateral malleolus, open"
+                },
+                {
+                  "code": "824.4",
+                  "display": "Bimalleolar fracture, closed"
+                },
+                {
+                  "code": "E824.4",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring occupant of streetcar"
+                },
+                {
+                  "code": "E824.2",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring motorcyclist"
+                },
+                {
+                  "code": "824.8",
+                  "display": "Unspecified fracture of ankle, closed"
+                },
+                {
+                  "code": "E824.8",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring other specified person"
+                },
+                {
+                  "code": "824.5",
+                  "display": "Bimalleolar fracture, open"
+                },
+                {
+                  "code": "E824.3",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring passenger on motorcycle"
+                },
+                {
+                  "code": "824.7",
+                  "display": "Trimalleolar fracture, open"
+                },
+                {
+                  "code": "E824.0",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "824.2",
+                  "display": "Fracture of lateral malleolus, closed"
+                },
+                {
+                  "code": "E824.6",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring pedal cyclist"
+                },
+                {
+                  "code": "824.0",
+                  "display": "Fracture of medial malleolus, closed"
+                },
+                {
+                  "code": "824.6",
+                  "display": "Trimalleolar fracture, closed"
+                },
+                {
+                  "code": "824.9",
+                  "display": "Unspecified fracture of ankle, open"
+                },
+                {
+                  "code": "824.1",
+                  "display": "Fracture of medial malleolus, open"
+                },
+                {
+                  "code": "E824.7",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring pedestrian"
+                },
+                {
+                  "code": "E824.9",
+                  "display": "Other motor vehicle nontraffic accident while boarding and alighting injuring unspecified person"
+                },
+                {
+                  "code": "825.23",
+                  "display": "Closed fracture of cuboid"
+                },
+                {
+                  "code": "E825.1",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring passenger in motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E825.2",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring motorcyclist"
+                },
+                {
+                  "code": "825.0",
+                  "display": "Fracture of calcaneus, closed"
+                },
+                {
+                  "code": "825.35",
+                  "display": "Open fracture of metatarsal bone(s)"
+                },
+                {
+                  "code": "825.24",
+                  "display": "Closed fracture of cuneiform, foot"
+                },
+                {
+                  "code": "825.31",
+                  "display": "Open fracture of astragalus"
+                },
+                {
+                  "code": "E825.9",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring unspecified person"
+                },
+                {
+                  "code": "E825.6",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring pedal cyclist"
+                },
+                {
+                  "code": "825.39",
+                  "display": "Other open fracture of tarsal and metatarsal bones"
+                },
+                {
+                  "code": "E825.4",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring occupant of streetcar"
+                },
+                {
+                  "code": "E825.8",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring other specified person"
+                },
+                {
+                  "code": "825.1",
+                  "display": "Fracture of calcaneus, open"
+                },
+                {
+                  "code": "825.32",
+                  "display": "Open fracture of navicular [scaphoid], foot"
+                },
+                {
+                  "code": "825.33",
+                  "display": "Open fracture of cuboid"
+                },
+                {
+                  "code": "E825.3",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring passenger on motorcycle"
+                },
+                {
+                  "code": "825.3",
+                  "display": "Fracture of other tarsal and metatarsal bones, open"
+                },
+                {
+                  "code": "825.34",
+                  "display": "Open fracture of cuneiform, foot"
+                },
+                {
+                  "code": "825.30",
+                  "display": "Open fracture of unspecified bone(s) of foot [except toes]"
+                },
+                {
+                  "code": "825.21",
+                  "display": "Closed fracture of astragalus"
+                },
+                {
+                  "code": "825.20",
+                  "display": "Closed fracture of unspecified bone(s) of foot [except toes]"
+                },
+                {
+                  "code": "825.25",
+                  "display": "Closed fracture of metatarsal bone(s)"
+                },
+                {
+                  "code": "825.29",
+                  "display": "Other closed fracture of tarsal and metatarsal bones"
+                },
+                {
+                  "code": "825.2",
+                  "display": "Fracture of other tarsal and metatarsal bones, closed"
+                },
+                {
+                  "code": "E825.0",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring driver of motor vehicle other than motorcycle"
+                },
+                {
+                  "code": "E825.5",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring rider of animal; occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "825.22",
+                  "display": "Closed fracture of navicular [scaphoid], foot"
+                },
+                {
+                  "code": "E825.7",
+                  "display": "Other motor vehicle nontraffic accident of other and unspecified nature injuring pedestrian"
+                },
+                {
+                  "code": "E826.0",
+                  "display": "Pedal cycle accident injuring pedestrian"
+                },
+                {
+                  "code": "E826.9",
+                  "display": "Pedal cycle accident injuring unspecified person"
+                },
+                {
+                  "code": "826.0",
+                  "display": "Closed fracture of one or more phalanges of foot"
+                },
+                {
+                  "code": "E826.8",
+                  "display": "Pedal cycle accident injuring other specified person"
+                },
+                {
+                  "code": "E826.2",
+                  "display": "Pedal cycle accident injuring rider of animal"
+                },
+                {
+                  "code": "E826.3",
+                  "display": "Pedal cycle accident injuring occupant of animal-drawn vehicle"
+                },
+                {
+                  "code": "826.1",
+                  "display": "Open fracture of one or more phalanges of foot"
+                },
+                {
+                  "code": "E826.1",
+                  "display": "Pedal cycle accident injuring pedal cyclist"
+                },
+                {
+                  "code": "E826.4",
+                  "display": "Pedal cycle accident injuring occupant of streetcar"
+                },
+                {
+                  "code": "827.0",
+                  "display": "Other, multiple and ill-defined fractures of lower limb, closed"
+                },
+                {
+                  "code": "E827.4",
+                  "display": "Animal-drawn vehicle accident injuring occupant of streetcar"
+                },
+                {
+                  "code": "E827.0",
+                  "display": "Animal-drawn vehicle accident injuring pedestrian"
+                },
+                {
+                  "code": "E827.3",
+                  "display": "Animal-drawn vehicle accident injuring occupant of animal drawn vehicle"
+                },
+                {
+                  "code": "E827.9",
+                  "display": "Animal-drawn vehicle accident injuring unspecified person"
+                },
+                {
+                  "code": "827.1",
+                  "display": "Other, multiple and ill-defined fractures of lower limb, open"
+                },
+                {
+                  "code": "E827.8",
+                  "display": "Animal-drawn vehicle accident injuring other specified person"
+                },
+                {
+                  "code": "E827.2",
+                  "display": "Animal-drawn vehicle accident injuring rider of animal"
+                },
+                {
+                  "code": "828.1",
+                  "display": "Open multiple fractures involving both lower limbs, lower with upper limb, and lower limb(s) with rib(s) and sternum"
+                },
+                {
+                  "code": "828.0",
+                  "display": "Closed multiple fractures involving both lower limbs, lower with upper limb, and lower limb(s) with rib(s) and sternum"
+                },
+                {
+                  "code": "E828.4",
+                  "display": "Accident involving animal being ridden injuring occupant of streetcar"
+                },
+                {
+                  "code": "E828.8",
+                  "display": "Accident involving animal being ridden injuring other specified person"
+                },
+                {
+                  "code": "E828.9",
+                  "display": "Accident involving animal being ridden injuring unspecified person"
+                },
+                {
+                  "code": "E828.2",
+                  "display": "Accident involving animal being ridden injuring rider of animal"
+                },
+                {
+                  "code": "E828.0",
+                  "display": "Accident involving animal being ridden injuring pedestrian"
+                },
+                {
+                  "code": "E829.8",
+                  "display": "Other road vehicle accidents injuring other specified person"
+                },
+                {
+                  "code": "E829.4",
+                  "display": "Other road vehicle accidents injuring occupant of streetcar"
+                },
+                {
+                  "code": "829.1",
+                  "display": "Fracture of unspecified bone, open"
+                },
+                {
+                  "code": "829.0",
+                  "display": "Fracture of unspecified bone, closed"
+                },
+                {
+                  "code": "E829.9",
+                  "display": "Other road vehicle accidents injuring unspecified person"
+                },
+                {
+                  "code": "E829.0",
+                  "display": "Other road vehicle accidents injuring pedestrian"
+                },
+                {
+                  "code": "835.0",
+                  "display": "Closed dislocation of hip"
+                },
+                {
+                  "code": "E835.3",
+                  "display": "Other and unspecified fall in water transport injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "E835.9",
+                  "display": "Other and unspecified fall in water transport injuring unspecified person"
+                },
+                {
+                  "code": "835.02",
+                  "display": "Closed obturator dislocation of hip"
+                },
+                {
+                  "code": "835.00",
+                  "display": "Closed dislocation of hip, unspecified site"
+                },
+                {
+                  "code": "835.01",
+                  "display": "Closed posterior dislocation of hip"
+                },
+                {
+                  "code": "835.11",
+                  "display": "Open posterior dislocation of hip"
+                },
+                {
+                  "code": "E835.0",
+                  "display": "Other and unspecified fall in water transport injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "E835.4",
+                  "display": "Other and unspecified fall in water transport injuring water skier"
+                },
+                {
+                  "code": "E835.7",
+                  "display": "Other and unspecified fall in water transport, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "E835.8",
+                  "display": "Other and unspecified fall in water transport injuring other specified person"
+                },
+                {
+                  "code": "835.03",
+                  "display": "Other closed anterior dislocation of hip"
+                },
+                {
+                  "code": "835.10",
+                  "display": "Open dislocation of hip, unspecified site"
+                },
+                {
+                  "code": "835.13",
+                  "display": "Other open anterior dislocation of hip"
+                },
+                {
+                  "code": "E835.6",
+                  "display": "Other and unspecified fall in water transport injuring dockers, stevedores"
+                },
+                {
+                  "code": "E835.2",
+                  "display": "Other and unspecified fall in water transport injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E835.5",
+                  "display": "Other and unspecified fall in water transport injuring swimmer"
+                },
+                {
+                  "code": "835.12",
+                  "display": "Open obturator dislocation of hip"
+                },
+                {
+                  "code": "835.1",
+                  "display": "Open dislocation of hip"
+                },
+                {
+                  "code": "E835.1",
+                  "display": "Other and unspecified fall in water transport injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "E836.8",
+                  "display": "Machinery accident in water transport injuring other specified person"
+                },
+                {
+                  "code": "E836.0",
+                  "display": "Machinery accident in water transport injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "836.54",
+                  "display": "Lateral dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "836.62",
+                  "display": "Posterior dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "836.51",
+                  "display": "Anterior dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "836.69",
+                  "display": "Other dislocation of knee, open"
+                },
+                {
+                  "code": "836.52",
+                  "display": "Posterior dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "E836.4",
+                  "display": "Machinery accident in water transport injuring water skier"
+                },
+                {
+                  "code": "E836.1",
+                  "display": "Machinery accident in water transport injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "E836.3",
+                  "display": "Machinery accident in water transport injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "836.5",
+                  "display": "Other dislocation of knee, closed"
+                },
+                {
+                  "code": "836.59",
+                  "display": "Other dislocation of knee, closed"
+                },
+                {
+                  "code": "836.63",
+                  "display": "Medial dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "E836.2",
+                  "display": "Machinery accident in water transport injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E836.9",
+                  "display": "Machinery accident in water transport injuring unspecified person"
+                },
+                {
+                  "code": "836.61",
+                  "display": "Anterior dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "836.0",
+                  "display": "Tear of medial cartilage or meniscus of knee, current"
+                },
+                {
+                  "code": "836.2",
+                  "display": "Other tear of cartilage or meniscus of knee, current"
+                },
+                {
+                  "code": "836.53",
+                  "display": "Medial dislocation of tibia, proximal end, closed"
+                },
+                {
+                  "code": "836.64",
+                  "display": "Lateral dislocation of tibia, proximal end, open"
+                },
+                {
+                  "code": "836.1",
+                  "display": "Tear of lateral cartilage or meniscus of knee, current"
+                },
+                {
+                  "code": "836.6",
+                  "display": "Other dislocation of knee, open"
+                },
+                {
+                  "code": "E836.5",
+                  "display": "Machinery accident in water transport injuring swimmer"
+                },
+                {
+                  "code": "E836.6",
+                  "display": "Machinery accident in water transport injuring dockers, stevedores"
+                },
+                {
+                  "code": "E836.7",
+                  "display": "Machinery accident in water transport, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "836.3",
+                  "display": "Dislocation of patella, closed"
+                },
+                {
+                  "code": "836.50",
+                  "display": "Dislocation of knee, unspecified, closed"
+                },
+                {
+                  "code": "836.4",
+                  "display": "Dislocation of patella, open"
+                },
+                {
+                  "code": "836.60",
+                  "display": "Dislocation of knee, unspecified, open"
+                },
+                {
+                  "code": "E837.9",
+                  "display": "Explosion, fire, or burning in watercraft injuring unspecified person"
+                },
+                {
+                  "code": "E837.6",
+                  "display": "Explosion, fire, or burning in watercraft injuring dockers, stevedores"
+                },
+                {
+                  "code": "837.1",
+                  "display": "Open dislocation of ankle"
+                },
+                {
+                  "code": "E837.2",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E837.7",
+                  "display": "Explosion, fire, or burning in watercraft, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "837.0",
+                  "display": "Closed dislocation of ankle"
+                },
+                {
+                  "code": "E837.0",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "E837.3",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "E837.4",
+                  "display": "Explosion, fire, or burning in watercraft injuring water skier"
+                },
+                {
+                  "code": "E837.5",
+                  "display": "Explosion, fire, or burning in watercraft injuring swimmer"
+                },
+                {
+                  "code": "E837.1",
+                  "display": "Explosion, fire, or burning in watercraft injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "E837.8",
+                  "display": "Explosion, fire, or burning in watercraft injuring other specified person"
+                },
+                {
+                  "code": "E838.5",
+                  "display": "Other and unspecified water transport accident injuring swimmer"
+                },
+                {
+                  "code": "E838.7",
+                  "display": "Other and unspecified water transport accident, occupant of military watercraft, any type"
+                },
+                {
+                  "code": "838.16",
+                  "display": "Open dislocation of interphalangeal (joint), foot"
+                },
+                {
+                  "code": "838.09",
+                  "display": "Closed dislocation of foot, other"
+                },
+                {
+                  "code": "E838.3",
+                  "display": "Other and unspecified water transport accident injuring occupant of other watercraft -- other than crew"
+                },
+                {
+                  "code": "838.00",
+                  "display": "Closed dislocation of foot, unspecified"
+                },
+                {
+                  "code": "838.06",
+                  "display": "Closed dislocation of interphalangeal (joint), foot"
+                },
+                {
+                  "code": "838.11",
+                  "display": "Open dislocation of tarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "E838.2",
+                  "display": "Other and unspecified water transport accident injuring occupant of other watercraft -- crew"
+                },
+                {
+                  "code": "E838.6",
+                  "display": "Other and unspecified water transport accident injuring dockers, stevedores"
+                },
+                {
+                  "code": "E838.8",
+                  "display": "Other and unspecified water transport accident injuring other specified person"
+                },
+                {
+                  "code": "838.04",
+                  "display": "Closed dislocation of metatarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "838.15",
+                  "display": "Open dislocation of metatarsophalangeal (joint)"
+                },
+                {
+                  "code": "E838.0",
+                  "display": "Other and unspecified water transport accident injuring occupant of small boat, unpowered"
+                },
+                {
+                  "code": "838.10",
+                  "display": "Open dislocation of foot, unspecified"
+                },
+                {
+                  "code": "838.02",
+                  "display": "Closed dislocation of midtarsal (joint)"
+                },
+                {
+                  "code": "838.12",
+                  "display": "Open dislocation of midtarsal (joint)"
+                },
+                {
+                  "code": "838.1",
+                  "display": "Open dislocation of foot"
+                },
+                {
+                  "code": "838.13",
+                  "display": "Open dislocation of tarsometatarsal (joint)"
+                },
+                {
+                  "code": "838.19",
+                  "display": "Open dislocation of foot, other"
+                },
+                {
+                  "code": "838.0",
+                  "display": "Closed dislocation of foot"
+                },
+                {
+                  "code": "E838.1",
+                  "display": "Other and unspecified water transport accident injuring occupant of small boat, powered"
+                },
+                {
+                  "code": "838.01",
+                  "display": "Closed dislocation of tarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "E838.4",
+                  "display": "Other and unspecified water transport accident injuring water skier"
+                },
+                {
+                  "code": "838.03",
+                  "display": "Closed dislocation of tarsometatarsal (joint)"
+                },
+                {
+                  "code": "838.05",
+                  "display": "Closed dislocation of metatarsophalangeal (joint)"
+                },
+                {
+                  "code": "838.14",
+                  "display": "Open dislocation of metatarsal (bone), joint unspecified"
+                },
+                {
+                  "code": "E838.9",
+                  "display": "Other and unspecified water transport accident injuring unspecified person"
+                },
+                {
+                  "code": "904.40",
+                  "display": "Injury to popliteal vessel(s), unspecified"
+                },
+                {
+                  "code": "904.42",
+                  "display": "Injury to popliteal vein"
+                },
+                {
+                  "code": "904.50",
+                  "display": "Injury to tibial vessel(s), unspecified"
+                },
+                {
+                  "code": "904.1",
+                  "display": "Injury to superficial femoral artery"
+                },
+                {
+                  "code": "904.41",
+                  "display": "Injury to popliteal artery"
+                },
+                {
+                  "code": "904.6",
+                  "display": "Injury to deep plantar blood vessels"
+                },
+                {
+                  "code": "E904.2",
+                  "display": "Accident due to lack of water"
+                },
+                {
+                  "code": "E904.9",
+                  "display": "Accident due to privation, unqualified"
+                },
+                {
+                  "code": "904.4",
+                  "display": "Injury to popliteal blood vessels"
+                },
+                {
+                  "code": "904.51",
+                  "display": "Injury to anterior tibial artery"
+                },
+                {
+                  "code": "904.8",
+                  "display": "Injury to unspecified blood vessel of lower extremity"
+                },
+                {
+                  "code": "904.52",
+                  "display": "Injury to anterior tibial vein"
+                },
+                {
+                  "code": "904.54",
+                  "display": "Injury to posterior tibial vein"
+                },
+                {
+                  "code": "904.2",
+                  "display": "Injury to femoral veins"
+                },
+                {
+                  "code": "904.5",
+                  "display": "Injury to tibial blood vessels"
+                },
+                {
+                  "code": "904.0",
+                  "display": "Injury to common femoral artery"
+                },
+                {
+                  "code": "E904.3",
+                  "display": "Accident due to exposure (to weather conditions), not elsewhere classifiable"
+                },
+                {
+                  "code": "904.9",
+                  "display": "Injury to blood vessels of unspecified site"
+                },
+                {
+                  "code": "904.3",
+                  "display": "Injury to saphenous veins"
+                },
+                {
+                  "code": "904.7",
+                  "display": "Injury to other specified blood vessels of lower extremity"
+                },
+                {
+                  "code": "904.53",
+                  "display": "Injury to posterior tibial artery"
+                },
+                {
+                  "code": "E904.0",
+                  "display": "Accident due to abandonment or neglect of infants and helpless persons"
+                },
+                {
+                  "code": "E904.1",
+                  "display": "Accident due to lack of food"
+                },
+                {
+                  "code": "928.10",
+                  "display": "Crushing injury of lower leg"
+                },
+                {
+                  "code": "928.21",
+                  "display": "Crushing injury of ankle"
+                },
+                {
+                  "code": "E928.2",
+                  "display": "Vibration"
+                },
+                {
+                  "code": "E928.1",
+                  "display": "Exposure to noise"
+                },
+                {
+                  "code": "E928.4",
+                  "display": "External constriction caused by hair"
+                },
+                {
+                  "code": "928.01",
+                  "display": "Crushing injury of hip"
+                },
+                {
+                  "code": "928.9",
+                  "display": "Crushing injury of unspecified site of lower limb"
+                },
+                {
+                  "code": "928.0",
+                  "display": "Crushing injury of hip and thigh"
+                },
+                {
+                  "code": "928.11",
+                  "display": "Crushing injury of knee"
+                },
+                {
+                  "code": "E928.6",
+                  "display": "Environmental exposure to harmful algae and toxins"
+                },
+                {
+                  "code": "928.3",
+                  "display": "Crushing injury of toe(s)"
+                },
+                {
+                  "code": "928.1",
+                  "display": "Crushing injury of knee and lower leg"
+                },
+                {
+                  "code": "928.8",
+                  "display": "Crushing injury of multiple sites of lower limb"
+                },
+                {
+                  "code": "928.00",
+                  "display": "Crushing injury of thigh"
+                },
+                {
+                  "code": "928.20",
+                  "display": "Crushing injury of foot"
+                },
+                {
+                  "code": "928.2",
+                  "display": "Crushing injury of ankle and foot, excluding toe(s) alone"
+                },
+                {
+                  "code": "E928.8",
+                  "display": "Other accidents"
+                },
+                {
+                  "code": "E928.0",
+                  "display": "Prolonged stay in weightless environment"
+                },
+                {
+                  "code": "E928.5",
+                  "display": "External constriction caused by other object"
+                },
+                {
+                  "code": "E928.7",
+                  "display": "Environmental and accidental causes, mechanism or component of firearm and air gun"
+                },
+                {
+                  "code": "E928.3",
+                  "display": "Human bite"
+                },
+                {
+                  "code": "E928.9",
+                  "display": "Unspecified accident"
+                },
+                {
+                  "code": "929.9",
+                  "display": "Crushing injury of unspecified site"
+                },
+                {
+                  "code": "E929.5",
+                  "display": "Late effects of accident due to natural and environmental factors"
+                },
+                {
+                  "code": "E929.8",
+                  "display": "Late effects of other accidents"
+                },
+                {
+                  "code": "929.0",
+                  "display": "Crushing injury of multiple sites, not elsewhere classified"
+                },
+                {
+                  "code": "E929.4",
+                  "display": "Late effects of accident caused by fire"
+                },
+                {
+                  "code": "E929.2",
+                  "display": "Late effects of accidental poisoning"
+                },
+                {
+                  "code": "E929.0",
+                  "display": "Late effects of motor vehicle accident"
+                },
+                {
+                  "code": "E929.1",
+                  "display": "Late effects of other transport accident"
+                },
+                {
+                  "code": "E929.3",
+                  "display": "Late effects of accidental fall"
+                },
+                {
+                  "code": "E929.9",
+                  "display": "Late effects of unspecified accident"
+                },
+                {
+                  "code": "959.6",
+                  "display": "Hip and thigh injury"
+                },
+                {
+                  "code": "959.7",
+                  "display": "Knee, leg, ankle, and foot injury"
+                },
+                {
+                  "code": "996.42",
+                  "display": "Dislocation of prosthetic joint"
+                },
+                {
+                  "code": "996.44",
+                  "display": "Peri-prosthetic fracture around prosthetic joint"
+                },
+                {
+                  "code": "996.46",
+                  "display": "Articular bearing surface wear of prosthetic joint"
+                },
+                {
+                  "code": "996.4",
+                  "display": "Mechanical complication of internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.40",
+                  "display": "Unspecified mechanical complication of internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.41",
+                  "display": "Mechanical loosening of prosthetic joint"
+                },
+                {
+                  "code": "996.47",
+                  "display": "Other mechanical complication of prosthetic joint implant"
+                },
+                {
+                  "code": "996.43",
+                  "display": "Broken prosthetic joint implant"
+                },
+                {
+                  "code": "996.45",
+                  "display": "Peri-prosthetic osteolysis"
+                },
+                {
+                  "code": "996.49",
+                  "display": "Other mechanical complication of other internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.66",
+                  "display": "Infection and inflammatory reaction due to internal joint prosthesis"
+                },
+                {
+                  "code": "996.67",
+                  "display": "Infection and inflammatory reaction due to other internal orthopedic device, implant, and graft"
+                },
+                {
+                  "code": "996.77",
+                  "display": "Other complications due to internal joint prosthesis"
+                },
+                {
+                  "code": "996.78",
+                  "display": "Other complications due to other internal orthopedic device, implant, and graft"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "16.claudication-meds",
+        "url": "https://workbench.phema.science/fhir/ValueSet/16.claudication-meds",
+        "name": "Claudication Meds",
+        "status": "active",
+        "publisher": "Project PhEMA",
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "concept": [
+                {
+                  "code": "21107",
+                  "display": "cilostazol"
+                },
+                {
+                  "code": "8013",
+                  "display": "Pentoxifylline"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet"
+      }
+    }
+  ]
+}

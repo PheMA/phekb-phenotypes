@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-47",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-47",
+  "status": "active",
+  "name": "PHEKB-12 HDL Labs",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2086-7",
+            "display": "Deprecated Cholesterol.in HDL [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2085-9",
+            "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

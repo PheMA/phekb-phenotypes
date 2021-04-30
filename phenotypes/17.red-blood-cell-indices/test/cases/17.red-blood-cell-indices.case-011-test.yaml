@@ -1,0 +1,21 @@
+---
+name: 011 RBC Indices Case - Cirrhosis diagnosis AFTER sample
+
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1958-07-16
+
+  - resourceType: Observation
+    code: LOINC#789-8 Erythrocytes [#/volume] in Blood by Automated count
+    valueQuantity: 5 10*6/uL
+    effectiveDateTime: "2007-06-01T07:00:00.000Z"
+
+  - resourceType: Condition
+    code: ICD9#571.2 Alcoholic cirrhosis of liver
+    onsetDateTime: "2017-03-12T16:00:00.000Z"
+results:
+  RBC Candidate: true
+  ESR Candidate: false
+  Case: true

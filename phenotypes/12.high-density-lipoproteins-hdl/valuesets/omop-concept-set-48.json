@@ -1,0 +1,117 @@
+{
+  "resourceType": "ValueSet",
+  "id": "omop-concept-set-48",
+  "url": "https://workbench.phema.science/fhir/ValueSet/omop-concept-set-48",
+  "status": "active",
+  "name": "PHEKB-12 Hyperthyroidism Codes",
+  "publisher": "PhEMA Workbench OMOP Concept Set Transformer",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "252.08",
+            "display": "Other hyperparathyroidism"
+          },
+          {
+            "code": "252.02",
+            "display": "Secondary hyperparathyroidism, non-renal"
+          },
+          {
+            "code": "252.1",
+            "display": "Hypoparathyroidism"
+          },
+          {
+            "code": "242.90",
+            "display": "Thyrotoxicosis without mention of goiter or other cause, and without mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "252.01",
+            "display": "Primary hyperparathyroidism"
+          },
+          {
+            "code": "252.0",
+            "display": "Hyperparathyroidism"
+          },
+          {
+            "code": "242.20",
+            "display": "Toxic multinodular goiter without mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.0",
+            "display": "Toxic diffuse goiter"
+          },
+          {
+            "code": "242.30",
+            "display": "Toxic nodular goiter, unspecified type, without mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.10",
+            "display": "Toxic uninodular goiter without mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.21",
+            "display": "Toxic multinodular goiter with mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "252.00",
+            "display": "Hyperparathyroidism, unspecified"
+          },
+          {
+            "code": "242.91",
+            "display": "Thyrotoxicosis without mention of goiter or other cause, with mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "243",
+            "display": "Congenital hypothyroidism"
+          },
+          {
+            "code": "242.9",
+            "display": "Thyrotoxicosis without mention of goiter or other cause"
+          },
+          {
+            "code": "242.3",
+            "display": "Toxic nodular goiter, unspecified type"
+          },
+          {
+            "code": "242.00",
+            "display": "Toxic diffuse goiter without mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.31",
+            "display": "Toxic nodular goiter, unspecified type, with mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.11",
+            "display": "Toxic uninodular goiter with mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242",
+            "display": "Thyrotoxicosis with or without goiter"
+          },
+          {
+            "code": "253.0",
+            "display": "Acromegaly and gigantism"
+          },
+          {
+            "code": "253.9",
+            "display": "Unspecified disorder of the pituitary gland and its hypothalamic control"
+          },
+          {
+            "code": "242.01",
+            "display": "Toxic diffuse goiter with mention of thyrotoxic crisis or storm"
+          },
+          {
+            "code": "242.2",
+            "display": "Toxic multinodular goiter"
+          },
+          {
+            "code": "242.1",
+            "display": "Toxic uninodular goiter"
+          }
+        ]
+      }
+    ]
+  }
+}
