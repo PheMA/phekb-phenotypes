@@ -2,9 +2,17 @@
 
 [![PhEMA](./repo-badge.svg)](https://projectphema.org "PhEMA")
 ![](https://img.shields.io/badge/progress-33%2F33-brightgreen?style=flat)
+[![DOI](https://img.shields.io/badge/DOI-10.1093%2Fjamiaopen%2Fooab094-blue)](https://academic.oup.com/jamiaopen/article/4/4/ooab094/6448692 "Development of a repository of computable phenotype definitions using the clinical quality language")
 
 Collection of PheKB [phenotypes](./phenotypes) translated as part of the PhEMA
 phenotype variability project.
+
+```
+Brandt PS, Pacheco JA, Rasmussen LV. Development of a repository of computable phenotype definitions 
+using the clinical quality language. JAMIA Open. 2021 Dec 3;4(4):ooab094. 
+doi: 10.1093/jamiaopen/ooab094. PMID: 34926996; PMCID: PMC8672934.
+```
+☝️ [citation](https://academic.oup.com/jamiaopen/article/4/4/ooab094/6448692)
 
 ## Overview
 
